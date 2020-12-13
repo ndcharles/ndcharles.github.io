@@ -16,6 +16,6 @@ What ?
 
 - 
 - 
-
-[back to portfolio](./)
-
+<br><br>
+<a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
+[Back to Portfolio](./)
