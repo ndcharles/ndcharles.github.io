@@ -8,7 +8,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   Let's Connect:<br>
   <a href="https://www.linkedin.com/in/nndcharles">LinkedIn</a> | <a href="https://www.twitter.com/nndcharles">Twitter</a> | <a href="mailto:ndcharles.edu@gmail.com">Email</a><br>
-<a href="https://ndcharles.github.io/assets/resume.pdf">View my Resume</a><br>
+<a href="https://github.com/ndcharles/ndcharles.github.io/blob/main/assets/resume.pdf">View my Resume</a><br>
   
 theme: jekyll-theme-minimal
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
