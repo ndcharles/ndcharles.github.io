@@ -25,6 +25,6 @@
 - Project 4 Title
 
 
-<br><br>
+<br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
 ---
