@@ -1,4 +1,4 @@
-logo: "/images/logo.png = 160x160" # your photo (or logo) here
+logo: <p align="center"><img src="/images/logo.png = 160x160"/></p> # your photo (or logo) here
 title: Ndcharles Nweke
  # your name (or website title) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
