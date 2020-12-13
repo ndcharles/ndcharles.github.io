@@ -1,0 +1,14 @@
+logo: "/images/logo.png?raw=true" # your photo (or logo) here
+title: <p style="text-align: center;">Ndcharles Nweke</p>
+ # your name (or website title) here
+description: > # your text below (remove <br> elements if you don't need line breaks)
+  Data Scientist | Machine Learning Intern | Storyteller 
+  <br><br>
+  An engineering graduate who found himself in the classroom. I am currently in data science/ML, which has been awesome so far🙌. My interests are in real-life applications of data science/ML especially, but not limited to, business/marketing analytics and education. 
+  <br><br>
+  <a href="https://www.linkedin.com/in/nndcharles">Connect on LinkedIn Profile</a> 
+  <a href="https://www.twitter.com/nndcharles">Connect on Twitter Profile</a>
+  <a href="mailto:ndcharles.edu@gmail.com">Shoot me an eMail</a>
+  
+theme: jekyll-theme-minimal
+google_analytics: UA-000000-0 # your Google Analytics tracking ID here
