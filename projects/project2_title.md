@@ -4,6 +4,7 @@ layout: default
 <!--- project 2 --->
 
 ## Summarising text Using BART and T5
+![text-summarisation](/images/tekxt.png)
 
 Text summarization is the process of distilling the most important information from a source text to produce an abridged version for a particular user and task.
 
@@ -19,16 +20,12 @@ T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervis
 
 BART and T5 were used for this project as they have been pre-trained. Using them reduced the lead time required for the project completion.
 
-<img src="images/tekxt.png?raw=true"/>
-
 [View project on GitHub](https://github.com/ndcharles/text-summarization)
 
 ### Discussions
 
 The codes were run in Google Colab and further on local host. It is to be hosted on heroku for public access since that is the only way to enable public review of the work. However, due to the size of the pre-trained data and the limit of Heroku free-tier, the model couldn't be hosted on there.
 
-- 
-- 
 <br><br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
 [Back to Portfolio](https://ndcharles.github.io/)
