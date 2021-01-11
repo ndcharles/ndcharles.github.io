@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
+/* project 1 */
 
-## Project 1 title
+## Lagos Rent Prediction Web app 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This is an inter-track project which involves the UI/UX team, Data Science team and Sodtware Engineering team.
+As part of the data science team, our task is to scrape the necessary data and then develop a machine learning model to help house seekers in Lagos have an idea of how much it would cost them to rent an apartment in locations around Lagos.
 
 ### Method
 
-What ?
+In progress...
+
+[View project on GitHub](#)
 
 ### Discussions
 
@@ -18,5 +22,5 @@ What ?
 - 
 <br><br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
-[Back to Portfolio](../)
+[Back to Portfolio](https://ndcharles.github.io/)
 
