@@ -16,6 +16,7 @@ However, automatic methods for text summarization are crucial in today’s world
 ### Method
 
 BART is a Seq2Seq model that performs well on multiple tasks like abstractive dialogue, question answering and summarization.
+
 T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervised and supervised tasks and for which each task is converted into a text-to-text format. T5 works well on a variety of tasks out-of-the-box such as translation, questions answering and summarisation. 
 
 BART and T5 were used for this project as they have been pre-trained. Using them reduced the lead time required for the project completion.
@@ -27,6 +28,6 @@ BART and T5 were used for this project as they have been pre-trained. Using them
 The codes were run in Google Colab and further on local host. The outputs were reasonably good. However, due to the size of pre-trained files, model size is pretty large.
 It is to be hosted on heroku for public access since that is the only way to enable public review of the work. However, due to the size of the pre-trained data and the limit of Heroku free-tier, the model couldn't be hosted on there.
 
-<br><br>
+<br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
 [Back to Portfolio](https://ndcharles.github.io/)
