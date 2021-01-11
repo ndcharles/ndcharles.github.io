@@ -24,7 +24,8 @@ BART and T5 were used for this project as they have been pre-trained. Using them
 
 ### Discussions
 
-The codes were run in Google Colab and further on local host. It is to be hosted on heroku for public access since that is the only way to enable public review of the work. However, due to the size of the pre-trained data and the limit of Heroku free-tier, the model couldn't be hosted on there.
+The codes were run in Google Colab and further on local host. The outputs were reasonably good. However, due to the size of pre-trained files, model size is pretty large.
+It is to be hosted on heroku for public access since that is the only way to enable public review of the work. However, due to the size of the pre-trained data and the limit of Heroku free-tier, the model couldn't be hosted on there.
 
 <br><br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
