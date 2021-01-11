@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-/* project 1 */
+<!--- project 1 --->
 
 ## Lagos Rent Prediction Web app 
 
