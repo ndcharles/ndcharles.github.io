@@ -13,14 +13,17 @@ A dataset consisting of 614 samples (and 13 attributes of loans) granted by XYZ,
 ![loan](/images/loan.png)
 
 Given it's a classification problem, various classification algorithms (LogisticRegression, DecisionTreeClassifier, RandomForestClassifier and AdaBoostClassifier) were used to create a model using the relevants attributes to predict the outcome – given or not given. 
-[View project on GitHub](https://github.com/ndcharles/text-summarization)
+
+[View project on GitHub](https://github.com/ndcharles/SGA08_DATASCI/blob/master/loan_project/loan_project.ipynb)
 
 ### Discussions
 
 Our first prediction used income fields, loan amount, loan term and credit history fields to train our model. The results of the models are given below:
+
 ![loan1](/images/loan1.png)
 
 Addition of other variables improved the results, with AdaBoostClassifier giving the best performance. Using the AdaBoostClassifier alone, to predict gave the below KDE plot and metrics.
+
 ![loan2](/images/loan2.png)
 
 From the KDE output, there is the need to balance the prediction to reduce the variation between the actual and predicted values.
