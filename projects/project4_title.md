@@ -22,12 +22,9 @@ Our first prediction used income fields, loan amount, loan term and credit histo
 
 ![loan1](/images/loan1.png)
 
-Addition of other variables improved the results, with AdaBoostClassifier giving the best performance. Using the AdaBoostClassifier alone, to predict gave the below KDE plot and metrics.
-
+Addition of other variables improved the results, with AdaBoostClassifier giving the best performance. Using the AdaBoostClassifier alone, to predict gave the below KDE plot and metrics. However, from the KDE output, there is the need to balance the prediction to reduce the variation between the actual and predicted values.
 ![loan2](/images/loan2.png)
 
-From the KDE output, there is the need to balance the prediction to reduce the variation between the actual and predicted values.
- 
 <br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
 [Back to Portfolio](https://ndcharles.github.io/) 
