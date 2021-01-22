@@ -7,28 +7,26 @@ This is an inter-track project which involves the UI/UX team, Data Science team 
 <!--- <img src="images/dummy_thumbnail.jpg?raw=true"/> --->
 
 ---
-### [Project 2 Title](/projects/project2_title)
+### [Summarising text Using BART and T5](/projects/project2_title)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### [Project 3 Title](/projects/project3_title)
+### [Customer Segmentation](/projects/project3_title)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### [Project 4 Title](/projects/project4_title)
+### [Loan Prediction](/projects/project4_title)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### [Project 5 Title](/projects/project4_title)
+### [Rent Prediction](/projects/project5_title)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### [Project 6 Title](/projects/project4_title)
+### [Exploratory Data Analysis](/projects/project6_title)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### [Project 4 Title](/projects/project4_title)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 <!---
 ## Other Skills
