@@ -19,7 +19,7 @@ This is an inter-track project which involves the UI/UX team, Data Science team 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-### [Rent Prediction](/projects/project5_title)
+### [Linear Regression on Lagos Rent](/projects/project5_title)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
