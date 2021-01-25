@@ -15,12 +15,12 @@ Rent data was scraped from [nigeriapropertycentre](https://nigeriapropertycentre
 
 ### Discussions
 
-After splitting, the linear regression model gave a score of 0.71 and an intercept 5.6758. This leaves us with a linear model (where 5.6758 is the intercept; X, the independent variable and beta, the model coeffieients.):
-
-![\hat{y} = 5.6758 + \sum\limits _{j=1} ^{p} X_{j}\hat{\beta}_{j}](http://www.sciweavers.org/tex2img.php?eq=\hat{y}%20%3D%205.6758%20%2B%20\sum\limits%20_{j%3D1}%20^{p}%20X_{j}\hat{\beta}_{j}&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+After splitting, the linear regression model gave a score of 0.71 and an intercept 5.6758. This leaves us with a linear model (where 5.6758 is the intercept; X, the independent variable and; m, the model coefficients.): **y = 5.6758 + mX**
 
 ### Also see
 - [mtcars Regression](https://github.com/ndcharles/SGA08_DATASCI/blob/master/LinearRegr.ipynb)
+-- This went a step further to use a RidgeRegression (normalization algorithm) to perform regression task
+
 <br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
 [Back to Portfolio](https://ndcharles.github.io/) 
