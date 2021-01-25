@@ -8,15 +8,19 @@ This is an inter-track project which involves the UI/UX team, Data Science team 
 
 ---
 ### [Summarising text Using BART and T5](/projects/project2_title)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+In this project, automatic text summarisation was explored BART and T5 models. Both models perform well on a variety of tasks out-of-the-box such as translation, questions answering and summarisation. The aim here, however, was to test their effectiveness on text summarisation. The models gave very good outputs which can be primed further by changing the pre-train files and hyperparameter tuning.
 
 ---
 ### [Customer Segmentation](/projects/project3_title)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+![custom-segmentation](/images/cus_seg.png)
+
+The purpose of this project is to develop a clustering algorithm to help a supermarket owner create target groups for his customers. This would help him know what age to target which product. As well as what kind of offers to use on which customers during his marketing runs. This is an unsupervised learning problem hence we used Kmeans clustering to segment the customers and provide Mr Ken with the Target Customers.
 
 ---
 ### [Loan Prediction](/projects/project4_title)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+![loanx](/images/loanx.jpg)
+
+A classification project to reduce the tedious process of ascertaining if a person will be offered loan or not. Models used are, LogisticRegression, DecisionTreeClassifier, RandomForestClassifier and AdaBoostClassifier. While AdaBoostClassifier outshined the others further efforts were made to improve on the accuracy of the models.
 
 ---
 ### [Linear Regression on Lagos Rent](/projects/project5_title)
