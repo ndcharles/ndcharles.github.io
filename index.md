@@ -6,7 +6,7 @@
 This is an inter-track project which involves the UI/UX team, Data Science team and Sodtware Engineering team. As part of the data science team, our task is to scrape the necessary data and then develop a machine learning model to help house seekers in Lagos have an idea of how much it would cost them to rent an apartment in locations around Lagos.
 <!--- <img src="images/dummy_thumbnail.jpg?raw=true"/> --->
 
-[Learn more](/projects/project1_title)
+[Learn more](https://github.com/ndcharles/ndcharles.github.io/blob/main/projects/project1_title.md)
 
 ---
 ### [Summarising text Using BART and T5](/projects/project2_title)
