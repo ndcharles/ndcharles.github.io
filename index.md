@@ -5,7 +5,7 @@
 ### [Lagos Rent Prediction Web app](/projects/project1_title)
 This is an inter-track project which involves the UI/UX team, Data Science team and Sodtware Engineering team. As part of the data science team, our task is to scrape the necessary data and then develop a machine learning model to help house seekers in Lagos have an idea of how much it would cost them to rent an apartment in locations around Lagos.
 <!--- <img src="images/dummy_thumbnail.jpg?raw=true"/> --->
-
+![Learn more](/projects/project1_title)
 ---
 ### [Summarising text Using BART and T5](/projects/project2_title)
 In this project, automatic text summarisation was explored BART and T5 models. Both models perform well on a variety of tasks out-of-the-box such as translation, questions answering and summarisation. The aim here, however, was to test their effectiveness on text summarisation. The models gave very good outputs which can be primed further by changing the pre-train files and hyperparameter tuning.
