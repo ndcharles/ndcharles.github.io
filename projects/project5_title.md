@@ -15,11 +15,11 @@ Rent data was scraped from [nigeriapropertycentre](https://nigeriapropertycentre
 
 ### Discussions
 
-After splitting, the linear regression model gave a score of 0.71 and an intercept 5.6758. This leaves us with a linear model (where 5.6758 is the intercept; X, the independent variable and; m, the model coefficients.): **y = 5.6758 + mX**
+After splitting, the linear regression model gave a score of 0.71 and an intercept 5.6758. This leaves us with a linear model (where 5.6758 is the intercept; X, the independent variable and; m, the model coefficients.) ==>  **y = 5.6758 + mX**
 
 ### Also see
-- [mtcars Regression](https://github.com/ndcharles/SGA08_DATASCI/blob/master/LinearRegr.ipynb)
--- This went a step further to use a RidgeRegression (normalization algorithm) to perform regression task
+- [Auto MPG Regression](https://github.com/ndcharles/SGA08_DATASCI/blob/master/LinearRegr.ipynb)
+  - This went a step further to use a RidgeRegression (normalization algorithm) to perform regression task
 
 <br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
