@@ -24,7 +24,7 @@ A classification project to reduce the tedious process of ascertaining if a pers
 
 ---
 ### [Linear Regression on Lagos Rent](/projects/project5_title)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+Rent data was scraped from [nigeriapropertycentre](https://nigeriapropertycentre.com/for-rent/flats-apartments/lagos/showtype?bedrooms=2) using Python and BeautifulSoup and were preprocessed in Excel to inspect the data for irregularities. EDA was then carried out on the data using python in jupyter-lab environment. A LinearRegression mdoel was then built to predict the rental price of houses within Lagos.
 
 ---
 ### [Exploratory Data Analysis](/projects/project6_title)
