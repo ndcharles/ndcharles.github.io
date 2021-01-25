@@ -19,7 +19,7 @@ After splitting, the linear regression model gave a score of 0.71 and an interce
 
 ### Also see
 - [Auto MPG Regression](https://github.com/ndcharles/SGA08_DATASCI/blob/master/LinearRegr.ipynb)
-  - This went a step further to use a RidgeRegression (normalization algorithm) to perform regression task
+  - This went a step further to use RidgeRegression (normalization algorithm) to perform regression task.
 
 <br>
 <a href="https://www.github.com/ndcharles">View my GitHub profile</a><br>
