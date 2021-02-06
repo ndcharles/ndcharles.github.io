@@ -14,6 +14,8 @@ We scrapped contents from [PropertyPro](https://www.propertypro.ng/) and [Nigeri
 
 Several regression algorithm were tried on the data but we finally settled with [CatBoostRegressor](https://catboost.ai/docs/concepts/python-reference_catboostregressor.html) algorithm. CatBoost is a machine learning algorithm that uses gradient boosting on decision trees. The algorithm was chosen because it has an inbulit method of dealing with categorical variables without affecting model output. Like other boosting models, it is available for hyperparameter tuning and tree pruning.
 
+### Discussions
+
 The model gave the below results:
 - Learn {R2: 0.68,  RMSE: 0.60}
 - Validation {R2: 0.76,  RMSE: 0.49}
