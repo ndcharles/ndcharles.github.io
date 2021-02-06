@@ -38,8 +38,9 @@ Rent data was scraped from [nigeriapropertycentre](https://nigeriapropertycentre
 
 ---
 ### [Exploratory Data Analysis](/projects/project6_title)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+![eda](/images/eda.jpg)
 
+Exploratory Data Analysis is an important step required to complete every project regardless of type of data one is working with. It gives us a sense of what additional work should be performed to quantify and extract insights from our data. In this analysis, I will be looking at the different factors that could have affected the survival rate of the passengers of the Titanic.
 
 [Learn more](https://ndcharles.github.io/projects/project6_title)
 
