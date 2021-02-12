@@ -45,7 +45,16 @@ Exploratory Data Analysis is an important step required to complete every projec
 [Learn more](https://ndcharles.github.io/projects/project6_title)
 
 ---
+## Some Tools I Use
 
+- Python
+- Pandas and Numpy
+- Scikit-Learn
+- SQL
+- Tableau
+- Other data science & ML frameworks
+
+---
 <!---
 ## Other Skills
 
