@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-22T13:20:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a blog by Ndcharles Nweke on Data, Growth et. Product management.</subtitle><entry><title type="html">This is a Test Page. Ok</title><link href="http://localhost:4000/this-test-page/" rel="alternate" type="text/html" title="This is a Test Page. Ok" /><published>2022-04-22T00:00:00+01:00</published><updated>2022-04-22T00:00:00+01:00</updated><id>http://localhost:4000/this-test-page</id><content type="html" xml:base="http://localhost:4000/this-test-page/"><![CDATA[<p>Ok. Hear me out.</p>
+
+<p>I am knowledged about digital marketing, web platforms and tech in general which makes me a good growth hacker marketer.</p>
+
+<p>My engineering background and love for details led me to data science and analytics where I drill down data in search of meaning and hidden information.</p>
+
+<p>Speaking of eye for details, digital marketing and tech, as a product manager I spend time analysing web platforms to understand how they work and, how users use them in order to know how platforms should actually work best for its users.</p>
+
+<p>I currently work as a Data Analyst and also acting as a Product Manager. I often create email newsletters and online resources for our company’s blog.</p>
+
+<p>In my own time I am a homeschool teacher for Common Entrance pupils and every other things (albeit in tech). I design <a href="https://opendiari.com/thatbros">WordPress websites</a>, <a href="https://opendiari.com">write quick tech articles</a>, and read daily about tech and growth marketing.</p>
+
+<p>All of my writings on <a href="/categories.html#data">data science</a>, <a href="/categories.html#growth">growth marketing</a>, <a href="#growth">product marketing</a> and <a href="/categories.html#tech">tech_life</a> can be found under the <strong>Articles section</strong>. My data science portfolio is at the <strong>Portfolio section</strong> (or just go <a href="https://ndcharles.github.io/portfolio">here</a>. If you want to see all of the wonderful projects I’ve worked on (and still working on), head over to the <strong>Projects section</strong>.</p>
+
+<blockquote>
+  <p>Do you enjoy my work and find value in the things that I share here or anywhere else and you want to work with me, or just hangout? Feel free to reach out on <a href="https://twitter.com/nndcharles">Twitter</a>, via e-mail, <a href="https://linkedin.com/in/nndcharles">LinkedIn</a> or just come to my house.</p>
+</blockquote>
+
+<h4 id="what-i-do">What I do?</h4>
+<ul>
+  <li><a href="see my portfolio">Data Science &amp; Analytics</a></li>
+  <li><a href="see my portfolio">Product Management</a></li>
+  <li><del>Growth Marketing</del></li>
+</ul>
+
+<h4 id="want-to-get-in-touch">Want to get in touch?</h4>
+<ul>
+  <li><a href="https://twitter.com/nndcharles">Twitter</a></li>
+  <li><a href="https://linkedin.com/in/nndcharles">LinkedIn</a></li>
+  <li><a href="#">Dev.to</a></li>
+  <li><a href="https://github.com/ndcharles">GitHub</a></li>
+  <li><a href="https://ndcharles.medium.com">Medium</a></li>
+</ul>]]></content><author><name>ndcharles</name></author><category term="tutorial" /><category term="test" /><category term="introduction" /><summary type="html"><![CDATA[Ok. Hear me out.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/9.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/9.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[<p>There are lots of powerful things you can do with the Markdown editor</p>
+
+<p>If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
+
+<p>As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.</p>
+
+<h2 id="special-formatting">Special formatting</h2>
+
+<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
+
+<ul>
+  <li><del>strike through</del></li>
+  <li>==highlight==</li>
+  <li>*escaped characters*</li>
+</ul>
+
+<h2 id="writing-code-blocks">Writing code blocks</h2>
+
+<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code class="language-plaintext highlighter-rouge">like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-link {
+    text-decoration: underline;
+}
+</code></pre></div></div>
+
+<p>If you want to get really fancy, you can even add syntax highlighting using Rouge.</p>
+
+<p><img src="/assets/images/3.jpg" alt="walking" /></p>
+
+<h2 id="reference-lists">Reference lists</h2>
+
+<p>The quick brown jumped over the lazy.</p>
+
+<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
+
+<h2 id="full-html">Full HTML</h2>
+
+<p>Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:</p>
+
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>]]></content><author><name>ndcharles</name></author><category term="Jekyll" /><category term="tutorial" /><category term="markdown" /><category term="editor" /><summary type="html"><![CDATA[There are lots of powerful things you can do with the Markdown editor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/art_work.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/art_work.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

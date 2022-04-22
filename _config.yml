@@ -1,0 +1,139 @@
+# Site
+name: 'MLIT'
+description: 'Welcome to MyLifeInTech, a blog by Ndcharles Nweke on Data, Growth et. Product management.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+google_analytics: 'UA-12345678-1'
+disqus: 'mlit'
+email: 'ndcharles.edu@gmail.com'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-target-blank
+  
+authors:
+    ndcharles:
+      name:           Ndcharles Nweke
+      display_name:   Ndcharles
+      site:           https://www.ndcharles.github.io
+      avatar:         'assets/images/ndcharles.png'
+      bio:            "Hi, I am Ndcharles. I write about my experience in data science, growth marketing and product management."
+      email:          ndcharles.edu@gmail.com
+      twitter:        https://twitter.com/nndcharles
+      linkedin:       https://linkedin.com/in/nndcharles
+
+    
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: ndcharles
+      avatar: 'assets/images/ndcharles.png'
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+prose:
+  rooturl: ''
+  siteurl: 'http://ndcharles.github.io/'
+  media: 'assets/images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          label: "layout"
+          element: "text"
+          value: "post"
+      - name:
+        field:
+          label: "date"
+          element: "text"
+          value: "CURRENT_DATETIME"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "disqus"
+        field:
+          element: "checkbox"
+          label: "Allow Disqus Comments"
+          value: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: false
+      - name: "category"
+        field:
+          element: "multiselect"
+          label: "Select Categories"
+          placeholder: "Choose Categories"
+          options:
+            - name: "Product"
+              value: "product"
+            - name: "Data"
+              value: "data"
+            - name: "Tech"
+              value: "tech"
+            - name: "Growth"
+              value: "growth"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          alterable: true
+          options:
+            - name: "Featured"
+              value: "featured"
+            - name: "Product Management"
+              value: "product management"
+            - name: "Data Science"
+              value: "data science"
+            - name: "Growth Marketing"
+              value: "growth marketing"
+            - name: "Jekyll"
+              value: "jekyll"
+            - name: "StartUp"
+              value: "startup"
+            - name: "Python"
+              value: "python"
+            - name: "Sticky"
+              value: "sticky"
+      - name: "excerpt"
+        field:
+          label: "excerpt"
+          element: "text"
+          placeholder: "Enter excerpt"
+      - name: "meta"
+        field:
+          label: "meta"
+          element: "text"
+          placeholder: "Enter metadata"
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
