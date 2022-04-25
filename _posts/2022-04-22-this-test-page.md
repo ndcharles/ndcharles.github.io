@@ -1,7 +1,6 @@
 ---
 title:  "This is a Test Page. Ok"
 categories: [ tutorial ]
-image: assets/images/9.jpg
 tags: [test, introduction]
 ---
 

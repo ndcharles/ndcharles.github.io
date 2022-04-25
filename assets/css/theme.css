@@ -802,7 +802,21 @@ div.a2a_full_footer {display:none;}
 		 height:280px !Important;
 	 }
  }
- 
+
+
+.page-content blockquote {
+	font-family:Times New Roman;	
+	font-style:italic;
+	font-size: 20px;
+	border-left: 1px solid #03a87c;
+	padding-left:10px;
+	margin-left:20px;
+	margin-right:10px;
+	position:relative;
+	cite {
+		font-weight: 700;
+	}
+}
  
 /* Share Bar */
 #share-bar {

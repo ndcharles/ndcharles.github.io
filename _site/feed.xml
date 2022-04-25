@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-24T07:33:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a blog by Ndcharles Nweke on Data, Growth et. Product management.</subtitle><entry><title type="html">This is a Test Page. Ok</title><link href="http://localhost:4000/this-test-page/" rel="alternate" type="text/html" title="This is a Test Page. Ok" /><published>2022-04-22T00:00:00+01:00</published><updated>2022-04-22T00:00:00+01:00</updated><id>http://localhost:4000/this-test-page</id><content type="html" xml:base="http://localhost:4000/this-test-page/"><![CDATA[<p>Ok. Hear me out.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-25T11:10:34+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Growth et. Product management.</subtitle><entry><title type="html">This is a Test Page. Ok</title><link href="http://localhost:4000/this-test-page/" rel="alternate" type="text/html" title="This is a Test Page. Ok" /><published>2022-04-22T00:00:00+01:00</published><updated>2022-04-22T00:00:00+01:00</updated><id>http://localhost:4000/this-test-page</id><content type="html" xml:base="http://localhost:4000/this-test-page/"><![CDATA[<p>Ok. Hear me out.</p>
 
 <p>I am knowledged about digital marketing, web platforms and tech in general which makes me a good growth hacker marketer.</p>
 
@@ -30,7 +30,7 @@
   <li><a href="#">Dev.to</a></li>
   <li><a href="https://github.com/ndcharles">GitHub</a></li>
   <li><a href="https://ndcharles.medium.com">Medium</a></li>
-</ul>]]></content><author><name>ndcharles</name></author><category term="tutorial" /><category term="test" /><category term="introduction" /><summary type="html"><![CDATA[Ok. Hear me out.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/9.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/9.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[<p>There are lots of powerful things you can do with the Markdown editor</p>
+</ul>]]></content><author><name>ndcharles</name></author><category term="tutorial" /><category term="test" /><category term="introduction" /><summary type="html"><![CDATA[Ok. Hear me out.]]></summary></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[<p>There are lots of powerful things you can do with the Markdown editor</p>
 
 <p>If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
 
@@ -64,6 +64,11 @@
 <p>The quick brown jumped over the lazy.</p>
 
 <p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
+
+<h2 id="sample-blockquote">Sample Blockquote</h2>
+<blockquote>
+  <p>Writing good technical articles is indeed a challenge, takes a lot of your personal time and often requires doing a lot of research. Of-course you should have a passion for reading and writing it. Before you write your paper, you need to understand your audience and your message.</p>
+</blockquote>
 
 <h2 id="full-html">Full HTML</h2>
 

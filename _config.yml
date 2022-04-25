@@ -1,10 +1,10 @@
 # Site
 name: 'MLIT'
-description: 'Welcome to MyLifeInTech, a blog by Ndcharles Nweke on Data, Growth et. Product management.'
+description: 'Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Growth et. Product management.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
-google_analytics: 'UA-12345678-1'
+google_analytics: 'G-EBC8NBRK90'
 disqus: 'mlit'
 email: 'ndcharles.edu@gmail.com'
 
@@ -122,6 +122,10 @@ prose:
               value: "startup"
             - name: "Python"
               value: "python"
+            - name: "Data Engineering"
+              value: "data_engineering"
+            - name: "Excel"
+              value: "excel"
             - name: "Sticky"
               value: "sticky"
       - name: "excerpt"

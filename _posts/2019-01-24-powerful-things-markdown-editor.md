@@ -42,6 +42,9 @@ The quick brown jumped over the lazy.
 
 Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
 
+## Sample Blockquote
+>Writing good technical articles is indeed a challenge, takes a lot of your personal time and often requires doing a lot of research. Of-course you should have a passion for reading and writing it. Before you write your paper, you need to understand your audience and your message.
+
 ## Full HTML
 
 Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
