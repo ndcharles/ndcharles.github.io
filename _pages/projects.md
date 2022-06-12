@@ -9,8 +9,6 @@ Thank you for coming.
 
 While I am still trying to gather all my projects, kindly read the [articles]({{site.baseurl}}/index.html), see more [about me]({{site.baseurl}}/about.html) or view my [GitHub profile](https://github.com/ndcharles)
 
-Nnoo!
-
 
 #### Want to get in touch instead?
 - [Twitter](https://twitter.com/nndcharles)

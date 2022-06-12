@@ -1,6 +1,6 @@
 # Site
 name: 'MLIT'
-description: 'Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Growth et. Product management.'
+description: 'Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
@@ -10,6 +10,7 @@ email: 'ndcharles.edu@gmail.com'
 
 include: ["_pages"]
 permalink: /:title/
+
 
 # Plugins
 plugins: 
@@ -25,11 +26,14 @@ authors:
       display_name:   Ndcharles
       site:           https://www.ndcharles.github.io
       avatar:         'assets/images/ndcharles.png'
-      bio:            "Hi, I am Ndcharles. I write about my experience in data science, growth marketing and product management."
+      bio:            "Hi, I am Ndcharles. I write about my experience in data science, tech and its products."
       email:          ndcharles.edu@gmail.com
       twitter:        https://twitter.com/nndcharles
       linkedin:       https://linkedin.com/in/nndcharles
 
+twitter:
+    username: nndcharles
+    card: summary_large_image
     
 # Defaults
 defaults:
@@ -99,8 +103,6 @@ prose:
               value: "data"
             - name: "Tech"
               value: "tech"
-            - name: "Growth"
-              value: "growth"
       - name: "tags"
         field:
           element: "multiselect"

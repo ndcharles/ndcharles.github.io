@@ -9,6 +9,7 @@ title:  "Enter post title"
 author: ndcharles
 categories: [ Product, Data, Tech, Growth ]
 image: assets/images/(add image name)
+Last_modified: 2022-06-07 
 tags: [featured, sticky, etc]
 ---
 
@@ -31,6 +32,8 @@ If you want to get really fancy, you can even add syntax highlighting using Roug
 + ==highlight==
 + \*escaped characters\*
 
++ Add highlights <code class="language-plaintext highlighter-rouge">{% last_modified_at %}</code>
+
 Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
 
 
@@ -40,9 +43,15 @@ final config: https://github.com/joshuacox/joshuacox.github.io/blob/master/_conf
 mdifications: https://www.hywel.me/2015/11/23/create-jekyll-static-site-posts-using-proseio.html
 creating categories and more: https://jetholt.com/micro/jekyll-tags-and-categories/
 
-
-
+https://cloudconvert.com/jpg-to-webp
 
 Online documents: 
 Create document drafts: https://draftin.com/
 
+Images settings:
+dimension: 750x500 (Hv)
+colour:
+	black: 
+	green: 
+	
+font: 

@@ -1,7 +1,8 @@
 ---
 title: "Contact"
 layout: page-sidebar
-permalink: "/contact.html"
+permalink: /contact.html
+description: "Write to me when you feel you need someone to speak you."
 ---
 
 #### Want to get in touch?
