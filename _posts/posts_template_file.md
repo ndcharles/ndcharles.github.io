@@ -9,7 +9,7 @@ title:  "Enter post title"
 author: ndcharles
 categories: [ Product, Data, Tech, Growth ]
 image: assets/images/(add image name)
-Last_modified: 2022-06-07 
+last_modified: 2022-06-07 
 tags: [featured, sticky, etc]
 ---
 

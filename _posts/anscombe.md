@@ -9,7 +9,7 @@ tags: [anscombe, dinosaurus, visualization, summary_statistics]
 ---
 Before you type df.describe() on that dataset and rush to tell us what you find, have you heard of Anscombe's Quartet? Probably not.
 
-Anscombe's Quartet is a set of four datasets, where each produces the same summary statistics (mean, standard deviation, and correlation), which could lead one to believe the datasets are quite similar. However, after visualizing (plotting) the data, it becomes clear that the datasets are markedly different.1
+Anscombe's Quartet is a set of four datasets where each produces the same summary statistics (mean, standard deviation, and correlation), and could lead one to believe the datasets are quite similar. However, after visualizing (plotting) the data, it becomes clear that the datasets are remarkedly different.1
 
 ### History of the Anscombe's Quartet 
 
