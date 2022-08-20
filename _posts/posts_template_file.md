@@ -25,14 +25,19 @@ for external resource, replace the relative url to external url.
 
 If you want to get really fancy, you can even add syntax highlighting using Rouge.
 
-
 + **bold**
 + __italicize__
 + ~~strike through~~
 + ==highlight==
 + \*escaped characters\*
 
-+ Add highlights <code class="language-plaintext highlighter-rouge">{% last_modified_at %}</code>
++ Add highlights <code class="language-plaintext highlighter-rouge">{% last_modified_at %}</code> this is cool (changes the font to a cooler one.
++ <span style="color:red">text to change</span> make a text change colour to red and retain the font.
+
+
+{% comment %}
+This is a comment to ignore.
+{% endcomment %}
 
 Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
 

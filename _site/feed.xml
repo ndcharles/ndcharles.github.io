@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-06-12T11:09:36+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Product Analytics: How to Use Data to Build Products that Customers Need</title><link href="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/" rel="alternate" type="text/html" title="Product Analytics: How to Use Data to Build Products that Customers Need" /><published>2022-04-05T00:00:00+01:00</published><updated>2022-04-05T00:00:00+01:00</updated><id>http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need</id><content type="html" xml:base="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/"><![CDATA[<p>At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-20T18:21:23+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">I was at CSA Africa 2022, UNILAG</title><link href="http://localhost:4000/csa-africa-2022/" rel="alternate" type="text/html" title="I was at CSA Africa 2022, UNILAG" /><published>2022-08-12T00:00:00+01:00</published><updated>2022-08-12T00:00:00+01:00</updated><id>http://localhost:4000/csa-africa-2022</id><content type="html" xml:base="http://localhost:4000/csa-africa-2022/"><![CDATA[<p>I attended <a href="https://www.csaafrica.org/csaafrica-2022">Computer Science Academy Africa 2022</a>, hosted by <a href="https://twitter.com/soolaosebikan">
+Sofiat Olaosebikan</a> and her wonderful <a href="https://www.csaafrica.org/team">team</a> at <a href="https://twitter.com/nithub_lag">NitHub, UNILAG</a> and this is what I learned.</p>
+
+<p>At first, while I was applying and saw the option asking about your University, I thought I won’t be selected (I’m already graduated). I filled it anyway and forgot about it until… well, I received the Congratulations email.</p>
+
+<p>There were a lot of promises made to participants that I was so eager to attend. Free lunch, accommodation and three weeks of constant drills in python, data structures, machine learning and IoT plus an opportunity to meet undergrads and grads alike. That sounds like a lot but the experience was worth it.</p>
+
+<h2 id="why-was-i-there">Why was I there?</h2>
+
+<p>There is something I always believed about having enough information to get you ahead. And the need to connect with people going your way (on the same journey as you). CSA Africa was an avenue for me to explore programming beyond the confines of me and online tutorials. It was a means to learn and connect with people (beginners and experienced alike) in the tech space, meet amazing roomies I made friends out of and another I found a tech co-founder in – just kidding.</p>
+
+<p>Well, I met people who were good at what they do. Those who were in other walks of life but understood the use of programming in their future ambitions. I also met people who think far into the future and needed help grabbing that future by its horn.</p>
+
+<h2 id="further-programming-experience">Further programming experience.</h2>
+
+<p>Our first day at CSAA was an awesomely scary experience that it made me question if I ever learnt to actually program in Python. Unfortunately not. I trained mostly using videos, and textbooks and hearing Stephen speak of recursion and memoisation made me realise that there is a lot I have to learn to fully equip my Python toolbox for what is coming.</p>
+
+<p>During our first class on recursion, I recalled my very first task at work which involved a deeply nested JSON dictionary. I found it difficult untangling it and although a friend helped with some parts of it, I now realised recursion/mnemonic is best suited to such problems.</p>
+
+<p>The first week of CSA Africa took us through different further programming tasks in Python. Haven refreshed our memories on the basics (lists, dictionaries, slicing and more) we dived into recursions, memoisation and functional programming (lambda, map, reduce and filter).</p>
+
+<p>Up until now, I have written progrmas around functions. You know, block of statements which manipulate data. This is what is called procedural programming. At CSA Africa, we went further into object-oriented programming (OOP). It involves combining data and functionality and wrapping it using classes and objects. (<a href="https://www.tutorialspoint.com/differences-between-procedural-and-object-oriented-programming">Here are their differences</a>)</p>
+
+<h2 id="the-machine-learning-experience">The Machine Learning Experience</h2>
+<p>My first attempt to do machine learning with just Numpy and no Pandas was at CSA. It was frustrating at first but then, it was an experience I really enjoyed. And when you think that was all there is, we had to implement the KNN and KMeans algorithms from scratch. Besides, learning about classification, regression and clustering algorithms, we also learned to evaluate our model outputs.</p>
+
+<h2 id="projects">Projects</h2>
+
+<p>I had a wonderful group. Although starting off was challenging, we found a way to kick-off and get the project going. We settled for a laptop price prediction project. (Original dataset <a href="https://github.com/Raghavagr/Laptop_Price_Prediction/blob/main/laptop_data.csv">here</a>).</p>
+
+<p><a href="https://github.com/ndcharles/csa_africa/blob/main/project/laptop_data.csv">Given the dataset</a> with several attributes, we performed several cleaning operations on it (<a href="https://github.com/ndcharles/csa_africa/blob/main/project/ml_laptop_cleaned.csv">see the cleaned version here</a>) and then built a machine learning model to predict the price of laptops.</p>
+
+<p>The project isn’t grandiose, but we learnt what we needed to while executing it.</p>
+
+<blockquote>
+  <p>We didn’t change the world, but we took a step further into changing the world.</p>
+</blockquote>
+
+<p>Our team lead <code class="language-plaintext highlighter-rouge">(@tife)</code> stayed up till 1:00 am trying to perfect our PowerPoint presentation. He confessed to learning a lot from that experience.  <code class="language-plaintext highlighter-rouge">Maradeben</code>, was busy trying different models, even after we have saved our models to file, looking to improve our model from 89% accuracy score to 90-something. He succeeded in getting to 98% (although we didn’t end up using it due to technical constraints of his implementation). <code class="language-plaintext highlighter-rouge">Omotayo</code> was there trying to grasp the whole concept of ML (he will catch-up soon). And here I am, sharing the experience with you. I had exposure to ML, so I took it further to get the team to implement a FastAPI backend for our project.</p>
+
+<p>You can <a href="https://github.com/ndcharles/csa_africa/tree/main/project">checkout our project files here</a>.</p>
+
+<p>I can go ahead and tell you about other groups, from implementing algorithms based on stable marriage (e shock you ba?) to seeing the beginners class build amazing stuffs using Python and Tkinter.</p>
+
+<h2 id="overall-experience">Overall Experience</h2>
+
+<p>In the end, if you ask me, “How was CSA Academy 2022 bootcamp?”
+Ok. I should probably rephrase that question to the way <a href="https://twitter.com/vodumuyiwa">Dr. Olumuyiwa</a> puts it, “Minus the food, how was the CSAA 2022 bootcamp?”. 🌝</p>
+
+<p>I would, without further ado say, “it was amazing.”</p>
+
+<p>It was an inclusive experience that ensured you learnt something within the short duration we all spent together. I know, right?</p>
+
+<p>A close pal during the bootcamp would say UNILAG likes PR but… so far as we were properly accommodated during the CSAA event, wetin concern me and your intentions.</p>
+
+<p>The hostel experience was nice with enough electricity and water to justify the reasons we left our homes for the provided accommodation. I don’t know about everyone else but I opted for accommodation for several reasons. One of which was to avoid the everyday Lagos stress as I commute between the Bootcamp and my house; I know I won’t learn enough. I also needed to connect with other learners, which won’t be possible if I were stuck trying to rush home after each day. Electricity can be unfavourable in my area, so let’s not go there.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>As CSA Academy 2022 has come to an end, a couple of things and further steps are clear to me:</p>
+
+<ul>
+  <li>
+    <p>To improve further my Python programming skills bearing in mind the tools introduced to me. I also got a glimpse of data structures and algorithms since my roomies were in that track. This is something I would also explore further, especially the time and space complexity problem.</p>
+  </li>
+  <li>
+    <p>I got a renewed energy to deep dive into my machine learning studies; with respect to the theoretical aspects of things. Why do you choose this model over that? How do you explain what your model is doing to a lay person? I believe that is the beginning of building and working with explainable machine learning models.</p>
+  </li>
+  <li>
+    <p>Truly, getting out to meet people helps you understand others and most especially, you. I met wonderful people and connected with a few of them. People are going through different things. Everyone simply devises a way to cope with the challenges of growing up to become a meaningful human. No one’s got it worse, you just have it in a different measure.</p>
+  </li>
+  <li>
+    <p>Aside from the seriousness, CSAA has set a very high standard for other bootcamps I would be attending in the future. They understood and showed that the comfort of a learner is as important as the actual learning.</p>
+  </li>
+  <li>
+    <p>But then, we have every little opportunity to influence people within our sphere. I plan to do that henceforth.</p>
+  </li>
+</ul>
+
+<p>Thank you CSA Africa, and a big one to NitHub for being so awesome.</p>
+
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/RNXhsZcvLtA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+
+<blockquote>
+  <p>To the friends and acquaintances I made during these few weeks and to those I never got to meet, better days ahead.</p>
+</blockquote>
+
+<p><strong>P.S:</strong> “Love and legacy are the sacrifices we make for progress.” ✌️</p>
+
+<p>Image source: <a href="https://twitter.com/CSAcademyAfrica">CSA Africa on Twitter</a></p>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="sticky" /><category term="csa_africa_2022" /><category term="python_bootcamp" /><category term="NitHub" /><summary type="html"><![CDATA[I attended Computer Science Academy Africa 2022, hosted by Sofiat Olaosebikan and her wonderful team at NitHub, UNILAG and this is what I learned.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/csa_africa_2022.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/csa_africa_2022.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Product Analytics: How to Use Data to Build Products that Customers Need</title><link href="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/" rel="alternate" type="text/html" title="Product Analytics: How to Use Data to Build Products that Customers Need" /><published>2022-04-05T00:00:00+01:00</published><updated>2022-04-05T00:00:00+01:00</updated><id>http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need</id><content type="html" xml:base="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/"><![CDATA[<p>At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.</p>
 
 <p>I work in an ecommerce company and although, most conversations around product analytics tend to gear towards product-led companies, ecommerce can also take advantage of the product analytics journey.</p>
 

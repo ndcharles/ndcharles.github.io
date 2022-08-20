@@ -22,7 +22,7 @@ Speaking of eye for details, digital marketing and tech, as a product manager I 
 
 I currently work as a Data Analyst ~~and an acting Product Manager~~. I often create email newsletters and online resources for our company's blog.
 
-In my own time I am a homeschool teacher for Common Entrance pupils and every other things (albeit in tech). I design [WordPress websites](https://opendiari.com/thatbros), [write quick tech articles](https://opendiari.com), and read daily about tech and growth marketing.
+In my own time I am a homeschool teacher for Common Entrance pupils and every other things (albeit in tech). I design [WordPress websites](https://opendiari.com/thatbros), [write quick tech articles](https://opendiari.com), teach kids to code in Scratch, and read daily about tech and growth marketing.
 
 All of my writings on [data science]({{site.baseurl}}/categories.html#data), [products]({{site.baseurl}}/categories.html#product) and [tech_life]({{site.baseurl}}/categories.html#tech) can be found under the **Articles section**. My data science portfolio is at the **Portfolio section** (or just go [here](https://ndcharles.github.io/data_portfolio).) If you want to see all of the wonderful projects I’ve worked on (and still working on), head over to the **Projects section**. 
 
@@ -35,10 +35,7 @@ All of my writings on [data science]({{site.baseurl}}/categories.html#data), [pr
 #### Want to get in touch?
 - [Twitter](https://twitter.com/nndcharles)
 - [LinkedIn](https://linkedin.com/in/nndcharles)
-- [Dev.to](#)
 - [GitHub](https://github.com/ndcharles)
-- [Medium](https://ndcharles.medium.com)
-
 
 {% comment %}
 #### What I'm currently working on?
@@ -49,7 +46,3 @@ Join me by donating to the project, helping with teaching resources or contribut
 You are highly appreciated when you do. 
 {% endcomment %}
 Talk Soon!
-
-{% comment %}
-This is a comment to ignore.
-{% endcomment %}
