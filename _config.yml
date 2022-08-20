@@ -10,7 +10,7 @@ email: 'ndcharles.edu@gmail.com'
 
 include: ["_pages"]
 permalink: /:title/
-
+google_site_verification: aFoRrj4Mizc_WYiBreiSaocQzFy_4ZEPfv8YK5HJCio
 
 # Plugins
 plugins: 
