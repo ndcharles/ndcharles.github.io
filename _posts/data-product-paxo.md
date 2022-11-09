@@ -6,7 +6,7 @@ categories: [ Product, Tech, Data ]
 image: assets/images/product-management-paxo.webp
 tags: [featured, sticky, etc]
 ---
-March 2020 was when I resigned from my teaching position at [Dannis](https://danniseducation.com.ng) to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with [Stutern](https://stutern.com), an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class in online classes.
+March 2020 was when I resigned from my teaching position at [Dannis](https://danniseducation.com.ng) to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with [Stutern](https://stutern.com), an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.
 
 A lot happened in between and in April 2021, Easter Tuesday, I resumed at [PAXO](https://paxo.com.ng) primarily as a data analyst.
 
@@ -38,7 +38,7 @@ My journey into product mnagement started here at PAXO. While building the new s
 Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I ditched them for Google sheet since all parties involved are very much familiar with it. 
 
 ## The present present 😂
-
+I started this post few weeks to my departure and I completed it 2 weeks after I have already left. What I learnt working at PAXO was that your job role is often a determinant to what next you do with your life. It can be a disastrous thing and it can be the best thing that ever happened to you interms of helping you re-define your career path.
 
 
 
