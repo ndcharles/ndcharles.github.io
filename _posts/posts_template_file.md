@@ -13,6 +13,8 @@ last_modified: 2022-06-07
 tags: [featured, sticky, etc]
 ---
 
+Creating internal links: [link_text]({{site.baseurl}}/post title (check _sites folder name))
+
 
 Add image within post: ![My helpful screenshot](/assets/screenshot.jpg)
 

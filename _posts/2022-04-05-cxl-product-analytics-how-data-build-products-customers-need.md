@@ -3,7 +3,7 @@ layout: post
 title:  "Product Analytics: How to Use Data to Build Products that Customers Need"
 author: ndcharles
 categories: [ Product, Data ]
-image: assets/images/how-use-data-build-products-that-customers-need.jpg
+image: assets/images/how-use-data-build-products-that-customers-need.webp
 tags: [featured, product_analytics, CXL_Institute]
 ---
 
