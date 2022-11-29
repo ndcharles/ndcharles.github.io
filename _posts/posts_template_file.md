@@ -15,6 +15,12 @@ tags: [featured, sticky, etc]
 
 Creating internal links: [link_text]({{site.baseurl}}/post title (check _sites folder name))
 
+Embed gifs: ![Attendance app](/assets/images/alx_appsheet.gif) views default gif or image
+
+<p align="center"><image src="/assets/images/name_it.gif" alt="alt_tag" align="center" height="800" width="600" /></p> aligns it center, add height, add width.
+
+Ref: https://dev.to/bdavidxyz/markdown-center-image-39j1
+
 
 Add image within post: ![My helpful screenshot](/assets/screenshot.jpg)
 
@@ -62,3 +68,7 @@ colour:
 	green: 
 	
 font: 
+
+
+If you could pick intro music to be played every time we did a roll call, what would you want?
+

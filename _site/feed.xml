@@ -1,322 +1,402 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-20T09:55:33+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Data &amp;amp; Product at PAXO Health &amp;amp; Beauty</title><link href="http://localhost:4000/data-product-paxo/" rel="alternate" type="text/html" title="Data &amp;amp; Product at PAXO Health &amp;amp; Beauty" /><published>2022-09-15T00:00:00+01:00</published><updated>2022-09-15T00:00:00+01:00</updated><id>http://localhost:4000/data-product-paxo</id><content type="html" xml:base="http://localhost:4000/data-product-paxo/"><![CDATA[March 2020 was when I resigned from my teaching position at [Dannis](https://danniseducation.com.ng) to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with [Stutern](https://stutern.com), an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-29T11:00:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[<p>I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.</p>
 
-A lot happened in between and in April 2021, Easter Tuesday, I resumed at [PAXO](https://paxo.com.ng) primarily as a data analyst.
+<p>Haven used Appsheet before, I decide to just continue with the platform to reduce the learning curve and also allow me create time for other event logistics.</p>
 
-## In the Beginning
-Coming into PAXO Health & Beauty as a data analyst, the bulk of my job during my first few weeks involved doing growth research and tools needed for web analytics on the new platform. And then, I had to be the one testing new features on the platform we were building.
+<p align="center"><image src="/assets/images/alx_appsheet.gif" alt="Attendance app" width="300" /></p>
 
-As a data analyst, I also needed to add the necessary components to ensure data is colllected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer's journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don't need anymore.
+<p>At the onset, my fear was the prototype not running smoothly due to appsheet restrictions; but it ran. No one said they couldn’t access the data. But then something happened, something no one told me until after the event. I came to check the app’s database and there were fewer persons than we had in attendance. Clearly, we just encountered data loss. Despite using Appsheet <code class="language-plaintext highlighter-rouge">unique()</code> parameter to set a unique key for every entry, something still found a way to go wrong.</p>
 
-I delved deeper into web analytics and then [product analytics]({{site.baseurl}}/cxl-product-analytics-how-data-build-products-customers-need). You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.
+<h2 id="a-little-back-story">A little back story…</h2>
+<p>My appsheet journey started early 2022. I had someone request assistance with listing her products on <a href="https://jiji.ng">Jiji</a>. I went to her place of business, took pictures of products and promised to send her a link to update the product names and prices. I made this promise without an inkling of how to get those inputs from her because the image files involved won’t allow me use Google sheets effectively.</p>
 
-## The Present
-Now the new site is live and I have settled in as the data analyst and the product manager.
+<p>A brief Google search led to Appsheet (which is something I was familiar with but not truly tried). I looked at app templates, selected the inventory app template and got down to business. It was a very basic app without any complex parts required. You can see the app below.</p>
 
-As a data analyst in a small company, my priority when sourcing for tools is to seek for those that are either very affordable or that are opensource. I prefer being productive and profitable to looking fancy but burning cash pretty fast. Also, this helps me try out different things until I find out what exactly it is I want to achieve then, what software can help me get that done.
+<p align="center"><image src="/assets/images/inventory_manager_app.gif" alt="inventory manager app" width="300" /></p>
 
-### My Data Tool Stack
-- Google analytics 
-- Hotjar/MS Clarity
-- Metabase
-- Excel
-- Python
-- Datawrapper
+<p>To me it was a success because I not only got the pictures, prices and updates I needed, I truly explored the Appsheet platform. So when an app was required for attendance at work, I remembered my escapades with Appsheet and decided to explore it further; this time for an app with complex requirements and conditions.</p>
 
-On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Sendy/AmazonSES as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.
+<h2 id="discovering-the-data-loss">Discovering the data loss</h2>
+<p>After the event, I decided to take a snapshot of all locations, starting with Lagos. I was shocked to see 46 records. Aah, with all the people around, I have only 46 records? I looked at the Feedback form and saw 66. That implies we had more than 70 persons in attendance. I checked Abuja and Rivers, truly I lost data.</p>
 
-## Managing Products
-My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.
+<p>Understanding the situation
+I went into deep research to understand what went wrong with my implementation. I used some resources from the Appsheet doc and community.</p>
 
-Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I ditched them for Google sheet since all parties involved are very much familiar with it. 
+<ul>
+  <li><a href="https://googlecloudcommunity.com/gc/Q-A/Data-loss-browser-usage/m-p/242857">Appsheet data loss</a></li>
+  <li><a href="https://support.google.com/appsheet/answer/10105403?hl=en">App changes are not captured in the spreadsheet</a></li>
+  <li><a href="https://googlecloudcommunity.com/gc/Q-A/Losing-Data/m-p/297690">Losing data</a></li>
+  <li><a href="https://support.google.com/appsheet/answer/10107724">Offline and Sync: The Essentials</a></li>
+  <li><a href="https://support.google.com/appsheet/answer/10104702">Concurrent Usage with multiple users</a></li>
+</ul>
 
-## The Present Present 😂
-I started this post few weeks to my departure and I completed it after I had already left. What I learnt working at PAXO was that, your job role is often a determinant of what next you do with your life. It can be a disastrous thing and it can be the best thing that ever happened to you in terms of helping you re-define your career path.
+<p>Because the app has to deal with <a href="https://googlecloudcommunity.com/gc/AppSheet-Q-A/Concurrent-User-Submissions/m-p/312023/highlight/true#M87713">concurrent user submission</a>, the issue might probably be from Google sheet API limit or some other stuffs I haven’t deeply inspected.</p>
 
-I am happy with the work I did at the company. It made me learn couple of things I never saw myself learning. It allowed me experiment and explore wildly.]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Tech" /><category term="Data" /><category term="featured" /><summary type="html"><![CDATA[March 2020 was when I resigned from my teaching position at Dannis to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with Stutern, an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/product-management-paxo.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/product-management-paxo.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I was at CSA Africa 2022, UNILAG</title><link href="http://localhost:4000/csa-africa-2022/" rel="alternate" type="text/html" title="I was at CSA Africa 2022, UNILAG" /><published>2022-08-12T00:00:00+01:00</published><updated>2022-08-12T00:00:00+01:00</updated><id>http://localhost:4000/csa-africa-2022</id><content type="html" xml:base="http://localhost:4000/csa-africa-2022/"><![CDATA[I attended [Computer Science Academy Africa 2022](https://www.csaafrica.org/csaafrica-2022), hosted by [
-Sofiat Olaosebikan](https://twitter.com/soolaosebikan) and her wonderful [team](https://www.csaafrica.org/team) at [NitHub, UNILAG](https://twitter.com/nithub_lag) and this is what I learned.
+<p>Cross-checking everything again I noticed some loopholes.</p>
+<ol>
+  <li>Concurrent usage could be taken care of using <code class="language-plaintext highlighter-rouge">user_email()</code>, which I already used.</li>
+  <li>Having a <code class="language-plaintext highlighter-rouge">uniqueID()</code> parameter. This I also have used.</li>
+</ol>
 
-At first, while I was applying and saw the option asking about your University, I thought I won’t be selected (I’m already graduated). I filled it anyway and forgot about it until… well, I received the Congratulations email.
+<h2 id="the-blame-game-is-it-me-or-appsheet-isnt-working-correctly">The Blame Game: Is it Me or Appsheet isn’t Working Correctly?</h2>
+<p>My configurations were fine at least. I also noticed that the userss quotes is 11 (more than the expected) probably that might be a reason? Some updates came in successfully, some didn’t. I checked the audit log for any syncing issues and realised that majority of my sync reported successful but never came through  into the spreadsheet. Well, I was in a tight corner because people depended heavily on the app to go well.</p>
 
-There were a lot of promises made to participants that I was so eager to attend. Free lunch, accommodation and three weeks of constant drills in python, data structures, machine learning and IoT plus an opportunity to meet undergrads and grads alike. That sounds like a lot but the experience was worth it.
+<p>I had to export the audit logs, thankfully it came as json, and then start extracting the updates that weren’t updated in the database. Plus, gather data from our feedback forms to augment for the registration data loss.</p>
 
-## Why was I there?
+<h2 id="the-next-steps-to-prepare-for-our-next-events">The next steps to prepare for our next events?</h2>
+<p>The key features I am looking for in this space of no-code apps revolves around:</p>
+<ul>
+  <li>number of apps per account</li>
+  <li>number of [signed-in] users (public vs private)</li>
+  <li>user specific data (see a snapshot of the data not everything)</li>
+  <li>available data sources (googlesheet is usually my most preferred data source)</li>
+  <li>number of spreadsheet rows per project</li>
+  <li>number of updates (read/write/delete)</li>
+  <li>whitelabeling (although this is not a major concern for me)</li>
+</ul>
 
-There is something I always believed about having enough information to get you ahead. And the need to connect with people going your way (on the same journey as you). CSA Africa was an avenue for me to explore programming beyond the confines of me and online tutorials. It was a means to learn and connect with people (beginners and experienced alike) in the tech space, meet amazing roomies I made friends out of and another I found a tech co-founder in – just kidding.
+<p>I liked the idea of sharing a spreadsheet [filled with a tab for each user] but the privacy that comes with using an app was what I enjoyed. You get to see only users in your location. Unfortunately, the first outing [using appsheet] wasn’t great. As I write, I have started searching for alternatives to Google’s Appsheet. Probably Glide comes next, or even an opensource software (less likely due to hosting costs). But I am definitely searching for an alternative platform.</p>
 
-Well, I met people who were good at what they do. Those who were in other walks of life but understood the use of programming in their future ambitions. I also met people who think far into the future and needed help grabbing that future by its horn.
+<p>The app was paused to prevent any harm coming to the account. And now we moove to Glide or something else (updates shortly).</p>
 
-## Further programming experience.
+<p><strong>Update</strong>: While soliciting for feedback the next day, other users reported of noticing the data loss but no one signaled. Well, some resorted to the pen-on-paper approach and continued with the event.</p>]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="Tech" /><category term="featured" /><category term="no-code" /><category term="appsheet" /><summary type="html"><![CDATA[I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/appsheet_app.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/appsheet_app.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Data &amp;amp; Product at PAXO Health &amp;amp; Beauty</title><link href="http://localhost:4000/data-product-paxo/" rel="alternate" type="text/html" title="Data &amp;amp; Product at PAXO Health &amp;amp; Beauty" /><published>2022-09-15T00:00:00+01:00</published><updated>2022-09-15T00:00:00+01:00</updated><id>http://localhost:4000/data-product-paxo</id><content type="html" xml:base="http://localhost:4000/data-product-paxo/"><![CDATA[<p>March 2020 was when I resigned from my teaching position at <a href="https://danniseducation.com.ng">Dannis</a> to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with <a href="https://stutern.com">Stutern</a>, an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.</p>
 
-Our first day at CSAA was an awesomely scary experience that it made me question if I ever learnt to actually program in Python. Unfortunately not. I trained mostly using videos, and textbooks and hearing Stephen speak of recursion and memoisation made me realise that there is a lot I have to learn to fully equip my Python toolbox for what is coming.
+<p>A lot happened in between and in April 2021, Easter Tuesday, I resumed at <a href="https://paxo.com.ng">PAXO</a> primarily as a data analyst.</p>
 
-During our first class on recursion, I recalled my very first task at work which involved a deeply nested JSON dictionary. I found it difficult untangling it and although a friend helped with some parts of it, I now realised recursion/mnemonic is best suited to such problems.
+<h2 id="in-the-beginning">In the Beginning</h2>
+<p>Coming into PAXO Health &amp; Beauty as a data analyst, the bulk of my job during my first few weeks involved doing growth research and tools needed for web analytics on the new platform. And then, I had to be the one testing new features on the platform we were building.</p>
 
-The first week of CSA Africa took us through different further programming tasks in Python. Haven refreshed our memories on the basics (lists, dictionaries, slicing and more) we dived into recursions, memoisation and functional programming (lambda, map, reduce and filter).
+<p>As a data analyst, I also needed to add the necessary components to ensure data is colllected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer’s journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don’t need anymore.</p>
 
-Up until now, I have written progrmas around functions. You know, block of statements which manipulate data. This is what is called procedural programming. At CSA Africa, we went further into object-oriented programming (OOP). It involves combining data and functionality and wrapping it using classes and objects. ([Here are their differences](https://www.tutorialspoint.com/differences-between-procedural-and-object-oriented-programming))
+<p>I delved deeper into web analytics and then <a href="/cxl-product-analytics-how-data-build-products-customers-need">product analytics</a>. You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.</p>
 
-## The Machine Learning Experience
-My first attempt to do machine learning with just Numpy and no Pandas was at CSA. It was frustrating at first but then, it was an experience I really enjoyed. And when you think that was all there is, we had to implement the KNN and KMeans algorithms from scratch. Besides, learning about classification, regression and clustering algorithms, we also learned to evaluate our model outputs.
+<h2 id="the-present">The Present</h2>
+<p>Now the new site is live and I have settled in as the data analyst and the product manager.</p>
 
-## Projects
+<p>As a data analyst in a small company, my priority when sourcing for tools is to seek for those that are either very affordable or that are opensource. I prefer being productive and profitable to looking fancy but burning cash pretty fast. Also, this helps me try out different things until I find out what exactly it is I want to achieve then, what software can help me get that done.</p>
 
-I had a wonderful group. Although starting off was challenging, we found a way to kick-off and get the project going. We settled for a laptop price prediction project. (Original dataset [here](https://github.com/Raghavagr/Laptop_Price_Prediction/blob/main/laptop_data.csv)).
+<h3 id="my-data-tool-stack">My Data Tool Stack</h3>
+<ul>
+  <li>Google analytics</li>
+  <li>Hotjar/MS Clarity</li>
+  <li>Metabase</li>
+  <li>Excel</li>
+  <li>Python</li>
+  <li>Datawrapper</li>
+</ul>
 
-[Given the dataset](https://github.com/ndcharles/csa_africa/blob/main/project/laptop_data.csv) with several attributes, we performed several cleaning operations on it ([see the cleaned version here](https://github.com/ndcharles/csa_africa/blob/main/project/ml_laptop_cleaned.csv)) and then built a machine learning model to predict the price of laptops.
+<p>On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Sendy/AmazonSES as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.</p>
 
-The project isn't grandiose, but we learnt what we needed to while executing it. 
+<h2 id="managing-products">Managing Products</h2>
+<p>My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.</p>
 
-> We didn't change the world, but we took a step further into changing the world.
+<p>Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I ditched them for Google sheet since all parties involved are very much familiar with it.</p>
 
-Our team lead <code class="language-plaintext highlighter-rouge">(@tife)</code> stayed up till 1:00 am trying to perfect our PowerPoint presentation. He confessed to learning a lot from that experience.  <code class="language-plaintext highlighter-rouge">Maradeben</code>, was busy trying different models, even after we have saved our models to file, looking to improve our model from 89% accuracy score to 90-something. He succeeded in getting to 98% (although we didn't end up using it due to technical constraints of his implementation). <code class="language-plaintext highlighter-rouge">Omotayo</code> was there trying to grasp the whole concept of ML (he will catch-up soon). And here I am, sharing the experience with you. I had exposure to ML, so I took it further to get the team to implement a FastAPI backend for our project. 
+<h2 id="the-present-present-">The Present Present 😂</h2>
+<p>I started this post few weeks to my departure and I completed it after I had already left. What I learnt working at PAXO was that, your job role is often a determinant of what next you do with your life. It can be a disastrous thing and it can be the best thing that ever happened to you in terms of helping you re-define your career path.</p>
 
-{%comment%}
-We created a FastAPI backend for our project, which we didn't project to everyone, but after the event I tried experimenting with streamlit for a frontend. The final laptop prediction project built with FastAPI and streamlit can be accessed here. 
+<p>I am happy with the work I did at the company. It made me learn couple of things I never saw myself learning. It allowed me experiment and explore wildly.</p>]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Tech" /><category term="Data" /><category term="featured" /><summary type="html"><![CDATA[March 2020 was when I resigned from my teaching position at Dannis to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with Stutern, an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/product-management-paxo.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/product-management-paxo.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I was at CSA Africa 2022, UNILAG</title><link href="http://localhost:4000/csa-africa-2022/" rel="alternate" type="text/html" title="I was at CSA Africa 2022, UNILAG" /><published>2022-08-12T00:00:00+01:00</published><updated>2022-08-12T00:00:00+01:00</updated><id>http://localhost:4000/csa-africa-2022</id><content type="html" xml:base="http://localhost:4000/csa-africa-2022/"><![CDATA[<p>I attended <a href="https://www.csaafrica.org/csaafrica-2022">Computer Science Academy Africa 2022</a>, hosted by <a href="https://twitter.com/soolaosebikan">
+Sofiat Olaosebikan</a> and her wonderful <a href="https://www.csaafrica.org/team">team</a> at <a href="https://twitter.com/nithub_lag">NitHub, UNILAG</a> and this is what I learned.</p>
 
-You can read this follow-up article to know how we came up with data cleaning decisions for  our dataset and then creating a FastAPI backend and Streamlit frontend after the CSA Academy 2022 bootcamp.
-{%endcomment%}
+<p>At first, while I was applying and saw the option asking about your University, I thought I won’t be selected (I’m already graduated). I filled it anyway and forgot about it until… well, I received the Congratulations email.</p>
 
-You can [checkout our project files here](https://github.com/ndcharles/csa_africa/tree/main/project).
+<p>There were a lot of promises made to participants that I was so eager to attend. Free lunch, accommodation and three weeks of constant drills in python, data structures, machine learning and IoT plus an opportunity to meet undergrads and grads alike. That sounds like a lot but the experience was worth it.</p>
 
-I can go ahead and tell you about other groups, from implementing algorithms based on stable marriage (e shock you ba?) to seeing the beginners class build amazing stuffs using Python and Tkinter.
+<h2 id="why-was-i-there">Why was I there?</h2>
 
-## Overall Experience
+<p>There is something I always believed about having enough information to get you ahead. And the need to connect with people going your way (on the same journey as you). CSA Africa was an avenue for me to explore programming beyond the confines of me and online tutorials. It was a means to learn and connect with people (beginners and experienced alike) in the tech space, meet amazing roomies I made friends out of and another I found a tech co-founder in – just kidding.</p>
 
-In the end, if you ask me, "How was CSA Academy 2022 bootcamp?"
-Ok. I should probably rephrase that question to the way [Dr. Olumuyiwa](https://twitter.com/vodumuyiwa) puts it, "Minus the food, how was the CSAA 2022 bootcamp?". 🌝
+<p>Well, I met people who were good at what they do. Those who were in other walks of life but understood the use of programming in their future ambitions. I also met people who think far into the future and needed help grabbing that future by its horn.</p>
 
-I would, without further ado say, "it was amazing."
+<h2 id="further-programming-experience">Further programming experience.</h2>
 
-{%comment%}
-To think that the convener Dr. Sofiat, ensured women were attended to, nursing mothers (with great interests), working class ladies and even people without personal computers made it (thanks to NitHub for making that happen).
-{%endcomment%}
+<p>Our first day at CSAA was an awesomely scary experience that it made me question if I ever learnt to actually program in Python. Unfortunately not. I trained mostly using videos, and textbooks and hearing Stephen speak of recursion and memoisation made me realise that there is a lot I have to learn to fully equip my Python toolbox for what is coming.</p>
 
-It was an inclusive experience that ensured you learnt something within the short duration we all spent together. I know, right?
+<p>During our first class on recursion, I recalled my very first task at work which involved a deeply nested JSON dictionary. I found it difficult untangling it and although a friend helped with some parts of it, I now realised recursion/mnemonic is best suited to such problems.</p>
 
-A close pal during the bootcamp would say UNILAG likes PR but... so far as we were properly accommodated during the CSAA event, wetin concern me and your intentions.
+<p>The first week of CSA Africa took us through different further programming tasks in Python. Haven refreshed our memories on the basics (lists, dictionaries, slicing and more) we dived into recursions, memoisation and functional programming (lambda, map, reduce and filter).</p>
 
-The hostel experience was nice with enough electricity and water to justify the reasons we left our homes for the provided accommodation. I don’t know about everyone else but I opted for accommodation for several reasons. One of which was to avoid the everyday Lagos stress as I commute between the Bootcamp and my house; I know I won’t learn enough. I also needed to connect with other learners, which won’t be possible if I were stuck trying to rush home after each day. Electricity can be unfavourable in my area, so let’s not go there.
+<p>Up until now, I have written progrmas around functions. You know, block of statements which manipulate data. This is what is called procedural programming. At CSA Africa, we went further into object-oriented programming (OOP). It involves combining data and functionality and wrapping it using classes and objects. (<a href="https://www.tutorialspoint.com/differences-between-procedural-and-object-oriented-programming">Here are their differences</a>)</p>
 
-## Next Steps
+<h2 id="the-machine-learning-experience">The Machine Learning Experience</h2>
+<p>My first attempt to do machine learning with just Numpy and no Pandas was at CSA. It was frustrating at first but then, it was an experience I really enjoyed. And when you think that was all there is, we had to implement the KNN and KMeans algorithms from scratch. Besides, learning about classification, regression and clustering algorithms, we also learned to evaluate our model outputs.</p>
 
-As CSA Academy 2022 has come to an end, a couple of things and further steps are clear to me:
+<h2 id="projects">Projects</h2>
 
-- To improve further my Python programming skills bearing in mind the tools introduced to me. I also got a glimpse of data structures and algorithms since my roomies were in that track. This is something I would also explore further, especially the time and space complexity problem.
+<p>I had a wonderful group. Although starting off was challenging, we found a way to kick-off and get the project going. We settled for a laptop price prediction project. (Original dataset <a href="https://github.com/Raghavagr/Laptop_Price_Prediction/blob/main/laptop_data.csv">here</a>).</p>
 
-- I got a renewed energy to deep dive into my machine learning studies; with respect to the theoretical aspects of things. Why do you choose this model over that? How do you explain what your model is doing to a lay person? I believe that is the beginning of building and working with explainable machine learning models.
+<p><a href="https://github.com/ndcharles/csa_africa/blob/main/project/laptop_data.csv">Given the dataset</a> with several attributes, we performed several cleaning operations on it (<a href="https://github.com/ndcharles/csa_africa/blob/main/project/ml_laptop_cleaned.csv">see the cleaned version here</a>) and then built a machine learning model to predict the price of laptops.</p>
 
-- Truly, getting out to meet people helps you understand others and most especially, you. I met wonderful people and connected with a few of them. People are going through different things. Everyone simply devises a way to cope with the challenges of growing up to become a meaningful human. No one’s got it worse, you just have it in a different measure.
+<p>The project isn’t grandiose, but we learnt what we needed to while executing it.</p>
 
-- Aside from the seriousness, CSAA has set a very high standard for other bootcamps I would be attending in the future. They understood and showed that the comfort of a learner is as important as the actual learning.
+<blockquote>
+  <p>We didn’t change the world, but we took a step further into changing the world.</p>
+</blockquote>
 
-- But then, we have every little opportunity to influence people within our sphere. I plan to do that henceforth.
+<p>Our team lead <code class="language-plaintext highlighter-rouge">(@tife)</code> stayed up till 1:00 am trying to perfect our PowerPoint presentation. He confessed to learning a lot from that experience.  <code class="language-plaintext highlighter-rouge">Maradeben</code>, was busy trying different models, even after we have saved our models to file, looking to improve our model from 89% accuracy score to 90-something. He succeeded in getting to 98% (although we didn’t end up using it due to technical constraints of his implementation). <code class="language-plaintext highlighter-rouge">Omotayo</code> was there trying to grasp the whole concept of ML (he will catch-up soon). And here I am, sharing the experience with you. I had exposure to ML, so I took it further to get the team to implement a FastAPI backend for our project.</p>
 
-Thank you CSA Africa, and a big one to NitHub for being so awesome.
+<p>You can <a href="https://github.com/ndcharles/csa_africa/tree/main/project">checkout our project files here</a>.</p>
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/RNXhsZcvLtA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>I can go ahead and tell you about other groups, from implementing algorithms based on stable marriage (e shock you ba?) to seeing the beginners class build amazing stuffs using Python and Tkinter.</p>
 
-> To the friends and acquaintances I made during these few weeks and to those I never got to meet, better days ahead.
+<h2 id="overall-experience">Overall Experience</h2>
 
-**P.S:** "Love and legacy are the sacrifices we make for progress." ✌️
+<p>In the end, if you ask me, “How was CSA Academy 2022 bootcamp?”
+Ok. I should probably rephrase that question to the way <a href="https://twitter.com/vodumuyiwa">Dr. Olumuyiwa</a> puts it, “Minus the food, how was the CSAA 2022 bootcamp?”. 🌝</p>
 
-Image source: [CSA Africa on Twitter](https://twitter.com/CSAcademyAfrica)]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="sticky" /><category term="csa_africa_2022" /><category term="python_bootcamp" /><category term="NitHub" /><summary type="html"><![CDATA[I attended Computer Science Academy Africa 2022, hosted by Sofiat Olaosebikan and her wonderful team at NitHub, UNILAG and this is what I learned.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/csa_africa_2022.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/csa_africa_2022.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Product Analytics: How to Use Data to Build Products that Customers Need</title><link href="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/" rel="alternate" type="text/html" title="Product Analytics: How to Use Data to Build Products that Customers Need" /><published>2022-04-05T00:00:00+01:00</published><updated>2022-04-05T00:00:00+01:00</updated><id>http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need</id><content type="html" xml:base="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/"><![CDATA[At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.
+<p>I would, without further ado say, “it was amazing.”</p>
 
-I work in an ecommerce company and although, most conversations around product analytics tend to gear towards product-led companies, ecommerce can also take advantage of the product analytics journey.
+<p>It was an inclusive experience that ensured you learnt something within the short duration we all spent together. I know, right?</p>
 
-## What is Product Analytics?
+<p>A close pal during the bootcamp would say UNILAG likes PR but… so far as we were properly accommodated during the CSAA event, wetin concern me and your intentions.</p>
 
-> Product analytics show you who your users are, what they want, and how to keep them.
-> <cite>&mdash;[Amplitude](https://amplitude.com/behavioral-analytics-platform)</cite>
+<p>The hostel experience was nice with enough electricity and water to justify the reasons we left our homes for the provided accommodation. I don’t know about everyone else but I opted for accommodation for several reasons. One of which was to avoid the everyday Lagos stress as I commute between the Bootcamp and my house; I know I won’t learn enough. I also needed to connect with other learners, which won’t be possible if I were stuck trying to rush home after each day. Electricity can be unfavourable in my area, so let’s not go there.</p>
 
-Product analytics refers to capturing and analyzing quantitative data through embedded tools that record how users interact with a product. It is about using data to understand who your users are, how they use your product and how these affects your business.
+<h2 id="next-steps">Next Steps</h2>
 
-Product Analytics can answer different types of questions ranging from trends to analyzing feature adoption or engagement over time, to visualizing intricate experiences and user flows inside or outside the product.
+<p>As CSA Academy 2022 has come to an end, a couple of things and further steps are clear to me:</p>
 
-{%comment%}
-Product analysis is the evaluation of a product for the purposes of product development, review or purchasing.
+<ul>
+  <li>
+    <p>To improve further my Python programming skills bearing in mind the tools introduced to me. I also got a glimpse of data structures and algorithms since my roomies were in that track. This is something I would also explore further, especially the time and space complexity problem.</p>
+  </li>
+  <li>
+    <p>I got a renewed energy to deep dive into my machine learning studies; with respect to the theoretical aspects of things. Why do you choose this model over that? How do you explain what your model is doing to a lay person? I believe that is the beginning of building and working with explainable machine learning models.</p>
+  </li>
+  <li>
+    <p>Truly, getting out to meet people helps you understand others and most especially, you. I met wonderful people and connected with a few of them. People are going through different things. Everyone simply devises a way to cope with the challenges of growing up to become a meaningful human. No one’s got it worse, you just have it in a different measure.</p>
+  </li>
+  <li>
+    <p>Aside from the seriousness, CSAA has set a very high standard for other bootcamps I would be attending in the future. They understood and showed that the comfort of a learner is as important as the actual learning.</p>
+  </li>
+  <li>
+    <p>But then, we have every little opportunity to influence people within our sphere. I plan to do that henceforth.</p>
+  </li>
+</ul>
 
-Marketing analytics is the practice of measuring, managing and analyzing marketing performance to maximize its effectiveness and optimize return on investment (ROI). 
-{%endcomment%}
+<p>Thank you CSA Africa, and a big one to NitHub for being so awesome.</p>
 
-## Why is product analytics important?
-Product analytics allow companies to fully understand how users engage with what they build. It is especially useful for technology products where teams can track users’ digital footprints step-by-step to see what they like or dislike and what leads them to engage, return, or churn.
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/RNXhsZcvLtA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
 
-## How to implement product analytics
-- **Step 1: Define your business goals**
+<blockquote>
+  <p>To the friends and acquaintances I made during these few weeks and to those I never got to meet, better days ahead.</p>
+</blockquote>
 
-The first step is defining a clear-cut business objectives that you want to optimize using data. Then you can ask the right questions like how many people used the wishlist feature last month?, what percentage of users used the skin expert feature last month compared to this month?
+<p><strong>P.S:</strong> “Love and legacy are the sacrifices we make for progress.” ✌️</p>
 
-To create good set of questions that accurately matches the data you have to your business goals, you should consider using the Product Analytics Question framework below by Matthew.
+<p>Image source: <a href="https://twitter.com/CSAcademyAfrica">CSA Africa on Twitter</a></p>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="sticky" /><category term="csa_africa_2022" /><category term="python_bootcamp" /><category term="NitHub" /><summary type="html"><![CDATA[I attended Computer Science Academy Africa 2022, hosted by Sofiat Olaosebikan and her wonderful team at NitHub, UNILAG and this is what I learned.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/csa_africa_2022.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/csa_africa_2022.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Product Analytics: How to Use Data to Build Products that Customers Need</title><link href="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/" rel="alternate" type="text/html" title="Product Analytics: How to Use Data to Build Products that Customers Need" /><published>2022-04-05T00:00:00+01:00</published><updated>2022-04-05T00:00:00+01:00</updated><id>http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need</id><content type="html" xml:base="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/"><![CDATA[<p>At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.</p>
 
-![product_analytics_question_framework](/assets/images/product_analytics_question_framework.jpg)
+<p>I work in an ecommerce company and although, most conversations around product analytics tend to gear towards product-led companies, ecommerce can also take advantage of the product analytics journey.</p>
 
-Example questions using the framework;
+<h2 id="what-is-product-analytics">What is Product Analytics?</h2>
 
-![product_analytics_question_framework_example1](/assets/images/product_analytics_question_framework_example1.jpg)
+<blockquote>
+  <p>Product analytics show you who your users are, what they want, and how to keep them.
+<cite>—<a href="https://amplitude.com/behavioral-analytics-platform">Amplitude</a></cite></p>
+</blockquote>
 
-![product_analytics_question_framework_example2](/assets/images/product_analytics_question_framework_example2.jpg)
+<p>Product analytics refers to capturing and analyzing quantitative data through embedded tools that record how users interact with a product. It is about using data to understand who your users are, how they use your product and how these affects your business.</p>
 
-- **Step 2: Create a tracking plan**
+<p>Product Analytics can answer different types of questions ranging from trends to analyzing feature adoption or engagement over time, to visualizing intricate experiences and user flows inside or outside the product.</p>
 
-Creating an analytics tracking plan helps us to collect the right amount of and correct data to cover our business use case. Incorrect data can lead to incorrect metrics and further misleading conclusions that end up marring the business decisions made from our conclusions.
+<h2 id="why-is-product-analytics-important">Why is product analytics important?</h2>
+<p>Product analytics allow companies to fully understand how users engage with what they build. It is especially useful for technology products where teams can track users’ digital footprints step-by-step to see what they like or dislike and what leads them to engage, return, or churn.</p>
 
-A tracking plan is an Excel or Google Spreadsheet that contains all the events and properties that you would like to track. An event is simply an action that a user takes (e.g. signing up for your product, uploading a picture or adding a product to cart). Properties are attributes attached to each event (e.g. when a user signs up for our product we would like to know their userID, dateOfSubscription, subscriptionPlan (free or paid) and so on).
+<h2 id="how-to-implement-product-analytics">How to implement product analytics</h2>
+<ul>
+  <li><strong>Step 1: Define your business goals</strong></li>
+</ul>
 
----
-#### What do we track?
-Anything that happens within our product e.g. button clicks, screen views.
+<p>The first step is defining a clear-cut business objectives that you want to optimize using data. Then you can ask the right questions like how many people used the wishlist feature last month?, what percentage of users used the skin expert feature last month compared to this month?</p>
 
-#### Data scopes
-Data scope tells us how data is put together.
+<p>To create good set of questions that accurately matches the data you have to your business goals, you should consider using the Product Analytics Question framework below by Matthew.</p>
 
-![data_scopes](/assets/images/data_scopes.jpg)
-*A single user can have multiple sessions, and each session can have multiple hits, as illustrated above.*
+<p><img src="/assets/images/product_analytics_question_framework.jpg" alt="product_analytics_question_framework" /></p>
 
-- Users: Anyone interacting with your product is a user. Example user metric include, days since last session, monthly active users, feature adoption rate, etc.
-- Session: Interactions by a single user are grouped into sessions. Example session metric is bounce rate.
-- Events (or hits) is a collection of all interactions that happened during a session. Example event metrics include pageviews and video plays.
+<p>Example questions using the framework;</p>
 
-#### Properties 
+<p><img src="/assets/images/product_analytics_question_framework_example1.jpg" alt="product_analytics_question_framework_example1" /></p>
 
-- User properties: A user has properties that are automatically captured by the analytics tool (e.g. location based on IP address, device used) or manually defined by you (e.g. user’s age, type of user).
-- Event properties: Events also have properties. Although they aren’t used as often as user properties, they capture valuable metadata about the event itself (e.g. message sent from driver to rider is the first time they are messaging) or state of the user when the event was generated (e.g., Jane was 21 years old when she registered a year ago but is now 22).
+<p><img src="/assets/images/product_analytics_question_framework_example2.jpg" alt="product_analytics_question_framework_example2" /></p>
 
----
+<ul>
+  <li><strong>Step 2: Create a tracking plan</strong></li>
+</ul>
 
-To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users. 
+<p>Creating an analytics tracking plan helps us to collect the right amount of and correct data to cover our business use case. Incorrect data can lead to incorrect metrics and further misleading conclusions that end up marring the business decisions made from our conclusions.</p>
 
-![sample_tracking_plan](https://help.mixpanel.com/hc/article_attachments/360036938031/Implementation_Spec_Part2.png)
-*A sample tracking plan from Mixpanel (for full image, open in new tab)*
+<p>A tracking plan is an Excel or Google Spreadsheet that contains all the events and properties that you would like to track. An event is simply an action that a user takes (e.g. signing up for your product, uploading a picture or adding a product to cart). Properties are attributes attached to each event (e.g. when a user signs up for our product we would like to know their userID, dateOfSubscription, subscriptionPlan (free or paid) and so on).</p>
 
-For a comprehensive guide on creating a tracking plan, with templates you can use as inspiration, [read this article](https://help.mixpanel.com/hc/en-us/articles/115004519886-Do-you-have-industry-specific-tracking-plans-I-can-use-).
+<hr />
+<h4 id="what-do-we-track">What do we track?</h4>
+<p>Anything that happens within our product e.g. button clicks, screen views.</p>
 
-### DataLayer 
+<h4 id="data-scopes">Data scopes</h4>
+<p>Data scope tells us how data is put together.</p>
 
-DataLayer is a way to store semantic metadata based on users, sessions, products, content etc. We use it to create an easy way to access information on the website. DataLayers are used instead of scraping because they (dataLayers) are more reliable and don't change as often as the website's code. 
+<p><img src="/assets/images/data_scopes.jpg" alt="data_scopes" />
+<em>A single user can have multiple sessions, and each session can have multiple hits, as illustrated above.</em></p>
 
-### What makes a good dataLayer?
- 
-- Tool-agnostic: It should be created for the sole purpose and not tied to a particular tool. e.g. *userID* **NOT** *GAUserID*.
-- Generic: It should be able to satisfy several use cases. e.g. *currentPlanName* **NOT** *proPlanSubscriber* and;
-- Consistent: Variable names should follow a naming convention and also be usable in different cases. 
+<ul>
+  <li>Users: Anyone interacting with your product is a user. Example user metric include, days since last session, monthly active users, feature adoption rate, etc.</li>
+  <li>Session: Interactions by a single user are grouped into sessions. Example session metric is bounce rate.</li>
+  <li>Events (or hits) is a collection of all interactions that happened during a session. Example event metrics include pageviews and video plays.</li>
+</ul>
 
-DataLayer helps us to debug our tracking setup and as well provides us with reliable and readily accessible values for reporting.
+<h4 id="properties">Properties</h4>
 
-**Also see:** How I created an [eCommerce Website DataLayer]({{site.baseurl}}/ecommerce-datalayer).
+<ul>
+  <li>User properties: A user has properties that are automatically captured by the analytics tool (e.g. location based on IP address, device used) or manually defined by you (e.g. user’s age, type of user).</li>
+  <li>Event properties: Events also have properties. Although they aren’t used as often as user properties, they capture valuable metadata about the event itself (e.g. message sent from driver to rider is the first time they are messaging) or state of the user when the event was generated (e.g., Jane was 21 years old when she registered a year ago but is now 22).</li>
+</ul>
 
-- **Step 3: Choose the right analytics tools**
+<hr />
 
-![popular_product_analytics_tools](/assets/images/popular_product_analytics_tools.jpg)
-*Some popular product analytics tools*
+<p>To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users.</p>
 
-There are two groups of analytics tools in use: the classic analytics and the retroactive analytics tools. The tools you use vary based on your business needs and requirements.
+<p><img src="https://help.mixpanel.com/hc/article_attachments/360036938031/Implementation_Spec_Part2.png" alt="sample_tracking_plan" />
+<em>A sample tracking plan from Mixpanel (for full image, open in new tab)</em></p>
 
-- Classic analytics captures pageview events by default (page-based) and other events that has been setup to be tracked on the website. It gathers data from the day you implement it. Google Analytics falls under this category.
-- Retroactive analytics captures all events happening on-page by default (event-based). Tools in this category automatically collect user interaction data with a single snippet and let you analyze that data when you need to. Examples include mixpanel, heap and amplitude.
+<p>For a comprehensive guide on creating a tracking plan, with templates you can use as inspiration, <a href="https://help.mixpanel.com/hc/en-us/articles/115004519886-Do-you-have-industry-specific-tracking-plans-I-can-use-">read this article</a>.</p>
 
-The difference between classic and retroactive tools is in the...
+<h3 id="datalayer">DataLayer</h3>
 
-- **Step 4: Follow a consistent process**
+<p>DataLayer is a way to store semantic metadata based on users, sessions, products, content etc. We use it to create an easy way to access information on the website. DataLayers are used instead of scraping because they (dataLayers) are more reliable and don’t change as often as the website’s code.</p>
 
-What is the key information each team needs to look at weekly?
-How do you ensure tracking is in place for new feature launches?
+<h3 id="what-makes-a-good-datalayer">What makes a good dataLayer?</h3>
 
-### A typical product analytics stack
+<ul>
+  <li>Tool-agnostic: It should be created for the sole purpose and not tied to a particular tool. e.g. <em>userID</em> <strong>NOT</strong> <em>GAUserID</em>.</li>
+  <li>Generic: It should be able to satisfy several use cases. e.g. <em>currentPlanName</em> <strong>NOT</strong> <em>proPlanSubscriber</em> and;</li>
+  <li>Consistent: Variable names should follow a naming convention and also be usable in different cases.</li>
+</ul>
 
-- Segment: to connect all your tools together from mixpanel, Google Analytics to your website and CRM.
-- Google Analytics (for marketing analytics), to gather top of the funnel page-view events.
-- Mixpanel, Amplitude or Heap to understand what users are doing after signup.
+<p>DataLayer helps us to debug our tracking setup and as well provides us with reliable and readily accessible values for reporting.</p>
 
-## Reporting analytics events 
+<p><strong>Also see:</strong> How I created an <a href="/ecommerce-datalayer">eCommerce Website DataLayer</a>.</p>
 
-Reports are time-based and segmented views of product data. They can be shared, updated and embedded or self-created by users. They are visual guides that enable stakeholders understand the performance of the product's metrics.
+<ul>
+  <li><strong>Step 3: Choose the right analytics tools</strong></li>
+</ul>
 
-> Dashboard is a collection of various reports.
+<p><img src="/assets/images/popular_product_analytics_tools.jpg" alt="popular_product_analytics_tools" />
+<em>Some popular product analytics tools</em></p>
 
-## Most useful reports in analytics
+<p>There are two groups of analytics tools in use: the classic analytics and the retroactive analytics tools. The tools you use vary based on your business needs and requirements.</p>
 
-The reports used for the below section were generated from Google Merchandise Store Universal Analytics demo account. Visit the [demo account information page](https://support.google.com/analytics/answer/6367342#access&zippy=%2Cin-this-article) for full details, tutorials and access limitations. Otherwise, you can go directly to the [Universal Analytics property](https://analytics.google.com/analytics/web/demoAccount) or the [Google Analytics 4 property](https://analytics.google.com/analytics/web/demoAccount?appstate=/p213025502).
+<ul>
+  <li>Classic analytics captures pageview events by default (page-based) and other events that has been setup to be tracked on the website. It gathers data from the day you implement it. Google Analytics falls under this category.</li>
+  <li>Retroactive analytics captures all events happening on-page by default (event-based). Tools in this category automatically collect user interaction data with a single snippet and let you analyze that data when you need to. Examples include mixpanel, heap and amplitude.</li>
+</ul>
 
-### Segmentation
+<p>The difference between classic and retroactive tools is in the…</p>
 
-A segment is a subset of your Analytics data. Segmentation helps us to uncover and understand hidden trends within our product. It allows us to break down product analysis by event or user property, such as location or operating system.
+<ul>
+  <li><strong>Step 4: Follow a consistent process</strong></li>
+</ul>
 
-With segmentation you can isolate and analyze a subset of data so you can examine and respond to trends in your business. For example, if you segment and realise that users from a particular region are no longer purchasing a particular product in the same volume as they normally do, you can check whether there is a competitor selling same product at lower prices. If this is true, you could respond by offering a discount that undercuts your competitor's prices.
+<p>What is the key information each team needs to look at weekly?
+How do you ensure tracking is in place for new feature launches?</p>
 
-You can also use information gotten from segmenting your users to know what group of users to target in a remarketing campaign.
+<h3 id="a-typical-product-analytics-stack">A typical product analytics stack</h3>
 
-See this short but detailed [explanation of segmentation](https://support.google.com/analytics/answer/3123951#zippy=%2Cin-this-article) from Google.
+<ul>
+  <li>Segment: to connect all your tools together from mixpanel, Google Analytics to your website and CRM.</li>
+  <li>Google Analytics (for marketing analytics), to gather top of the funnel page-view events.</li>
+  <li>Mixpanel, Amplitude or Heap to understand what users are doing after signup.</li>
+</ul>
 
-### Cohort Analysis
+<h2 id="reporting-analytics-events">Reporting analytics events</h2>
 
-Cohort analysis helps us to find out which group (segments) of users stay engaged with our product the longest. It also helps us to understand if our product has improved over time. i.e. if newer users are staying longer than older ones did.
+<p>Reports are time-based and segmented views of product data. They can be shared, updated and embedded or self-created by users. They are visual guides that enable stakeholders understand the performance of the product’s metrics.</p>
 
-![cohort_analysis](/assets/images/cohort_analysis.jpg)
+<blockquote>
+  <p>Dashboard is a collection of various reports.</p>
+</blockquote>
 
-The above image shows a 6-week analysis of users grouped by _Acquisition date_ and the _Total transactions_ they carried out from their first week (Week 0) to the present week (Week 6).
-We can observe that the initial total transactions are high. However, the number of repeat purchase from these users drop rapidly as the week goes by. This drop could be explained by the type of products on the [Google Merchandise store](https://shop.googlemerchandisestore.com/?utm_source=partners&utm_medium=affiliate&utm_campaign=data%20share%20article). These are not FMCG products. So a better cohort size would have been by month or year.
+<h2 id="most-useful-reports-in-analytics">Most useful reports in analytics</h2>
 
-To understand cohort analysis further, [read this article](https://medium.com/analytics-for-humans/a-beginners-guide-to-cohort-analysis-the-most-actionable-and-underrated-report-on-google-c0797d826bf4).
+<p>The reports used for the below section were generated from Google Merchandise Store Universal Analytics demo account. Visit the <a href="https://support.google.com/analytics/answer/6367342#access&amp;zippy=%2Cin-this-article">demo account information page</a> for full details, tutorials and access limitations. Otherwise, you can go directly to the <a href="https://analytics.google.com/analytics/web/demoAccount">Universal Analytics property</a> or the <a href="https://analytics.google.com/analytics/web/demoAccount?appstate=/p213025502">Google Analytics 4 property</a>.</p>
 
-### Funnel Analysis 
+<h3 id="segmentation">Segmentation</h3>
 
-Funnels are used to understand user behaviour usually in a specific order. It shows us data on users who have gone through a funnel we define (e.g. single product, add to cart, checkout, create account, complete checkout). Through this, we can identify user drop-off points to improve conversion rates.
+<p>A segment is a subset of your Analytics data. Segmentation helps us to uncover and understand hidden trends within our product. It allows us to break down product analysis by event or user property, such as location or operating system.</p>
 
-### User flows
+<p>With segmentation you can isolate and analyze a subset of data so you can examine and respond to trends in your business. For example, if you segment and realise that users from a particular region are no longer purchasing a particular product in the same volume as they normally do, you can check whether there is a competitor selling same product at lower prices. If this is true, you could respond by offering a discount that undercuts your competitor’s prices.</p>
 
-![user_flows](/assets/images/user_flows.png)
+<p>You can also use information gotten from segmenting your users to know what group of users to target in a remarketing campaign.</p>
 
-A flow analysis helps us to understand user behaviour in a less structured way than funnels. It helps to understand what events are key to reaching a goal and how users use our products outside how we intend them to use it. 
+<p>See this short but detailed <a href="https://support.google.com/analytics/answer/3123951#zippy=%2Cin-this-article">explanation of segmentation</a> from Google.</p>
 
-It allows us to see where a user goes/does after a starting point (e.g. next five actions that a user did after visiting the landing page) or what the user did before an ending action (e.g. previous five actions user did before buying our product).
+<h3 id="cohort-analysis">Cohort Analysis</h3>
 
-It helps us answer the question: _"Where are users going to from event X?"_ and _"How are users getting to event Y?"_
+<p>Cohort analysis helps us to find out which group (segments) of users stay engaged with our product the longest. It also helps us to understand if our product has improved over time. i.e. if newer users are staying longer than older ones did.</p>
 
-## Conclusion
-As a product analyst, your major job is not just to find creative ways to share insights across your organisation but also finding meaningful ways to empower others to discover insights on their own. To fully take the advantage of data, data blending is a useful concept which is merging data from different sources for analysis. This helps us to see data from different perspectives. Going forward as a product analyst, it is a standard practise to automate reports to help reduce drudgery while improving reliability.
+<p><img src="/assets/images/cohort_analysis.jpg" alt="cohort_analysis" /></p>
 
-**P.S:** This is a summary gotten from the Product Analytics course at CXL Institute.]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="featured" /><category term="product_analytics" /><category term="CXL_Institute" /><summary type="html"><![CDATA[At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[There are lots of powerful things you can do with the Markdown editor
+<p>The above image shows a 6-week analysis of users grouped by <em>Acquisition date</em> and the <em>Total transactions</em> they carried out from their first week (Week 0) to the present week (Week 6).
+We can observe that the initial total transactions are high. However, the number of repeat purchase from these users drop rapidly as the week goes by. This drop could be explained by the type of products on the <a href="https://shop.googlemerchandisestore.com/?utm_source=partners&amp;utm_medium=affiliate&amp;utm_campaign=data%20share%20article">Google Merchandise store</a>. These are not FMCG products. So a better cohort size would have been by month or year.</p>
 
-If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
+<p>To understand cohort analysis further, <a href="https://medium.com/analytics-for-humans/a-beginners-guide-to-cohort-analysis-the-most-actionable-and-underrated-report-on-google-c0797d826bf4">read this article</a>.</p>
 
-As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using. oya update it.
+<h3 id="funnel-analysis">Funnel Analysis</h3>
 
+<p>Funnels are used to understand user behaviour usually in a specific order. It shows us data on users who have gone through a funnel we define (e.g. single product, add to cart, checkout, create account, complete checkout). Through this, we can identify user drop-off points to improve conversion rates.</p>
 
-## Special formatting
+<h3 id="user-flows">User flows</h3>
 
-As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:
+<p><img src="/assets/images/user_flows.png" alt="user_flows" /></p>
 
-+ ~~strike through~~
-+ ==highlight==
-+ \*escaped characters\*
+<p>A flow analysis helps us to understand user behaviour in a less structured way than funnels. It helps to understand what events are key to reaching a goal and how users use our products outside how we intend them to use it.</p>
 
+<p>It allows us to see where a user goes/does after a starting point (e.g. next five actions that a user did after visiting the landing page) or what the user did before an ending action (e.g. previous five actions user did before buying our product).</p>
 
-## Writing code blocks
+<p>It helps us answer the question: <em>“Where are users going to from event X?”</em> and <em>“How are users getting to event Y?”</em></p>
 
-There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, `like this`. Larger snippets of code can be displayed across multiple lines using triple back ticks:
+<h2 id="conclusion">Conclusion</h2>
+<p>As a product analyst, your major job is not just to find creative ways to share insights across your organisation but also finding meaningful ways to empower others to discover insights on their own. To fully take the advantage of data, data blending is a useful concept which is merging data from different sources for analysis. This helps us to see data from different perspectives. Going forward as a product analyst, it is a standard practise to automate reports to help reduce drudgery while improving reliability.</p>
 
-```
-.my-link {
+<p><strong>P.S:</strong> This is a summary gotten from the Product Analytics course at CXL Institute.</p>]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="featured" /><category term="product_analytics" /><category term="CXL_Institute" /><summary type="html"><![CDATA[At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[<p>There are lots of powerful things you can do with the Markdown editor</p>
+
+<p>If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
+
+<p>As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using. oya update it.</p>
+
+<h2 id="special-formatting">Special formatting</h2>
+
+<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
+
+<ul>
+  <li><del>strike through</del></li>
+  <li>==highlight==</li>
+  <li>*escaped characters*</li>
+</ul>
+
+<h2 id="writing-code-blocks">Writing code blocks</h2>
+
+<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code class="language-plaintext highlighter-rouge">like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-link {
     text-decoration: underline;
 }
-```
+</code></pre></div></div>
 
-If you want to get really fancy, you can even add syntax highlighting using Rouge.
+<p>If you want to get really fancy, you can even add syntax highlighting using Rouge.</p>
 
+<p><img src="/assets/images/3.jpg" alt="walking" /></p>
 
-![walking]({{ site.baseurl }}/assets/images/3.jpg)
+<h2 id="reference-lists">Reference lists</h2>
 
-## Reference lists
+<p>The quick brown jumped over the lazy.</p>
 
-The quick brown jumped over the lazy.
+<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
 
-Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
+<h2 id="sample-blockquote">Sample Blockquote</h2>
+<blockquote>
+  <p>Writing good technical articles is indeed a challenge, takes a lot of your personal time and often requires doing a lot of research. Of-course you should have a passion for reading and writing it. Before you write your paper, you need to understand your audience and your message.</p>
+</blockquote>
 
-## Sample Blockquote
->Writing good technical articles is indeed a challenge, takes a lot of your personal time and often requires doing a lot of research. Of-course you should have a passion for reading and writing it. Before you write your paper, you need to understand your audience and your message.
+<h2 id="full-html">Full HTML</h2>
 
-## Full HTML
+<p>Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:</p>
 
-Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
-
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>]]></content><author><name>ndcharles</name></author><category term="Jekyll" /><category term="Tech" /><category term="markdown" /><category term="editor" /><summary type="html"><![CDATA[There are lots of powerful things you can do with the Markdown editor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/art_work.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/art_work.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>]]></content><author><name>ndcharles</name></author><category term="Jekyll" /><category term="Tech" /><category term="markdown" /><category term="editor" /><summary type="html"><![CDATA[There are lots of powerful things you can do with the Markdown editor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/art_work.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/art_work.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
