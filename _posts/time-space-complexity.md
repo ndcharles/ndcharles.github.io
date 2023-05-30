@@ -13,7 +13,7 @@ One of the
 
 No algorithm is inherently good or bad. We can only have an algorithm suitable for a specific kind of task. In machine learning, there are more than one way to solve a particular problem. Example, to build a regression model, we can code by ourself, use linear regression, ridge or lasso, or even go afrther into deep learning. 
 
-The question then becomes, "how do we selct which algorithm to use for a particular problem" since there are a lot to choose from.
+The question then becomes, "how do we select which algorithm to use for a particular problem" since there are a lot to choose from.
 
 This was the first of my questions when I got introduced to the data science space. To solve this problem, let's look at one characteristic of algorithm -- efficiency.
 

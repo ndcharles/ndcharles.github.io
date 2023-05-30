@@ -31,6 +31,10 @@ Linking to PDF directly: [get the PDF](/assets/mydoc.pdf)
 for external resource, replace the relative url to external url.
 
 
+Adding related posts in jekyll 
+- https://hanisarji.com/zine-hs/2021/05/20/related-posts/
+- https://tomordonez.com/jekyll-related-posts/ parent 
+
 If you want to get really fancy, you can even add syntax highlighting using Rouge.
 
 + **bold**
@@ -71,4 +75,8 @@ font:
 
 
 If you could pick intro music to be played every time we did a roll call, what would you want?
+
+
+For when I feel like leaving GitHub pages for Azure static sites
+- https://tomordonez.com/azure-static-web-app-nextjs-github-pages/
 
