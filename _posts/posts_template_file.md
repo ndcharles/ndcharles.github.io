@@ -24,6 +24,11 @@ Ref: https://dev.to/bdavidxyz/markdown-center-image-39j1
 
 Add image within post: ![My helpful screenshot](/assets/screenshot.jpg)
 
+https://dev-notes.eu/2016/01/images-in-kramdown-jekyll/
+
+
+Creating image gallery in Jekyll: https://dmnfarrell.github.io/software/jekyll-galleries or this https://www.aravindiyer.com/posts/equal-height-image-gallery
+
 Embed video within post using HTML: <p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
 
 
@@ -79,4 +84,8 @@ If you could pick intro music to be played every time we did a roll call, what w
 
 For when I feel like leaving GitHub pages for Azure static sites
 - https://tomordonez.com/azure-static-web-app-nextjs-github-pages/
+
+
+# Download GitHub subpages
+- https://downgit.github.io/#/home (check for more details at stackoverflow)
 
