@@ -78,6 +78,10 @@ colour:
 	
 font: 
 
+https://mmistakes.github.io/minimal-mistakes/docs/layouts/
+https://www.aravindiyer.com/posts/how-i-made-my-website
+
+
 
 If you could pick intro music to be played every time we did a roll call, what would you want?
 

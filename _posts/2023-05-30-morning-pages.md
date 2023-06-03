@@ -8,7 +8,7 @@ tags: [ featured, morning_pages, alx_nigeria, alx ]
 ---
 I used to write but then I stopped. What even caused it I don't know. Going through [ALX Foundations](https://tech.alxafrica.com/nigeria) I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.
 
-## What is Morning Pages?
+## What are Morning Pages?
 Morning Pages were made famous more than 25 years ago by Julia Cameron in her best-selling book ['The Artist's Way'](https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252). Morning pages are streams of conscious writing done first thing in the morning, in three pages. The practice is not just for artists! It's a "life hack" used by many successful business people, entrepreneurs, people who create social impact, and of course tech talent. Doing morning pages every day has been shown to increase creativity, positive mood, and big-picture thinking for all kinds of people. 
 
 > Writing Morning Pages provides you the opportunity to clear out space, so that your mind is more open to receive inspiration. It's like a brain dump.
