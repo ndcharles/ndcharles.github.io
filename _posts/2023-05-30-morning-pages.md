@@ -4,6 +4,7 @@ title:  "Don't Stop | Don't Think | Just Write!"
 author: ndcharles
 categories: [ Tech, Growth ]
 image: assets/images/morning_pages.webp
+last_modified: 2023-03-06 
 tags: [ featured, morning_pages, alx_nigeria, alx ]
 ---
 I used to write but then I stopped. What even caused it I don't know. Going through [ALX Foundations](https://tech.alxafrica.com/nigeria) I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.
