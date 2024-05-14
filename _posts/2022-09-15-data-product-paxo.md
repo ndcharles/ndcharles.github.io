@@ -14,7 +14,7 @@ A lot happened in between and in April 2021, Easter Tuesday, I resumed at [PAXO]
 ## In the Beginning
 Coming into PAXO Health & Beauty as a data analyst, the bulk of my job during my first few weeks involved doing growth research and tools needed for web analytics on the new platform. And then, I had to be the one testing new features on the platform we were building.
 
-As a data analyst, I also needed to add the necessary components to ensure data is colllected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer's journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don't need anymore.
+As a data analyst, I also needed to add the necessary components to ensure data is collected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer's journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don't need anymore.
 
 I delved deeper into web analytics and then [product analytics]({{site.baseurl}}/cxl-product-analytics-how-data-build-products-customers-need). You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.
 
@@ -31,7 +31,7 @@ As a data analyst in a small company, my priority when sourcing for tools is to 
 - Python
 - Datawrapper
 
-On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Sendy/AmazonSES as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.
+On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Zoho emails (still taking a look at Sendy/AmazonSES) as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.
 
 ## Managing Products
 My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.

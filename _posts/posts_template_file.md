@@ -93,3 +93,139 @@ For when I feel like leaving GitHub pages for Azure static sites
 # Download GitHub subpages
 - https://downgit.github.io/#/home (check for more details at stackoverflow)
 
+# Update GitHub readme with latest blog posts (2)
+- https://dotnetthoughts.net/adding-blog-posts-to-your-github-readme-with-github-actions/
+- https://devdojo.com/bobbyiliev/automatically-display-your-latest-posts-on-your-github-profile-readme
+
+
+
+This is important: https://www.hotjar.com/blog/analyze-open-ended-questions/
+
+
+
+
+# How to change the password on Ubuntu 22.04
+- Note the Ubuntu distribtution yur WSL is using by visiting the Microsoft store
+	- Default user "root" doecn't have a password
+- Open CMD and run ~ubuntu2004 config --default-user root~ to switch the Ubuntu to the default user 
+- Now run WSL and it would start as root user.
+- In WSL run ~passwd username~ to create a password for the username 
+- Open CMD again and run ~ubuntu2004 config --default-user username~ to switch from defualt root user to your username.
+!password reset successful.
+
+
+# Free Bootcamp Resources to Learn Data Analysis
+- CS50 SQL
+
+
+# Learn LLMs using Free Bootcamp Resources
+- Full Stack LLM Bootcamp (https://fullstackdeeplearning.com/llm-bootcamp/)
+- 
+
+
+# Tech Support Forums 
+- https://go.experts-exchange.com/
+- 
+
+
+# How to disable WordPress update and notifications for a specific plugin 
+- https://wordpress.stackexchange.com/questions/20580/disable-update-notification-for-individual-plugins
+- Open the plugin file and set the version number to a very high value (e.g. 99.9.9) 
+- only update notifications ()
+- Use a plugin 
+	- Easy updates manager 
+	- Diasable updates manager 
+
+
+# Stories to Help You Level-Up at Work
+~Perspectives on career development, handpicked by Medium Staff.~
+I saw this title on [Medium](https://medium.com/@MediumStaff/list/stories-to-help-you-levelup-at-work-faca18b0622f) and felt I should write a few on my data journey so far. 
+
+
+
+# Installing Ruby and Jekyll for Existing Website
+
+After switching to a new PC I found it difficult getting my Jekyll site up again due to dependency issues.
+
+Let me give you a run down of my Jekyll process.
+
+First things first, install, ruby + devkit through here https://rubyinstaller.org/downloads/ 
+
+Download the first option w/ devkit 
+
+Run `ridk install` to install local dependencies
+From the installations, select `MSYS2 and MINGW development tool chain` that's option 3.
+
+Next Install Jekyll and Bundler using `gem install jekyll bundler`
+
+Check if Jekyll has been installed properly: `jekyll -v`
+
+Ref: https://jekyllrb.com/docs/installation/windows/
+
+## To continue with existing jekyll site 
+- Open command prompt and navigate to the project foler
+- Run `bundle exec jekyll serve --incremental`
+- Type `http://127.0.0.1:4000/` in your browser to continue with your website
+
+
+
+https://jekyllrb.com/docs/ruby-101/
+
+
+# Git and GitHub
+- Amend git commit message (bash and GUI)
+- Undo git init (https://careerkarma.com/blog/git-undo-git-init/)
+- 
+
+
+# Scripting in Google sheet
+- https://support.google.com/docs/thread/173663134/how-to-bulk-import-multiple-csv-files-at-one-go-in-google-sheets?hl=en
+
+
+# virtual tiles reality 
+- tilesview.ai
+- https://www.realityremod.com/
+- https://clayarktiles.com/product-details/slab-collections/1200x2780-9-mm-thickness/cinerea-river 
+- https://amintile.com/
+- Møbel · 2. Dreamhouse AI. Dreamhouse AI · 3. REimagine Home. Styldod · 4. Decorify. Wayfair Next · 5. Room AI. Room AI · 6. DecorAI. · 7. CoolAIid.
+
+
+
+
+# best form platforms (alternative to typeform and google forms)
+- fillout
+- formbricks (html embed can use this for alx.internship)
+- quillforms 
+
+# best kahoot alternative 
+- blooklet
+- 
+
+
+# Hosting ML apps 
+- Heroku
+- https://railway.app/pricing
+- python anywhere 
+- streamlit hosting 
+- huggingface 
+
+
+# static site generators content 
+- https://scholarslab.lib.virginia.edu/blog/jekyll-content-interfaces//
+- https://github.com/christian-fei/Simple-Jekyll-Search
+- https://alex.pearwin.com/2016/02/simpler-jekyll-searching/
+- 
+
+
+# Static site to Jekyll 
+- https://jekyllrb.com/tutorials/convert-site-to-jekyll/
+
+
+# Jekyll toolkit
+- https://medium.com/@kurtiskemple/setting-up-client-side-search-for-a-jekyll-github-pages-site-with-lunr-and-backbone-d644541d7260
+- https://alphahydrae.com/2021/01/how-to-generate-and-enrich-pages-in-a-jekyll-blog/
+- https://jekyllrb.com/docs/plugins/generators/
+- https://talk.jekyllrb.com/t/how-to-create-a-page-from-a-generator-plugin/6053
+- 
+
+

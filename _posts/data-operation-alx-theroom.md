@@ -12,14 +12,6 @@ We must have met somewhere; The ROOM townhalls (CTH), activation events, marketi
 
 [picture collage]
 
-
-
-<hr>
-<b>Available space:</b> {{ desk_spaces }} spaces.<br>
-<b>Capacity (3 sessions):</b> {{ capacity }} learners
-
-
-
 ## Visualising data using datawrapper 
 - Getting map data for custom graphing (https://hackernoon.com/how-to-convert-and-prepare-topojson-files-for-interactive-mapping-with-d3-499cf0ced5f)
 - Get the data here: https://gadm.org/download_country.html (I used the GeoJSON file instead of shapefile. Selected only Lagos data. Uploaded the custom map to datawrapper.) 
@@ -40,3 +32,12 @@ Part of working here involved calling learners, fellows and others for one thing
 - Write something — Writing helps you step back and think through a problem. With the degree of thoughtfulness that you put into writing you eventually become a better person.
 - Explore change
 
+
+# Job Board Using Jekyll
+- Jekyll 
+- Search
+
+references:
+- https://medium.com/@kurtiskemple/setting-up-client-side-search-for-a-jekyll-github-pages-site-with-lunr-and-backbone-d644541d7260
+- https://talk.jekyllrb.com/t/page-variable-name-in-for-loop-using-data-files/7522/4 
+- https://jekyllrb.com/docs/datafiles/ (dump the csv in site.data)

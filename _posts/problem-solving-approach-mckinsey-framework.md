@@ -4,15 +4,18 @@ title:  "Problem-Solving Approaches - The McKinsey Problem-Solving Framework"
 author: ndcharles
 categories: [ Tech, Growth ]
 image: assets/images/problem_solving.webp
-tags: [ featured, problem_solving, alx, data_operations, alx_foundations, alx_nigeria ]
+tags: [ featured, problem_solving, alx, data_operations, alx_foundations ]
 ---
 # Problem definition
+What is problem definition?...
+
+To be able to define a problem more concretely and succinctly, we can use The 5Ws+H: Who, What, Where, When, Why and How. These can be better answered by developing a problem statement and a good way to develop an effective problem statement is to use a problem-solving framework.
 
 # Symptoms vs Root-Cause
 - the 5-Whys technique 
 
 ## Problem-solving approaches
-The McKinsey Problem Solving Framework and the Cool Head Warm Heart Framework are two different approaches to decision-making and problem-solving. While they share some similarities, they differ in focus and application. Let's take a look at how to apply each one. 
+Problem-solving is all about asking the right questions. The McKinsey Problem Solving Framework and the Cool Head Warm Heart Framework are two different approaches to decision-making and problem-solving. While they share some similarities, they differ in focus and application. Let's take a look at how to apply each one. 
 
 - Cool Head, Warm Heart Model
 The Cool Head Warm Heart Framework is a problem-solving approach that balances analytical and emotional considerations. It involves making decisions that align with one's values and goals while also considering the perspectives and feelings of others. This framework is often used in interpersonal and social contexts, such as leadership, communication, and conflict resolution.
@@ -25,7 +28,7 @@ On the other hand, having a "warm heart" means showing kindness, empathy, and co
 By combining a cool head with a warm heart, we can make rational and compassionate decisions. We can approach problems with a clear and focused mind, while also being sensitive to the emotions and needs of others. 
 
 - The McKinsey Problem Solving Framework
-The McKinsey's Problem Solving Framework is often used in business and consulting settings and is particularly effective for analyzing data and developing data-driven and evidence-based solutions. The framework requires that we answer the following 6 questions:
+The McKinsey Problem-Solving Framework is a widely recognized tool used by the management consulting firm McKinsey & Company to analyze and solve complex business problems. The framework consists of six components and is particularly effective for analyzing data and developing data-driven and evidence-based solutions. It consists of seven interrelated components that collectively influence an organization's effectiveness. These components are:
 
 - What is the problem?
 - Where and when does the problem occur?

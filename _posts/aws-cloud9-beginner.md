@@ -6,7 +6,7 @@ categories: [ Tech ]
 image: assets/images/aws_cloud9.webp
 tags: [ featured, aws, aws_cloud9, devops, cloud ]
 ---
-First, this is coming from a frustrated beginner. During my first project in ALX/Udacity Cloud DevOps Engineering ND I had to setup a static website using AWS S3. The project was going well until I had to upload to S3 bucket. The upload speed was terribly slow despite the file is about 15MB. So I ahd to go programmatically.
+First, this is coming from a frustrated beginner. During my first project in ALX/Udacity Cloud DevOps Engineering ND I had to setup a static website using AWS S3. The project was going well until I had to upload to S3 bucket. The upload speed was terribly slow despite the file is about 15MB. So I had to go programmatically.
 
 ## Accessing AWS Services
 There are several ways to manage your AWS service.
