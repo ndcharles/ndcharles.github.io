@@ -226,6 +226,21 @@ https://jekyllrb.com/docs/ruby-101/
 - https://alphahydrae.com/2021/01/how-to-generate-and-enrich-pages-in-a-jekyll-blog/
 - https://jekyllrb.com/docs/plugins/generators/
 - https://talk.jekyllrb.com/t/how-to-create-a-page-from-a-generator-plugin/6053
+- https://github.com/dnoneill/jekyll-lunr-js-custom-search
+- https://zoeleblanc.com/blog/2017/adding-search-to-jekyll-sites-with-lunr/
+
+
+
+# How to merge multiple CSV files on windows 
+before we start 
+- the headers have to be the same 
+- the columns must have the same layout 
+
+o merge files i spin up Jupyter-lab and using glob and python, i merge all files in a folder.
+Now i am tired of that and needed a simpler way to do it since i do it once in a while 
+- CMD (bat file)
+- https://sensorfactdev.github.io/csv-joiner/ (https://github.com/Sensorfactdev/csv-joiner/releases)
+- https://github.com/deviousasti/csv-merge
 - 
 
 

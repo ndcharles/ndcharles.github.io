@@ -26,5 +26,5 @@ From the classroom to tech. Grace found me and then here...
 - CommYOUnity
 - Data analysis on EDX
 - Digital marketing course on Tech4Dev 
-
+- Data Engineering basic courses
 
