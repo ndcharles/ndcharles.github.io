@@ -34,9 +34,7 @@ These are tips that the average user already uses to make their prompts better.[
 
 -- **Feedback loops.** Use the model's outputs to inform and adjust subsequent prompts. This dynamic interaction ensures that the model's responses align more closely with user expectations over time.
 
-```
-Article in progress
-```
+<code class="language-plaintext highlighter-rouge">== Article in progress ==</code>
 
 ## Advanced prompt engineering
 Many advanced prompting techniques have been designed to improve performance on complex tasks. [^2]
