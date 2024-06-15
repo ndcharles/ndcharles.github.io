@@ -1,4 +1,218 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-29T11:00:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[<p>I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-15T13:04:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[<p>Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.</p>
+
+<p>By providing clear instructions (prompts), users can leverage generative AI to perform tasks efficiently. It can write essays, solve math problems, generate marketing content, analyze data, question-answering, sentiment analysis, language translation, coding and more.</p>
+
+<blockquote>
+  <p>No matter what happens with AI, being able to have good ideas and communicate them effectively will continue to be important. – <a href="https://www.saxifrage.xyz/post/prompt-engineering">Sam Altman</a></p>
+</blockquote>
+
+<p>Prompt engineering is the process of crafting and refining inputs (prompts) to guide AI models in generating specific, high-quality outputs. It includes writing, optimizing, and iterating prompts to improve accuracy and effectiveness. This process helps AI models understand and perform tasks based on the provided instructions. Prompt engineering is also known as prompt design and is essential for enhancing AI performance on particular tasks.</p>
+
+<blockquote>
+  <p>Prompt engineering is the practice of creating the perfect questions or instructions to get exactly what you need from an AI solution. They help us communicate with these machines to perform different tasks such as writing, analyzing data, text generation, question-answering, sentiment analysis, language translation and coding.</p>
+</blockquote>
+
+<h2 id="prompt-engineering-is-iterative">Prompt engineering is iterative</h2>
+<p>Getting the best output from an AI system requires an iterative process.</p>
+<ul>
+  <li>Try something, be clear and specific</li>
+  <li>Analyze whether the result is desired or not</li>
+  <li>Clarify instructions, give the system time to think</li>
+  <li>Refine the idea and the prompt with few shots of examples</li>
+  <li>Rinse and repeat</li>
+</ul>
+
+<h2 id="basic-techniques">Basic techniques</h2>
+<p>These are tips that the average user already uses to make their prompts better.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>– <strong>Role-playing.</strong> By making the model act as a specific entity, like a historian or a scientist, you can get tailored responses. For example, “As a nutritionist, evaluate the following diet plan” might yield a response grounded in nutritional science.</p>
+
+<p>– <strong>Iterative refinement.</strong> Start with a broad prompt and gradually refine it based on the model’s responses. This iterative process helps in honing the prompt to perfection.</p>
+
+<p>– <strong>Feedback loops.</strong> Use the model’s outputs to inform and adjust subsequent prompts. This dynamic interaction ensures that the model’s responses align more closely with user expectations over time.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article in progress
+</code></pre></div></div>
+
+<h2 id="advanced-prompt-engineering">Advanced prompt engineering</h2>
+<p>Many advanced prompting techniques have been designed to improve performance on complex tasks. <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+<ul>
+  <li>Reference prompting</li>
+  <li>Zero-shot</li>
+  <li>Few-shot</li>
+  <li>Chain-of-thought</li>
+  <li>Generated knowledge</li>
+  <li>Train of thought prompting</li>
+  <li>Directional stimulus prompting</li>
+  <li>Chain of density prompting</li>
+</ul>
+
+<p>–1. <strong>Reference prompting</strong> (also contextual prompting or reference text prompting): This involves providing context or reference materials to your query which then guides the model’s response. This is used when you want specific responses and have access to supporting materials for context. This context can be a passage, a set of instructions or any other relevant information.<br />
+Examples of Reference prompting</p>
+
+<p>a. Text summarization</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Prompt: Summarize the following text:
+Reference Text: "Quantum computing leverages quantum mechanical phenomena to perform calculations exponentially faster than classical computers. It has the potential to revolutionize fields such as cryptography, materials science, and artificial intelligence. However, current quantum computers are still in the experimental stage and face significant technical challenges."
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Response: "Quantum computing uses quantum mechanics to perform fast calculations and has potential applications in cryptography and AI, but it is still experimental and faces technical challenges."
+</code></pre></div></div>
+
+<p>–2. <strong>Zero-shot</strong>: Zero-shot involves providing the model with a task it hasn’t seen during its training. It tests the model’s ability to generalize and produce relevant outputs without relying on prior examples. It’s akin to asking someone to perform a task they’ve never done before without any specific instructions or examples</p>
+
+<p>–3. <strong>Few-shot/in-context learning:</strong> Shots refer to examples you provide the AI before allowing it to attempt a task. Few-shot learning gives the model a few example outputs to help it learn what is expected for a particular task; voice, tone and keywords. This case is likened to creating a pattern and the AI tries to match the pattern.</p>
+
+<p>Examples of zero-shot and few-shot learning</p>
+
+<p>a. Text Classification</p>
+
+<pre>
+<b>Zero-shot</b>
+"Classify the following text into categories: sports, politics, technology, or entertainment: 'The team secured a victory in the final seconds.'"
+
+<b>Few-shot</b>
+"Classify the following text into categories: sports, politics, technology, or entertainment: 
+- 'The government passed a new bill yesterday.' (politics)
+- 'Innovative startups are leading the way in AI development.' (technology)
+- 'The championship game will be held next weekend.' (sports)
+- 'The concert was a huge success with thousands attending.' (entertainment)
+- 'A new app is changing the way we manage our daily tasks.'"
+</pre>
+
+<p>b. Translation</p>
+
+<pre>
+<b>Zero-shot</b>
+"Translate this sentence into French: ‘Hello, how are you today?’"
+
+<b>Few-shot</b>
+"Translate these sentences into French:
+- 'The sky is clear today.' (Le ciel est dégagé aujourd'hui.)
+- 'I will meet you at the park.' (Je te rencontrerai au parc.)
+- 'Can you help me with my homework?'"
+</pre>
+
+<p>c. Summarization</p>
+
+<pre>
+<b>Zero-shot</b>
+"Provide a summary for this article: ‘Researchers have discovered a new method to recycle plastics.'"
+
+<b>Few-shot</b>
+"Provide a summary for these articles:
+- 'Scientists have found a potential cure for a rare disease.' (Researchers may have discovered a treatment for a rare illness.)
+- 'The stock market experienced significant growth last quarter.' (The financial market saw considerable gains in the previous quarter.)
+- 'A new species of bird has been discovered in the Amazon rainforest.'"
+</pre>
+
+<p>d. Question Answering</p>
+
+<pre>
+<b>Zero-shot</b>
+"What is the capital city of France?"
+
+<b>Few-shot</b>
+"Answer these questions based on the information provided:
+- 'What is the boiling point of water?' (100°C)
+- 'Who wrote the play Romeo and Juliet?' (William Shakespeare)
+- 'How long is the Great Wall of China?'"
+</pre>
+
+<p>e. Sentiment Analysis</p>
+
+<pre>
+<b>Zero-shot</b>
+"Determine the sentiment of this review: 'The movie was a thrilling adventure from start to finish.'"
+
+<b>Few-shot</b>
+"Determine the sentiment of these reviews:
+- 'This is the best restaurant in town!' (Positive)
+- 'I'm disappointed with the service I received.' (Negative)
+- 'The book was quite interesting, though it had a slow start.'"
+</pre>
+
+<p>–4. <strong>Chain-of-thought (CoT):</strong> this inves creating a logical sequence on how the response should go. It involves, referencing, few-shots and/or zero+few-shots. Let’s take this step-by-step</p>
+
+<p>–5. Take a deep breath and work step-by-step. This instruction makes the AI start in a detailed stepwise manner</p>
+
+<p>–5. <strong>Generated knowledge:</strong> this is where examples are first generated by the AI using few-shots prompting then the response is then used to get further detailed responses.</p>
+
+<p>–6. <strong>Train of thought prompting:</strong> This involves getting the AI to generate several responses and eliminates the wrong answer by itself.</p>
+
+<p>–7. <strong>Directional stimulus prompting:</strong> This can be straightforward as it uses reference prompting but then provides a hint on what piece of information should be highlighted from the original text. Example, summary of a text input that should include a hint, the location of the xter. This is good for essay questions</p>
+
+<p>–8. <strong>Chain of density prompting:</strong> Used to summarise huge texts into a solid summary and then checking that it is correct; all done in one prompt.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+  <li><a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results">Prompt Engineering Guide from OpenAI</a></li>
+  <li><a href="https://learnprompting.org/docs/intro">Prompt Engineering Guide from Learn Prompting</a></li>
+  <li><a href="https://github.com/dair-ai/Prompt-Engineering-Guide">Guides, papers, lecture, notebooks and resources for prompt engineering</a></li>
+  <li><a href="https://www.saxifrage.xyz/post/prompt-engineering">Prompt Engineering: From Words to Art and Copy</a></li>
+  <li><a href="https://app.vexpower.com/paths/prompt-engineer/">41 Prompt Engineering Courses</a></li>
+</ul>
+
+<h3 id="footnotes">Footnotes</h3>
+<hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication">What is Prompt Engineering? A Detailed Guide For 2024</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://www.linkedin.com/learning/advanced-prompt-engineering-techniques/prompting-to-make-ai-systems-more-useful">Advanced Prompt Engineering Techniques</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="prompt_engineering" /><category term="reference" /><category term="chatGPT" /><category term="copilot" /><summary type="html"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Don’t Stop | Don’t Think | Just Write!</title><link href="http://localhost:4000/morning-pages/" rel="alternate" type="text/html" title="Don’t Stop | Don’t Think | Just Write!" /><published>2023-05-30T00:00:00+01:00</published><updated>2023-05-30T00:00:00+01:00</updated><id>http://localhost:4000/morning-pages</id><content type="html" xml:base="http://localhost:4000/morning-pages/"><![CDATA[<p>I used to write but then I stopped. What even caused it I don’t know. Going through <a href="https://tech.alxafrica.com/nigeria">ALX Foundations</a> I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.</p>
+
+<h2 id="what-are-morning-pages">What are Morning Pages?</h2>
+<p>Morning Pages were made famous more than 25 years ago by Julia Cameron in her best-selling book <a href="https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252">‘The Artist’s Way’</a>. Morning pages are streams of conscious writing done first thing in the morning, in three pages. The practice is not just for artists! It’s a “life hack” used by many successful business people, entrepreneurs, people who create social impact, and of course tech talent. Doing morning pages every day has been shown to increase creativity, positive mood, and big-picture thinking for all kinds of people.</p>
+
+<blockquote>
+  <p>Writing Morning Pages provides you the opportunity to clear out space, so that your mind is more open to receive inspiration. It’s like a brain dump.</p>
+</blockquote>
+
+<p>A lot of professionals have testified to the benefits of morning pages. From entrepreneurs like <a href="https://tim.blog/2015/01/15/morning-pages/">Tim Ferris</a>, <a href="https://www.chriswinfield.com/morning-pages/">Chris Winfield</a>, and <a href="https://bettyzzzz.wordpress.com/2011/04/25/">Nicky Hajal</a> to productivity authors like <a href="https://www.theguardian.com/lifeandstyle/2014/oct/03/morning-pages-change-your-life-oliver-burkeman">Oliver Burkeman</a>.</p>
+
+<p>When writing a morning page, you are not doing actual writing; you are just jotting down the first thoughts that come into your mind in the morning, no matter how senseless they sound.</p>
+
+<h2 id="benefits-of-morning-pages">Benefits of morning pages</h2>
+<p>There are several benefits to writing Morning Pages.</p>
+<ul>
+  <li>It helps you gain clarity</li>
+  <li>It helps you declutter your mind</li>
+  <li>It is a space for self-reflection</li>
+  <li>It helps ignite your creative juice</li>
+  <li>It helps you clear off the anxiety of a new day</li>
+  <li>It gives you a space to rant</li>
+</ul>
+
+<h2 id="how-to-write-morning-pages">How to write morning pages</h2>
+<p>The first time might feel awkward or aimless, but stick with it. The more you practice morning pages, the easier they become. Whereas there is no right and wrong way to Morning Pages, some rules can help you get started.</p>
+<ul>
+  <li>Doing them first thing when you wake up is the best. But any time of day is ok.</li>
+  <li>Get a pen and paper (any book not just a dedicated journal) and write! The benefits come from doing this by hand - no typing!</li>
+  <li>Write whatever pops into your head! (Really, whatever’s there. Anything! Just write it!)</li>
+  <li>Don’t stop writing. Don’t re-read what you’ve written. Don’t go back and edit.</li>
+  <li>If you don’t know what to write, then write, “I don’t know what to write. Maybe it’s because…” and you’re off again. Just keep the pen moving!</li>
+  <li>Write as much as you can (at least 3 pages)</li>
+  <li>When you’re done, put them in an envelope (or burn them)! Don’t re-read them. Don’t share them with anyone.</li>
+  <li>Remember, the point of Morning Pages is the process and not the product.</li>
+</ul>
+
+<blockquote>
+  <p>The most important thing is that you write something by hand and that you do it every day.</p>
+</blockquote>
+
+<p>One thing that is really important to remember with morning pages is that what you write matters a lot less than the fact that you write something. So make sure you give yourself permission to write absolutely anything. Don’t overthink it. Just write. Think of it as “clearing out the pipes” so that you have more space to do focused and creative work.</p>
+
+<h2 id="the-30-day-morning-page-challenge">The 30-day Morning Page challenge</h2>
+<p>Morning pages are unique. Meant to be filled with meaningful yet pointless rants (no professionalism needed). Write whatever comes to mind — weird, funny, boring, banal, insightful, dull. Not meant to be re-read. It is meant to be enjoyed not seen as a chore. Watch Leighann Chandler as she shares her experience committing to a 30-day Morning pages challenge.</p>
+
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/MXXs9JC_ItQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+
+<p>This is an experiment I have challenged myself to give a try everyday for the next 1 month and I believe that it would impact on my mood, focus, and overall productivity. What have I got to lose? Nothing. As I continue with this, it would strengthen me to start writing here and on my how-to blog.</p>]]></content><author><name>ndcharles</name></author><category term="Tech" /><category term="Growth" /><category term="featured" /><category term="morning_pages" /><category term="alx_nigeria" /><category term="alx" /><summary type="html"><![CDATA[I used to write but then I stopped. What even caused it I don’t know. Going through ALX Foundations I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/morning_pages.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/morning_pages.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[<p>I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.</p>
 
 <p>Haven used Appsheet before, I decide to just continue with the platform to reduce the learning curve and also allow me create time for other event logistics.</p>
 
@@ -65,9 +279,9 @@ I went into deep research to understand what went wrong with my implementation. 
 <h2 id="in-the-beginning">In the Beginning</h2>
 <p>Coming into PAXO Health &amp; Beauty as a data analyst, the bulk of my job during my first few weeks involved doing growth research and tools needed for web analytics on the new platform. And then, I had to be the one testing new features on the platform we were building.</p>
 
-<p>As a data analyst, I also needed to add the necessary components to ensure data is colllected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer’s journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don’t need anymore.</p>
+<p>As a data analyst, I also needed to add the necessary components to ensure data is collected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer’s journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don’t need anymore.</p>
 
-<p>I delved deeper into web analytics and then <a href="/cxl-product-analytics-how-data-build-products-customers-need">product analytics</a>. You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.</p>
+<p>I delved deeper into web analytics and then <a href="../cxl-product-analytics-how-data-build-products-customers-need">product analytics</a>. You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.</p>
 
 <h2 id="the-present">The Present</h2>
 <p>Now the new site is live and I have settled in as the data analyst and the product manager.</p>
@@ -84,7 +298,7 @@ I went into deep research to understand what went wrong with my implementation. 
   <li>Datawrapper</li>
 </ul>
 
-<p>On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Sendy/AmazonSES as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.</p>
+<p>On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Zoho emails (still taking a look at Sendy/AmazonSES) as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.</p>
 
 <h2 id="managing-products">Managing Products</h2>
 <p>My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.</p>
@@ -251,10 +465,7 @@ Ok. I should probably rephrase that question to the way <a href="https://twitter
 
 <hr />
 
-<p>To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users.</p>
-
-<p><img src="https://help.mixpanel.com/hc/article_attachments/360036938031/Implementation_Spec_Part2.png" alt="sample_tracking_plan" />
-<em>A sample tracking plan from Mixpanel (for full image, open in new tab)</em></p>
+<p>To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users. Here is a <a href="https://docs.google.com/spreadsheets/d/1Kyys37m_GEL79_1BKKEnU5KxK91NF04kY-L_bFfcfqE/edit?gid=1641519238#gid=1641519238">sample tracking plan for e-commerce</a> business.</p>
 
 <p>For a comprehensive guide on creating a tracking plan, with templates you can use as inspiration, <a href="https://help.mixpanel.com/hc/en-us/articles/115004519886-Do-you-have-industry-specific-tracking-plans-I-can-use-">read this article</a>.</p>
 

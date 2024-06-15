@@ -28,3 +28,13 @@ From the classroom to tech. Grace found me and then here...
 - Digital marketing course on Tech4Dev 
 - Data Engineering basic courses
 
+
+# Practising Dashboards Design in Tableau
+- https://pressbooks.com/open-education/reports-and-dashboards-to-inspire-open-education-advocates/ replicate all these dashboards 
+- 
+
+Read thin on web writing and unstructional materials.
+- https://ecampusontario.pressbooks.pub/telferonlineteaching/
+- https://pressbooks.gvsu.edu/webwritingstyleguide/
+- https://pressbooks.pub/everydayid/
+

@@ -16,7 +16,7 @@ Coming into PAXO Health & Beauty as a data analyst, the bulk of my job during my
 
 As a data analyst, I also needed to add the necessary components to ensure data is collected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer's journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don't need anymore.
 
-I delved deeper into web analytics and then [product analytics]({{site.baseurl}}/cxl-product-analytics-how-data-build-products-customers-need). You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.
+I delved deeper into web analytics and then [product analytics](../cxl-product-analytics-how-data-build-products-customers-need). You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.
 
 ## The Present
 Now the new site is live and I have settled in as the data analyst and the product manager.

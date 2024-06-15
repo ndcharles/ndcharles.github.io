@@ -71,10 +71,7 @@ Data scope tells us how data is put together.
 
 ---
 
-To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users. 
-
-![sample_tracking_plan](https://help.mixpanel.com/hc/article_attachments/360036938031/Implementation_Spec_Part2.png)
-*A sample tracking plan from Mixpanel (for full image, open in new tab)*
+To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users. Here is a [sample tracking plan for e-commerce](https://docs.google.com/spreadsheets/d/1Kyys37m_GEL79_1BKKEnU5KxK91NF04kY-L_bFfcfqE/edit?gid=1641519238#gid=1641519238) business.
 
 For a comprehensive guide on creating a tracking plan, with templates you can use as inspiration, [read this article](https://help.mixpanel.com/hc/en-us/articles/115004519886-Do-you-have-industry-specific-tracking-plans-I-can-use-).
 

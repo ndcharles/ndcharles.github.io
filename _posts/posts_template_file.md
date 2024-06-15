@@ -13,7 +13,13 @@ last_modified: 2022-06-07
 tags: [featured, sticky, etc]
 ---
 
+Add searchable data tables to Jekyll or bootstrap using jQuery: https://idratherbewriting.com/documentation-theme-jekyll/mydoc_tables.html
+
+code samples: https://idratherbewriting.com/documentation-theme-jekyll/mydoc_faq_layout.html 
+
 Creating internal links: [link_text]({{site.baseurl}}/post title (check _sites folder name))
+
+Creating internal links: [Final example](../morning-pages) {where the last part is the folder name in _site}
 
 Embed gifs: ![Attendance app](/assets/images/alx_appsheet.gif) views default gif or image
 
