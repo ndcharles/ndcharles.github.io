@@ -4,7 +4,7 @@ title:  "Advanced Prompt Engineering"
 author: ndcharles
 categories: [ Data, Tech]
 image: assets/images/advanced_prompt_engineering.webp
-Last_modified: 
+date_modified: 
 tags: [prompt_engineering, reference, chatGPT, copilot]
 ---
 Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.

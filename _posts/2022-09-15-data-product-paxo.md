@@ -4,7 +4,7 @@ title:  "Data & Product at PAXO Health & Beauty"
 author: ndcharles
 categories: [ Product, Tech, Data ]
 image: assets/images/product-management-paxo.webp
-last_modified: 2022-11-20
+date_modified: 2022-11-20
 tags: [featured]
 ---
 March 2020 was when I resigned from my teaching position at [Dannis](https://danniseducation.com.ng) to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with [Stutern](https://stutern.com), an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.

@@ -4,7 +4,7 @@ title:  "Anscombe's Quartet and the Dinosaurus "
 author: ndcharles
 categories: [ Data]
 image: assets/images/anscombe_dinosaurus.webp)
-Last_modified: 
+date_modified: 
 tags: [anscombe, dinosaurus, visualization, summary_statistics]
 ---
 Before you type df.describe() on that dataset and rush to tell us what you find, have you heard of Anscombe's Quartet? Probably not.

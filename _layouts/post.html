@@ -22,7 +22,7 @@ comments: true
                         <img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.display_name}}" width="50">
 						{% endif %}
 						<small class="ml-3"> {{ author.display_name }} <span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
-                            <span class="text-muted d-block mt-1">{% if page.last_modified %} Last updated: {{ page.last_modified | date: '%b %d, %Y' }}
+                            <span class="text-muted d-block mt-1">{% if page.date_modified %} Last updated: {{ page.date_modified | date: '%b %d, %Y' }}
 							{% else %} Published: {{ page.date | date: '%b %d, %Y' }} {% endif %}</span>
 						</small>
 					</div>

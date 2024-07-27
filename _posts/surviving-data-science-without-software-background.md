@@ -4,7 +4,7 @@ title:  "How I am surviving data science without software background "
 author: ndcharles
 categories: [ Data, Tech]
 image: assets/images/data_science_survivor.webp)
-Last_modified: 
+date_modified: 
 tags: [sticky]
 ---
 When I started data science with my pals, the popular advice is usually, "you don't need to know how to code to make it". Well, it was enough push to get us started. I am now a data scientist.
