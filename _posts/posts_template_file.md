@@ -20,6 +20,7 @@ code samples: https://idratherbewriting.com/documentation-theme-jekyll/mydoc_faq
 Creating internal links: [link_text]({{site.baseurl}}/post title (check _sites folder name))
 
 Creating internal links: [Final example](../morning-pages) {where the last part is the folder name in _site}
+https://mademistakes.com/mastering-jekyll/how-to-link/
 
 Embed gifs: ![Attendance app](/assets/images/alx_appsheet.gif) views default gif or image
 

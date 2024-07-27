@@ -3,6 +3,7 @@ name: 'MLIT'
 description: 'Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
+url: 'https://ndcharles.github.io'
 baseurl: ''
 google_analytics: 'G-EBC8NBRK90'
 disqus: 'mlit'
@@ -37,8 +38,6 @@ twitter:
     
 # Defaults
 defaults:
-
-  # all posts
   - scope:
       path: "_posts"
     values:
