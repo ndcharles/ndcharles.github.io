@@ -250,3 +250,16 @@ Now i am tired of that and needed a simpler way to do it since i do it once in a
 - 
 
 
+# static sites hosting 
+- jekyll on github
+- netlify
+- vercel
+- digital ocean app platform 
+- cloudflare pages 
+- firebase firecast
+- 
+
+
+# commenting system for static sites 
+- https://haacked.com/archive/2018/06/24/comments-for-jekyll-blogs/
+- https://statichunt.com/jamstack-feedback

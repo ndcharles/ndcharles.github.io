@@ -149,12 +149,21 @@ e. Sentiment Analysis
 [^1]: [What is Prompt Engineering? A Detailed Guide For 2024](https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication)
 [^2]: [Advanced Prompt Engineering Techniques](https://www.linkedin.com/learning/advanced-prompt-engineering-techniques/prompting-to-make-ai-systems-more-useful)
 
+
+## Want to learn AI Skills
+- https://trigaten.github.io/Prompt_Survey_Site/
+- https://www.deeplearning.ai/courses/
+- https://microsoft.github.io/AI-For-Beginners/
+- https://learnprompting.org/docs/basics/introduction
+
+
 ## Further Reading
 - [Prompt Engineering Guide from OpenAI](https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results)
 - [Prompt Engineering Guide from Learn Prompting](https://learnprompting.org/docs/intro)
 - [Guides, papers, lecture, notebooks and resources for prompt engineering](https://github.com/dair-ai/Prompt-Engineering-Guide)
 - [Prompt Engineering: From Words to Art and Copy](https://www.saxifrage.xyz/post/prompt-engineering)
 - [41 Prompt Engineering Courses](https://app.vexpower.com/paths/prompt-engineer/)
+- [How to Get a Prompt Engineer Job](https://www.growthmentor.com/blog/how-to-get-prompt-engineer-job/)
 
 ### Footnotes
 ---
