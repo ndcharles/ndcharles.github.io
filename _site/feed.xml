@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-27T12:48:35+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-27T13:01:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.
 
 By providing clear instructions (prompts), users can leverage generative AI to perform tasks efficiently. It can write essays, solve math problems, generate marketing content, analyze data, question-answering, sentiment analysis, language translation, coding and more.
 
@@ -157,55 +157,47 @@ e. Sentiment Analysis
 - [How to Get a Prompt Engineer Job](https://www.growthmentor.com/blog/how-to-get-prompt-engineer-job/)
 
 ### Footnotes
----]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="prompt_engineering" /><category term="reference" /><category term="chatGPT" /><category term="copilot" /><summary type="html"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Don’t Stop | Don’t Think | Just Write!</title><link href="http://localhost:4000/morning-pages/" rel="alternate" type="text/html" title="Don’t Stop | Don’t Think | Just Write!" /><published>2023-05-30T00:00:00+01:00</published><updated>2023-05-30T00:00:00+01:00</updated><id>http://localhost:4000/morning-pages</id><content type="html" xml:base="http://localhost:4000/morning-pages/"><![CDATA[<p>I used to write but then I stopped. What even caused it I don’t know. Going through <a href="https://tech.alxafrica.com/nigeria">ALX Foundations</a> I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.</p>
+---]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="prompt_engineering" /><category term="reference" /><category term="chatGPT" /><category term="copilot" /><summary type="html"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Don’t Stop | Don’t Think | Just Write!</title><link href="http://localhost:4000/morning-pages/" rel="alternate" type="text/html" title="Don’t Stop | Don’t Think | Just Write!" /><published>2023-05-30T00:00:00+01:00</published><updated>2023-05-30T00:00:00+01:00</updated><id>http://localhost:4000/morning-pages</id><content type="html" xml:base="http://localhost:4000/morning-pages/"><![CDATA[I used to write but then I stopped. What even caused it I don't know. Going through [ALX Foundations](https://tech.alxafrica.com/nigeria) I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.
 
-<h2 id="what-are-morning-pages">What are Morning Pages?</h2>
-<p>Morning Pages were made famous more than 25 years ago by Julia Cameron in her best-selling book <a href="https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252">‘The Artist’s Way’</a>. Morning pages are streams of conscious writing done first thing in the morning, in three pages. The practice is not just for artists! It’s a “life hack” used by many successful business people, entrepreneurs, people who create social impact, and of course tech talent. Doing morning pages every day has been shown to increase creativity, positive mood, and big-picture thinking for all kinds of people.</p>
+## What are Morning Pages?
+Morning Pages were made famous more than 25 years ago by Julia Cameron in her best-selling book ['The Artist's Way'](https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252). Morning pages are streams of conscious writing done first thing in the morning, in three pages. The practice is not just for artists! It's a "life hack" used by many successful business people, entrepreneurs, people who create social impact, and of course tech talent. Doing morning pages every day has been shown to increase creativity, positive mood, and big-picture thinking for all kinds of people. 
 
-<blockquote>
-  <p>Writing Morning Pages provides you the opportunity to clear out space, so that your mind is more open to receive inspiration. It’s like a brain dump.</p>
-</blockquote>
+> Writing Morning Pages provides you the opportunity to clear out space, so that your mind is more open to receive inspiration. It's like a brain dump.
 
-<p>A lot of professionals have testified to the benefits of morning pages. From entrepreneurs like <a href="https://tim.blog/2015/01/15/morning-pages/">Tim Ferris</a>, <a href="https://www.chriswinfield.com/morning-pages/">Chris Winfield</a>, and <a href="https://bettyzzzz.wordpress.com/2011/04/25/">Nicky Hajal</a> to productivity authors like <a href="https://www.theguardian.com/lifeandstyle/2014/oct/03/morning-pages-change-your-life-oliver-burkeman">Oliver Burkeman</a>.</p>
+A lot of professionals have testified to the benefits of morning pages. From entrepreneurs like [Tim Ferris](https://tim.blog/2015/01/15/morning-pages/), [Chris Winfield](https://www.chriswinfield.com/morning-pages/), and [Nicky Hajal](https://bettyzzzz.wordpress.com/2011/04/25/) to productivity authors like [Oliver Burkeman](https://www.theguardian.com/lifeandstyle/2014/oct/03/morning-pages-change-your-life-oliver-burkeman).
 
-<p>When writing a morning page, you are not doing actual writing; you are just jotting down the first thoughts that come into your mind in the morning, no matter how senseless they sound.</p>
+When writing a morning page, you are not doing actual writing; you are just jotting down the first thoughts that come into your mind in the morning, no matter how senseless they sound.
 
-<h2 id="benefits-of-morning-pages">Benefits of morning pages</h2>
-<p>There are several benefits to writing Morning Pages.</p>
-<ul>
-  <li>It helps you gain clarity</li>
-  <li>It helps you declutter your mind</li>
-  <li>It is a space for self-reflection</li>
-  <li>It helps ignite your creative juice</li>
-  <li>It helps you clear off the anxiety of a new day</li>
-  <li>It gives you a space to rant</li>
-</ul>
+## Benefits of morning pages
+There are several benefits to writing Morning Pages.
+- It helps you gain clarity
+- It helps you declutter your mind
+- It is a space for self-reflection
+- It helps ignite your creative juice 
+- It helps you clear off the anxiety of a new day
+- It gives you a space to rant 
 
-<h2 id="how-to-write-morning-pages">How to write morning pages</h2>
-<p>The first time might feel awkward or aimless, but stick with it. The more you practice morning pages, the easier they become. Whereas there is no right and wrong way to Morning Pages, some rules can help you get started.</p>
-<ul>
-  <li>Doing them first thing when you wake up is the best. But any time of day is ok.</li>
-  <li>Get a pen and paper (any book not just a dedicated journal) and write! The benefits come from doing this by hand - no typing!</li>
-  <li>Write whatever pops into your head! (Really, whatever’s there. Anything! Just write it!)</li>
-  <li>Don’t stop writing. Don’t re-read what you’ve written. Don’t go back and edit.</li>
-  <li>If you don’t know what to write, then write, “I don’t know what to write. Maybe it’s because…” and you’re off again. Just keep the pen moving!</li>
-  <li>Write as much as you can (at least 3 pages)</li>
-  <li>When you’re done, put them in an envelope (or burn them)! Don’t re-read them. Don’t share them with anyone.</li>
-  <li>Remember, the point of Morning Pages is the process and not the product.</li>
-</ul>
+## How to write morning pages
+The first time might feel awkward or aimless, but stick with it. The more you practice morning pages, the easier they become. Whereas there is no right and wrong way to Morning Pages, some rules can help you get started.
+- Doing them first thing when you wake up is the best. But any time of day is ok.
+- Get a pen and paper (any book not just a dedicated journal) and write! The benefits come from doing this by hand - no typing!
+- Write whatever pops into your head! (Really, whatever's there. Anything! Just write it!)
+- Don’t stop writing. Don’t re-read what you’ve written. Don’t go back and edit.
+- If you don’t know what to write, then write, “I don’t know what to write. Maybe it’s because…” and you’re off again. Just keep the pen moving!
+- Write as much as you can (at least 3 pages)
+- When you're done, put them in an envelope (or burn them)! Don’t re-read them. Don’t share them with anyone.
+- Remember, the point of Morning Pages is the process and not the product. 
 
-<blockquote>
-  <p>The most important thing is that you write something by hand and that you do it every day.</p>
-</blockquote>
+> The most important thing is that you write something by hand and that you do it every day.
 
-<p>One thing that is really important to remember with morning pages is that what you write matters a lot less than the fact that you write something. So make sure you give yourself permission to write absolutely anything. Don’t overthink it. Just write. Think of it as “clearing out the pipes” so that you have more space to do focused and creative work.</p>
+One thing that is really important to remember with morning pages is that what you write matters a lot less than the fact that you write something. So make sure you give yourself permission to write absolutely anything. Don't overthink it. Just write. Think of it as "clearing out the pipes" so that you have more space to do focused and creative work.
 
-<h2 id="the-30-day-morning-page-challenge">The 30-day Morning Page challenge</h2>
-<p>Morning pages are unique. Meant to be filled with meaningful yet pointless rants (no professionalism needed). Write whatever comes to mind — weird, funny, boring, banal, insightful, dull. Not meant to be re-read. It is meant to be enjoyed not seen as a chore. Watch Leighann Chandler as she shares her experience committing to a 30-day Morning pages challenge.</p>
+## The 30-day Morning Page challenge 
+Morning pages are unique. Meant to be filled with meaningful yet pointless rants (no professionalism needed). Write whatever comes to mind — weird, funny, boring, banal, insightful, dull. Not meant to be re-read. It is meant to be enjoyed not seen as a chore. Watch Leighann Chandler as she shares her experience committing to a 30-day Morning pages challenge.
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/MXXs9JC_ItQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/MXXs9JC_ItQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
 
-<p>This is an experiment I have challenged myself to give a try everyday for the next 1 month and I believe that it would impact on my mood, focus, and overall productivity. What have I got to lose? Nothing. As I continue with this, it would strengthen me to start writing here and on my how-to blog.</p>]]></content><author><name>ndcharles</name></author><category term="Tech" /><category term="Growth" /><category term="featured" /><category term="morning_pages" /><category term="alx_nigeria" /><category term="alx" /><summary type="html"><![CDATA[I used to write but then I stopped. What even caused it I don’t know. Going through ALX Foundations I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/morning_pages.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/morning_pages.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn't register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.
+This is an experiment I have challenged myself to give a try everyday for the next 1 month and I believe that it would impact on my mood, focus, and overall productivity. What have I got to lose? Nothing. As I continue with this, it would strengthen me to start writing here and on my how-to blog.]]></content><author><name>ndcharles</name></author><category term="Tech" /><category term="Growth" /><category term="featured" /><category term="morning_pages" /><category term="alx_nigeria" /><category term="alx" /><summary type="html"><![CDATA[I used to write but then I stopped. What even caused it I don’t know. Going through ALX Foundations I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/morning_pages.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/morning_pages.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn't register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.
 
 Haven used Appsheet before, I decide to just continue with the platform to reduce the learning curve and also allow me create time for other event logistics.
 

@@ -36,7 +36,7 @@ On here, I use WordPress a lot to either whip up quick landing pages or just to 
 ## Managing Products
 My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.
 
-Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I ditched them for Google sheet since all parties involved are very much familiar with it. 
+Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I had to go for Google sheet since all parties involved are very much familiar with it. 
 
 ## The Present Present 😂
 I started this post few weeks to my departure and I completed it after I had already left. What I learnt working at PAXO was that, your job role is often a determinant of what next you do with your life. It can be a disastrous thing and it can be the best thing that ever happened to you in terms of helping you re-define your career path.

@@ -22,6 +22,8 @@ Creating internal links: [link_text]({{site.baseurl}}/post title (check _sites f
 Creating internal links: [Final example](../morning-pages) {where the last part is the folder name in _site}
 https://mademistakes.com/mastering-jekyll/how-to-link/
 
+https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
 Embed gifs: ![Attendance app](/assets/images/alx_appsheet.gif) views default gif or image
 
 <p align="center"><image src="/assets/images/name_it.gif" alt="alt_tag" align="center" height="800" width="600" /></p> aligns it center, add height, add width.
