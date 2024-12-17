@@ -1,64 +1,181 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-07-27T13:01:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-17T00:41:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Data et Operations at ALX</title><link href="http://localhost:4000/data-operation-alx/" rel="alternate" type="text/html" title="Data et Operations at ALX" /><published>2024-12-17T00:00:00+01:00</published><updated>2024-12-17T00:00:00+01:00</updated><id>http://localhost:4000/data-operation-alx</id><content type="html" xml:base="http://localhost:4000/data-operation-alx/"><![CDATA[<p>I am never a picture person, it never comes out great, but for the sake of this piece, I took different pictures at different angles to know which would come out better.</p>
 
-By providing clear instructions (prompts), users can leverage generative AI to perform tasks efficiently. It can write essays, solve math problems, generate marketing content, analyze data, question-answering, sentiment analysis, language translation, coding and more.
+<p>[picture collage not found 😎]</p>
 
-> No matter what happens with AI, being able to have good ideas and communicate them effectively will continue to be important. -- [Sam Altman](https://www.saxifrage.xyz/post/prompt-engineering)
+<p>We must have met somewhere; ALX Fellowship townhalls (CTH/FTH), activation events, marketing outreach, application clinics, karibu or at our Lagos hub.</p>
 
-Prompt engineering is the process of crafting and refining inputs (prompts) to guide AI models in generating specific, high-quality outputs. It includes writing, optimizing, and iterating prompts to improve accuracy and effectiveness. This process helps AI models understand and perform tasks based on the provided instructions. Prompt engineering is also known as prompt design and is essential for enhancing AI performance on particular tasks.
+<p>Nice meeting you!</p>
 
-> Prompt engineering is the practice of creating the perfect questions or instructions to get exactly what you need from an AI solution. They help us communicate with these machines to perform different tasks such as writing, analyzing data, text generation, question-answering, sentiment analysis, language translation and coding.
+<p>This is an unfolding story but I will try my best to get it started and share as much as would make it a meaningful read for you.</p>
 
-## Prompt engineering is iterative
-Getting the best output from an AI system requires an iterative process.
-- Try something, be clear and specific
-- Analyze whether the result is desired or not
-- Clarify instructions, give the system time to think
-- Refine the idea and the prompt with few shots of examples
-- Rinse and repeat
+<h2 id="data-analysis-in-google-sheet">Data analysis in Google sheet</h2>
+<p>My first few days at ALX, I was stuck between doing analysis in Excel versus doint it in Google sheet. By the end of month 1, I had to choose Google sheets. This is because most task requires sharing the final output with someone or having to copy data from an exisiting sheet.</p>
 
-## Basic techniques 
-These are tips that the average user already uses to make their prompts better.[^1]
+<p>A few formulas I can clearly say I used [and still use] during these days:</p>
+<ul>
+  <li>INDEX/MATCH</li>
+  <li>VLOOKUP (This quickly became a favourite)</li>
+  <li>IFERROR</li>
+  <li>REGEX (my favourite suite in Google sheets)</li>
+  <li>ARRAYFORMULA</li>
+  <li>IMPORTRANGE</li>
+  <li>PIVOTS</li>
+  <li>QUERY</li>
+  <li>And more.</li>
+</ul>
 
--- **Role-playing.** By making the model act as a specific entity, like a historian or a scientist, you can get tailored responses. For example, "As a nutritionist, evaluate the following diet plan" might yield a response grounded in nutritional science.
+<p>Some formulas are considered basic that’s why you won’t be seeing COUNTIFS and the likes.</p>
 
--- **Iterative refinement.** Start with a broad prompt and gradually refine it based on the model's responses. This iterative process helps in honing the prompt to perfection.
+<h2 id="google-workspace-tools">Google workspace tools</h2>
+<p>Given that everything has to be done in a manner that it can be easily shared plus we use Google workspace tools, I had to explore what tools are available to enhance these workspace tools. Let me introduce you to a few tools that would come handy.</p>
 
--- **Feedback loops.** Use the model's outputs to inform and adjust subsequent prompts. This dynamic interaction ensures that the model's responses align more closely with user expectations over time.
+<ul>
+  <li>Bulk emails: My first love was <a href="https://yamm.com/">YAMM</a>. It is great at what it does. 1500 emails daily on Google workspace premium and 50 daily emails free forever (they changed this to 30 in their 2024 update). Another tool is <a href="https://drmerge.com/">Dr. Merge</a>. This is a life saver if you don’t have the money to subscribe to YAMM. The only catch is that, you won’t be able to create email templates in Gmail. You will have to create them within Dr. Merge. Another trade-off with Dr. Merge is that you can’t choose a custom sender (if your default email is abc@gmail.com, you can’t change that). But then, you lose nothing since the product is entirely FREE. Another product worthy of exploring is <a href="https://www.mergo.app/">MailMergo</a>. It happened to be from the creator of YAMM (he left YAMM and started <a href="https://www.scriptit.fr/">Scripit</a>).</li>
+</ul>
 
-<code class="language-plaintext highlighter-rouge">== Article in progress ==</code>
+<blockquote>
+  <p>We have professional email tools but flexing my Google Workspace skills helps me automate some things better.</p>
+</blockquote>
 
-## Advanced prompt engineering
-Many advanced prompting techniques have been designed to improve performance on complex tasks. [^2]
-- Reference prompting
-- Zero-shot 
-- Few-shot 
-- Chain-of-thought
-- Generated knowledge
-- Train of thought prompting
-- Directional stimulus prompting
-- Chain of density prompting
+<ul>
+  <li>
+    <p>Repositories and project sites: Google sites is an amazing tool for quick project sites. The customisations can be limiting but with a custom theme, <a href="https://awesome-table.com/apps">Awesome Table addon</a>, embeds, a good eye for design and other tweaks I am not aware of, you can get something amazing out of it. Plus it has the option for custom domains (remember to use a [custom DNS server]).
+See an <a href="aglaw.com.ng">example site</a> I built for a client after discovering Google sites. And a quick yet amazing tutorial on <a href="https://www.steegle.com/google-sites/how-to/assign-custom-url-domain-personal">setting up custom domains on Google sites</a>.</p>
+  </li>
+  <li>
+    <p>Other site tools: Notion is really great. A few of our projects are hosted on Notion as a site published using <a href="https://super.so">Super.so</a>. This was our early days, now I push these site directly via notion but cloak them behind our custom URL shortener (alx.ng).</p>
+  </li>
+  <li>
+    <p>Google sheets tools: I am not a power user of sheets but I have had a fair share of the tools for most of my analysis. A few of my go-to add-ons are <a href="https://www.ablebits.com/google-sheets-add-ons/power-tools/index.php">Power tool (split and sheet)</a>, app script, and <a href="https://workspace.google.com/marketplace/app/sheet_automation_automate_google_sheets/250108887537">Sheet Automation</a>. Google sheets have received massive updates in the past months that some of these features are already within it core.</p>
+  </li>
+  <li>
+    <p>Appsheet: Even though <a href="../first-appsheet-app-failed">my first appsheet app failed</a> on first usage, I was able to learn a lot about appsheets and remedy the situation then went ahead to build other apps (although for different clients and purposes). Glide was another platform I used for creating our event apps but the experience and customisation wasn’t as great as Appsheet’s (apologies to all glide lovers). I ended up building a lot more things on Sheets.</p>
+  </li>
+</ul>
 
---1. **Reference prompting** (also contextual prompting or reference text prompting): This involves providing context or reference materials to your query which then guides the model's response. This is used when you want specific responses and have access to supporting materials for context. This context can be a passage, a set of instructions or any other relevant information.<br>
-Examples of Reference prompting 
+<p><strong>Note:</strong> Dr. Merge is no longer available on Google Workspace. I am yet to know why since their homepage is still live.</p>
 
-a. Text summarization
+<h2 id="events-coordination">Events coordination</h2>
+<p>It’s one thing to plan an event but another thing to coordinate your attendees to ensure they have a seamless check-in experience.</p>
 
-```
-Prompt: Summarize the following text:
+<ul>
+  <li>
+    <p><a href="https://tickettailor.com">Ticket Tailor</a>: This is really great for event registration and check-in. They have a generous free plan of 5,000 event registrations. The platform is customisable to a very large extent, registration pages, attendee questions, ticket types, ticket grouping, admin and check-in app user accounts, custom registeration confirmation email and conditional emails to recipients.</p>
+  </li>
+  <li>
+    <p>Luma: This is a great Ticket Tailor alternative but doesn’t have enough customisation options especially for emails. It has a blog option and that can mean a lot to some people.</p>
+  </li>
+  <li>
+    <p>Google sheets and qr scanner: Yes, Google sheets again. For a very large event where our data is already on sheets or it has been collected before hand but then we need to check-in our attendees using QR. This <a href="https://qrexplore.com/checkin/">QR tool</a> or an AppSheet app is good enough for you. I created a [quick qr code check-in tutorial here] on how to set this up. You’re welcome.</p>
+  </li>
+</ul>
+
+<h2 id="more-tools">More tools</h2>
+<ul>
+  <li>Github pages was a rescue for a lot of settings</li>
+  <li>Tally.so, Fillout, and Formbricks were perfect Google forms alternatives</li>
+  <li>Staff training and onboarding: classroomio.com and Google Drive</li>
+</ul>
+
+<h2 id="visualisations">Visualisations</h2>
+<p>What use is analysis if no visualisations are attached.</p>
+<ul>
+  <li>[Google sheets[(sheets.google.com)</li>
+  <li><a href="https://datawrapper.de">Datawrapper</a></li>
+  <li><a href="https://flourish.studio/">Flourish</a></li>
+  <li><a href="https://rawgraphs.io">RAWgraphs</a></li>
+  <li><a href="https://lookerstudio.google.com/">Looker stuido</a></li>
+  <li><a href="https://public.tableau.com/app">Tableau</a> (sorry to Power BI lovers, it was a tough decision)</li>
+  <li>[Getting map data for custom graphing] (https://hackernoon.com/how-to-convert-and-prepare-topojson-files-for-interactive-mapping-with-d3-499cf0ced5f)</li>
+  <li>Get the data here: https://gadm.org/download_country.html (I used the GeoJSON file instead of shapefile. Selected only Lagos data and upload the custom map to datawrapper.)</li>
+</ul>
+
+<h2 id="people-relations">People relations</h2>
+<p>At first, part of working here involved calling learners, alumni and others for one thing or another. Borrowing some learnings from ‘Better’ by Atul Gawande (a book about performance in medicine), there are several ways to make a positive difference especially when your work involves interacting with people.</p>
+
+<ul>
+  <li>Be personable, learn to hold conversations, irrespective of the call scripts offered to you. Learn about the people you speak to. Listen and make note of what you learn. This is a big loophole I find in almost every customer relationship calls I have received. You’re human not a robot, use that to your advantage.</li>
+  <li>Don’t complain — It doesn’t solve anything but gets you down. Instead, in your conversation with others discuss ideas you read about, interesting problems you came across.</li>
+  <li>Be observant - See everything as a learning phase and not problems. This also is one of the CHAIR values at ALX (Adventure).</li>
+  <li>Write something — Writing helps you step back and think through a problem. With the degree of thoughtfulness that you put into writing you eventually become a better person.</li>
+  <li>Explore change</li>
+</ul>
+
+<h2 id="building-things">Building things</h2>
+<ul>
+  <li>Job Board Using Jekyll</li>
+  <li>Job board using WordPress
+I never pushed any of the job boards to production. They were built as proof of concepts and then I leave the final build to the product team. I didn’t want to increase my personal workload.</li>
+  <li>I have a data science background and as such have pushed a few ML apps online. <a href="alx-connect-w9h3.onrender.com">Here is the API to one we shipped just before this post</a>.</li>
+</ul>
+
+<p>There is more to me being here. <strong>ALX Connect</strong>, our <strong>Big query project</strong>, <strong>managing the contact centre</strong>, and hosting the experience (which gave birth to my next project)and ALX Connect.</p>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="featured" /><category term="alx" /><category term="the_room" /><category term="data_operations" /><category term="alx_nigeria" /><summary type="html"><![CDATA[I am never a picture person, it never comes out great, but for the sake of this piece, I took different pictures at different angles to know which would come out better.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/alx_theroom.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/alx_theroom.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[<p>Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.</p>
+
+<p>By providing clear instructions (prompts), users can leverage generative AI to perform tasks efficiently. It can write essays, solve math problems, generate marketing content, analyze data, question-answering, sentiment analysis, language translation, coding and more.</p>
+
+<blockquote>
+  <p>No matter what happens with AI, being able to have good ideas and communicate them effectively will continue to be important. – <a href="https://www.saxifrage.xyz/post/prompt-engineering">Sam Altman</a></p>
+</blockquote>
+
+<p>Prompt engineering is the process of crafting and refining inputs (prompts) to guide AI models in generating specific, high-quality outputs. It includes writing, optimizing, and iterating prompts to improve accuracy and effectiveness. This process helps AI models understand and perform tasks based on the provided instructions. Prompt engineering is also known as prompt design and is essential for enhancing AI performance on particular tasks.</p>
+
+<blockquote>
+  <p>Prompt engineering is the practice of creating the perfect questions or instructions to get exactly what you need from an AI solution. They help us communicate with these machines to perform different tasks such as writing, analyzing data, text generation, question-answering, sentiment analysis, language translation and coding.</p>
+</blockquote>
+
+<h2 id="prompt-engineering-is-iterative">Prompt engineering is iterative</h2>
+<p>Getting the best output from an AI system requires an iterative process.</p>
+<ul>
+  <li>Try something, be clear and specific</li>
+  <li>Analyze whether the result is desired or not</li>
+  <li>Clarify instructions, give the system time to think</li>
+  <li>Refine the idea and the prompt with few shots of examples</li>
+  <li>Rinse and repeat</li>
+</ul>
+
+<h2 id="basic-techniques">Basic techniques</h2>
+<p>These are tips that the average user already uses to make their prompts better.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>– <strong>Role-playing.</strong> By making the model act as a specific entity, like a historian or a scientist, you can get tailored responses. For example, “As a nutritionist, evaluate the following diet plan” might yield a response grounded in nutritional science.</p>
+
+<p>– <strong>Iterative refinement.</strong> Start with a broad prompt and gradually refine it based on the model’s responses. This iterative process helps in honing the prompt to perfection.</p>
+
+<p>– <strong>Feedback loops.</strong> Use the model’s outputs to inform and adjust subsequent prompts. This dynamic interaction ensures that the model’s responses align more closely with user expectations over time.</p>
+
+<p><code class="language-plaintext highlighter-rouge">== Article in progress ==</code></p>
+
+<h2 id="advanced-prompt-engineering">Advanced prompt engineering</h2>
+<p>Many advanced prompting techniques have been designed to improve performance on complex tasks. <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+<ul>
+  <li>Reference prompting</li>
+  <li>Zero-shot</li>
+  <li>Few-shot</li>
+  <li>Chain-of-thought</li>
+  <li>Generated knowledge</li>
+  <li>Train of thought prompting</li>
+  <li>Directional stimulus prompting</li>
+  <li>Chain of density prompting</li>
+</ul>
+
+<p>–1. <strong>Reference prompting</strong> (also contextual prompting or reference text prompting): This involves providing context or reference materials to your query which then guides the model’s response. This is used when you want specific responses and have access to supporting materials for context. This context can be a passage, a set of instructions or any other relevant information.<br />
+Examples of Reference prompting</p>
+
+<p>a. Text summarization</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Prompt: Summarize the following text:
 Reference Text: "Quantum computing leverages quantum mechanical phenomena to perform calculations exponentially faster than classical computers. It has the potential to revolutionize fields such as cryptography, materials science, and artificial intelligence. However, current quantum computers are still in the experimental stage and face significant technical challenges."
-```
+</code></pre></div></div>
 
-```
-Response: "Quantum computing uses quantum mechanics to perform fast calculations and has potential applications in cryptography and AI, but it is still experimental and faces technical challenges."
-```
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Response: "Quantum computing uses quantum mechanics to perform fast calculations and has potential applications in cryptography and AI, but it is still experimental and faces technical challenges."
+</code></pre></div></div>
 
---2. **Zero-shot**: Zero-shot involves providing the model with a task it hasn't seen during its training. It tests the model's ability to generalize and produce relevant outputs without relying on prior examples. It’s akin to asking someone to perform a task they’ve never done before without any specific instructions or examples
+<p>–2. <strong>Zero-shot</strong>: Zero-shot involves providing the model with a task it hasn’t seen during its training. It tests the model’s ability to generalize and produce relevant outputs without relying on prior examples. It’s akin to asking someone to perform a task they’ve never done before without any specific instructions or examples</p>
 
---3. **Few-shot/in-context learning:** Shots refer to examples you provide the AI before allowing it to attempt a task. Few-shot learning gives the model a few example outputs to help it learn what is expected for a particular task; voice, tone and keywords. This case is likened to creating a pattern and the AI tries to match the pattern.
+<p>–3. <strong>Few-shot/in-context learning:</strong> Shots refer to examples you provide the AI before allowing it to attempt a task. Few-shot learning gives the model a few example outputs to help it learn what is expected for a particular task; voice, tone and keywords. This case is likened to creating a pattern and the AI tries to match the pattern.</p>
 
-Examples of zero-shot and few-shot learning 
+<p>Examples of zero-shot and few-shot learning</p>
 
-a. Text Classification 
+<p>a. Text Classification</p>
 
 <pre>
 <b>Zero-shot</b>
@@ -73,7 +190,7 @@ a. Text Classification
 - 'A new app is changing the way we manage our daily tasks.'"
 </pre>
 
-b. Translation
+<p>b. Translation</p>
 
 <pre>
 <b>Zero-shot</b>
@@ -86,7 +203,7 @@ b. Translation
 - 'Can you help me with my homework?'"
 </pre>
 
-c. Summarization
+<p>c. Summarization</p>
 
 <pre>
 <b>Zero-shot</b>
@@ -99,7 +216,7 @@ c. Summarization
 - 'A new species of bird has been discovered in the Amazon rainforest.'"
 </pre>
 
-d. Question Answering
+<p>d. Question Answering</p>
 
 <pre>
 <b>Zero-shot</b>
@@ -112,7 +229,7 @@ d. Question Answering
 - 'How long is the Great Wall of China?'"
 </pre>
 
-e. Sentiment Analysis
+<p>e. Sentiment Analysis</p>
 
 <pre>
 <b>Zero-shot</b>
@@ -125,448 +242,491 @@ e. Sentiment Analysis
 - 'The book was quite interesting, though it had a slow start.'"
 </pre>
 
---4. **Chain-of-thought (CoT):** this inves creating a logical sequence on how the response should go. It involves, referencing, few-shots and/or zero+few-shots. Let's take this step-by-step
+<p>–4. <strong>Chain-of-thought (CoT):</strong> this inves creating a logical sequence on how the response should go. It involves, referencing, few-shots and/or zero+few-shots. Let’s take this step-by-step</p>
 
---5. Take a deep breath and work step-by-step. This instruction makes the AI start in a detailed stepwise manner
+<p>–5. Take a deep breath and work step-by-step. This instruction makes the AI start in a detailed stepwise manner</p>
 
---5. **Generated knowledge:** this is where examples are first generated by the AI using few-shots prompting then the response is then used to get further detailed responses.
+<p>–5. <strong>Generated knowledge:</strong> this is where examples are first generated by the AI using few-shots prompting then the response is then used to get further detailed responses.</p>
 
---6. **Train of thought prompting:** This involves getting the AI to generate several responses and eliminates the wrong answer by itself.
+<p>–6. <strong>Train of thought prompting:</strong> This involves getting the AI to generate several responses and eliminates the wrong answer by itself.</p>
 
---7. **Directional stimulus prompting:** This can be straightforward as it uses reference prompting but then provides a hint on what piece of information should be highlighted from the original text. Example, summary of a text input that should include a hint, the location of the xter. This is good for essay questions 
+<p>–7. <strong>Directional stimulus prompting:</strong> This can be straightforward as it uses reference prompting but then provides a hint on what piece of information should be highlighted from the original text. Example, summary of a text input that should include a hint, the location of the xter. This is good for essay questions</p>
 
---8. **Chain of density prompting:** Used to summarise huge texts into a solid summary and then checking that it is correct; all done in one prompt.
+<p>–8. <strong>Chain of density prompting:</strong> Used to summarise huge texts into a solid summary and then checking that it is correct; all done in one prompt.</p>
 
-[^1]: [What is Prompt Engineering? A Detailed Guide For 2024](https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication)
-[^2]: [Advanced Prompt Engineering Techniques](https://www.linkedin.com/learning/advanced-prompt-engineering-techniques/prompting-to-make-ai-systems-more-useful)
+<h2 id="want-to-learn-ai-skills">Want to learn AI Skills</h2>
+<ul>
+  <li>https://trigaten.github.io/Prompt_Survey_Site/</li>
+  <li>https://www.deeplearning.ai/courses/</li>
+  <li>https://microsoft.github.io/AI-For-Beginners/</li>
+  <li>https://learnprompting.org/docs/basics/introduction</li>
+</ul>
 
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+  <li><a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results">Prompt Engineering Guide from OpenAI</a></li>
+  <li><a href="https://learnprompting.org/docs/intro">Prompt Engineering Guide from Learn Prompting</a></li>
+  <li><a href="https://github.com/dair-ai/Prompt-Engineering-Guide">Guides, papers, lecture, notebooks and resources for prompt engineering</a></li>
+  <li><a href="https://www.saxifrage.xyz/post/prompt-engineering">Prompt Engineering: From Words to Art and Copy</a></li>
+  <li><a href="https://app.vexpower.com/paths/prompt-engineer/">41 Prompt Engineering Courses</a></li>
+  <li><a href="https://www.growthmentor.com/blog/how-to-get-prompt-engineer-job/">How to Get a Prompt Engineer Job</a></li>
+</ul>
 
-## Want to learn AI Skills
-- https://trigaten.github.io/Prompt_Survey_Site/
-- https://www.deeplearning.ai/courses/
-- https://microsoft.github.io/AI-For-Beginners/
-- https://learnprompting.org/docs/basics/introduction
+<h3 id="footnotes">Footnotes</h3>
+<hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication">What is Prompt Engineering? A Detailed Guide For 2024</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://www.linkedin.com/learning/advanced-prompt-engineering-techniques/prompting-to-make-ai-systems-more-useful">Advanced Prompt Engineering Techniques</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="prompt_engineering" /><category term="reference" /><category term="chatGPT" /><category term="copilot" /><summary type="html"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Don’t Stop | Don’t Think | Just Write!</title><link href="http://localhost:4000/morning-pages/" rel="alternate" type="text/html" title="Don’t Stop | Don’t Think | Just Write!" /><published>2023-05-30T00:00:00+01:00</published><updated>2023-05-30T00:00:00+01:00</updated><id>http://localhost:4000/morning-pages</id><content type="html" xml:base="http://localhost:4000/morning-pages/"><![CDATA[<p>I used to write but then I stopped. What even caused it I don’t know. Going through <a href="https://tech.alxafrica.com/nigeria">ALX Foundations</a> I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.</p>
 
+<h2 id="what-are-morning-pages">What are Morning Pages?</h2>
+<p>Morning Pages were made famous more than 25 years ago by Julia Cameron in her best-selling book <a href="https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252">‘The Artist’s Way’</a>. Morning pages are streams of conscious writing done first thing in the morning, in three pages. The practice is not just for artists! It’s a “life hack” used by many successful business people, entrepreneurs, people who create social impact, and of course tech talent. Doing morning pages every day has been shown to increase creativity, positive mood, and big-picture thinking for all kinds of people.</p>
 
-## Further Reading
-- [Prompt Engineering Guide from OpenAI](https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results)
-- [Prompt Engineering Guide from Learn Prompting](https://learnprompting.org/docs/intro)
-- [Guides, papers, lecture, notebooks and resources for prompt engineering](https://github.com/dair-ai/Prompt-Engineering-Guide)
-- [Prompt Engineering: From Words to Art and Copy](https://www.saxifrage.xyz/post/prompt-engineering)
-- [41 Prompt Engineering Courses](https://app.vexpower.com/paths/prompt-engineer/)
-- [How to Get a Prompt Engineer Job](https://www.growthmentor.com/blog/how-to-get-prompt-engineer-job/)
+<blockquote>
+  <p>Writing Morning Pages provides you the opportunity to clear out space, so that your mind is more open to receive inspiration. It’s like a brain dump.</p>
+</blockquote>
 
-### Footnotes
----]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="prompt_engineering" /><category term="reference" /><category term="chatGPT" /><category term="copilot" /><summary type="html"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/advanced_prompt_engineering.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Don’t Stop | Don’t Think | Just Write!</title><link href="http://localhost:4000/morning-pages/" rel="alternate" type="text/html" title="Don’t Stop | Don’t Think | Just Write!" /><published>2023-05-30T00:00:00+01:00</published><updated>2023-05-30T00:00:00+01:00</updated><id>http://localhost:4000/morning-pages</id><content type="html" xml:base="http://localhost:4000/morning-pages/"><![CDATA[I used to write but then I stopped. What even caused it I don't know. Going through [ALX Foundations](https://tech.alxafrica.com/nigeria) I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.
+<p>A lot of professionals have testified to the benefits of morning pages. From entrepreneurs like <a href="https://tim.blog/2015/01/15/morning-pages/">Tim Ferris</a>, <a href="https://www.chriswinfield.com/morning-pages/">Chris Winfield</a>, and <a href="https://bettyzzzz.wordpress.com/2011/04/25/">Nicky Hajal</a> to productivity authors like <a href="https://www.theguardian.com/lifeandstyle/2014/oct/03/morning-pages-change-your-life-oliver-burkeman">Oliver Burkeman</a>.</p>
 
-## What are Morning Pages?
-Morning Pages were made famous more than 25 years ago by Julia Cameron in her best-selling book ['The Artist's Way'](https://www.amazon.com/Artists-Way-25th-Anniversary/dp/0143129252). Morning pages are streams of conscious writing done first thing in the morning, in three pages. The practice is not just for artists! It's a "life hack" used by many successful business people, entrepreneurs, people who create social impact, and of course tech talent. Doing morning pages every day has been shown to increase creativity, positive mood, and big-picture thinking for all kinds of people. 
+<p>When writing a morning page, you are not doing actual writing; you are just jotting down the first thoughts that come into your mind in the morning, no matter how senseless they sound.</p>
 
-> Writing Morning Pages provides you the opportunity to clear out space, so that your mind is more open to receive inspiration. It's like a brain dump.
+<h2 id="benefits-of-morning-pages">Benefits of morning pages</h2>
+<p>There are several benefits to writing Morning Pages.</p>
+<ul>
+  <li>It helps you gain clarity</li>
+  <li>It helps you declutter your mind</li>
+  <li>It is a space for self-reflection</li>
+  <li>It helps ignite your creative juice</li>
+  <li>It helps you clear off the anxiety of a new day</li>
+  <li>It gives you a space to rant</li>
+</ul>
 
-A lot of professionals have testified to the benefits of morning pages. From entrepreneurs like [Tim Ferris](https://tim.blog/2015/01/15/morning-pages/), [Chris Winfield](https://www.chriswinfield.com/morning-pages/), and [Nicky Hajal](https://bettyzzzz.wordpress.com/2011/04/25/) to productivity authors like [Oliver Burkeman](https://www.theguardian.com/lifeandstyle/2014/oct/03/morning-pages-change-your-life-oliver-burkeman).
+<h2 id="how-to-write-morning-pages">How to write morning pages</h2>
+<p>The first time might feel awkward or aimless, but stick with it. The more you practice morning pages, the easier they become. Whereas there is no right and wrong way to Morning Pages, some rules can help you get started.</p>
+<ul>
+  <li>Doing them first thing when you wake up is the best. But any time of day is ok.</li>
+  <li>Get a pen and paper (any book not just a dedicated journal) and write! The benefits come from doing this by hand - no typing!</li>
+  <li>Write whatever pops into your head! (Really, whatever’s there. Anything! Just write it!)</li>
+  <li>Don’t stop writing. Don’t re-read what you’ve written. Don’t go back and edit.</li>
+  <li>If you don’t know what to write, then write, “I don’t know what to write. Maybe it’s because…” and you’re off again. Just keep the pen moving!</li>
+  <li>Write as much as you can (at least 3 pages)</li>
+  <li>When you’re done, put them in an envelope (or burn them)! Don’t re-read them. Don’t share them with anyone.</li>
+  <li>Remember, the point of Morning Pages is the process and not the product.</li>
+</ul>
 
-When writing a morning page, you are not doing actual writing; you are just jotting down the first thoughts that come into your mind in the morning, no matter how senseless they sound.
+<blockquote>
+  <p>The most important thing is that you write something by hand and that you do it every day.</p>
+</blockquote>
 
-## Benefits of morning pages
-There are several benefits to writing Morning Pages.
-- It helps you gain clarity
-- It helps you declutter your mind
-- It is a space for self-reflection
-- It helps ignite your creative juice 
-- It helps you clear off the anxiety of a new day
-- It gives you a space to rant 
+<p>One thing that is really important to remember with morning pages is that what you write matters a lot less than the fact that you write something. So make sure you give yourself permission to write absolutely anything. Don’t overthink it. Just write. Think of it as “clearing out the pipes” so that you have more space to do focused and creative work.</p>
 
-## How to write morning pages
-The first time might feel awkward or aimless, but stick with it. The more you practice morning pages, the easier they become. Whereas there is no right and wrong way to Morning Pages, some rules can help you get started.
-- Doing them first thing when you wake up is the best. But any time of day is ok.
-- Get a pen and paper (any book not just a dedicated journal) and write! The benefits come from doing this by hand - no typing!
-- Write whatever pops into your head! (Really, whatever's there. Anything! Just write it!)
-- Don’t stop writing. Don’t re-read what you’ve written. Don’t go back and edit.
-- If you don’t know what to write, then write, “I don’t know what to write. Maybe it’s because…” and you’re off again. Just keep the pen moving!
-- Write as much as you can (at least 3 pages)
-- When you're done, put them in an envelope (or burn them)! Don’t re-read them. Don’t share them with anyone.
-- Remember, the point of Morning Pages is the process and not the product. 
+<h2 id="the-30-day-morning-page-challenge">The 30-day Morning Page challenge</h2>
+<p>Morning pages are unique. Meant to be filled with meaningful yet pointless rants (no professionalism needed). Write whatever comes to mind — weird, funny, boring, banal, insightful, dull. Not meant to be re-read. It is meant to be enjoyed not seen as a chore. Watch Leighann Chandler as she shares her experience committing to a 30-day Morning pages challenge.</p>
 
-> The most important thing is that you write something by hand and that you do it every day.
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/MXXs9JC_ItQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
 
-One thing that is really important to remember with morning pages is that what you write matters a lot less than the fact that you write something. So make sure you give yourself permission to write absolutely anything. Don't overthink it. Just write. Think of it as "clearing out the pipes" so that you have more space to do focused and creative work.
+<p>This is an experiment I have challenged myself to give a try everyday for the next 1 month and I believe that it would impact on my mood, focus, and overall productivity. What have I got to lose? Nothing. As I continue with this, it would strengthen me to start writing here and on my how-to blog.</p>]]></content><author><name>ndcharles</name></author><category term="Tech" /><category term="Growth" /><category term="featured" /><category term="morning_pages" /><category term="alx_nigeria" /><category term="alx" /><summary type="html"><![CDATA[I used to write but then I stopped. What even caused it I don’t know. Going through ALX Foundations I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/morning_pages.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/morning_pages.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[<p>I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.</p>
 
-## The 30-day Morning Page challenge 
-Morning pages are unique. Meant to be filled with meaningful yet pointless rants (no professionalism needed). Write whatever comes to mind — weird, funny, boring, banal, insightful, dull. Not meant to be re-read. It is meant to be enjoyed not seen as a chore. Watch Leighann Chandler as she shares her experience committing to a 30-day Morning pages challenge.
-
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/MXXs9JC_ItQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
-
-This is an experiment I have challenged myself to give a try everyday for the next 1 month and I believe that it would impact on my mood, focus, and overall productivity. What have I got to lose? Nothing. As I continue with this, it would strengthen me to start writing here and on my how-to blog.]]></content><author><name>ndcharles</name></author><category term="Tech" /><category term="Growth" /><category term="featured" /><category term="morning_pages" /><category term="alx_nigeria" /><category term="alx" /><summary type="html"><![CDATA[I used to write but then I stopped. What even caused it I don’t know. Going through ALX Foundations I am now committed to doing my Morning pages. You know, writing daily by hand to ensure I put down something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/morning_pages.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/morning_pages.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">My First Appsheet App was a Failure</title><link href="http://localhost:4000/first-appsheet-app-failed/" rel="alternate" type="text/html" title="My First Appsheet App was a Failure" /><published>2022-11-27T00:00:00+01:00</published><updated>2022-11-27T00:00:00+01:00</updated><id>http://localhost:4000/first-appsheet-app-failed</id><content type="html" xml:base="http://localhost:4000/first-appsheet-app-failed/"><![CDATA[I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn't register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.
-
-Haven used Appsheet before, I decide to just continue with the platform to reduce the learning curve and also allow me create time for other event logistics.
+<p>Haven used Appsheet before, I decide to just continue with the platform to reduce the learning curve and also allow me create time for other event logistics.</p>
 
 <p align="center"><image src="/assets/images/alx_appsheet.gif" alt="Attendance app" width="300" /></p>
 
-At the onset, my fear was the prototype not running smoothly due to appsheet restrictions; but it ran. No one said they couldn't access the data. But then something happened, something no one told me until after the event. I came to check the app's database and there were fewer persons than we had in attendance. Clearly, we just encountered data loss. Despite using Appsheet `unique()` parameter to set a unique key for every entry, something still found a way to go wrong.
+<p>At the onset, my fear was the prototype not running smoothly due to appsheet restrictions; but it ran. No one said they couldn’t access the data. But then something happened, something no one told me until after the event. I came to check the app’s database and there were fewer persons than we had in attendance. Clearly, we just encountered data loss. Despite using Appsheet <code class="language-plaintext highlighter-rouge">unique()</code> parameter to set a unique key for every entry, something still found a way to go wrong.</p>
 
-## A little back story...
-My appsheet journey started early 2022. I had someone request assistance with listing her products on [Jiji](https://jiji.ng). I went to her place of business, took pictures of products and promised to send her a link to update the product names and prices. I made this promise without an inkling of how to get those inputs from her because the image files involved won't allow me use Google sheets effectively.
+<h2 id="a-little-back-story">A little back story…</h2>
+<p>My appsheet journey started early 2022. I had someone request assistance with listing her products on <a href="https://jiji.ng">Jiji</a>. I went to her place of business, took pictures of products and promised to send her a link to update the product names and prices. I made this promise without an inkling of how to get those inputs from her because the image files involved won’t allow me use Google sheets effectively.</p>
 
-A brief Google search led to Appsheet (which is something I was familiar with but not truly tried). I looked at app templates, selected the inventory app template and got down to business. It was a very basic app without any complex parts required. You can see the app below. 
+<p>A brief Google search led to Appsheet (which is something I was familiar with but not truly tried). I looked at app templates, selected the inventory app template and got down to business. It was a very basic app without any complex parts required. You can see the app below.</p>
 
 <p align="center"><image src="/assets/images/inventory_manager_app.gif" alt="inventory manager app" width="300" /></p>
 
-To me it was a success because I not only got the pictures, prices and updates I needed, I truly explored the Appsheet platform. So when an app was required for attendance at work, I remembered my escapades with Appsheet and decided to explore it further; this time for an app with complex requirements and conditions.
+<p>To me it was a success because I not only got the pictures, prices and updates I needed, I truly explored the Appsheet platform. So when an app was required for attendance at work, I remembered my escapades with Appsheet and decided to explore it further; this time for an app with complex requirements and conditions.</p>
 
-## Discovering the data loss
-After the event, I decided to take a snapshot of all locations, starting with Lagos. I was shocked to see 46 records. Aah, with all the people around, I have only 46 records? I looked at the Feedback form and saw 66. That implies we had more than 70 persons in attendance. I checked Abuja and Rivers, truly I lost data. 
+<h2 id="discovering-the-data-loss">Discovering the data loss</h2>
+<p>After the event, I decided to take a snapshot of all locations, starting with Lagos. I was shocked to see 46 records. Aah, with all the people around, I have only 46 records? I looked at the Feedback form and saw 66. That implies we had more than 70 persons in attendance. I checked Abuja and Rivers, truly I lost data.</p>
 
-Understanding the situation
-I went into deep research to understand what went wrong with my implementation. I used some resources from the Appsheet doc and community.
+<p>Understanding the situation
+I went into deep research to understand what went wrong with my implementation. I used some resources from the Appsheet doc and community.</p>
 
-- [Appsheet data loss](https://googlecloudcommunity.com/gc/Q-A/Data-loss-browser-usage/m-p/242857)
-- [App changes are not captured in the spreadsheet](https://support.google.com/appsheet/answer/10105403?hl=en)
-- [Losing data](https://googlecloudcommunity.com/gc/Q-A/Losing-Data/m-p/297690)
-- [Offline and Sync: The Essentials](https://support.google.com/appsheet/answer/10107724)
-- [Concurrent Usage with multiple users](https://support.google.com/appsheet/answer/10104702)
+<ul>
+  <li><a href="https://googlecloudcommunity.com/gc/Q-A/Data-loss-browser-usage/m-p/242857">Appsheet data loss</a></li>
+  <li><a href="https://support.google.com/appsheet/answer/10105403?hl=en">App changes are not captured in the spreadsheet</a></li>
+  <li><a href="https://googlecloudcommunity.com/gc/Q-A/Losing-Data/m-p/297690">Losing data</a></li>
+  <li><a href="https://support.google.com/appsheet/answer/10107724">Offline and Sync: The Essentials</a></li>
+  <li><a href="https://support.google.com/appsheet/answer/10104702">Concurrent Usage with multiple users</a></li>
+</ul>
 
-Because the app has to deal with [concurrent user submission](https://googlecloudcommunity.com/gc/AppSheet-Q-A/Concurrent-User-Submissions/m-p/312023/highlight/true#M87713), the issue might probably be from Google sheet API limit or some other stuffs I haven't deeply inspected.
+<p>Because the app has to deal with <a href="https://googlecloudcommunity.com/gc/AppSheet-Q-A/Concurrent-User-Submissions/m-p/312023/highlight/true#M87713">concurrent user submission</a>, the issue might probably be from Google sheet API limit or some other stuffs I haven’t deeply inspected.</p>
 
-Cross-checking everything again I noticed some loopholes. 
-1. Concurrent usage could be taken care of using `user_email()`, which I already used.
-2. Having a `uniqueID()` parameter. This I also have used.
+<p>Cross-checking everything again I noticed some loopholes.</p>
+<ol>
+  <li>Concurrent usage could be taken care of using <code class="language-plaintext highlighter-rouge">user_email()</code>, which I already used.</li>
+  <li>Having a <code class="language-plaintext highlighter-rouge">uniqueID()</code> parameter. This I also have used.</li>
+</ol>
 
-## The Blame Game: Is it Me or Appsheet isn't Working Correctly?
-My configurations were fine at least. I also noticed that the userss quotes is 11 (more than the expected) probably that might be a reason? Some updates came in successfully, some didn't. I checked the audit log for any syncing issues and realised that majority of my sync reported successful but never came through  into the spreadsheet. Well, I was in a tight corner because people depended heavily on the app to go well.
+<h2 id="the-blame-game-is-it-me-or-appsheet-isnt-working-correctly">The Blame Game: Is it Me or Appsheet isn’t Working Correctly?</h2>
+<p>My configurations were fine at least. I also noticed that the userss quotes is 11 (more than the expected) probably that might be a reason? Some updates came in successfully, some didn’t. I checked the audit log for any syncing issues and realised that majority of my sync reported successful but never came through  into the spreadsheet. Well, I was in a tight corner because people depended heavily on the app to go well.</p>
 
-I had to export the audit logs, thankfully it came as json, and then start extracting the updates that weren't updated in the database. Plus, gather data from our feedback forms to augment for the registration data loss.
+<p>I had to export the audit logs, thankfully it came as json, and then start extracting the updates that weren’t updated in the database. Plus, gather data from our feedback forms to augment for the registration data loss.</p>
 
-## The next steps to prepare for our next events?
-The key features I am looking for in this space of no-code apps revolves around:
-- number of apps per account
-- number of [signed-in] users (public vs private)
-- user specific data (see a snapshot of the data not everything)
-- available data sources (googlesheet is usually my most preferred data source)
-- number of spreadsheet rows per project
-- number of updates (read/write/delete)
-- whitelabeling (although this is not a major concern for me)
+<h2 id="the-next-steps-to-prepare-for-our-next-events">The next steps to prepare for our next events?</h2>
+<p>The key features I am looking for in this space of no-code apps revolves around:</p>
+<ul>
+  <li>number of apps per account</li>
+  <li>number of [signed-in] users (public vs private)</li>
+  <li>user specific data (see a snapshot of the data not everything)</li>
+  <li>available data sources (googlesheet is usually my most preferred data source)</li>
+  <li>number of spreadsheet rows per project</li>
+  <li>number of updates (read/write/delete)</li>
+  <li>whitelabeling (although this is not a major concern for me)</li>
+</ul>
 
-I liked the idea of sharing a spreadsheet [filled with a tab for each user] but the privacy that comes with using an app was what I enjoyed. You get to see only users in your location. Unfortunately, the first outing [using appsheet] wasn't great. As I write, I have started searching for alternatives to Google's Appsheet. Probably Glide comes next, or even an opensource software (less likely due to hosting costs). But I am definitely searching for an alternative platform.
+<p>I liked the idea of sharing a spreadsheet [filled with a tab for each user] but the privacy that comes with using an app was what I enjoyed. You get to see only users in your location. Unfortunately, the first outing [using appsheet] wasn’t great. As I write, I have started searching for alternatives to Google’s Appsheet. Probably Glide comes next, or even an opensource software (less likely due to hosting costs). But I am definitely searching for an alternative platform.</p>
 
-The app was paused to prevent any harm coming to the account. And now we moove to Glide or something else (updates shortly).
+<p>The app was paused to prevent any harm coming to the account. And now we moove to Glide or something else (updates shortly).</p>
 
-**Update**: While soliciting for feedback the next day, other users reported of noticing the data loss but no one signaled. Well, some resorted to the pen-on-paper approach and continued with the event.]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="Tech" /><category term="featured" /><category term="no-code" /><category term="appsheet" /><summary type="html"><![CDATA[I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/appsheet_app.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/appsheet_app.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Data &amp;amp; Product at PAXO Health &amp;amp; Beauty</title><link href="http://localhost:4000/data-product-paxo/" rel="alternate" type="text/html" title="Data &amp;amp; Product at PAXO Health &amp;amp; Beauty" /><published>2022-09-15T00:00:00+01:00</published><updated>2022-09-15T00:00:00+01:00</updated><id>http://localhost:4000/data-product-paxo</id><content type="html" xml:base="http://localhost:4000/data-product-paxo/"><![CDATA[March 2020 was when I resigned from my teaching position at [Dannis](https://danniseducation.com.ng) to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with [Stutern](https://stutern.com), an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.
+<p><strong>Update</strong>: While soliciting for feedback the next day, other users reported of noticing the data loss but no one signaled. Well, some resorted to the pen-on-paper approach and continued with the event.</p>]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="Tech" /><category term="featured" /><category term="no-code" /><category term="appsheet" /><summary type="html"><![CDATA[I had to create an app for events attendance at my new place. The aim was to simplify the movement of data from registration to attendance. So, after registration, we should only have to tick your attendance or add your name if you didn’t register online earlier. This replaces the case of running search and replace over Google sheets during attendance. Or worse still, having registration data and attendance data separately. This leads to errors while merging and removing duplicates.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/appsheet_app.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/appsheet_app.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Data &amp;amp; Product at PAXO Health &amp;amp; Beauty</title><link href="http://localhost:4000/data-product-paxo/" rel="alternate" type="text/html" title="Data &amp;amp; Product at PAXO Health &amp;amp; Beauty" /><published>2022-09-15T00:00:00+01:00</published><updated>2022-09-15T00:00:00+01:00</updated><id>http://localhost:4000/data-product-paxo</id><content type="html" xml:base="http://localhost:4000/data-product-paxo/"><![CDATA[<p>March 2020 was when I resigned from my teaching position at <a href="https://danniseducation.com.ng">Dannis</a> to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with <a href="https://stutern.com">Stutern</a>, an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.</p>
 
-A lot happened in between and in April 2021, Easter Tuesday, I resumed at [PAXO](https://paxo.com.ng) primarily as a data analyst.
+<p>A lot happened in between and in April 2021, Easter Tuesday, I resumed at <a href="https://paxo.com.ng">PAXO</a> primarily as a data analyst.</p>
 
-## In the Beginning
-Coming into PAXO Health & Beauty as a data analyst, the bulk of my job during my first few weeks involved doing growth research and tools needed for web analytics on the new platform. And then, I had to be the one testing new features on the platform we were building.
+<h2 id="in-the-beginning">In the Beginning</h2>
+<p>Coming into PAXO Health &amp; Beauty as a data analyst, the bulk of my job during my first few weeks involved doing growth research and tools needed for web analytics on the new platform. And then, I had to be the one testing new features on the platform we were building.</p>
 
-As a data analyst, I also needed to add the necessary components to ensure data is collected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer's journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don't need anymore.
+<p>As a data analyst, I also needed to add the necessary components to ensure data is collected and ready for analysis. I integrated analytics using Google Analytics. There was Hotjar and Microsoft Clarity for heatmaps and visual capture of the customer’s journey. Most of these third-party integrations (including facebook and google conversion pixels) were done using Google tag manager (GTM). This GTM setup allowed me to start/pause any srvice I don’t need anymore.</p>
 
-I delved deeper into web analytics and then [product analytics](../cxl-product-analytics-how-data-build-products-customers-need). You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.
+<p>I delved deeper into web analytics and then <a href="../cxl-product-analytics-how-data-build-products-customers-need">product analytics</a>. You know, setting up all these platforms, creating dataLayer variables and struggling to ensure the developer adds them correctly; which was unfortunately not possible for them.</p>
 
-## The Present
-Now the new site is live and I have settled in as the data analyst and the product manager.
+<h2 id="the-present">The Present</h2>
+<p>Now the new site is live and I have settled in as the data analyst and the product manager.</p>
 
-As a data analyst in a small company, my priority when sourcing for tools is to seek for those that are either very affordable or that are opensource. I prefer being productive and profitable to looking fancy but burning cash pretty fast. Also, this helps me try out different things until I find out what exactly it is I want to achieve then, what software can help me get that done.
+<p>As a data analyst in a small company, my priority when sourcing for tools is to seek for those that are either very affordable or that are opensource. I prefer being productive and profitable to looking fancy but burning cash pretty fast. Also, this helps me try out different things until I find out what exactly it is I want to achieve then, what software can help me get that done.</p>
 
-### My Data Tool Stack
-- Google analytics 
-- Hotjar/MS Clarity
-- Metabase
-- Excel
-- Python
-- Datawrapper
+<h3 id="my-data-tool-stack">My Data Tool Stack</h3>
+<ul>
+  <li>Google analytics</li>
+  <li>Hotjar/MS Clarity</li>
+  <li>Metabase</li>
+  <li>Excel</li>
+  <li>Python</li>
+  <li>Datawrapper</li>
+</ul>
 
-On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Zoho emails (still taking a look at Sendy/AmazonSES) as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.
+<p>On here, I use WordPress a lot to either whip up quick landing pages or just to test out something we need. I also use Google sites for landing pages. I recently ditched MailChimp for Zoho emails (still taking a look at Sendy/AmazonSES) as our email tool for the sake of flexibility in sending emails to different group of people at an affordable rate; at any time.</p>
 
-## Managing Products
-My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.
+<h2 id="managing-products">Managing Products</h2>
+<p>My journey into product mnagement started here at PAXO. While building the new site I turned out to be the go-to person when it comes to testing features. I stepped further into having to create dataLayers for the site (as the analyst), and then putting other [data and product-related] things in place.</p>
 
-Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I ditched them for Google sheet since all parties involved are very much familiar with it. 
+<p>Soon, I moved in very close to having to test features and suggest new features. Then managing developers. This was when I stepped up a bit to trying out Basecamp and Jira, although I had to go for Google sheet since all parties involved are very much familiar with it.</p>
 
-## The Present Present 😂
-I started this post few weeks to my departure and I completed it after I had already left. What I learnt working at PAXO was that, your job role is often a determinant of what next you do with your life. It can be a disastrous thing and it can be the best thing that ever happened to you in terms of helping you re-define your career path.
+<h2 id="the-present-present-">The Present Present 😂</h2>
+<p>I started this post few weeks to my departure and I completed it after I had already left. What I learnt working at PAXO was that, your job role is often a determinant of what next you do with your life. It can be a disastrous thing and it can be the best thing that ever happened to you in terms of helping you re-define your career path.</p>
 
-I am happy with the work I did at the company. It made me learn couple of things I never saw myself learning. It allowed me experiment and explore wildly.]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Tech" /><category term="Data" /><category term="featured" /><summary type="html"><![CDATA[March 2020 was when I resigned from my teaching position at Dannis to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with Stutern, an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/product-management-paxo.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/product-management-paxo.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I was at CSA Africa 2022, UNILAG</title><link href="http://localhost:4000/csa-africa-2022/" rel="alternate" type="text/html" title="I was at CSA Africa 2022, UNILAG" /><published>2022-08-12T00:00:00+01:00</published><updated>2022-08-12T00:00:00+01:00</updated><id>http://localhost:4000/csa-africa-2022</id><content type="html" xml:base="http://localhost:4000/csa-africa-2022/"><![CDATA[I attended [Computer Science Academy Africa 2022](https://www.csaafrica.org/csaafrica-2022), hosted by [
-Sofiat Olaosebikan](https://twitter.com/soolaosebikan) and her wonderful [team](https://www.csaafrica.org/team) at [NitHub, UNILAG](https://twitter.com/nithub_lag) and this is what I learned.
+<p>I am happy with the work I did at the company. It made me learn couple of things I never saw myself learning. It allowed me experiment and explore wildly.</p>]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Tech" /><category term="Data" /><category term="featured" /><summary type="html"><![CDATA[March 2020 was when I resigned from my teaching position at Dannis to go fully into tech. As luck would have it, COVID-19 started at the end of the same month. In May, I started data science with Stutern, an action I applauded as it happened remotely. All through COVID-19 I was running data science and taking my previous class (basic 6) in online classes.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/product-management-paxo.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/product-management-paxo.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">I was at CSA Africa 2022, UNILAG</title><link href="http://localhost:4000/csa-africa-2022/" rel="alternate" type="text/html" title="I was at CSA Africa 2022, UNILAG" /><published>2022-08-12T00:00:00+01:00</published><updated>2022-08-12T00:00:00+01:00</updated><id>http://localhost:4000/csa-africa-2022</id><content type="html" xml:base="http://localhost:4000/csa-africa-2022/"><![CDATA[<p>I attended <a href="https://www.csaafrica.org/csaafrica-2022">Computer Science Academy Africa 2022</a>, hosted by <a href="https://twitter.com/soolaosebikan">
+Sofiat Olaosebikan</a> and her wonderful <a href="https://www.csaafrica.org/team">team</a> at <a href="https://twitter.com/nithub_lag">NitHub, UNILAG</a> and this is what I learned.</p>
 
-At first, while I was applying and saw the option asking about your University, I thought I won’t be selected (I’m already graduated). I filled it anyway and forgot about it until… well, I received the Congratulations email.
+<p>At first, while I was applying and saw the option asking about your University, I thought I won’t be selected (I’m already graduated). I filled it anyway and forgot about it until… well, I received the Congratulations email.</p>
 
-There were a lot of promises made to participants that I was so eager to attend. Free lunch, accommodation and three weeks of constant drills in python, data structures, machine learning and IoT plus an opportunity to meet undergrads and grads alike. That sounds like a lot but the experience was worth it.
+<p>There were a lot of promises made to participants that I was so eager to attend. Free lunch, accommodation and three weeks of constant drills in python, data structures, machine learning and IoT plus an opportunity to meet undergrads and grads alike. That sounds like a lot but the experience was worth it.</p>
 
-## Why was I there?
+<h2 id="why-was-i-there">Why was I there?</h2>
 
-There is something I always believed about having enough information to get you ahead. And the need to connect with people going your way (on the same journey as you). CSA Africa was an avenue for me to explore programming beyond the confines of me and online tutorials. It was a means to learn and connect with people (beginners and experienced alike) in the tech space, meet amazing roomies I made friends out of and another I found a tech co-founder in – just kidding.
+<p>There is something I always believed about having enough information to get you ahead. And the need to connect with people going your way (on the same journey as you). CSA Africa was an avenue for me to explore programming beyond the confines of me and online tutorials. It was a means to learn and connect with people (beginners and experienced alike) in the tech space, meet amazing roomies I made friends out of and another I found a tech co-founder in – just kidding.</p>
 
-Well, I met people who were good at what they do. Those who were in other walks of life but understood the use of programming in their future ambitions. I also met people who think far into the future and needed help grabbing that future by its horn.
+<p>Well, I met people who were good at what they do. Those who were in other walks of life but understood the use of programming in their future ambitions. I also met people who think far into the future and needed help grabbing that future by its horn.</p>
 
-## Further programming experience.
+<h2 id="further-programming-experience">Further programming experience.</h2>
 
-Our first day at CSAA was an awesomely scary experience that it made me question if I ever learnt to actually program in Python. Unfortunately not. I trained mostly using videos, and textbooks and hearing Stephen speak of recursion and memoisation made me realise that there is a lot I have to learn to fully equip my Python toolbox for what is coming.
+<p>Our first day at CSAA was an awesomely scary experience that it made me question if I ever learnt to actually program in Python. Unfortunately not. I trained mostly using videos, and textbooks and hearing Stephen speak of recursion and memoisation made me realise that there is a lot I have to learn to fully equip my Python toolbox for what is coming.</p>
 
-During our first class on recursion, I recalled my very first task at work which involved a deeply nested JSON dictionary. I found it difficult untangling it and although a friend helped with some parts of it, I now realised recursion/mnemonic is best suited to such problems.
+<p>During our first class on recursion, I recalled my very first task at work which involved a deeply nested JSON dictionary. I found it difficult untangling it and although a friend helped with some parts of it, I now realised recursion/mnemonic is best suited to such problems.</p>
 
-The first week of CSA Africa took us through different further programming tasks in Python. Haven refreshed our memories on the basics (lists, dictionaries, slicing and more) we dived into recursions, memoisation and functional programming (lambda, map, reduce and filter).
+<p>The first week of CSA Africa took us through different further programming tasks in Python. Haven refreshed our memories on the basics (lists, dictionaries, slicing and more) we dived into recursions, memoisation and functional programming (lambda, map, reduce and filter).</p>
 
-Up until now, I have written progrmas around functions. You know, block of statements which manipulate data. This is what is called procedural programming. At CSA Africa, we went further into object-oriented programming (OOP). It involves combining data and functionality and wrapping it using classes and objects. ([Here are their differences](https://www.tutorialspoint.com/differences-between-procedural-and-object-oriented-programming))
+<p>Up until now, I have written progrmas around functions. You know, block of statements which manipulate data. This is what is called procedural programming. At CSA Africa, we went further into object-oriented programming (OOP). It involves combining data and functionality and wrapping it using classes and objects. (<a href="https://www.tutorialspoint.com/differences-between-procedural-and-object-oriented-programming">Here are their differences</a>)</p>
 
-## The Machine Learning Experience
-My first attempt to do machine learning with just Numpy and no Pandas was at CSA. It was frustrating at first but then, it was an experience I really enjoyed. And when you think that was all there is, we had to implement the KNN and KMeans algorithms from scratch. Besides, learning about classification, regression and clustering algorithms, we also learned to evaluate our model outputs.
+<h2 id="the-machine-learning-experience">The Machine Learning Experience</h2>
+<p>My first attempt to do machine learning with just Numpy and no Pandas was at CSA. It was frustrating at first but then, it was an experience I really enjoyed. And when you think that was all there is, we had to implement the KNN and KMeans algorithms from scratch. Besides, learning about classification, regression and clustering algorithms, we also learned to evaluate our model outputs.</p>
 
-## Projects
+<h2 id="projects">Projects</h2>
 
-I had a wonderful group. Although starting off was challenging, we found a way to kick-off and get the project going. We settled for a laptop price prediction project. (Original dataset [here](https://github.com/Raghavagr/Laptop_Price_Prediction/blob/main/laptop_data.csv)).
+<p>I had a wonderful group. Although starting off was challenging, we found a way to kick-off and get the project going. We settled for a laptop price prediction project. (Original dataset <a href="https://github.com/Raghavagr/Laptop_Price_Prediction/blob/main/laptop_data.csv">here</a>).</p>
 
-[Given the dataset](https://github.com/ndcharles/csa_africa/blob/main/project/laptop_data.csv) with several attributes, we performed several cleaning operations on it ([see the cleaned version here](https://github.com/ndcharles/csa_africa/blob/main/project/ml_laptop_cleaned.csv)) and then built a machine learning model to predict the price of laptops.
+<p><a href="https://github.com/ndcharles/csa_africa/blob/main/project/laptop_data.csv">Given the dataset</a> with several attributes, we performed several cleaning operations on it (<a href="https://github.com/ndcharles/csa_africa/blob/main/project/ml_laptop_cleaned.csv">see the cleaned version here</a>) and then built a machine learning model to predict the price of laptops.</p>
 
-The project isn't grandiose, but we learnt what we needed to while executing it. 
+<p>The project isn’t grandiose, but we learnt what we needed to while executing it.</p>
 
-> We didn't change the world, but we took a step further into changing the world.
+<blockquote>
+  <p>We didn’t change the world, but we took a step further into changing the world.</p>
+</blockquote>
 
-Our team lead <code class="language-plaintext highlighter-rouge">(@tife)</code> stayed up till 1:00 am trying to perfect our PowerPoint presentation. He confessed to learning a lot from that experience.  <code class="language-plaintext highlighter-rouge">Maradeben</code>, was busy trying different models, even after we have saved our models to file, looking to improve our model from 89% accuracy score to 90-something. He succeeded in getting to 98% (although we didn't end up using it due to technical constraints of his implementation). <code class="language-plaintext highlighter-rouge">Omotayo</code> was there trying to grasp the whole concept of ML (he will catch-up soon). And here I am, sharing the experience with you. I had exposure to ML, so I took it further to get the team to implement a FastAPI backend for our project. 
+<p>Our team lead <code class="language-plaintext highlighter-rouge">(@tife)</code> stayed up till 1:00 am trying to perfect our PowerPoint presentation. He confessed to learning a lot from that experience.  <code class="language-plaintext highlighter-rouge">Maradeben</code>, was busy trying different models, even after we have saved our models to file, looking to improve our model from 89% accuracy score to 90-something. He succeeded in getting to 98% (although we didn’t end up using it due to technical constraints of his implementation). <code class="language-plaintext highlighter-rouge">Omotayo</code> was there trying to grasp the whole concept of ML (he will catch-up soon). And here I am, sharing the experience with you. I had exposure to ML, so I took it further to get the team to implement a FastAPI backend for our project.</p>
 
-{%comment%}
-We created a FastAPI backend for our project, which we didn't project to everyone, but after the event I tried experimenting with streamlit for a frontend. The final laptop prediction project built with FastAPI and streamlit can be accessed here. 
+<p>You can <a href="https://github.com/ndcharles/csa_africa/tree/main/project">checkout our project files here</a>.</p>
 
-You can read this follow-up article to know how we came up with data cleaning decisions for  our dataset and then creating a FastAPI backend and Streamlit frontend after the CSA Academy 2022 bootcamp.
-{%endcomment%}
+<p>I can go ahead and tell you about other groups, from implementing algorithms based on stable marriage (e shock you ba?) to seeing the beginners class build amazing stuffs using Python and Tkinter.</p>
 
-You can [checkout our project files here](https://github.com/ndcharles/csa_africa/tree/main/project).
+<h2 id="overall-experience">Overall Experience</h2>
 
-I can go ahead and tell you about other groups, from implementing algorithms based on stable marriage (e shock you ba?) to seeing the beginners class build amazing stuffs using Python and Tkinter.
+<p>In the end, if you ask me, “How was CSA Academy 2022 bootcamp?”
+Ok. I should probably rephrase that question to the way <a href="https://twitter.com/vodumuyiwa">Dr. Olumuyiwa</a> puts it, “Minus the food, how was the CSAA 2022 bootcamp?”. 🌝</p>
 
-## Overall Experience
+<p>I would, without further ado say, “it was amazing.”</p>
 
-In the end, if you ask me, "How was CSA Academy 2022 bootcamp?"
-Ok. I should probably rephrase that question to the way [Dr. Olumuyiwa](https://twitter.com/vodumuyiwa) puts it, "Minus the food, how was the CSAA 2022 bootcamp?". 🌝
+<p>It was an inclusive experience that ensured you learnt something within the short duration we all spent together. I know, right?</p>
 
-I would, without further ado say, "it was amazing."
+<p>A close pal during the bootcamp would say UNILAG likes PR but… so far as we were properly accommodated during the CSAA event, wetin concern me and your intentions.</p>
 
-{%comment%}
-To think that the convener Dr. Sofiat, ensured women were attended to, nursing mothers (with great interests), working class ladies and even people without personal computers made it (thanks to NitHub for making that happen).
-{%endcomment%}
+<p>The hostel experience was nice with enough electricity and water to justify the reasons we left our homes for the provided accommodation. I don’t know about everyone else but I opted for accommodation for several reasons. One of which was to avoid the everyday Lagos stress as I commute between the Bootcamp and my house; I know I won’t learn enough. I also needed to connect with other learners, which won’t be possible if I were stuck trying to rush home after each day. Electricity can be unfavourable in my area, so let’s not go there.</p>
 
-It was an inclusive experience that ensured you learnt something within the short duration we all spent together. I know, right?
+<h2 id="next-steps">Next Steps</h2>
 
-A close pal during the bootcamp would say UNILAG likes PR but... so far as we were properly accommodated during the CSAA event, wetin concern me and your intentions.
+<p>As CSA Academy 2022 has come to an end, a couple of things and further steps are clear to me:</p>
 
-The hostel experience was nice with enough electricity and water to justify the reasons we left our homes for the provided accommodation. I don’t know about everyone else but I opted for accommodation for several reasons. One of which was to avoid the everyday Lagos stress as I commute between the Bootcamp and my house; I know I won’t learn enough. I also needed to connect with other learners, which won’t be possible if I were stuck trying to rush home after each day. Electricity can be unfavourable in my area, so let’s not go there.
+<ul>
+  <li>
+    <p>To improve further my Python programming skills bearing in mind the tools introduced to me. I also got a glimpse of data structures and algorithms since my roomies were in that track. This is something I would also explore further, especially the time and space complexity problem.</p>
+  </li>
+  <li>
+    <p>I got a renewed energy to deep dive into my machine learning studies; with respect to the theoretical aspects of things. Why do you choose this model over that? How do you explain what your model is doing to a lay person? I believe that is the beginning of building and working with explainable machine learning models.</p>
+  </li>
+  <li>
+    <p>Truly, getting out to meet people helps you understand others and most especially, you. I met wonderful people and connected with a few of them. People are going through different things. Everyone simply devises a way to cope with the challenges of growing up to become a meaningful human. No one’s got it worse, you just have it in a different measure.</p>
+  </li>
+  <li>
+    <p>Aside from the seriousness, CSAA has set a very high standard for other bootcamps I would be attending in the future. They understood and showed that the comfort of a learner is as important as the actual learning.</p>
+  </li>
+  <li>
+    <p>But then, we have every little opportunity to influence people within our sphere. I plan to do that henceforth.</p>
+  </li>
+</ul>
 
-## Next Steps
+<p>Thank you CSA Africa, and a big one to NitHub for being so awesome.</p>
 
-As CSA Academy 2022 has come to an end, a couple of things and further steps are clear to me:
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/RNXhsZcvLtA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
 
-- To improve further my Python programming skills bearing in mind the tools introduced to me. I also got a glimpse of data structures and algorithms since my roomies were in that track. This is something I would also explore further, especially the time and space complexity problem.
+<blockquote>
+  <p>To the friends and acquaintances I made during these few weeks and to those I never got to meet, better days ahead.</p>
+</blockquote>
 
-- I got a renewed energy to deep dive into my machine learning studies; with respect to the theoretical aspects of things. Why do you choose this model over that? How do you explain what your model is doing to a lay person? I believe that is the beginning of building and working with explainable machine learning models.
+<p><strong>P.S:</strong> “Love and legacy are the sacrifices we make for progress.” ✌️</p>
 
-- Truly, getting out to meet people helps you understand others and most especially, you. I met wonderful people and connected with a few of them. People are going through different things. Everyone simply devises a way to cope with the challenges of growing up to become a meaningful human. No one’s got it worse, you just have it in a different measure.
+<p>Image source: <a href="https://twitter.com/CSAcademyAfrica">CSA Africa on Twitter</a></p>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="sticky" /><category term="csa_africa_2022" /><category term="python_bootcamp" /><category term="NitHub" /><summary type="html"><![CDATA[I attended Computer Science Academy Africa 2022, hosted by Sofiat Olaosebikan and her wonderful team at NitHub, UNILAG and this is what I learned.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/csa_africa_2022.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/csa_africa_2022.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Product Analytics: How to Use Data to Build Products that Customers Need</title><link href="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/" rel="alternate" type="text/html" title="Product Analytics: How to Use Data to Build Products that Customers Need" /><published>2022-04-05T00:00:00+01:00</published><updated>2022-04-05T00:00:00+01:00</updated><id>http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need</id><content type="html" xml:base="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/"><![CDATA[<p>At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.</p>
 
-- Aside from the seriousness, CSAA has set a very high standard for other bootcamps I would be attending in the future. They understood and showed that the comfort of a learner is as important as the actual learning.
+<p>I work in an ecommerce company and although, most conversations around product analytics tend to gear towards product-led companies, ecommerce can also take advantage of the product analytics journey.</p>
 
-- But then, we have every little opportunity to influence people within our sphere. I plan to do that henceforth.
+<h2 id="what-is-product-analytics">What is Product Analytics?</h2>
 
-Thank you CSA Africa, and a big one to NitHub for being so awesome.
+<blockquote>
+  <p>Product analytics show you who your users are, what they want, and how to keep them.
+<cite>—<a href="https://amplitude.com/behavioral-analytics-platform">Amplitude</a></cite></p>
+</blockquote>
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/RNXhsZcvLtA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p>Product analytics refers to capturing and analyzing quantitative data through embedded tools that record how users interact with a product. It is about using data to understand who your users are, how they use your product and how these affects your business.</p>
 
-> To the friends and acquaintances I made during these few weeks and to those I never got to meet, better days ahead.
+<p>Product Analytics can answer different types of questions ranging from trends to analyzing feature adoption or engagement over time, to visualizing intricate experiences and user flows inside or outside the product.</p>
 
-**P.S:** "Love and legacy are the sacrifices we make for progress." ✌️
+<h2 id="why-is-product-analytics-important">Why is product analytics important?</h2>
+<p>Product analytics allow companies to fully understand how users engage with what they build. It is especially useful for technology products where teams can track users’ digital footprints step-by-step to see what they like or dislike and what leads them to engage, return, or churn.</p>
 
-Image source: [CSA Africa on Twitter](https://twitter.com/CSAcademyAfrica)]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="sticky" /><category term="csa_africa_2022" /><category term="python_bootcamp" /><category term="NitHub" /><summary type="html"><![CDATA[I attended Computer Science Academy Africa 2022, hosted by Sofiat Olaosebikan and her wonderful team at NitHub, UNILAG and this is what I learned.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/csa_africa_2022.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/csa_africa_2022.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Product Analytics: How to Use Data to Build Products that Customers Need</title><link href="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/" rel="alternate" type="text/html" title="Product Analytics: How to Use Data to Build Products that Customers Need" /><published>2022-04-05T00:00:00+01:00</published><updated>2022-04-05T00:00:00+01:00</updated><id>http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need</id><content type="html" xml:base="http://localhost:4000/cxl-product-analytics-how-data-build-products-customers-need/"><![CDATA[At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.
+<h2 id="how-to-implement-product-analytics">How to implement product analytics</h2>
+<ul>
+  <li><strong>Step 1: Define your business goals</strong></li>
+</ul>
 
-I work in an ecommerce company and although, most conversations around product analytics tend to gear towards product-led companies, ecommerce can also take advantage of the product analytics journey.
+<p>The first step is defining a clear-cut business objectives that you want to optimize using data. Then you can ask the right questions like how many people used the wishlist feature last month?, what percentage of users used the skin expert feature last month compared to this month?</p>
 
-## What is Product Analytics?
+<p>To create good set of questions that accurately matches the data you have to your business goals, you should consider using the Product Analytics Question framework below by Matthew.</p>
 
-> Product analytics show you who your users are, what they want, and how to keep them.
-> <cite>&mdash;[Amplitude](https://amplitude.com/behavioral-analytics-platform)</cite>
+<p><img src="/assets/images/product_analytics_question_framework.jpg" alt="product_analytics_question_framework" /></p>
 
-Product analytics refers to capturing and analyzing quantitative data through embedded tools that record how users interact with a product. It is about using data to understand who your users are, how they use your product and how these affects your business.
+<p>Example questions using the framework;</p>
 
-Product Analytics can answer different types of questions ranging from trends to analyzing feature adoption or engagement over time, to visualizing intricate experiences and user flows inside or outside the product.
+<p><img src="/assets/images/product_analytics_question_framework_example1.jpg" alt="product_analytics_question_framework_example1" /></p>
 
-{%comment%}
-Product analysis is the evaluation of a product for the purposes of product development, review or purchasing.
+<p><img src="/assets/images/product_analytics_question_framework_example2.jpg" alt="product_analytics_question_framework_example2" /></p>
 
-Marketing analytics is the practice of measuring, managing and analyzing marketing performance to maximize its effectiveness and optimize return on investment (ROI). 
-{%endcomment%}
+<ul>
+  <li><strong>Step 2: Create a tracking plan</strong></li>
+</ul>
 
-## Why is product analytics important?
-Product analytics allow companies to fully understand how users engage with what they build. It is especially useful for technology products where teams can track users’ digital footprints step-by-step to see what they like or dislike and what leads them to engage, return, or churn.
+<p>Creating an analytics tracking plan helps us to collect the right amount of and correct data to cover our business use case. Incorrect data can lead to incorrect metrics and further misleading conclusions that end up marring the business decisions made from our conclusions.</p>
 
-## How to implement product analytics
-- **Step 1: Define your business goals**
+<p>A tracking plan is an Excel or Google Spreadsheet that contains all the events and properties that you would like to track. An event is simply an action that a user takes (e.g. signing up for your product, uploading a picture or adding a product to cart). Properties are attributes attached to each event (e.g. when a user signs up for our product we would like to know their userID, dateOfSubscription, subscriptionPlan (free or paid) and so on).</p>
 
-The first step is defining a clear-cut business objectives that you want to optimize using data. Then you can ask the right questions like how many people used the wishlist feature last month?, what percentage of users used the skin expert feature last month compared to this month?
+<hr />
+<h4 id="what-do-we-track">What do we track?</h4>
+<p>Anything that happens within our product e.g. button clicks, screen views.</p>
 
-To create good set of questions that accurately matches the data you have to your business goals, you should consider using the Product Analytics Question framework below by Matthew.
+<h4 id="data-scopes">Data scopes</h4>
+<p>Data scope tells us how data is put together.</p>
 
-![product_analytics_question_framework](/assets/images/product_analytics_question_framework.jpg)
+<p><img src="/assets/images/data_scopes.jpg" alt="data_scopes" />
+<em>A single user can have multiple sessions, and each session can have multiple hits, as illustrated above.</em></p>
 
-Example questions using the framework;
+<ul>
+  <li>Users: Anyone interacting with your product is a user. Example user metric include, days since last session, monthly active users, feature adoption rate, etc.</li>
+  <li>Session: Interactions by a single user are grouped into sessions. Example session metric is bounce rate.</li>
+  <li>Events (or hits) is a collection of all interactions that happened during a session. Example event metrics include pageviews and video plays.</li>
+</ul>
 
-![product_analytics_question_framework_example1](/assets/images/product_analytics_question_framework_example1.jpg)
+<h4 id="properties">Properties</h4>
 
-![product_analytics_question_framework_example2](/assets/images/product_analytics_question_framework_example2.jpg)
+<ul>
+  <li>User properties: A user has properties that are automatically captured by the analytics tool (e.g. location based on IP address, device used) or manually defined by you (e.g. user’s age, type of user).</li>
+  <li>Event properties: Events also have properties. Although they aren’t used as often as user properties, they capture valuable metadata about the event itself (e.g. message sent from driver to rider is the first time they are messaging) or state of the user when the event was generated (e.g., Jane was 21 years old when she registered a year ago but is now 22).</li>
+</ul>
 
-- **Step 2: Create a tracking plan**
+<hr />
 
-Creating an analytics tracking plan helps us to collect the right amount of and correct data to cover our business use case. Incorrect data can lead to incorrect metrics and further misleading conclusions that end up marring the business decisions made from our conclusions.
+<p>To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users. Here is a <a href="https://docs.google.com/spreadsheets/d/1Kyys37m_GEL79_1BKKEnU5KxK91NF04kY-L_bFfcfqE/edit?gid=1641519238#gid=1641519238">sample tracking plan for e-commerce</a> business.</p>
 
-A tracking plan is an Excel or Google Spreadsheet that contains all the events and properties that you would like to track. An event is simply an action that a user takes (e.g. signing up for your product, uploading a picture or adding a product to cart). Properties are attributes attached to each event (e.g. when a user signs up for our product we would like to know their userID, dateOfSubscription, subscriptionPlan (free or paid) and so on).
+<p>For a comprehensive guide on creating a tracking plan, with templates you can use as inspiration, <a href="https://help.mixpanel.com/hc/en-us/articles/115004519886-Do-you-have-industry-specific-tracking-plans-I-can-use-">read this article</a>.</p>
 
----
-#### What do we track?
-Anything that happens within our product e.g. button clicks, screen views.
+<h3 id="datalayer">DataLayer</h3>
 
-#### Data scopes
-Data scope tells us how data is put together.
+<p>DataLayer is a way to store semantic metadata based on users, sessions, products, content etc. We use it to create an easy way to access information on the website. DataLayers are used instead of scraping because they (dataLayers) are more reliable and don’t change as often as the website’s code.</p>
 
-![data_scopes](/assets/images/data_scopes.jpg)
-*A single user can have multiple sessions, and each session can have multiple hits, as illustrated above.*
+<h3 id="what-makes-a-good-datalayer">What makes a good dataLayer?</h3>
 
-- Users: Anyone interacting with your product is a user. Example user metric include, days since last session, monthly active users, feature adoption rate, etc.
-- Session: Interactions by a single user are grouped into sessions. Example session metric is bounce rate.
-- Events (or hits) is a collection of all interactions that happened during a session. Example event metrics include pageviews and video plays.
+<ul>
+  <li>Tool-agnostic: It should be created for the sole purpose and not tied to a particular tool. e.g. <em>userID</em> <strong>NOT</strong> <em>GAUserID</em>.</li>
+  <li>Generic: It should be able to satisfy several use cases. e.g. <em>currentPlanName</em> <strong>NOT</strong> <em>proPlanSubscriber</em> and;</li>
+  <li>Consistent: Variable names should follow a naming convention and also be usable in different cases.</li>
+</ul>
 
-#### Properties 
+<p>DataLayer helps us to debug our tracking setup and as well provides us with reliable and readily accessible values for reporting.</p>
 
-- User properties: A user has properties that are automatically captured by the analytics tool (e.g. location based on IP address, device used) or manually defined by you (e.g. user’s age, type of user).
-- Event properties: Events also have properties. Although they aren’t used as often as user properties, they capture valuable metadata about the event itself (e.g. message sent from driver to rider is the first time they are messaging) or state of the user when the event was generated (e.g., Jane was 21 years old when she registered a year ago but is now 22).
+<p><strong>Also see:</strong> How I created an <a href="/ecommerce-datalayer">eCommerce Website DataLayer</a>.</p>
 
----
+<ul>
+  <li><strong>Step 3: Choose the right analytics tools</strong></li>
+</ul>
 
-To develop a tracking plan we; define key events, decide what context you need for them and then determine what we need to know about our users. Here is a [sample tracking plan for e-commerce](https://docs.google.com/spreadsheets/d/1Kyys37m_GEL79_1BKKEnU5KxK91NF04kY-L_bFfcfqE/edit?gid=1641519238#gid=1641519238) business.
+<p><img src="/assets/images/popular_product_analytics_tools.jpg" alt="popular_product_analytics_tools" />
+<em>Some popular product analytics tools</em></p>
 
-For a comprehensive guide on creating a tracking plan, with templates you can use as inspiration, [read this article](https://help.mixpanel.com/hc/en-us/articles/115004519886-Do-you-have-industry-specific-tracking-plans-I-can-use-).
+<p>There are two groups of analytics tools in use: the classic analytics and the retroactive analytics tools. The tools you use vary based on your business needs and requirements.</p>
 
-### DataLayer 
+<ul>
+  <li>Classic analytics captures pageview events by default (page-based) and other events that has been setup to be tracked on the website. It gathers data from the day you implement it. Google Analytics falls under this category.</li>
+  <li>Retroactive analytics captures all events happening on-page by default (event-based). Tools in this category automatically collect user interaction data with a single snippet and let you analyze that data when you need to. Examples include mixpanel, heap and amplitude.</li>
+</ul>
 
-DataLayer is a way to store semantic metadata based on users, sessions, products, content etc. We use it to create an easy way to access information on the website. DataLayers are used instead of scraping because they (dataLayers) are more reliable and don't change as often as the website's code. 
+<p>The difference between classic and retroactive tools is in the…</p>
 
-### What makes a good dataLayer?
- 
-- Tool-agnostic: It should be created for the sole purpose and not tied to a particular tool. e.g. *userID* **NOT** *GAUserID*.
-- Generic: It should be able to satisfy several use cases. e.g. *currentPlanName* **NOT** *proPlanSubscriber* and;
-- Consistent: Variable names should follow a naming convention and also be usable in different cases. 
+<ul>
+  <li><strong>Step 4: Follow a consistent process</strong></li>
+</ul>
 
-DataLayer helps us to debug our tracking setup and as well provides us with reliable and readily accessible values for reporting.
+<p>What is the key information each team needs to look at weekly?
+How do you ensure tracking is in place for new feature launches?</p>
 
-**Also see:** How I created an [eCommerce Website DataLayer]({{site.baseurl}}/ecommerce-datalayer).
+<h3 id="a-typical-product-analytics-stack">A typical product analytics stack</h3>
 
-- **Step 3: Choose the right analytics tools**
+<ul>
+  <li>Segment: to connect all your tools together from mixpanel, Google Analytics to your website and CRM.</li>
+  <li>Google Analytics (for marketing analytics), to gather top of the funnel page-view events.</li>
+  <li>Mixpanel, Amplitude or Heap to understand what users are doing after signup.</li>
+</ul>
 
-![popular_product_analytics_tools](/assets/images/popular_product_analytics_tools.jpg)
-*Some popular product analytics tools*
+<h2 id="reporting-analytics-events">Reporting analytics events</h2>
 
-There are two groups of analytics tools in use: the classic analytics and the retroactive analytics tools. The tools you use vary based on your business needs and requirements.
+<p>Reports are time-based and segmented views of product data. They can be shared, updated and embedded or self-created by users. They are visual guides that enable stakeholders understand the performance of the product’s metrics.</p>
 
-- Classic analytics captures pageview events by default (page-based) and other events that has been setup to be tracked on the website. It gathers data from the day you implement it. Google Analytics falls under this category.
-- Retroactive analytics captures all events happening on-page by default (event-based). Tools in this category automatically collect user interaction data with a single snippet and let you analyze that data when you need to. Examples include mixpanel, heap and amplitude.
+<blockquote>
+  <p>Dashboard is a collection of various reports.</p>
+</blockquote>
 
-The difference between classic and retroactive tools is in the...
+<h2 id="most-useful-reports-in-analytics">Most useful reports in analytics</h2>
 
-- **Step 4: Follow a consistent process**
+<p>The reports used for the below section were generated from Google Merchandise Store Universal Analytics demo account. Visit the <a href="https://support.google.com/analytics/answer/6367342#access&amp;zippy=%2Cin-this-article">demo account information page</a> for full details, tutorials and access limitations. Otherwise, you can go directly to the <a href="https://analytics.google.com/analytics/web/demoAccount">Universal Analytics property</a> or the <a href="https://analytics.google.com/analytics/web/demoAccount?appstate=/p213025502">Google Analytics 4 property</a>.</p>
 
-What is the key information each team needs to look at weekly?
-How do you ensure tracking is in place for new feature launches?
+<h3 id="segmentation">Segmentation</h3>
 
-### A typical product analytics stack
+<p>A segment is a subset of your Analytics data. Segmentation helps us to uncover and understand hidden trends within our product. It allows us to break down product analysis by event or user property, such as location or operating system.</p>
 
-- Segment: to connect all your tools together from mixpanel, Google Analytics to your website and CRM.
-- Google Analytics (for marketing analytics), to gather top of the funnel page-view events.
-- Mixpanel, Amplitude or Heap to understand what users are doing after signup.
+<p>With segmentation you can isolate and analyze a subset of data so you can examine and respond to trends in your business. For example, if you segment and realise that users from a particular region are no longer purchasing a particular product in the same volume as they normally do, you can check whether there is a competitor selling same product at lower prices. If this is true, you could respond by offering a discount that undercuts your competitor’s prices.</p>
 
-## Reporting analytics events 
+<p>You can also use information gotten from segmenting your users to know what group of users to target in a remarketing campaign.</p>
 
-Reports are time-based and segmented views of product data. They can be shared, updated and embedded or self-created by users. They are visual guides that enable stakeholders understand the performance of the product's metrics.
+<p>See this short but detailed <a href="https://support.google.com/analytics/answer/3123951#zippy=%2Cin-this-article">explanation of segmentation</a> from Google.</p>
 
-> Dashboard is a collection of various reports.
+<h3 id="cohort-analysis">Cohort Analysis</h3>
 
-## Most useful reports in analytics
+<p>Cohort analysis helps us to find out which group (segments) of users stay engaged with our product the longest. It also helps us to understand if our product has improved over time. i.e. if newer users are staying longer than older ones did.</p>
 
-The reports used for the below section were generated from Google Merchandise Store Universal Analytics demo account. Visit the [demo account information page](https://support.google.com/analytics/answer/6367342#access&zippy=%2Cin-this-article) for full details, tutorials and access limitations. Otherwise, you can go directly to the [Universal Analytics property](https://analytics.google.com/analytics/web/demoAccount) or the [Google Analytics 4 property](https://analytics.google.com/analytics/web/demoAccount?appstate=/p213025502).
+<p><img src="/assets/images/cohort_analysis.jpg" alt="cohort_analysis" /></p>
 
-### Segmentation
+<p>The above image shows a 6-week analysis of users grouped by <em>Acquisition date</em> and the <em>Total transactions</em> they carried out from their first week (Week 0) to the present week (Week 6).
+We can observe that the initial total transactions are high. However, the number of repeat purchase from these users drop rapidly as the week goes by. This drop could be explained by the type of products on the <a href="https://shop.googlemerchandisestore.com/?utm_source=partners&amp;utm_medium=affiliate&amp;utm_campaign=data%20share%20article">Google Merchandise store</a>. These are not FMCG products. So a better cohort size would have been by month or year.</p>
 
-A segment is a subset of your Analytics data. Segmentation helps us to uncover and understand hidden trends within our product. It allows us to break down product analysis by event or user property, such as location or operating system.
+<p>To understand cohort analysis further, <a href="https://medium.com/analytics-for-humans/a-beginners-guide-to-cohort-analysis-the-most-actionable-and-underrated-report-on-google-c0797d826bf4">read this article</a>.</p>
 
-With segmentation you can isolate and analyze a subset of data so you can examine and respond to trends in your business. For example, if you segment and realise that users from a particular region are no longer purchasing a particular product in the same volume as they normally do, you can check whether there is a competitor selling same product at lower prices. If this is true, you could respond by offering a discount that undercuts your competitor's prices.
+<h3 id="funnel-analysis">Funnel Analysis</h3>
 
-You can also use information gotten from segmenting your users to know what group of users to target in a remarketing campaign.
+<p>Funnels are used to understand user behaviour usually in a specific order. It shows us data on users who have gone through a funnel we define (e.g. single product, add to cart, checkout, create account, complete checkout). Through this, we can identify user drop-off points to improve conversion rates.</p>
 
-See this short but detailed [explanation of segmentation](https://support.google.com/analytics/answer/3123951#zippy=%2Cin-this-article) from Google.
+<h3 id="user-flows">User flows</h3>
 
-### Cohort Analysis
+<p><img src="/assets/images/user_flows.png" alt="user_flows" /></p>
 
-Cohort analysis helps us to find out which group (segments) of users stay engaged with our product the longest. It also helps us to understand if our product has improved over time. i.e. if newer users are staying longer than older ones did.
+<p>A flow analysis helps us to understand user behaviour in a less structured way than funnels. It helps to understand what events are key to reaching a goal and how users use our products outside how we intend them to use it.</p>
 
-![cohort_analysis](/assets/images/cohort_analysis.jpg)
+<p>It allows us to see where a user goes/does after a starting point (e.g. next five actions that a user did after visiting the landing page) or what the user did before an ending action (e.g. previous five actions user did before buying our product).</p>
 
-The above image shows a 6-week analysis of users grouped by _Acquisition date_ and the _Total transactions_ they carried out from their first week (Week 0) to the present week (Week 6).
-We can observe that the initial total transactions are high. However, the number of repeat purchase from these users drop rapidly as the week goes by. This drop could be explained by the type of products on the [Google Merchandise store](https://shop.googlemerchandisestore.com/?utm_source=partners&utm_medium=affiliate&utm_campaign=data%20share%20article). These are not FMCG products. So a better cohort size would have been by month or year.
+<p>It helps us answer the question: <em>“Where are users going to from event X?”</em> and <em>“How are users getting to event Y?”</em></p>
 
-To understand cohort analysis further, [read this article](https://medium.com/analytics-for-humans/a-beginners-guide-to-cohort-analysis-the-most-actionable-and-underrated-report-on-google-c0797d826bf4).
+<h2 id="conclusion">Conclusion</h2>
+<p>As a product analyst, your major job is not just to find creative ways to share insights across your organisation but also finding meaningful ways to empower others to discover insights on their own. To fully take the advantage of data, data blending is a useful concept which is merging data from different sources for analysis. This helps us to see data from different perspectives. Going forward as a product analyst, it is a standard practise to automate reports to help reduce drudgery while improving reliability.</p>
 
-### Funnel Analysis 
+<p><strong>P.S:</strong> This is a summary gotten from the Product Analytics course at CXL Institute.</p>]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="featured" /><category term="product_analytics" /><category term="CXL_Institute" /><summary type="html"><![CDATA[At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[<p>There are lots of powerful things you can do with the Markdown editor</p>
 
-Funnels are used to understand user behaviour usually in a specific order. It shows us data on users who have gone through a funnel we define (e.g. single product, add to cart, checkout, create account, complete checkout). Through this, we can identify user drop-off points to improve conversion rates.
+<p>If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
 
-### User flows
+<p>As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using. oya update it.</p>
 
-![user_flows](/assets/images/user_flows.png)
+<h2 id="special-formatting">Special formatting</h2>
 
-A flow analysis helps us to understand user behaviour in a less structured way than funnels. It helps to understand what events are key to reaching a goal and how users use our products outside how we intend them to use it. 
+<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
 
-It allows us to see where a user goes/does after a starting point (e.g. next five actions that a user did after visiting the landing page) or what the user did before an ending action (e.g. previous five actions user did before buying our product).
+<ul>
+  <li><del>strike through</del></li>
+  <li>==highlight==</li>
+  <li>*escaped characters*</li>
+</ul>
 
-It helps us answer the question: _"Where are users going to from event X?"_ and _"How are users getting to event Y?"_
+<h2 id="writing-code-blocks">Writing code blocks</h2>
 
-## Conclusion
-As a product analyst, your major job is not just to find creative ways to share insights across your organisation but also finding meaningful ways to empower others to discover insights on their own. To fully take the advantage of data, data blending is a useful concept which is merging data from different sources for analysis. This helps us to see data from different perspectives. Going forward as a product analyst, it is a standard practise to automate reports to help reduce drudgery while improving reliability.
+<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code class="language-plaintext highlighter-rouge">like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
 
-**P.S:** This is a summary gotten from the Product Analytics course at CXL Institute.]]></content><author><name>ndcharles</name></author><category term="Product" /><category term="Data" /><category term="featured" /><category term="product_analytics" /><category term="CXL_Institute" /><summary type="html"><![CDATA[At the beginning of most products, instincts, gut-feeling, interviews and surveys form the basis of decision making. After developement and people start using the product, data is generated. The available data is then used to validate hypothesis that would help in improving the product. This is when product analytics comes in.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/how-use-data-build-products-that-customers-need.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Powerful things you can do with the Markdown editor</title><link href="http://localhost:4000/powerful-things-markdown-editor/" rel="alternate" type="text/html" title="Powerful things you can do with the Markdown editor" /><published>2019-01-24T00:00:00+01:00</published><updated>2019-01-24T00:00:00+01:00</updated><id>http://localhost:4000/powerful-things-markdown-editor</id><content type="html" xml:base="http://localhost:4000/powerful-things-markdown-editor/"><![CDATA[There are lots of powerful things you can do with the Markdown editor
-
-If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
-
-As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using. oya update it.
-
-
-## Special formatting
-
-As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:
-
-+ ~~strike through~~
-+ ==highlight==
-+ \*escaped characters\*
-
-
-## Writing code blocks
-
-There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, `like this`. Larger snippets of code can be displayed across multiple lines using triple back ticks:
-
-```
-.my-link {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.my-link {
     text-decoration: underline;
 }
-```
+</code></pre></div></div>
 
-If you want to get really fancy, you can even add syntax highlighting using Rouge.
+<p>If you want to get really fancy, you can even add syntax highlighting using Rouge.</p>
 
+<p><img src="/assets/images/3.jpg" alt="walking" /></p>
 
-![walking]({{ site.baseurl }}/assets/images/3.jpg)
+<h2 id="reference-lists">Reference lists</h2>
 
-## Reference lists
+<p>The quick brown jumped over the lazy.</p>
 
-The quick brown jumped over the lazy.
+<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
 
-Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
+<h2 id="sample-blockquote">Sample Blockquote</h2>
+<blockquote>
+  <p>Writing good technical articles is indeed a challenge, takes a lot of your personal time and often requires doing a lot of research. Of-course you should have a passion for reading and writing it. Before you write your paper, you need to understand your audience and your message.</p>
+</blockquote>
 
-## Sample Blockquote
->Writing good technical articles is indeed a challenge, takes a lot of your personal time and often requires doing a lot of research. Of-course you should have a passion for reading and writing it. Before you write your paper, you need to understand your audience and your message.
+<h2 id="full-html">Full HTML</h2>
 
-## Full HTML
+<p>Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:</p>
 
-Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
-
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>]]></content><author><name>ndcharles</name></author><category term="Jekyll" /><category term="Tech" /><category term="markdown" /><category term="editor" /><summary type="html"><![CDATA[There are lots of powerful things you can do with the Markdown editor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/art_work.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/art_work.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>]]></content><author><name>ndcharles</name></author><category term="Jekyll" /><category term="Tech" /><category term="markdown" /><category term="editor" /><summary type="html"><![CDATA[There are lots of powerful things you can do with the Markdown editor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/art_work.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/art_work.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
