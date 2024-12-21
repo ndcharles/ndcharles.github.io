@@ -7,7 +7,24 @@ comments: false
 
 Thank you for coming.
 
-While I am still trying to gather all my projects, kindly read the [articles]({{site.baseurl}}/index.html), see more [about me]({{site.baseurl}}/about.html) or view my [GitHub profile](https://github.com/ndcharles)
+Here are a few of the projects I have worked on. Go through them,kindly read the [articles]({{site.baseurl}}/index.html), see more [about me]({{site.baseurl}}/about.html) or view my [GitHub profile](https://github.com/ndcharles)
+
+
+<div class="projects-container">
+  {% for project in site.data.projects %}
+  <div class="project-card">
+    <div class="project-content">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+      <p>{{ project.description }}</p>
+      <div class="technologies">
+        {% for tech in project.technologies %}
+        <span class="tech-button" data-tech="{{ tech }}">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
 
 #### Want to get in touch instead?

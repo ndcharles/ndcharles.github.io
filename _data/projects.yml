@@ -1,0 +1,88 @@
+- title: "CSA project on predicting laptop price"
+  url: "https://github.com/ndcharles/csa_africa/blob/main/project/ml_group_data_cleaning.ipynb"
+  description: "Help buyers make a decision on the best laptop to purchase by providing their preferred OS, screen size, RAM and storage preference."
+  technologies:
+    - Python
+  concepts:
+    - CatBoostRegressor
+
+- title: "Lagos Rent Prediction Web app (EazyRent)"
+  url: "https://ndcharles.github.io/data-portfolio/lagos-rent-prediction-webapp.html"
+  description: "Scrape data for rental apartments in Lagos from PropertyPro and Nigeria Property Centre and then develop a machine learning model that helps house seekers in Lagos have an idea of how much it would cost them to rent an apartment in locations around Lagos."
+  technologies:
+    - Python
+    - FastAPI
+    - CatBoostRegressor
+  concepts:
+    - Web Scraping
+    - Regression
+
+- title: "Summarising text Using BART and T5"
+  url: "https://ndcharles.github.io/data-portfolio/summarising-text-using-bart-t5.html"
+  description: "In this project I will explore text summarization models BART and T5 to achieve automatic summarization."
+  technologies:
+    - Python
+    - Transformer
+  concepts:
+    - Text Summarisation
+    
+- title: "Customer Segmentation"
+  url: "https://ndcharles.github.io/data-portfolio/customer-segmentation.html"
+  description: "Develop a clustering algorithm to help a supermarket owner create target groups for his customers. This would help him know what age to target which product."
+  technologies:
+    - Python
+    - KMeans
+  concepts:
+    - Clustering
+    - Unsupervised
+    
+- title: "Loan Prediction"
+  url: "https://ndcharles.github.io/data-portfolio/loan-prediction.html"
+  description: "A classification project to reduce the tedious process of ascertaining if a person will be offered loan or not. Models used are, LogisticRegression, DecisionTreeClassifier, RandomForestClassifier and AdaBoostClassifier."
+  technologies:
+    - Python
+    - AdaBoostClassifier
+  concepts:
+    - Classification
+
+- title: "Linear Regression on Lagos Rent"
+  url: "https://ndcharles.github.io/data-portfolio/linear-regression-lagos-rent.html"
+  description: "Scrape contents from nigeriapropertycentre and build a regression model to predict the housing price (rent) in Lagos."
+  technologies:
+    - Python
+    - Scikit Learn
+  concepts:
+    - Web Scraping
+    - Regression
+
+- title: "Exploration of Prosper Loan"
+  url: "https://github.com/ndcharles/Udacity_data_analyst_ND/tree/main/explanatory_prosper_loan"
+  description: "It all started with the question: Why would someone borrow money and refuse to pay back?"
+  technologies:
+    - Python
+  concepts:
+    - Exploratory Data Analysis
+
+- title: "No-show Appointment Booking"
+  url: "https://github.com/ndcharles/Udacity_data_analyst_ND/blob/main/no_show_appointment/Investigate_a_Dataset.ipynb"
+  description: "Investigating the No-show appointment booking from 100k medical appointments in Brazil and is focused on the question of whether or not patients showed up for their appointment."
+  technologies:
+    - Python
+  concepts:
+    - Exploratory Data Analysis
+
+- title: "Exploratory Data Analysis on Titanic Dataset"
+  url: "https://ndcharles.github.io/data-portfolio/exploratory-data-analysis-titanic-dataset.html"
+  description: "In this project I went through the general data analysis process using pandas, numpy, seaborn and matplotlib."
+  technologies:
+    - Python
+  concepts:
+    - Exploratory Data Analysis
+
+#Technologies in the CSS:
+#    - HTML 
+#    - CSS
+#    - JavaScript
+#    - Jekyll
+#    - Python
+#    - SCSS

@@ -1,41 +1,63 @@
 ---
-title: "About"
+title: "Hai 👋🏻 I am Ndcharles"
 layout: page-sidebar
 permalink: /about.html
-description: "I am a Data Scientist with a slice of Analytics, Growth and Product added to the mix."
+description: "I am a Data Scientist with a slice of Operations, Growth and Product added to the mix."
 comments: false
 published: true
 ---
+>During the COVID in 2020 I transitioned fully into tech as a Data Scientist. I have experience in digital marketing before now, so I easily focused on Analytics, with Growth and Product added to the pack (thanks to my first data role). I am interested in the real-life applications of data science and machine learning.
+Currently, at ALX, I work at the intersection of data analysis and operations (IT and community) and have built a few products. I work with Spreadsheets, Looker Studio, Tableau, Python, and SQL. I am currently learning and building more LLM-based products and software products to enhance team and community operations.
 
-### Hai 👋🏻 I am Ndcharles
->I am a Data Scientist with a slice of Analytics, Growth and Product added to the pack.
-I work with Excel, Power BI, Python and SQL. I build ML models (thanks to the abundance of frameworks from the likes of Scikit Learn, Google and Facebook prophet and more). I am currently doing a deep dive into more data science projects to improve my skillset and also get a fuller grasp of data engineering (AWS and ML in production).
 <br/>
 <hr/>
 Ok. This next version is an extended version of me.
 
-I am knowledged about digital marketing, web platforms and tech in general which makes me a good growth hacker marketer. 
+I am knowledged about digital marketing, web platforms and tech in general which gives me the ability to work across data, software and products. 
 
 My engineering background and love for details led me to data science and analytics where I drill down data in search of meaning and hidden information. 
 
-Speaking of eye for details, digital marketing and tech, as a product manager I spend time analysing web platforms to understand how they work and, how users use them in order to know how platforms should actually work best for its users.  
+Speaking of eye for details, digital marketing and tech, as a product manager I spend time analysing web platforms to understand how they work and, how users use them in order to know how platforms should actually work best for its users. This knowledge also guides me while selecting and building tools for my team and community.
 
-I currently work as a Data Analyst ~~and an acting Product Manager~~. I often create email newsletters and online resources for our company's blog.
+In my own time I used to be a homeschool teacher for Common Entrance pupils and every other things (albeit in tech). I design [WordPress websites](https://opendiari.com/thatbros), [write quick tech articles](https://opendiari.com), teach kids to code in Scratch, and read daily about tech and growth marketing. I am currently working on EdstreetNG, seeNaija and Stopeet.
 
-In my own time I am a homeschool teacher for Common Entrance pupils and every other things (albeit in tech). I design [WordPress websites](https://opendiari.com/thatbros), [write quick tech articles](https://opendiari.com), teach kids to code in Scratch, and read daily about tech and growth marketing.
+All of my writings on [data science]({{site.baseurl}}/categories.html#data), [products]({{site.baseurl}}/categories.html#product) and [tech life]({{site.baseurl}}/categories.html#tech) can be found under the **Articles section** while my data science portfolio is at [here](https://ndcharles.github.io/data-portfolio).
 
-All of my writings on [data science]({{site.baseurl}}/categories.html#data), [products]({{site.baseurl}}/categories.html#product) and [tech_life]({{site.baseurl}}/categories.html#tech) can be found under the **Articles section**. My data science portfolio is at the **Portfolio section** (or just go [here](https://ndcharles.github.io/data-portfolio).) If you want to see all of the wonderful projects I’ve worked on (and still working on), head over to the **Projects section**. 
+### Projects I have worked on
+Here are some of the wonderful projects I’ve worked on (and still working on). More can be found via [my GitHub profile](https://github.com/ndcharles). 
 
-> Do you enjoy my work and find value in the things that I share here or anywhere else and you want to work with me, or just hangout? Feel free to reach out on [Twitter](https://twitter.com/nndcharles), via e-mail, [LinkedIn](https://linkedin.com/in/nndcharles) or just come to my house.
+<div class="projects-container">
+  {% for project in site.data.projects %}
+  <div class="project-card">
+    <div class="project-content">
+      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
+      <p>{{ project.description }}</p>
+      <div class="tags-container">
+        {% for tech in project.technologies %}
+        <span class="tech-button technology">{{ tech }}</span>
+        {% endfor %}
+        {% for concept in project.concepts %}
+        <span class="tech-button concept">{{ concept }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<br>
+Do you enjoy my work and find value in the things that I share here or anywhere else and you want to work with me, or just hangout? Feel free to reach out on [Twitter](https://twitter.com/nndcharles), via e-mail, [LinkedIn](https://linkedin.com/in/nndcharles) or just come to my house.
 
 #### What I do?
 - [Data Science & Analytics](https://ndcharles.github.io/data-portfolio)
-- Everything else tech 
+- [Everything else tech](https://ndcharles.github.io)
+- And Others
 
 #### Want to get in touch?
 - [Twitter](https://twitter.com/nndcharles)
 - [LinkedIn](https://linkedin.com/in/nndcharles)
 - [GitHub](https://github.com/ndcharles)
+
 
 {% comment %}
 #### What I'm currently working on?
