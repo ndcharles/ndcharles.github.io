@@ -6,10 +6,10 @@ description: "I am a Data Scientist with a slice of Operations, Growth and Produ
 comments: false
 published: true
 ---
->During the COVID in 2020 I transitioned fully into tech as a Data Scientist. I have experience in digital marketing before now, so I easily focused on Analytics, with Growth and Product added to the pack (thanks to my first data role). I am interested in the real-life applications of data science and machine learning.
-Currently, at ALX, I work at the intersection of data analysis and operations (IT and community) and have built a few products. I work with Spreadsheets, Looker Studio, Tableau, Python, and SQL. I am currently learning and building more LLM-based products and software products to enhance team and community operations.
+> During the COVID in 2020 I transitioned fully into tech as a Data Scientist. I have experience in digital marketing before now, so I easily focused on Analytics, with Growth and Product added to the pack (thanks to my first data role). I am interested in the real-life applications of data science and machine learning.
 
-<br/>
+> Currently, at ALX, I work at the intersection of data analysis and operations (IT and community) and have built a few products. I work with Spreadsheets, Looker Studio, Tableau, Python, and SQL. I am currently learning and building more LLM-based products and software products to enhance team and community operations.
+<br>
 <hr/>
 Ok. This next version is an extended version of me.
 
@@ -23,30 +23,7 @@ In my own time I used to be a homeschool teacher for Common Entrance pupils and 
 
 All of my writings on [data science]({{site.baseurl}}/categories.html#data), [products]({{site.baseurl}}/categories.html#product) and [tech life]({{site.baseurl}}/categories.html#tech) can be found under the **Articles section** while my data science portfolio is at [here](https://ndcharles.github.io/data-portfolio).
 
-### Projects I have worked on
-Here are some of the wonderful projects I’ve worked on (and still working on). More can be found via [my GitHub profile](https://github.com/ndcharles). 
-
-<div class="projects-container">
-  {% for project in site.data.projects %}
-  <div class="project-card">
-    <div class="project-content">
-      <h3><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h3>
-      <p>{{ project.description }}</p>
-      <div class="tags-container">
-        {% for tech in project.technologies %}
-        <span class="tech-button technology">{{ tech }}</span>
-        {% endfor %}
-        {% for concept in project.concepts %}
-        <span class="tech-button concept">{{ concept }}</span>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
-<br>
-Do you enjoy my work and find value in the things that I share here or anywhere else and you want to work with me, or just hangout? Feel free to reach out on [Twitter](https://twitter.com/nndcharles), via e-mail, [LinkedIn](https://linkedin.com/in/nndcharles) or just come to my house.
+Do you like my work or find value in the things that I share here or anywhere else and you want to work with me, or just hangout? Feel free to reach out on [Twitter](https://twitter.com/nndcharles), via e-mail or [LinkedIn](https://linkedin.com/in/nndcharles).
 
 #### What I do?
 - [Data Science & Analytics](https://ndcharles.github.io/data-portfolio)

@@ -1,124 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-21T20:47:29+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Data et Operations at ALX</title><link href="http://localhost:4000/data-operation-alx/" rel="alternate" type="text/html" title="Data et Operations at ALX" /><published>2024-12-17T00:00:00+01:00</published><updated>2024-12-17T00:00:00+01:00</updated><id>http://localhost:4000/data-operation-alx</id><content type="html" xml:base="http://localhost:4000/data-operation-alx/"><![CDATA[<p>I am never a picture person as my pictures never turn out great, but for the sake of this piece, I took different pictures at different angles to see which would turn out better.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-22T08:40:14+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MLIT</title><subtitle>Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.</subtitle><entry><title type="html">Data et Operations at ALX</title><link href="http://localhost:4000/data-operation-alx/" rel="alternate" type="text/html" title="Data et Operations at ALX" /><published>2024-12-17T00:00:00+01:00</published><updated>2024-12-17T00:00:00+01:00</updated><id>http://localhost:4000/data-operation-alx</id><content type="html" xml:base="http://localhost:4000/data-operation-alx/"><![CDATA[I am never a picture person as my pictures never turn out great, but for the sake of this piece, I took different pictures at different angles to see which would turn out better.
 
-<p>[picture collage not found 😎]</p>
+[picture collage not found 😎]
 
-<p>We must have met somewhere: at ALX Fellowship town hall (CTH/FTH), activation events, marketing outreach, application clinics, Karibu, or our Lagos hub.</p>
+We must have met somewhere: at ALX Fellowship town hall (CTH/FTH), activation events, marketing outreach, application clinics, Karibu, or our Lagos hub.
 
-<p>Nice meeting you!</p>
+Nice meeting you!
 
-<p>This is an unfolding story, but I will get it started and share as much as possible to make it a meaningful read for you.</p>
+This is an unfolding story, but I will get it started and share as much as possible to make it a meaningful read for you.
 
-<h2 id="data-analysis-in-google-sheet">Data analysis in Google sheet</h2>
-<p>During my first few days at ALX, I was stuck between analysing in Excel and Google Sheets. By the end of month 1, I had to choose Google Sheets. This is because most tasks require sharing the final output with someone or copying data from an existing sheet.</p>
+## Data analysis in Google sheet
+During my first few days at ALX, I was stuck between analysing in Excel and Google Sheets. By the end of month 1, I had to choose Google Sheets. This is because most tasks require sharing the final output with someone or copying data from an existing sheet.
 
-<p>A few formulas I can clearly say I used [and still use] during these days:</p>
-<ul>
-  <li>INDEX/MATCH</li>
-  <li>VLOOKUP (This quickly became a favourite)</li>
-  <li>IFERROR</li>
-  <li>REGEX (my favourite suite in Google Sheets)</li>
-  <li>ARRAYFORMULA</li>
-  <li>IMPORTRANGE</li>
-  <li>PIVOTS</li>
-  <li>QUERY</li>
-  <li>And more.
-Some formulas are considered fundamental that’s why you won’t be seeing COUNTIFS and the likes.</li>
-</ul>
+A few formulas I can clearly say I used [and still use] during these days:
+- INDEX/MATCH
+- VLOOKUP (This quickly became a favourite)
+- IFERROR
+- REGEX (my favourite suite in Google Sheets)
+- ARRAYFORMULA
+- IMPORTRANGE
+- PIVOTS
+- QUERY
+- And more.
+Some formulas are considered fundamental that's why you won't be seeing COUNTIFS and the likes.
 
-<h2 id="google-workspace-tools">Google workspace tools</h2>
-<p>Given that everything has to be done so that it can be easily shared and we use Google Workspace tools, I had to explore what tools are available to enhance these workspace tools. Let me introduce you to a few tools that come in handy.</p>
+## Google workspace tools
+Given that everything has to be done so that it can be easily shared and we use Google Workspace tools, I had to explore what tools are available to enhance these workspace tools. Let me introduce you to a few tools that come in handy.
 
-<ul>
-  <li>Bulk emails: My first love was <a href="https://yamm.com/">YAMM</a>. It is great at what it does. 1500 emails daily on Google Workspace premium and 50 daily emails free forever (they changed this to 30 in their 2024 update). Another tool is <a href="https://drmerge.com/">Dr. Merge</a>. This is a lifesaver if you don’t have the money to subscribe to YAMM. The only catch is that you won’t be able to create email templates in Gmail. You will have to create them within Dr. Merge. Another trade-off with Dr Merge is that you can’t choose a custom sender (if your default email is abc@gmail.com, you can’t change that). But then, you lose nothing since the product is entirely FREE. Another product worthy of exploring is <a href="https://www.mergo.app/">MailMergo</a>. It happened to be from the creator of YAMM (he left YAMM and started <a href="https://www.scriptit.fr/">Scripit</a>).</li>
-</ul>
+- Bulk emails: My first love was [YAMM](https://yamm.com/). It is great at what it does. 1500 emails daily on Google Workspace premium and 50 daily emails free forever (they changed this to 30 in their 2024 update). Another tool is [Dr. Merge](https://drmerge.com/). This is a lifesaver if you don't have the money to subscribe to YAMM. The only catch is that you won't be able to create email templates in Gmail. You will have to create them within Dr. Merge. Another trade-off with Dr Merge is that you can't choose a custom sender (if your default email is abc@gmail.com, you can't change that). But then, you lose nothing since the product is entirely FREE. Another product worthy of exploring is [MailMergo](https://www.mergo.app/). It happened to be from the creator of YAMM (he left YAMM and started [Scripit](https://www.scriptit.fr/)).
 
-<blockquote>
-  <p>We have professional email tools but flexing my Google Workspace skills helps me automate some things better.</p>
-</blockquote>
+> We have professional email tools but flexing my Google Workspace skills helps me automate some things better.
 
-<p><strong>Note:</strong> Dr. Merge is no longer available on Google Workspace. I am yet to know why since their homepage is still live.</p>
+**Note:** Dr. Merge is no longer available on Google Workspace. I am yet to know why since their homepage is still live.
 
-<ul>
-  <li>
-    <p>Repositories and project sites: Google Sites is a fantastic tool for quick project sites. The customisations can be limiting, but you can create something amazing with a custom theme, <a href="https://awesome-table.com/apps">Awesome Table addon</a>, embeds, a good eye for design, and other tweaks I am unaware of. Plus, it has the option for custom domains (remember to use a [custom DNS server]).
-See an <a href="aglaw.com.ng">example site</a> I built for a client after discovering Google sites. And a quick yet amazing tutorial on <a href="https://www.steegle.com/google-sites/how-to/assign-custom-url-domain-personal">setting up custom domains on Google sites</a>.</p>
-  </li>
-  <li>
-    <p>Other site tools: Notion is excellent. A few of our projects are hosted on Notion as a site published using <a href="https://super.so">Super.so</a>. This was our early days, now I push these site directly via notion but cloak them behind our custom URL shortener (alx.ng).</p>
-  </li>
-  <li>
-    <p>Google Sheets tools: I am not a power user of Sheets, but I have used a fair share of the tools in most of my analyses. A few of my go-to add-ons are <a href="https://www.ablebits.com/google-sheets-add-ons/power-tools/index.php">Power tool (split and sheet)</a>, app script, and <a href="https://workspace.google.com/marketplace/app/sheet_automation_automate_google_sheets/250108887537">Sheet Automation</a>. Google sheets have received massive updates in the past months that some of these features are already within it core.</p>
-  </li>
-  <li>
-    <p>Appsheet: Even though <a href="../first-appsheet-app-failed">my first appsheet app failed</a> on first usage, I was able to learn a lot about appsheets and remedy the situation then went ahead to build other apps (although for different clients and purposes). Glide was another platform I used for creating our event apps but the experience and customisation wasn’t as great as Appsheet’s (apologies to all glide lovers). I ended up building a lot more things on Sheets.</p>
-  </li>
-</ul>
+- Repositories and project sites: Google Sites is a fantastic tool for quick project sites. The customisations can be limiting, but you can create something amazing with a custom theme, [Awesome Table addon](https://awesome-table.com/apps), embeds, a good eye for design, and other tweaks I am unaware of. Plus, it has the option for custom domains (remember to use a [custom DNS server]).
+See an [example site](aglaw.com.ng) I built for a client after discovering Google sites. And a quick yet amazing tutorial on [setting up custom domains on Google sites](https://www.steegle.com/google-sites/how-to/assign-custom-url-domain-personal).
 
-<h2 id="events-coordination">Events coordination</h2>
-<p>It’s one thing to plan an event but another thing to coordinate your attendees to ensure they have a seamless check-in experience.</p>
+- Other site tools: Notion is excellent. A few of our projects are hosted on Notion as a site published using [Super.so](https://super.so). This was our early days, now I push these site directly via notion but cloak them behind our custom URL shortener (alx.ng).
 
-<ul>
-  <li>
-    <p><a href="https://tickettailor.com">Ticket Tailor</a>: This is really great for event registration and check-in. They have a generous free plan of 5,000 event registrations. The platform is customisable to a very large extent, registration pages, attendee questions, ticket types, ticket grouping, admin and check-in app user accounts, custom registeration confirmation email and conditional emails to recipients.</p>
-  </li>
-  <li>
-    <p><a href="https://lu.ma/">Luma</a>: This is a great Ticket Tailor alternative but doesn’t have enough customisation options especially for emails. It has a blog option and that can mean a lot to some people.</p>
-  </li>
-  <li>
-    <p>Google sheets and qr scanner: Yes, Google sheets again. For a very large event where our data is already on sheets or it has been collected before hand but then we need to check-in our attendees using QR. This <a href="https://qrexplore.com/checkin/">QR tool</a> or an AppSheet app is good enough for you. I created a [quick qr code check-in tutorial here] on how to set this up. You’re welcome.</p>
-  </li>
-</ul>
+- Google Sheets tools: I am not a power user of Sheets, but I have used a fair share of the tools in most of my analyses. A few of my go-to add-ons are [Power tool (split and sheet)](https://www.ablebits.com/google-sheets-add-ons/power-tools/index.php), app script, and [Sheet Automation](https://workspace.google.com/marketplace/app/sheet_automation_automate_google_sheets/250108887537). Google sheets have received massive updates in the past months that some of these features are already within it core.
 
-<h2 id="more-tools">More tools</h2>
-<ul>
-  <li>Github pages was a rescue for a lot of settings</li>
-  <li>Tally.so, Fillout, and Formbricks were perfect Google forms alternatives</li>
-  <li>Staff training and onboarding: classroomio.com and Google Drive</li>
-</ul>
+- Appsheet: Even though [my first appsheet app failed](../first-appsheet-app-failed) on first usage, I was able to learn a lot about appsheets and remedy the situation then went ahead to build other apps (although for different clients and purposes). Glide was another platform I used for creating our event apps but the experience and customisation wasn't as great as Appsheet's (apologies to all glide lovers). I ended up building a lot more things on Sheets.
 
-<h2 id="visualisations">Visualisations</h2>
-<p>What use is analysis if no visualisations are attached.</p>
-<ul>
-  <li><a href="sheets.google.com">Google sheets</a></li>
-  <li><a href="https://datawrapper.de">Datawrapper</a></li>
-  <li><a href="https://flourish.studio/">Flourish</a></li>
-  <li><a href="https://rawgraphs.io">RAWgraphs</a></li>
-  <li><a href="https://lookerstudio.google.com/">Looker stuido</a></li>
-  <li><a href="https://public.tableau.com/app">Tableau</a> (sorry to Power BI lovers, it was a tough decision)</li>
-  <li><a href="https://hackernoon.com/how-to-convert-and-prepare-topojson-files-for-interactive-mapping-with-d3-499cf0ced5f">Getting map data for custom graphing</a></li>
-  <li>Get the data <a href="https://gadm.org/download_country.html">here</a>: (I used the GeoJSON file instead of shapefile. Selected only Lagos data and upload the custom map to datawrapper.)</li>
-</ul>
+## Events coordination
+It's one thing to plan an event but another thing to coordinate your attendees to ensure they have a seamless check-in experience. 
 
-<h2 id="people-relations">People relations</h2>
-<p>At first, part of working here involved calling learners, alumni and others for one thing or another. Borrowing some learnings from ‘Better’ by Atul Gawande (a book about performance in medicine), there are several ways to make a positive difference, especially when your work involves interacting with people.</p>
+- [Ticket Tailor](https://tickettailor.com): This is really great for event registration and check-in. They have a generous free plan of 5,000 event registrations. The platform is customisable to a very large extent, registration pages, attendee questions, ticket types, ticket grouping, admin and check-in app user accounts, custom registeration confirmation email and conditional emails to recipients.
 
-<ul>
-  <li>
-    <p>Be personable, and learn to hold conversations, irrespective of the call scripts offered to you. Learn about the people you speak to. Listen and make note of what you learn. This is a big loophole I find in almost every customer relationship calls I have received. You’re human not a robot; use that to your advantage.</p>
-  </li>
-  <li>
-    <p>Don’t complain — It doesn’t solve anything but gets you down. Instead, in your conversation with others, discuss ideas you read about and interesting problems you came across.</p>
-  </li>
-  <li>
-    <p>Be observant - See everything as a learning phase and not problem. This also is one of the CHAIR values at ALX (Adventure).</p>
-  </li>
-  <li>
-    <p>Write something — Writing helps you step back and think through a problem. With the degree of thoughtfulness you put into writing you eventually become a better person.</p>
-  </li>
-  <li>
-    <p>Explore change</p>
-  </li>
-</ul>
+- [Luma](https://lu.ma/): This is a great Ticket Tailor alternative but doesn't have enough customisation options especially for emails. It has a blog option and that can mean a lot to some people.
 
-<h2 id="building-things">Building things</h2>
-<ul>
-  <li>Job Board Using Jekyll</li>
-  <li>Job board using WordPress
-I never pushed any of the job boards to production. They were built as proof of concepts and then I leave the final build to the product team.</li>
-  <li>I have a data science background and as such have pushed a few ML apps online. <a href="alx-connect-w9h3.onrender.com">Here is the API to one we shipped just before this post</a>.</li>
-</ul>
+- Google sheets and qr scanner: Yes, Google sheets again. For a very large event where our data is already on sheets or it has been collected before hand but then we need to check-in our attendees using QR. This [QR tool](https://qrexplore.com/checkin/) or an AppSheet app is good enough for you. I created a [quick qr code check-in tutorial here] on how to set this up. You're welcome.
 
-<p>There is more to me being here. <strong>ALX Connect</strong>, our <strong>Big query project</strong>, <strong>managing the contact centre</strong>, and hosting the experience (which gave birth to my next project) and ALX Connect.</p>]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="alx" /><category term="the_room" /><category term="data_operations" /><category term="SAND" /><category term="alx_nigeria" /><summary type="html"><![CDATA[I am never a picture person as my pictures never turn out great, but for the sake of this piece, I took different pictures at different angles to see which would turn out better.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/alx_theroom.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/alx_theroom.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.
+## More tools 
+- Github pages was a rescue for a lot of settings 
+- Tally.so, Fillout, and Formbricks were perfect Google forms alternatives
+- Staff training and onboarding: classroomio.com and Google Drive
+
+## Visualisations
+What use is analysis if no visualisations are attached.
+- [Google sheets](sheets.google.com)
+- [Datawrapper](https://datawrapper.de)
+- [Flourish](https://flourish.studio/)
+- [RAWgraphs](https://rawgraphs.io)
+- [Looker stuido](https://lookerstudio.google.com/)
+- [Tableau](https://public.tableau.com/app) (sorry to Power BI lovers, it was a tough decision)
+- [Getting map data for custom graphing](https://hackernoon.com/how-to-convert-and-prepare-topojson-files-for-interactive-mapping-with-d3-499cf0ced5f)
+- Get the data [here](https://gadm.org/download_country.html): (I used the GeoJSON file instead of shapefile. Selected only Lagos data and upload the custom map to datawrapper.) 
+
+## People relations
+At first, part of working here involved calling learners, alumni and others for one thing or another. Borrowing some learnings from ‘Better’ by Atul Gawande (a book about performance in medicine), there are several ways to make a positive difference, especially when your work involves interacting with people.
+
+- Be personable, and learn to hold conversations, irrespective of the call scripts offered to you. Learn about the people you speak to. Listen and make note of what you learn. This is a big loophole I find in almost every customer relationship calls I have received. You're human not a robot; use that to your advantage.
+
+- Don’t complain — It doesn’t solve anything but gets you down. Instead, in your conversation with others, discuss ideas you read about and interesting problems you came across.
+
+- Be observant - See everything as a learning phase and not problem. This also is one of the CHAIR values at ALX (Adventure).
+
+- Write something — Writing helps you step back and think through a problem. With the degree of thoughtfulness you put into writing you eventually become a better person.
+
+- Explore change
+
+## Building things 
+- Job Board Using Jekyll
+- Job board using WordPress
+I never pushed any of the job boards to production. They were built as proof of concepts and then I leave the final build to the product team. 
+- I have a data science background and as such have pushed a few ML apps online. [Here is the API to one we shipped just before this post](alx-connect-w9h3.onrender.com).
+
+There is more to me being here. **ALX Connect**, our **Big query project**, **managing the contact centre**, and hosting the experience (which gave birth to my next project) and ALX Connect.
+
+{% comment %}
+# How I built a a connected space for our community
+- 
+> This project gave birth to a startup, Syfinix
+{% endcomment %}]]></content><author><name>ndcharles</name></author><category term="Data" /><category term="Tech" /><category term="alx" /><category term="the_room" /><category term="data_operations" /><category term="SAND" /><category term="alx_nigeria" /><summary type="html"><![CDATA[I am never a picture person as my pictures never turn out great, but for the sake of this piece, I took different pictures at different angles to see which would turn out better.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/alx_theroom.webp" /><media:content medium="image" url="http://localhost:4000/assets/images/alx_theroom.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Advanced Prompt Engineering</title><link href="http://localhost:4000/advanced-prompt-engineering/" rel="alternate" type="text/html" title="Advanced Prompt Engineering" /><published>2024-06-11T00:00:00+01:00</published><updated>2024-06-11T00:00:00+01:00</updated><id>http://localhost:4000/advanced-prompt-engineering</id><content type="html" xml:base="http://localhost:4000/advanced-prompt-engineering/"><![CDATA[Generative AI refers to tools that can create new content, such as articles or images, similar to human capabilities. This technology is expected to significantly impact various industries by automating creative tasks, saving time, and reducing costs.
 
 By providing clear instructions (prompts), users can leverage generative AI to perform tasks efficiently. It can write essays, solve math problems, generate marketing content, analyze data, question-answering, sentiment analysis, language translation, coding and more.
 
