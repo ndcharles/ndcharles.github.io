@@ -15,7 +15,9 @@ We must have met somewhere: at ALX Fellowship town hall (CTH/FTH), activation ev
 
 Nice meeting you!
 
-This is an unfolding story, but I will get it started and share as much as possible to make it a meaningful read for you.
+Managing community at ALX is something that comes to me naturally. I don't know how but despite being an introvert I enjoy the experience. Maybe that's becuase it involves getting to meeet random persons and build systems to solve a need at different points.
+
+This is an unfolding story, but I will get it started and share as much as possible to make it a meaningful read for you. Also, this isn't about the community side of my work but more on the data and operations part which happen behind-the-scene for all to have an amazing experience.
 
 ## Data analysis in Google sheet
 During my first few days at ALX, I was stuck between analysing in Excel and Google Sheets. By the end of month 1, I had to choose Google Sheets. This is because most tasks require sharing the final output with someone or copying data from an existing sheet.
@@ -42,7 +44,7 @@ Given that everything has to be done so that it can be easily shared and we use 
 **Note:** Dr. Merge is no longer available on Google Workspace. I am yet to know why since their homepage is still live.
 
 - Repositories and project sites: Google Sites is a fantastic tool for quick project sites. The customisations can be limiting, but you can create something amazing with a custom theme, [Awesome Table addon](https://awesome-table.com/apps), embeds, a good eye for design, and other tweaks I am unaware of. Plus, it has the option for custom domains (remember to use a [custom DNS server]).
-See an [example site](aglaw.com.ng) I built for a client after discovering Google sites. And a quick yet amazing tutorial on [setting up custom domains on Google sites](https://www.steegle.com/google-sites/how-to/assign-custom-url-domain-personal).
+See an [example site](https://www.aglaw.com.ng) I built for a client after discovering Google sites. And a quick yet amazing tutorial on [setting up custom domains on Google sites](https://www.steegle.com/google-sites/how-to/assign-custom-url-domain-personal).
 
 - Other site tools: Notion is excellent. A few of our projects are hosted on Notion as a site published using [Super.so](https://super.so). This was our early days, now I push these site directly via notion but cloak them behind our custom URL shortener (alx.ng).
 
@@ -92,7 +94,14 @@ At first, part of working here involved calling learners, alumni and others for 
 - Job Board Using Jekyll
 - Job board using WordPress
 I never pushed any of the job boards to production. They were built as proof of concepts and then I leave the final build to the product team. 
-- I have a data science background and as such have pushed a few ML apps online. [Here is the API to one we shipped just before this post](alx-connect-w9h3.onrender.com).
+- I have a data science background and as such have pushed a few ML apps online. [Here is ALX Connect API](https://alx-connect-w9h3.onrender.com). I shipped it with my team of recent ALX graduates just before this post.
+
+> ALX Connect is aimed at creating an enabling environment for our community members to connect. This helps us break the geographic barrier to meeting your peer, finding mentors and eventually getting placed in jobs or start their own business.
+
+> I created an initial version of ALX Connect using forms, spreadsheets, and meeting tools to test the concept. Amongst other limitations were the manual process involved, the inability to accurately pair everyone based on their profiles, and the scalability of the approach.
+
+> By leveraging the advanced capabilities of LLMs, this gap can be bridged through an intelligent matching model that clusters individuals based on shared interests and professional profiles, then pair them with others who have complementary levels of experience. This approach promotes mentorship and collaborative opportunities and provide a framework for continuously learning from user interactions and feedback to refine clustering and pairing algorithms over time. All with the single click of a button.
+
 
 There is more to me being here. **ALX Connect**, our **Big query project**, **managing the contact centre**, and hosting the experience (which gave birth to my next project) and ALX Connect.
 
