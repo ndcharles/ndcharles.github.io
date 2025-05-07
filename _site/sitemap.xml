@@ -42,9 +42,6 @@
 <loc>http://localhost:4000/authors-list.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/buy-me-a-coffee.html</loc>
-</url>
-<url>
 <loc>http://localhost:4000/categories.html</loc>
 </url>
 <url>
@@ -64,5 +61,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/tags.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tools/url-replacer.html</loc>
 </url>
 </urlset>

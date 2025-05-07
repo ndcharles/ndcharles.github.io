@@ -1079,3 +1079,18 @@ img + em {
   background-color: #03a87c;
 }
 
+/* Hover dropdown for menu*/
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Sleeker dropdown styling */
+.dropdown-menu {
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+  min-width: 10rem;
+}
+.dropdown-item {
+  padding: 0.4rem 1rem;
+}
