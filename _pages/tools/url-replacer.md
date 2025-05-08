@@ -59,41 +59,17 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 		margin-top: 15px;
 	}
 	
-	/* Ad container styles */
-	.ads-container {
-		display: flex;
-		justify-content: space-between;
-		gap: 20px;
-		margin-top: 30px;
-	}
-	.ad-unit {
-		flex: 1;
-		padding: 15px;
-		background-color: rgba(255, 255, 255, 0.9);
-		border-radius: 8px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		text-align: center;
-		border: 1px solid #dee2e6;
-	}
-	.ad-unit h5 {
-		font-size: 16px;
+@media (max-width: 780px) {
+	  .result-group {
+		align-items: stretch;
+	  }
+	  .result-group textarea {
+		width: 100%;
 		margin-bottom: 10px;
-		color: #0d6efd;
-	}
-	.ad-unit p {
-		font-size: 14px;
-		margin-bottom: 15px;
-		color: #495057;
-	}
-	.ad-unit .btn {
-		font-size: 14px;
-		padding: 6px 12px;
-	}
-	@media (max-width: 768px) {
-		.ads-container {
-			flex-direction: column;
-			gap: 15px;
-		}
+	  }
+	  #copyBtn {
+		width: 100%;
+	  }
 	}
 </style>
 
@@ -104,7 +80,7 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 		<div class="card-body">
 			<div class="mb-3">
 				<label for="inputUrl" class="form-label">Enter URL with spaces:</label>
-				<textarea class="form-control" id="inputUrl" rows="3" placeholder="https://example.com/my  file  with  multiple  spaces.txt"></textarea>
+				<textarea class="form-control" id="inputUrl" rows="3" placeholder="https://example.com/my file with multiple  spaces.txt"></textarea>
 			</div>
 			<div class="row mb-3">
 				<div class="col-md-6">
@@ -122,7 +98,7 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 			<button id="processBtn" class="btn btn-primary">Process URL</button>
 			<div class="mt-4">
 				<label for="result" class="form-label">Result:</label>
-				<div class="input-group mb-3">
+				<div class="input-group mb-3 result-group d-flex">
 					<textarea class="form-control" id="result" rows="3" readonly></textarea>
 					<button class="btn btn-outline-secondary copy-btn" type="button" id="copyBtn" title="Copy to clipboard">
 						<i class="bi bi-clipboard"></i> Copy
