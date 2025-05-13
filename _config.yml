@@ -20,7 +20,7 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-target-blank
-  
+
 authors:
     ndcharles:
       name:           Ndcharles Nweke

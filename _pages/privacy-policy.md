@@ -3,23 +3,23 @@ title: "Privacy Policy"
 permalink: "/privacy-policy.html"
 ---
 
-"{{site.name}}" takes your privacy seriously. To better protect your privacy we provide this privacy policy notice explaining the way your personal information is collected and used.
+"{{site.name}}" takes your privacy seriously. To better protect your privacy this privacy policy notice explains the way your personal information is collected and used.
 
 ~~ I am leaving this privacy policy here in case I change my mind on running ads and starting a newsletter. Take Care! ~~
 
 #### Collection of Routine Information
 
-This website track basic information about their visitors. This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify specific visitor to this website. The information is tracked for routine administration and maintenance purposes.
+This website track basic information about you, its visitor. This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify a specific visitor to this website. The information is tracked for routine administration and maintenance purposes.
 
 
 #### Cookies
 
-Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content.
+Where necessary, this website uses cookies to store information about your preferences and history in order to better serve you, the visitor, and/or present you with customized content.
 
 
 #### Advertisement and Other Third Parties
 
-Advertising partners and other third parties may use cookies, scripts and/or web beacons to track visitor activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This website has no access or control over these cookies, scripts and/or web beacons that may be used by third parties. Learn how to [opt out of Google’s cookie usage](http://www.google.com/privacy_ads.html).
+Advertising partners and other third parties may use cookies, scripts and/or web beacons to track your activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This website has no access or control over these cookies, scripts and/or web beacons that may be used by third parties. Learn how to [opt out of Google’s cookie usage](http://www.google.com/privacy_ads.html).
 
 
 #### Links to Third Party Websites
@@ -36,7 +36,7 @@ The security of your personal information is important to us, but remember that 
 
 This Privacy Policy is effective and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
 
-We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.
+We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, you will have to take a look on this page to see it.
 
 
 #### Contact Information

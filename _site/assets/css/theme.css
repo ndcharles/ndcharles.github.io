@@ -1002,30 +1002,7 @@ img + em {
   margin-top: 20px;
 }
 
-/* About button styling for default (desktop) */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-}
-
-/* About buttons stack vertically on smaller screens */
-@media (max-width: 768px) {
-  .button-container {
-    flex-direction: column;
-    gap: 10px; /* Adjust spacing for mobile */
-  }
-
-  .btn {
-    width: 100%; /* Full width for buttons on mobile */
-    max-width: 300px; /* Optional: limit button width */
-    margin: 0 auto; /* Center the buttons */
-  }
-}
-
+/* error code here */
 
 /* Project display on about page */
 .projects-container {
