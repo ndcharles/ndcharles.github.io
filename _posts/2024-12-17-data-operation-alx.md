@@ -5,7 +5,7 @@ author: ndcharles
 categories: [ Data, Tech ]
 image: assets/images/alx_theroom.webp
 date_modified: 2024-12-21 
-tags: [ alx, the_room, data_operations, SAND, alx_nigeria ]
+tags: [ featured, alx, the_room, data_operations, SAND, alx_nigeria ]
 ---
 I am never a picture person as my pictures never turn out great, but for the sake of this piece, I took different pictures at different angles to see which would turn out better.
 
@@ -102,8 +102,15 @@ I never pushed any of the job boards to production. They were built as proof of 
 
 > By leveraging the advanced capabilities of LLMs, this gap can be bridged through an intelligent matching model that clusters individuals based on shared interests and professional profiles, then pair them with others who have complementary levels of experience. This approach promotes mentorship and collaborative opportunities and provide a framework for continuously learning from user interactions and feedback to refine clustering and pairing algorithms over time. All with the single click of a button.
 
-
+{: .highlight }
 There is more to me being here. **ALX Connect**, our **Big query project**, **managing the contact centre**, and hosting the experience (which gave birth to my next project) and ALX Connect.
+
+## 2025 Updates
+> In 2025, we are improving on ALX Connect and starting a beta test while scaling the platform little by little. We also created a system for ALX community-led events.
+
+> We are done building [ALX Wall of Devs](https://devs.alxafrica.ng). This project is aimed at recognising our heroes, those who spent countless hours developing the products that would make our community experience an amazing one. From ALX Connect, to Job board, and more to come.
+
+> We also launched an [ALX check-in app](https://checkin.alxafrica.com) for our in-person community events. This is a simple solution to help migrate event registration data from forms and other tools to an easy solution that also allows us cover the 37 states of Nigeria where we have presence.
 
 {% comment %}
 # How I built a a connected space for our community

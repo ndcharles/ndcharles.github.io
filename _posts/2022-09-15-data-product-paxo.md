@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Data & Product at PAXO Health & Beauty"
+title:  "Data et Product at PAXO Health & Beauty"
 author: ndcharles
 categories: [ Product, Tech, Data ]
 image: assets/images/product-management-paxo.webp

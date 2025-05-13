@@ -31,6 +31,9 @@ Embed gifs: ![Attendance app](/assets/images/alx_appsheet.gif) views default gif
 Ref: https://dev.to/bdavidxyz/markdown-center-image-39j1
 
 
+Callouts and highlights in Jekyll using the Markdown extension supported by kramdown: block IALs.
+https://just-the-docs.com/docs/ui-components/callouts/
+
 Add image within post: ![My helpful screenshot](/assets/screenshot.jpg)
 
 https://dev-notes.eu/2016/01/images-in-kramdown-jekyll/

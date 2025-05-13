@@ -4,79 +4,128 @@ permalink: /tools/url-replacer.html
 description: "This tool replaces spaces in URLs with your specified encoding (default: %20)"
 ---
 <style>
-	.main-container {
-		max-width: 800px;
-		margin: 20px auto;
-	}
-	.card {
-		background-color: rgba(255, 255, 255, 0.9);
-		backdrop-filter: blur(5px);
-		border-radius: 10px;
-		overflow: hidden;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-		border: none;
-		margin-bottom: 20px;
-	}
+.main-container {
+	max-width: 800px;
+	margin: 20px auto;
+}
 
-	}
-	#result {
-		min-height: 100px;
-		background-color: rgba(255, 255, 255, 0.8);
-	}
-	.copy-btn {
-		cursor: pointer;
-		transition: all 0.3s ease;
-	}
-	.copy-btn:hover {
-		background-color: #e9ecef;
-	}
-	.encoding-input {
-		max-width: 100px;
-	}
-	.form-control {
-		background-color: rgba(255, 255, 255, 0.8);
-		border: 1px solid #dee2e6;
-	}
-	.form-control:focus {
-		background-color: white;
-		box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-	}
-	.btn-primary {
-		background-color: #0d6efd;
-		border: none;
-		padding: 10px 20px;
-		font-weight: 500;
-		transition: all 0.3s ease;
-	}
-	.btn-primary:hover {
-		background-color: #0b5ed7;
-		transform: translateY(-2px);
-	}
-	.input-group-text {
-		background-color: #f8f9fa;
-	}
-	.form-check {
-		margin-top: 15px;
-	}
-	
-@media (max-width: 780px) {
-	  .result-group {
-		align-items: stretch;
-	  }
-	  .result-group textarea {
-		width: 100%;
-		margin-bottom: 10px;
-	  }
-	  #copyBtn {
-		width: 100%;
-	  }
-	}
+.card {
+	background-color: rgba(255, 255, 255, 0.9);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border: none;
+	margin-bottom: 20px;
+}
+
+.copy-btn {
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border: none;
+	border-radius: 5px;
+	background-color: #0d6efd;
+	color: white;
+	font-weight: 500;
+	text-align: center;
+}
+
+.copy-btn:hover {
+	background-color: #0b5ed7;
+}
+.encoding-input {
+	max-width: 100px;
+}
+.form-control {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid #dee2e6;
+}
+.form-control:focus {
+	background-color: white;
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn-primary {
+	background-color: #0d6efd;
+	border: none;
+	padding: 10px 20px;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+	background-color: #0b5ed7;
+	transform: translateY(-2px);
+}
+
+.input-group-text {
+	background-color: #f8f9fa;
+}
+
+.form-check {
+	margin-top: 15px;
+}
+
+.copy-text {
+  position:relative;
+  padding:5px;
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:5px;
+  display:flex;
+}
+
+.copy-text button {
+  padding:20px;
+  background:#5784f5;
+  color:#fff;
+  font-size:20px;
+  border:none;
+  outline:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+.copy-text button:active {
+  background:#809ce2;
+}
+
+.copy-text button:after {
+  content:"";
+  position:absolute;
+  top:-20px;
+  right:25px;
+  width:10px;
+  height:10px;
+  background:#5c81dc;
+  transform:rotate(45deg);
+  display:none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after {
+  display:block;
+}
+
+.notification {
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	background-color: #fff3cd;
+	color: #856404;
+	border: 1px solid #ffeeba;
+	display: none;
+	animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 </style>
 
 <body>
 <div class="main-container">
 	<!-- Tool Container -->
-	<div class="card shadow">
+	<div class="card">
 		<div class="card-body">
 			<div class="mb-3">
 				<label for="inputUrl" class="form-label">Enter URL with spaces:</label>
@@ -95,17 +144,26 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 				<input class="form-check-input" type="checkbox" id="trimSpaces" checked>
 				<label class="form-check-label" for="trimSpaces">Trim excess spaces between words</label>
 			</div>
+			<div id="processNotification" class="notification mb-3">
+                Please enter text to process
+            </div>
+			<div id="successNotification" class="notification notification-success mb-3">
+				URL processed successfully!
+			</div>
 			<button id="processBtn" class="btn btn-primary">Process URL</button>
-			<div class="mt-4">
-				<label for="result" class="form-label">Result:</label>
-				<div class="input-group mb-3 result-group d-flex">
-					<textarea class="form-control" id="result" rows="3" readonly></textarea>
-					<button class="btn btn-outline-secondary copy-btn" type="button" id="copyBtn" title="Copy to clipboard">
-						<i class="bi bi-clipboard"></i> Copy
+            <div class="mt-4">
+                <label for="result" class="form-label">Result:</label>
+				<div class="copy-text">
+					<textarea class="form-control" id="result" rows="3" placeholder="Result will appear here..." style="background-color: transparent; border-color: transparent; line-height: 1.2; padding-left: 0.45rem" readonly></textarea>
+					<button id="copyBtn" title="Copy to clipboard">
+					  <i class="fa fa-clone"></i>
 					</button>
 				</div>
-			</div>
-		</div>
+				<div id="copyNotification" class="notification mt-2">
+                    There is no link processed for copying yet.
+                </div>
+            </div>
+        </div>
 		<div class="card-footer text-muted">
 			<small>This tool replaces spaces in URLs with your specified encoding (default: %20)</small>
 		</div>
@@ -122,6 +180,9 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 		const encodingFormat = document.getElementById('encodingFormat');
 		const trimSpaces = document.getElementById('trimSpaces');
 		const result = document.getElementById('result');
+		const processNotification = document.getElementById('processNotification');
+        const copyNotification = document.getElementById('copyNotification');
+		const successNotification = document.getElementById('successNotification');
 		
 		// Process URL when button is clicked
 		processBtn.addEventListener('click', function() {
@@ -135,6 +196,7 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 			}
 			
 			if (url) {
+				 processNotification.style.display = 'none';
 				// Trim excess spaces if option is checked
 				if (trimSpaces.checked) {
 					url = url.replace(/\s+/g, ' ');
@@ -144,23 +206,49 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 				const escapedEncoding = encoding.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 				const encodedUrl = url.replace(new RegExp(' ', 'g'), encoding);
 				result.value = encodedUrl;
+				
+				successNotification.style.display = 'block';
+                
+                // Hide notification after 5 seconds
+                setTimeout(() => {
+                    successNotification.style.display = 'none';
+                }, 5000);
+				
 			} else {
-				alert('Please enter a URL to process');
+				processNotification.style.display = 'block';
+                
+                // Hide notification after 5 seconds
+                setTimeout(() => {
+                    processNotification.style.display = 'none';
+                }, 5000);
 			}
 		});
 		
 		// Copy result to clipboard
 		copyBtn.addEventListener('click', function() {
 			if (result.value) {
-				result.select();
-				document.execCommand('copy');
-				
+				copyNotification.style.display = 'none';
+				navigator.clipboard.writeText(result.value).then(() => {
 				// Change button text temporarily
 				const originalText = copyBtn.innerHTML;
-				copyBtn.innerHTML = '<i class="bi bi-check"></i> Copied!';
+				copyBtn.innerHTML = '<i class="bi bi-check"></i>Copied!';
 				setTimeout(() => {
 					copyBtn.innerHTML = originalText;
-				}, 2000);
+				}, 5000);
+			})
+			.catch(err => {
+                        console.error('Failed to copy text: ', err);
+                        alert('Could not copy text. Your browser may not support this feature.');
+                    });
+			
+			} else {
+				// Show notification that there's nothing to copy
+                copyNotification.style.display = 'block';
+                
+                // Hide notification after 5 seconds
+                setTimeout(() => {
+                    copyNotification.style.display = 'none';
+                }, 5000);
 			}
 		});
 		
