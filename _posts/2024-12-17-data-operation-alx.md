@@ -4,7 +4,7 @@ title:  "Data et Operations at ALX"
 author: ndcharles
 categories: [ Data, Tech ]
 image: assets/images/alx_theroom.webp
-date_modified: 2024-12-21 
+date_modified: 2025-05-21 
 tags: [ featured, alx, the_room, data_operations, SAND, alx_nigeria ]
 ---
 I am never a picture person as my pictures never turn out great, but for the sake of this piece, I took different pictures at different angles to see which would turn out better.
