@@ -41,7 +41,7 @@ description: "This web tool turns any Google Drive share link into a one-click d
         text-overflow: ellipsis;
     }
     .tab.active {
-        background: #4285f4;
+        background: #03a87c;
         color: white;
     }
     .input-group {
@@ -62,7 +62,7 @@ description: "This web tool turns any Google Drive share link into a one-click d
         transition: border-color 0.2s ease;
     }
     input[type="text"]:focus {
-        border-color: #4285f4;
+        border-color: #03a87c;
         outline: none;
     }
     select {
@@ -73,7 +73,7 @@ description: "This web tool turns any Google Drive share link into a one-click d
         font-size: 14px;
     }
     button {
-        background: #4285f4;
+        background: #03a87c;
         color: white;
         border: none;
         padding: 8px 15px;
@@ -84,16 +84,16 @@ description: "This web tool turns any Google Drive share link into a one-click d
         transition: background-color 0.2s ease, transform 0.1s ease;
     }
     button:hover {
-        background: #3367d6;
+        background: #028260;
     }
     button:active {
         transform: scale(0.98);
     }
     .btn.copy {
-        background: #34a853;
+        background: #03a87c;
     }
     .btn.copy:hover {
-        background: #2d9248;
+        background: #028260;
     }
     .btn.test {
         background: #ea4335;

@@ -19,20 +19,6 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 	margin-bottom: 20px;
 }
 
-.copy-btn {
-	cursor: pointer;
-	transition: all 0.3s ease;
-	border: none;
-	border-radius: 5px;
-	background-color: #0d6efd;
-	color: white;
-	font-weight: 500;
-	text-align: center;
-}
-
-.copy-btn:hover {
-	background-color: #0b5ed7;
-}
 .encoding-input {
 	max-width: 100px;
 }
@@ -45,7 +31,6 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .btn-primary {
-	background-color: #0d6efd;
 	border: none;
 	padding: 10px 20px;
 	font-weight: 500;
@@ -53,7 +38,6 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 }
 
 .btn-primary:hover {
-	background-color: #0b5ed7;
 	transform: translateY(-2px);
 }
 
@@ -76,16 +60,18 @@ description: "This tool replaces spaces in URLs with your specified encoding (de
 
 .copy-text button {
   padding:20px;
-  background:#5784f5;
+  background:#03a87c;
   color:#fff;
   font-size:20px;
   border:none;
   outline:none;
   border-radius:10px;
   cursor:pointer;
+  transition: all 0.3s ease;
 }
-.copy-text button:active {
-  background:#809ce2;
+.copy-text button:hover {
+  background:#028260;
+  transform: translateY(-2px);
 }
 
 .copy-text button:after {
