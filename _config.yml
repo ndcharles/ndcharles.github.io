@@ -10,7 +10,7 @@ disqus: 'mlit'
 email: 'ndcharles.edu@gmail.com'
 
 include: ["_pages"]
-permalink: /:title/
+permalink: /:title
 google_site_verification: aFoRrj4Mizc_WYiBreiSaocQzFy_4ZEPfv8YK5HJCio
 
 # Plugins
@@ -61,7 +61,7 @@ paginate: 10
 
 prose:
   rooturl: ''
-  siteurl: 'http://ndcharles.github.io/'
+  siteurl: 'http://ndcharles.github.io'
   media: 'assets/images'
   metadata:
     _posts:
