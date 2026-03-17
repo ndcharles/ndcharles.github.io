@@ -1,10 +1,25 @@
+- title: "Building ALX Connect, One Match at a Time"
+  url: "https://github.com/ndcharles/alx-connect"
+  description: "An AI-powered matching platform I co-built to scale peer connections across ALX Nigeria’s 100k+ alumni. Designed from scratch (Next.js, Python, FastAPI), it automates intelligent matching, scheduling, feedback, and analytics—reducing manual effort by ~90% and increasing meaningful conversations by 10x. From messy spreadsheets to seamless human connection: this is tech in service of community."
+  technologies:
+    - Python
+    - FastAPI
+    - Sentence-Transformer
+    - Cloud Run
+    - OnRender
+    - HNSWlib (ANN)
+  concepts:
+    - Clustering
+    - Matching
+
 - title: "CSA project on predicting laptop price"
   url: "https://github.com/ndcharles/csa_africa/blob/main/project/ml_group_data_cleaning.ipynb"
   description: "Help buyers make a decision on the best laptop to purchase by providing their preferred OS, screen size, RAM and storage preference."
   technologies:
     - Python
-  concepts:
     - CatBoostRegressor
+  concepts:
+    - Regression
 
 - title: "Lagos Rent Prediction Web app (EazyRent)"
   url: "https://ndcharles.github.io/data-portfolio/lagos-rent-prediction-webapp.html"
