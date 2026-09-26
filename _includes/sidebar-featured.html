@@ -1,3 +1,8 @@
+{%- comment -%}
+Featured + the Sleekbio box move as one block. It scrolls with the page until the
+bottom of the box comes into view, then the whole block stays put (see theme.js).
+{%- endcomment -%}
+<div class="sidebar-stack">
 <div class="sidebar-featured">
     <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>  
     <ol class="list-featured">				
@@ -19,7 +24,7 @@
         {% endfor %}   
     </ol>
 </div>
-{%- comment -%} Featured scrolls normally; the ad sticks once the reader scrolls down to it. {%- endcomment -%}
 <div class="sidebar-ad">
     {% include sleekbio-promo.html variant="square" placement=include.placement %}
+</div>
 </div> 

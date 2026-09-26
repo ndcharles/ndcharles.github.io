@@ -1,17 +1,26 @@
 {%- comment -%}
-Sleekbio promo. include.variant = "bar" (full width) or "square" (under Featured).
-include.placement goes into utm_content so each spot can be compared in analytics.
+Sleekbio promo. include.variant = "bar" (full width) or "square" (under Featured,
+styled like a mini Sleekbio bio page; animated by theme.js). include.placement goes into utm_content.
 {%- endcomment -%}
 {%- assign sb_variant = include.variant | default: "bar" -%}
 {%- assign sb_placement = include.placement | default: sb_variant -%}
 {%- capture sb_url -%}https://sleekb.io/?utm_source=mlit_by_ndcharles&utm_medium=display&utm_campaign=sleekbio&utm_content={{ sb_placement }}{%- endcapture -%}
-<a class="sb-promo sb-promo-{{ sb_variant }}" href="{{ sb_url }}" rel="sponsored noopener" target="_blank" aria-label="Sleekbio: create your digital hub at sleekb.io">
-    <span class="sb-head">
-        {%- if sb_variant == "square" %}
-        <img class="sb-icon" src="{{ site.baseurl }}/assets/images/sleekbio/sleekbio-icon.png" alt="" width="36" height="36" loading="lazy">
-        {%- endif %}
-        <img class="sb-wordmark" src="{{ site.baseurl }}/assets/images/sleekbio/sleekbio-wordmark.png" alt="Sleekbio" width="130" height="20" loading="lazy">
+{%- capture sb_arrow -%}<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>{%- endcapture -%}
+{%- if sb_variant == "square" -%}
+<a class="sb-promo sb-promo-square" href="{{ sb_url }}" rel="sponsored noopener" target="_blank" aria-label="Sleekbio: create your digital hub at sleekb.io">
+    <span class="sb-sq-band" aria-hidden="true"></span>
+    <span class="sb-sq-avatar" aria-hidden="true">
+        <span class="sb-sq-face-clip"><img class="sb-sq-face" src="{{ site.baseurl }}/assets/images/sleekbio/avatar.webp" alt="" width="88" height="88" loading="lazy"></span>
     </span>
+    <img class="sb-wordmark" src="{{ site.baseurl }}/assets/images/sleekbio/sleekbio-wordmark.png" alt="Sleekbio" width="130" height="20" loading="lazy">
     <span class="sb-copy">Your business card, bio page, booking &amp; email signature in one digital hub.</span>
-    <span class="sb-cta">Create yours now <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+    <span class="sb-chips" aria-hidden="true"><span>NFC Cards</span><span>Bio page</span><span>Booking</span><span>Email Signature</span></span>
+    <span class="sb-cta">Create yours now {{ sb_arrow }}</span>
 </a>
+{%- else -%}
+<a class="sb-promo sb-promo-bar" href="{{ sb_url }}" rel="sponsored noopener" target="_blank" aria-label="Sleekbio: create your digital hub at sleekb.io">
+    <img class="sb-wordmark" src="{{ site.baseurl }}/assets/images/sleekbio/sleekbio-wordmark.png" alt="Sleekbio" width="130" height="20" loading="lazy">
+    <span class="sb-copy">Your business card, bio page, booking &amp; email signature in one digital hub.</span>
+    <span class="sb-cta">Create yours now {{ sb_arrow }}</span>
+</a>
+{%- endif -%}

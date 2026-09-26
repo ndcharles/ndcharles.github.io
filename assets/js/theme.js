@@ -134,3 +134,45 @@ $(function() {
     }
   }
 });
+
+// Sidebar (Featured + Sleekbio box): sticky with a computed top so the block
+// scrolls normally until its bottom is in view, then stays there. A block
+// shorter than the window simply sticks below the nav.
+(function () {
+    var stack = document.querySelector('.sidebar-stack');
+    if (!stack) return;
+    // Posts have a fixed previous/next bar at the bottom of the window; keep clear of it.
+    var NAV = 80, GAP = document.querySelector('.alertbar') ? 84 : 24;
+    function place() {
+        stack.style.top = Math.min(NAV, window.innerHeight - stack.offsetHeight - GAP) + 'px';
+    }
+    place();
+    window.addEventListener('resize', place);
+    window.addEventListener('load', place);
+    if ('ResizeObserver' in window) new ResizeObserver(place).observe(stack);
+})();
+
+// Sleekbio promos: play the animation (square: avatar, chips, button sweep;
+// bar: logo zoom, button sweep) when one first comes on screen, then again
+// every 30s while it is still on screen.
+(function () {
+    var boxes = document.querySelectorAll('.sb-promo');
+    if (!boxes.length || !('IntersectionObserver' in window)) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var EVERY = 30000;
+    function play(box) {
+        box.classList.remove('sb-play');
+        void box.offsetWidth; // restart the CSS animations
+        box.classList.add('sb-play');
+    }
+    boxes.forEach(function (box) {
+        var visible = false, timer = null;
+        new IntersectionObserver(function (entries) {
+            visible = entries[0].isIntersecting;
+            if (visible && !timer) {
+                play(box);
+                timer = setInterval(function () { if (visible && !document.hidden) play(box); }, EVERY);
+            }
+        }, { threshold: 0.5 }).observe(box);
+    });
+})();

@@ -1096,8 +1096,6 @@ img + em {
 .sb-promo:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--sb-ink); }
 .sb-promo:focus-visible { outline: 3px solid var(--sb); outline-offset: 3px; }
 .sb-wordmark { display: block; flex: none; width: 130px; height: auto; margin: 0; }
-.sb-head { display: inline-flex; align-items: center; gap: 10px; flex: none; }
-.sb-icon { display: block; flex: none; width: 36px; height: 36px; margin: 0; border-radius: 9px; }
 .sb-copy { flex: 1; min-width: 0; font-size: .9375rem; line-height: 1.45; color: #4a4040; }
 .sb-cta {
 	display: inline-flex;
@@ -1119,25 +1117,165 @@ img + em {
 	.sb-promo-bar .sb-cta { order: 3; }
 }
 
-/* Compact box under Featured. Featured scrolls away; this sticks below the nav. */
-.sidebar-ad { margin: 8px 0 24px; }
+/* Featured + the box scroll as one block; theme.js sets `top` so it sticks
+   once the bottom of the box is visible. */
 @media (min-width: 768px) {
-	.sidebar-ad { position: sticky; top: 80px; }
+	.sidebar-stack { position: sticky; top: 80px; }
 }
+.sidebar-ad { margin: 12px 0 24px; }
+.sidebar-ad .sb-promo-square { margin: 0 auto; }
+
+/* Square: a mini Sleekbio bio page - coral band, avatar, wordmark, chips, button. */
 .sb-promo-square {
+	position: relative;
 	flex-direction: column;
-	align-items: flex-start;
-	gap: 12px;
+	align-items: center;
+	gap: 14px;
 	max-width: 320px;
 	margin: 0;
-	padding: 18px 18px 20px;
-	background:
-		radial-gradient(120% 80% at 100% 0%, rgba(255, 83, 71, .2), transparent 60%),
-		#fff1ef;
+	padding: 0 22px 22px;
+	overflow: hidden;
+	border: 1px solid #f3dcd8;
+	border-radius: 18px;
+	background: #fff;
+	box-shadow: 0 10px 30px rgba(29, 26, 26, .08);
+	text-align: center;
 }
-.sb-promo-square .sb-wordmark { width: 120px; }
-.sb-promo-square .sb-copy { flex: 0 1 auto; font-size: 1rem; font-weight: 600; line-height: 1.4; color: var(--sb-ink); }
-.sb-promo-square .sb-cta { padding: 8px 14px; font-size: .875rem; }
+.sb-promo-square:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(255, 83, 71, .18); }
+.sb-promo-square:active { transform: translateY(0); box-shadow: 0 8px 20px rgba(29, 26, 26, .1); }
+.sb-sq-band {
+	align-self: stretch;
+	height: 72px;
+	margin: 0 -22px;
+	background:
+		radial-gradient(circle at 20% 30%, rgba(255, 255, 255, .22) 0 2px, transparent 3px) 0 0 / 18px 18px,
+		linear-gradient(120deg, #ff6b5f, #ff5347 55%, #e8412f);
+}
+/* Avatar: a circle whose lower half crops the image, while the area above
+   stays open so the head can pop out of the top. */
+.sb-sq-avatar {
+	position: relative;
+	display: block;
+	flex: none;
+	width: 76px;
+	height: 76px;
+	margin-top: -42px;
+}
+.sb-sq-avatar::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	background: #ffe2de;
+	box-shadow: 0 6px 16px rgba(29, 26, 26, .12);
+}
+.sb-sq-face-clip {
+	position: absolute;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+	height: 102px; /* 68px circle + 34px of open space above it */
+	-webkit-mask-image: linear-gradient(#000, #000), radial-gradient(circle 34px at 50% calc(100% - 34px), #000 98%, transparent 100%);
+	mask-image: linear-gradient(#000, #000), radial-gradient(circle 34px at 50% calc(100% - 34px), #000 98%, transparent 100%);
+	-webkit-mask-size: 100% 68px, 100% 100%;
+	mask-size: 100% 68px, 100% 100%;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: top, 0 0;
+	mask-position: top, 0 0;
+}
+.sb-sq-face {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 48px;   /* ~70% of the 68px circle */
+	height: 48px;
+	max-width: none;
+	margin: 0 0 0 -24px;
+	transform-origin: 50% 100%;
+}
+
+/* ---- Animation. theme.js adds .sb-play when a promo is on screen and again every 30s.
+   Square: the avatar grows up out of the circle and settles back, the chips arrive
+   one by one, then light sweeps the button. Bar: the logo zooms in and out, then
+   the same sweep. ---- */
+.sb-play .sb-sq-face { animation: sb-grow 2.4s cubic-bezier(.45, 0, .25, 1); }
+@keyframes sb-grow {
+	0%   { transform: scale(1); }
+	35%  { transform: scale(1.8) rotate(-4deg); }
+	50%  { transform: scale(1.72) rotate(4deg); }
+	65%  { transform: scale(1.78) rotate(-2deg); }
+	100% { transform: scale(1); }
+}
+.sb-play .sb-chips span { animation: sb-chip-in .6s cubic-bezier(.34, 1.4, .64, 1) backwards; }
+.sb-play .sb-chips span:nth-child(1) { animation-delay: 2.2s; }
+.sb-play .sb-chips span:nth-child(2) { animation-delay: 2.5s; }
+.sb-play .sb-chips span:nth-child(3) { animation-delay: 2.8s; }
+.sb-play .sb-chips span:nth-child(4) { animation-delay: 3.1s; }
+@keyframes sb-chip-in {
+	from { opacity: 0; transform: translateY(8px) scale(.85); }
+	to   { opacity: 1; transform: none; }
+}
+.sb-play .sb-wordmark { animation: sb-zoom 1.8s ease-in-out; }
+@keyframes sb-zoom {
+	0%, 100% { transform: scale(1); }
+	30%      { transform: scale(1.14); }
+	55%      { transform: scale(.96); }
+	75%      { transform: scale(1.04); }
+}
+.sb-promo-square .sb-wordmark { animation: none; }
+.sb-cta { position: relative; overflow: hidden; }
+.sb-cta::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 45%;
+	background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .55), transparent);
+	transform: translateX(-120%) skewX(-18deg);
+	pointer-events: none;
+}
+.sb-play .sb-cta::after { animation: sb-sweep 1.4s ease-in-out 1.9s; }
+.sb-play.sb-promo-square .sb-cta::after { animation-delay: 3.8s; }
+@keyframes sb-sweep {
+	from { transform: translateX(-120%) skewX(-18deg); }
+	to   { transform: translateX(330%) skewX(-18deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+	.sb-play .sb-sq-face, .sb-play .sb-chips span, .sb-play .sb-wordmark, .sb-play .sb-cta::after { animation: none; }
+}
+.sb-promo-square .sb-wordmark { width: 124px; margin-top: 2px; }
+.sb-promo-square .sb-copy {
+	flex: 0 1 auto;
+	font-size: .9375rem;
+	font-weight: 400;
+	line-height: 1.55;
+	color: #4a4040;
+}
+.sb-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; max-width: 220px; }
+.sb-chips span {
+	padding: 3px 10px;
+	border: 1px solid #ffd2cc;
+	border-radius: 999px;
+	background: #fff5f3;
+	color: #c2382a;
+	font-size: .75rem;
+	font-weight: 400;
+}
+.sb-promo-square .sb-cta {
+	align-self: stretch;
+	justify-content: center;
+	margin-top: 4px;
+	padding: 11px 16px;
+	border-radius: 10px;
+	background: linear-gradient(90deg, #ff6b5f, #ff5347 50%, #d93a29);
+	font-size: .9375rem;
+	font-weight: 600;
+	box-shadow: 0 4px 12px rgba(255, 83, 71, .3);
+}
+.sb-promo-square:hover .sb-cta { background: linear-gradient(90deg, #ff5f52, #f04535 50%, #c9301f); }
 
 /* ---------- Media embeds (_includes/embed.html) ---------- */
 .embed { margin: 1.25rem 0; }
