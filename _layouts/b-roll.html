@@ -50,6 +50,8 @@ If fewer than 3 share a tag, the rest are the newest remaining notes.
         </div>
     </article>
 
+    {% include sleekbio-promo.html variant="bar" placement="broll_note_bar" %}
+
     {% if page.previous or page.next %}
     <nav class="br-prevnext" aria-label="More notes">
         {% if page.previous %}
@@ -67,19 +69,7 @@ If fewer than 3 share a tag, the rest are the newest remaining notes.
     </nav>
     {% endif %}
 
-    {% if site.thatbros.api_url %}
-    <section id="comments" class="br-section">
-        <h2 class="br-section-title">Comments</h2>
-        <thatbros-comments
-            data-api-url="{{ site.thatbros.api_url }}"
-            data-page-id="{{ page.url | prepend: site.baseurl }}"
-            data-turnstile-site-key="{{ site.thatbros.turnstile_site_key }}"
-            data-theme="light"
-            data-accent="#03a87c"
-            data-sort="best"></thatbros-comments>
-        <script src="{{ site.thatbros.api_url }}/comments.js" defer></script>
-    </section>
-    {% endif %}
+    {% unless page.comments == false %}{% include comments.html %}{% endunless %}
 
     {% if related.size > 0 %}
     <section class="br-section">
@@ -92,7 +82,7 @@ If fewer than 3 share a tag, the rest are the newest remaining notes.
 </div>
 
 <div class="col-lg-4">
-    {% include sidebar-featured.html %}
+    {% include sidebar-featured.html placement="broll_note_sidebar" %}
 </div>
 </div>
 </div>

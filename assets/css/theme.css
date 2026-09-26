@@ -1076,41 +1076,99 @@ img + em {
 }
 
 /* Ad container styles */
-.ads-container {
+/* ---------- Sleekbio promo (_includes/sleekbio-promo.html) ---------- */
+.sb-promo {
+	--sb: #ff5347;
+	--sb-ink: #1d1a1a;
 	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	margin-top: 30px;
+	align-items: center;
+	gap: 16px 24px;
+	margin: 32px 0 8px;
+	padding: 16px 22px;
+	border: 2px solid var(--sb-ink);
+	border-radius: 14px;
+	background: #fff1ef;
+	color: var(--sb-ink);
+	box-shadow: 4px 4px 0 var(--sb-ink);
+	transition: transform .15s ease, box-shadow .15s ease;
 }
-.ad-unit {
-	flex: 1;
-	padding: 15px;
-	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	text-align: center;
-	border: 1px solid #dee2e6;
+.sb-promo:hover { color: var(--sb-ink); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--sb-ink); }
+.sb-promo:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--sb-ink); }
+.sb-promo:focus-visible { outline: 3px solid var(--sb); outline-offset: 3px; }
+.sb-wordmark { display: block; flex: none; width: 130px; height: auto; margin: 0; }
+.sb-head { display: inline-flex; align-items: center; gap: 10px; flex: none; }
+.sb-icon { display: block; flex: none; width: 36px; height: 36px; margin: 0; border-radius: 9px; }
+.sb-copy { flex: 1; min-width: 0; font-size: .9375rem; line-height: 1.45; color: #4a4040; }
+.sb-cta {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	flex: none;
+	padding: 9px 16px;
+	border-radius: 999px;
+	background: var(--sb);
+	color: #fff;
+	font-weight: 700;
+	font-size: .9375rem;
+	white-space: nowrap;
 }
-.ad-unit h5 {
-	font-size: 16px;
-	margin-bottom: 10px;
-	color: #0d6efd;
+.sb-promo:hover .sb-cta { background: #f03d31; }
+@media (max-width: 767.98px) {
+	.sb-promo-bar { flex-wrap: wrap; }
+	.sb-promo-bar .sb-copy { flex-basis: 100%; order: 2; }
+	.sb-promo-bar .sb-cta { order: 3; }
 }
-.ad-unit p {
-	font-size: 14px;
-	margin-bottom: 15px;
-	color: #495057;
+
+/* Compact box under Featured. Featured scrolls away; this sticks below the nav. */
+.sidebar-ad { margin: 8px 0 24px; }
+@media (min-width: 768px) {
+	.sidebar-ad { position: sticky; top: 80px; }
 }
-.ad-unit .btn {
-	font-size: 14px;
-	padding: 6px 12px;
+.sb-promo-square {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	max-width: 320px;
+	margin: 0;
+	padding: 18px 18px 20px;
+	background:
+		radial-gradient(120% 80% at 100% 0%, rgba(255, 83, 71, .2), transparent 60%),
+		#fff1ef;
 }
-@media (max-width: 768px) {
-	.ads-container {
-		flex-direction: column;
-		gap: 15px;
-	}
+.sb-promo-square .sb-wordmark { width: 120px; }
+.sb-promo-square .sb-copy { flex: 0 1 auto; font-size: 1rem; font-weight: 600; line-height: 1.4; color: var(--sb-ink); }
+.sb-promo-square .sb-cta { padding: 8px 14px; font-size: .875rem; }
+
+/* ---------- Media embeds (_includes/embed.html) ---------- */
+.embed { margin: 1.25rem 0; }
+.embed-frame { position: relative; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #111; }
+.embed-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.embed-audio-frame { display: block; width: 100%; border: 0; border-radius: 12px; }
+.embed-video { display: block; width: 100%; max-height: 70vh; border-radius: 10px; background: #111; }
+.embed-audio { display: block; width: 100%; }
+.embed figcaption, .quote-card figcaption { margin-top: .5rem; font-size: .8125rem; color: #6b7471; }
+
+/* ---------- Quote card (_includes/quote.html) ---------- */
+.quote-card {
+	margin: 1.25rem 0;
+	padding: 28px 28px 24px;
+	border-radius: 12px;
+	background: #4a5352;
+	color: #f4f4f1;
 }
+.quote-card blockquote { margin: 0; padding: 0; border: 0; font-style: normal; }
+.quote-card blockquote p {
+	margin: 0;
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -.01em;
+	color: #f4f4f1;
+}
+.quote-card blockquote p::before { content: "\201C"; margin-right: .05em; color: #ff9a8f; }
+.quote-card blockquote p::after { content: "\201D"; color: #ff9a8f; }
+.quote-card figcaption { margin-top: 18px; font-family: Georgia, "Times New Roman", serif; font-size: .9375rem; color: #d4d8d6; }
+.quote-card cite { font-style: italic; }
 /* Author box at the end of posts (_includes/author-bio.html): avatar always on the left. */
 .author-box {
 	display: flex;
@@ -1136,3 +1194,19 @@ img + em {
 @media (max-width: 575.98px) {
 	.author-box-avatar { width: 56px; height: 56px; }
 }
+
+/* One page width everywhere: nav, post header, content and footer all use
+   .container, widened to 1140px from 992px up (fits content + Featured sidebar).
+   The 1920px+ rule above still takes it to 1280px. */
+@media (min-width: 992px) and (max-width: 1919.98px) {
+	.container, .container-lg { max-width: 1140px; }
+}
+
+/* The navbar and footer add side padding around their .container, which
+   insets them from the page content when the window is under 1170px. */
+nav.topnav { padding-left: 0; padding-right: 0; }
+nav.topnav > .container { padding-left: 15px !important; padding-right: 15px !important; }
+footer.p-3 { padding-left: 0 !important; padding-right: 0 !important; }
+
+/* Thin grey line under the top navigation. */
+nav.topnav { border-bottom: 1px solid #e6ebe9; }

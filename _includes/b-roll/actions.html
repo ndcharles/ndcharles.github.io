@@ -4,9 +4,15 @@ Counts come from thatbros and are filled in by assets/js/b-roll.js.
 {%- endcomment -%}
 {%- assign note_url = include.note.url | prepend: site.baseurl -%}
 {%- assign abs_url = include.note.url | absolute_url -%}
-{%- assign share_url = abs_url | url_encode -%}
 {%- assign share_text = include.note.title | url_encode -%}
-<div class="br-actions" data-page-id="{{ note_url }}" data-share-url="{{ abs_url }}" data-share-title="{{ include.note.title | escape }}">
+{%- comment -%} UTM tags only go on shared links; canonical URLs stay clean. {%- endcomment -%}
+{%- assign utm = "&utm_campaign=broll_share" -%}
+{%- capture fb_url %}{{ abs_url }}?utm_source=facebook&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture x_url %}{{ abs_url }}?utm_source=x&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture wa_url %}{{ abs_url }}?utm_source=whatsapp&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture ig_url %}{{ abs_url }}?utm_source=instagram&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture copy_url %}{{ abs_url }}?utm_source=copy_link&utm_medium=share{{ utm }}{% endcapture -%}
+<div class="br-actions" data-page-id="{{ note_url }}" data-share-url="{{ abs_url }}" data-copy-url="{{ copy_url }}" data-instagram-url="{{ ig_url }}" data-share-title="{{ include.note.title | escape }}">
     <button type="button" class="br-act br-love" data-action="love" aria-pressed="false" aria-label="Love this note">
         {% include b-roll/icon.html name="heart" %}<span class="br-count" data-count="loves"></span>
     </button>
@@ -18,9 +24,9 @@ Counts come from thatbros and are filled in by assets/js/b-roll.js.
             {% include b-roll/icon.html name="share" %}
         </button>
         <div class="br-share-menu" hidden>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" data-action="share-popup">{% include b-roll/icon.html name="facebook" %}Facebook</a>
-            <a href="https://twitter.com/intent/tweet?text={{ share_text }}&amp;url={{ share_url }}&amp;via={{ site.author.twitter }}" data-action="share-popup">{% include b-roll/icon.html name="x" %}X (Twitter)</a>
-            <a href="https://wa.me/?text={{ share_text }}%20{{ share_url }}" data-action="share-popup">{% include b-roll/icon.html name="whatsapp" %}WhatsApp</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ fb_url | url_encode }}" data-action="share-popup">{% include b-roll/icon.html name="facebook" %}Facebook</a>
+            <a href="https://twitter.com/intent/tweet?text={{ share_text }}&amp;url={{ x_url | url_encode }}&amp;via={{ site.author.twitter }}" data-action="share-popup">{% include b-roll/icon.html name="x" %}X (Twitter)</a>
+            <a href="https://wa.me/?text={{ share_text }}%20{{ wa_url | url_encode }}" data-action="share-popup">{% include b-roll/icon.html name="whatsapp" %}WhatsApp</a>
             <button type="button" data-action="instagram">{% include b-roll/icon.html name="instagram" %}Instagram</button>
             <button type="button" data-action="copy">{% include b-roll/icon.html name="link" %}Copy link</button>
         </div>

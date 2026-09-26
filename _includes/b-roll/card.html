@@ -17,6 +17,12 @@ is cut with "Read more"; pinned notes pass limit=100.
     <div class="br-body">
         {%- if plain.size > limit -%}
         <p>{{ plain | truncate: limit, "…" }}</p>
+        {%- comment -%} A cut note keeps its first image or GIF; players show on the note page. {%- endcomment -%}
+        {%- assign img_parts = html | split: "<img" -%}
+        {%- if img_parts.size > 1 -%}
+        {%- assign first_img = img_parts[1] | split: ">" | first -%}
+        <span class="br-preview-img"><img{{ first_img }}></span>
+        {%- endif -%}
         <a class="br-more" href="{{ note.url | prepend: site.baseurl }}">Read more</a>
         {%- else -%}
         {{ html }}

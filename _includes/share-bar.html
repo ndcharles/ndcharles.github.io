@@ -1,0 +1,26 @@
+{%- comment -%}
+Love + share row at the end of blog posts: heart (thatbros count), Facebook, X,
+LinkedIn, copy link. Behaviour comes from assets/js/b-roll.js.
+{%- endcomment -%}
+{%- assign post_url = page.url | prepend: site.baseurl -%}
+{%- assign abs_url = page.url | absolute_url -%}
+{%- assign share_text = page.title | url_encode -%}
+{%- comment -%} UTM tags only go on shared links; canonical URLs stay clean. {%- endcomment -%}
+{%- assign utm = "&utm_campaign=post_share" -%}
+{%- capture fb_url %}{{ abs_url }}?utm_source=facebook&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture x_url %}{{ abs_url }}?utm_source=x&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture li_url %}{{ abs_url }}?utm_source=linkedin&utm_medium=social{{ utm }}{% endcapture -%}
+{%- capture copy_url %}{{ abs_url }}?utm_source=copy_link&utm_medium=share{{ utm }}{% endcapture -%}
+<div class="br-sharebar" data-br-api="{{ site.thatbros.api_url }}">
+    <p class="br-sharebar-label">Enjoyed this? Love it or share it.</p>
+    <div class="br-actions br-actions-inline" data-page-id="{{ post_url }}" data-share-url="{{ abs_url }}" data-copy-url="{{ copy_url }}" data-share-title="{{ page.title | escape }}">
+        <button type="button" class="br-act br-love br-pill" data-action="love" aria-pressed="false" aria-label="Love this post" title="Love this post">
+            {% include b-roll/icon.html name="heart" %}<span class="br-count" data-count="loves"></span>
+        </button>
+        <span class="br-sep" aria-hidden="true"></span>
+        <a class="br-act br-pill br-icon-only" href="https://www.facebook.com/sharer/sharer.php?u={{ fb_url | url_encode }}" data-action="share-popup" aria-label="Share on Facebook" title="Share on Facebook">{% include b-roll/icon.html name="facebook" %}</a>
+        <a class="br-act br-pill br-icon-only" href="https://twitter.com/intent/tweet?text={{ share_text }}&amp;url={{ x_url | url_encode }}&amp;via={{ site.author.twitter }}" data-action="share-popup" aria-label="Share on X (Twitter)" title="Share on X (Twitter)">{% include b-roll/icon.html name="x" %}</a>
+        <a class="br-act br-pill br-icon-only" href="https://www.linkedin.com/sharing/share-offsite/?url={{ li_url | url_encode }}" data-action="share-popup" aria-label="Share on LinkedIn" title="Share on LinkedIn">{% include b-roll/icon.html name="linkedin" %}</a>
+        <button type="button" class="br-act br-pill br-icon-only" data-action="copy" aria-label="Copy link" title="Copy link">{% include b-roll/icon.html name="link" %}</button>
+    </div>
+</div>

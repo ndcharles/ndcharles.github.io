@@ -1,0 +1,12 @@
+{%- comment -%}
+A book or film quote as a card. by and source are optional.
+  {% include quote.html text="The ultimate goal is getting paid to simply be yourself." by="Ana Calin" %}
+  {% include quote.html text="..." by="Niccolò Machiavelli" source="The Prince" %}
+For an ordinary inline quote, Markdown's "> " still works.
+{%- endcomment -%}
+<figure class="quote-card">
+    <blockquote><p>{{ include.text }}</p></blockquote>
+    {%- if include.by or include.source %}
+    <figcaption>&mdash; {{ include.by }}{% if include.by and include.source %}, {% endif %}{% if include.source %}<cite>{{ include.source }}</cite>{% endif %}</figcaption>
+    {%- endif %}
+</figure>

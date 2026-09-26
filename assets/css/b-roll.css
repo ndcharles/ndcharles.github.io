@@ -110,6 +110,21 @@
 .br-body p { margin: 0 0 .75em; }
 .br-body > :last-child { margin-bottom: 0; }
 .br-body img { border-radius: var(--br-radius); }
+/* Players and links inside a card sit above the card-wide link so they stay clickable. */
+.br-card .br-body a, .br-card .embed, .br-card video, .br-card audio, .br-card iframe { position: relative; z-index: 1; }
+.br-body > blockquote {
+    margin: 0 0 .75em;
+    padding: 2px 0 2px 16px;
+    border-left: 3px solid var(--br-accent);
+    color: var(--br-ink);
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.05em;
+}
+.br-body > blockquote p { margin: 0 0 .35em; }
+.br-body > blockquote p:last-child { margin: 0; color: inherit; }
+.br-preview-img { display: block; margin: 12px 0 0; }
+.br-preview-img img { display: block; max-height: 320px; width: auto; max-width: 100%; margin: 0; }
 .br-more {
     position: relative;
     z-index: 1;
@@ -144,7 +159,36 @@
     cursor: pointer;
     transition: color .15s, background-color .15s;
 }
+.br-act { position: relative; }
 .br-act:hover { color: var(--br-ink); background: rgba(3, 168, 124, .08); }
+/* Small "Link copied" bubble above the button that was used. */
+.br-flash {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    z-index: 6;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--br-film);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    pointer-events: none;
+    transform: translate(-50%, 4px);
+    opacity: 0;
+    transition: opacity .15s, transform .15s;
+}
+.br-flash::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    border: 5px solid transparent;
+    border-top-color: var(--br-film);
+    transform: translateX(-50%);
+}
+.br-flash.br-show { opacity: 1; transform: translate(-50%, 0); }
 .br-act:focus-visible { outline: 2px solid var(--br-accent); outline-offset: 1px; }
 .br-count:empty { display: none; }
 .br-love:hover { color: var(--br-love); background: rgba(224, 36, 94, .08); }
@@ -218,6 +262,17 @@
     cursor: pointer;
 }
 .br-load-more:hover { border-color: var(--br-accent); color: var(--br-accent); }
+
+/* ---------- Blog post love + share row (_includes/share-bar.html) ---------- */
+.br-sharebar { margin: 8px 0 0; padding: 18px 0; border-top: 1px solid var(--br-line); border-bottom: 1px solid var(--br-line); }
+.br-sharebar { text-align: center; }
+.br-sharebar-label { margin: 0 0 10px; font-size: .9375rem; font-weight: 700; color: var(--br-ink); }
+.br-actions-inline { margin: 0; flex-wrap: wrap; justify-content: center; gap: 8px; width: auto; }
+.br-pill { min-height: 40px; padding: 8px 14px; border: 1px solid var(--br-line); }
+.br-icon-only { width: 40px; padding: 0; justify-content: center; }
+.br-pill:hover { border-color: #cfdcd7; }
+.br-love.br-pill:hover, .br-love.br-pill[aria-pressed="true"] { border-color: rgba(224, 36, 94, .35); }
+.br-sep { width: 1px; height: 24px; margin: 0 4px; background: var(--br-line); }
 
 /* ---------- Single note ---------- */
 .br-single { padding-top: 8px; }

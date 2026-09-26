@@ -1,5 +1,5 @@
-// B-Roll feed and notes: relative times, love/comment counts from thatbros,
-// the love toggle, the share menu and "Show more notes".
+// B-Roll feed and notes, and the love/share bar on blog posts: relative times,
+// love/comment counts from thatbros, the love toggle, sharing and "Show more notes".
 // One delegated click listener, keyed on data-action.
 (function () {
     'use strict';
@@ -58,6 +58,8 @@
         if (!API) return;
         api('/api/reactions' + q).then(function (d) { setCount(bar, 'loves', d.loves || 0); })
             .catch(function (e) { console.warn('[b-roll] loves:', e.message); });
+        // The post share bar has no comment count; skip fetching the thread there.
+        if (!bar.querySelector('[data-count="comments"]')) return;
         api('/api/comments' + q).then(function (d) { setCount(bar, 'comments', d.total || 0); })
             .catch(function (e) { console.warn('[b-roll] comments:', e.message); });
     }
@@ -72,7 +74,9 @@
     }, { rootMargin: '200px' }) : null;
 
     function watch(bar) { observer ? observer.observe(bar) : loadCounts(bar); }
-    document.querySelectorAll('.br-card:not(.br-hidden) .br-actions, .br-note .br-actions').forEach(watch);
+    document.querySelectorAll('.br-actions').forEach(function (bar) {
+        if (!bar.closest('.br-hidden')) watch(bar);
+    });
 
     /* ---------- Love ---------- */
     function toggleLove(button) {
@@ -145,9 +149,27 @@
         toastTimer = setTimeout(function () { toastEl.classList.remove('br-show'); }, 2600);
     }
 
-    function shareData(el) {
+    // Inline confirmation above the button, e.g. "Link copied".
+    function flash(button, message) {
+        var bubble = button.querySelector('.br-flash');
+        if (!bubble) {
+            bubble = document.createElement('span');
+            bubble.className = 'br-flash';
+            bubble.setAttribute('role', 'status');
+            button.appendChild(bubble);
+        }
+        bubble.textContent = message;
+        void bubble.offsetWidth;
+        bubble.classList.add('br-show');
+        clearTimeout(bubble._timer);
+        bubble._timer = setTimeout(function () { bubble.classList.remove('br-show'); }, 1600);
+    }
+
+    // kind: "copy" or "instagram" picks that button's UTM-tagged link, if the bar has one.
+    function shareData(el, kind) {
         var bar = el.closest('.br-actions');
-        return { url: bar.getAttribute('data-share-url'), title: bar.getAttribute('data-share-title') };
+        var url = (kind && bar.getAttribute('data-' + kind + '-url')) || bar.getAttribute('data-share-url');
+        return { url: url, title: bar.getAttribute('data-share-title') };
     }
 
     /* ---------- Clicks ---------- */
@@ -175,14 +197,18 @@
             closeMenus();
         } else if (action === 'copy') {
             event.preventDefault();
-            copyText(shareData(target).url).then(function () { toast('Link copied'); },
-                function () { toast('Could not copy the link'); });
+            // In the B-Roll share menu the menu closes, so confirm on the share button.
+            var anchor = target.closest('.br-share')
+                ? target.closest('.br-share').querySelector('[data-action="share-toggle"]')
+                : target;
+            copyText(shareData(target, 'copy').url).then(function () { flash(anchor, 'Link copied'); },
+                function () { flash(anchor, 'Could not copy'); });
             closeMenus();
         } else if (action === 'instagram') {
             // Instagram has no web share link. Use the phone's share sheet when
             // there is one; otherwise copy the link for a story or DM.
             event.preventDefault();
-            var data = shareData(target);
+            var data = shareData(target, 'instagram');
             closeMenus();
             if (navigator.share) {
                 navigator.share({ title: data.title, url: data.url }).catch(function () {});

@@ -2,6 +2,7 @@
 layout: default
 comments: true
 ---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/b-roll.css?v={{ site.time | date: "%s" }}">
 
 <div class="container">
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
@@ -35,7 +36,7 @@ comments: true
 </div>
 
 
-<div class="container-lg pt-4 pb-4">
+<div class="container pt-4 pb-4">
 	<div class="row">
         		
 		<div class="col-md-12 col-lg-8">
@@ -47,37 +48,8 @@ comments: true
 			{{ content }}                
 			</article>
 			<br>
-			<!-- social share  -->
-			<div id="share-bar">
-
-				<h5>Like this article? Share it.</h5>
-
-				<div class="share-buttons">
-					<a  href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-						onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-						title="Share on Facebook" >
-						<i class="fab fa-facebook-square share-button"> Facebook</i>
-					</a>
-
-					<a  href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-						onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-						title="Share on Twitter" >
-						<i class="fab fa-twitter share-button"> Twitter</i>
-					</a>
-
-					<a  href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.title }}"
-						onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-						title="Share on LinkedIn" >
-						<i class="fab fa-linkedin share-button"> LinkedIn</i>
-					</a>
-
-					<a  href="mailto:?subject={{ page.title }}&amp;body=You should read this interesting piece: {{ site.url }}{{ site.baseurl }}{{ page.url }}"
-						title="Share via Email" >
-						<i class="fa fa-envelope share-button"> Email</i>
-					</a>
-				</div>
-
-			</div>
+			<!-- Love + share -->
+			{% include share-bar.html %}
 			
 			<br>
 			<!-- Tags -->
@@ -100,13 +72,13 @@ comments: true
 		{% include advertisement.html %}
 
             <!-- Comments -->
-		{% include load_comments.html %}
+		{% unless page.comments == false %}{% include comments.html %}{% endunless %}
 		
             
 		</div>
 
 		<div class="col-lg-4 mt-5 mt-lg-0">
-			{% include sidebar-featured.html %}
+			{% include sidebar-featured.html placement="post_sidebar" %}
 		</div>
         
 	</div>
@@ -132,3 +104,5 @@ comments: true
 	 </div>
     </div>
 </div>
+
+<script src="{{ site.baseurl }}/assets/js/b-roll.js?v={{ site.time | date: '%s' }}" defer></script>

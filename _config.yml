@@ -6,7 +6,6 @@ favicon: 'assets/images/favicon.ico'
 url: 'https://ndcharles.github.io'
 baseurl: ''
 google_analytics: 'G-EBC8NBRK90'
-disqus: 'mlit'
 email: 'ndcharles.edu@gmail.com'
 
 include: ["_pages"]
@@ -53,6 +52,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
+      comments: true
 
   - scope:
       path: ""
@@ -95,11 +95,6 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "disqus"
-        field:
-          element: "checkbox"
-          label: "Allow Disqus Comments"
-          value: true
       - name: "published"
         field:
           element: "checkbox"

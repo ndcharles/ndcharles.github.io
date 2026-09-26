@@ -1,0 +1,40 @@
+{%- comment -%}
+thatbros comment thread for posts, pages and B-Roll notes. Keyed on the page URL.
+On by default for posts and notes (turn off with `comments: false`); pages opt in with `comments: true`.
+Needs assets/css/b-roll.css on the page for the site's light colours.
+{%- endcomment -%}
+{%- if site.thatbros.api_url -%}
+<section id="comments" class="br-section">
+    <h2 class="br-section-title">Comments</h2>
+    <thatbros-comments
+        data-api-url="{{ site.thatbros.api_url }}"
+        data-page-id="{{ page.url | prepend: site.baseurl }}"
+        data-turnstile-site-key="{{ site.thatbros.turnstile_site_key }}"
+        data-theme="light"
+        data-accent="#03a87c"
+        data-sort="best"></thatbros-comments>
+    <script>
+    // Load the comment widget only when the reader gets near it (or arrives
+    // via a #comments link), so a post costs nothing extra until then.
+    (function () {
+        var section = document.getElementById('comments');
+        var done = false;
+        function load() {
+            if (done) return;
+            done = true;
+            var js = document.createElement('script');
+            js.src = '{{ site.thatbros.api_url }}/comments.js';
+            js.async = true;
+            document.head.appendChild(js);
+        }
+        if (!('IntersectionObserver' in window) || /^#comment/.test(location.hash)) return load();
+        var io = new IntersectionObserver(function (entries) {
+            if (!entries[0].isIntersecting) return;
+            io.disconnect();
+            load();
+        }, { rootMargin: '600px 0px' });
+        io.observe(section);
+    })();
+    </script>
+</section>
+{%- endif -%}

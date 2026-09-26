@@ -1,4 +1,4 @@
-<div class="sticky-top sticky-top-offset">
+<div class="sidebar-featured">
     <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>  
     <ol class="list-featured">				
         {% for post in site.tags.featured %}                
@@ -18,4 +18,8 @@
             </li>                
         {% endfor %}   
     </ol>
+</div>
+{%- comment -%} Featured scrolls normally; the ad sticks once the reader scrolls down to it. {%- endcomment -%}
+<div class="sidebar-ad">
+    {% include sleekbio-promo.html variant="square" placement=include.placement %}
 </div> 

@@ -12,6 +12,7 @@ layout: default
         {{ content }}
         <!-- Comments -->
         {% if page.comments == true %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/b-roll.css?v={{ site.time | date: '%s' }}">
         {% include comments.html %}
         {% endif %}
     </div>
