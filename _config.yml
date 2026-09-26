@@ -36,7 +36,7 @@ thatbros:
   api_url: https://thatbros.ndcharles.workers.dev
   turnstile_site_key: '0x4AAAAAAFDl--WqO6c4HI99'
 
-# B-Roll: short notes in _b-roll/, listed at /blog-roll/
+# B-Roll: short notes in _b-roll/, listed at /blog-roll.html
 # Portfolio: projects in _portfolio/, listed at /portfolio.html
 collections:
   b-roll:
