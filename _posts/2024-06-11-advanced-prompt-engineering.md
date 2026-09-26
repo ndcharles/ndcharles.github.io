@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Advanced Prompt Engineering"
-author: ndcharles
 categories: [ Data, Tech]
 image: assets/images/advanced_prompt_engineering.webp
 date_modified: 

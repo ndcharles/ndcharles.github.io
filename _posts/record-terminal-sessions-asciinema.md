@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How to Record Your Terminal Sessions using Asciinema"
-author: ndcharles
 categories: [ Tech]
 image: assets/images/record_terminal_windows_asciinema.webp
 tags: [screen recorder, terminal recorder, asciinema, asciinema windows]

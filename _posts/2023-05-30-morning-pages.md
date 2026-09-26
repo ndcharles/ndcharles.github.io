@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Don't Stop | Don't Think | Just Write!"
-author: ndcharles
 categories: [ Tech, Growth ]
 image: assets/images/morning_pages.webp
 date_modified: 2023-06-03 

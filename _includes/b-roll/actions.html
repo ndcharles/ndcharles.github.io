@@ -1,0 +1,28 @@
+{%- comment -%}
+Love / comment / share bar. include.note = the B-Roll document.
+Counts come from thatbros and are filled in by assets/js/b-roll.js.
+{%- endcomment -%}
+{%- assign note_url = include.note.url | prepend: site.baseurl -%}
+{%- assign abs_url = include.note.url | absolute_url -%}
+{%- assign share_url = abs_url | url_encode -%}
+{%- assign share_text = include.note.title | url_encode -%}
+<div class="br-actions" data-page-id="{{ note_url }}" data-share-url="{{ abs_url }}" data-share-title="{{ include.note.title | escape }}">
+    <button type="button" class="br-act br-love" data-action="love" aria-pressed="false" aria-label="Love this note">
+        {% include b-roll/icon.html name="heart" %}<span class="br-count" data-count="loves"></span>
+    </button>
+    <a class="br-act" href="{{ note_url }}#comments" aria-label="Comments">
+        {% include b-roll/icon.html name="comment" %}<span class="br-count" data-count="comments"></span>
+    </a>
+    <div class="br-share">
+        <button type="button" class="br-act" data-action="share-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Share">
+            {% include b-roll/icon.html name="share" %}
+        </button>
+        <div class="br-share-menu" hidden>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" data-action="share-popup">{% include b-roll/icon.html name="facebook" %}Facebook</a>
+            <a href="https://twitter.com/intent/tweet?text={{ share_text }}&amp;url={{ share_url }}&amp;via={{ site.author.twitter }}" data-action="share-popup">{% include b-roll/icon.html name="x" %}X (Twitter)</a>
+            <a href="https://wa.me/?text={{ share_text }}%20{{ share_url }}" data-action="share-popup">{% include b-roll/icon.html name="whatsapp" %}WhatsApp</a>
+            <button type="button" data-action="instagram">{% include b-roll/icon.html name="instagram" %}Instagram</button>
+            <button type="button" data-action="copy">{% include b-roll/icon.html name="link" %}Copy link</button>
+        </div>
+    </div>
+</div>

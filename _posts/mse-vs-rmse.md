@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Mean Squared Error VS Root Mean Squared Error"
-author: ndcharles
 categories: [ Data ]
 image: assets/images/mse_vs_rmse.webp)
 tags: [ statistics, machine_learning ]

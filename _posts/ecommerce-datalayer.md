@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "eCommerce Website DataLayer"
-author: ndcharles
 categories: [ Product, Data ]
 image: assets/images/ecommerce_datalayer.jpg
 tags: [featured, web_analytics, product_analytics, datalayer ]

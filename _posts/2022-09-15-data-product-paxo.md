@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Data et Product at PAXO Health & Beauty"
-author: ndcharles
 categories: [ Product, Tech, Data ]
 image: assets/images/product-management-paxo.webp
 date_modified: 2022-11-20

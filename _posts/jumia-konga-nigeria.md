@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Enter post title"
-author: ndcharles
 categories: [ Product, Tech, Growth ]
 image: assets/images/(add image name)
 tags: [featured, sticky, etc]

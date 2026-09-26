@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Why I Built CommandX:Engineering My Own Ultimate Google Sheets Tool"
-author: ndcharles
 categories: [ Product, Data, Tech, Growth ]
 image: assets/images/commandx_toolkit.webp
 tags: [CommandX, google-sheets, automation, google-apps-script, javascript]

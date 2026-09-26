@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
-	<title> 
+	<title>
+		{% if page.url == "/" %}
+			{{ page.title | escape }}
+		{% else %}
 		{% if page.tag or page.title %}
 			{% if page.tag %}
 				{{ page.tag | escape }}
@@ -21,29 +24,30 @@
 		{{ site.name | escape }}
 		{% unless page.tag or page.title %} - {{ site.description | escape }}
 		{% endunless %}
+		{% endif %}
 	</title>
 
     {% seo title=false %}
 
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
-	
+    <!-- Font Awesome Icons (non-blocking: icons are decorative, the page renders without them) -->
+    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"></noscript>
+
+    <!-- Google Fonts (non-blocking, falls back to the system font until loaded) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap"></noscript>
+
     <!-- Bootstrap Modified -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
 
-    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 	{% if site.google_analytics and jekyll.environment == 'production' %}
     {% include tracking-header.html %}
 	{% endif %}
@@ -81,12 +85,20 @@
     </main>
 
 
-    <!-- Scripts: popper, bootstrap, theme, lunr -->
+    <!-- Scripts: jquery, popper, bootstrap, theme, search (lunr + index load on first search) -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <script src="{{site.baseurl}}/assets/js/theme.js"></script>
+
+    <script>var SEARCH_BASEURL = '{{ site.baseurl }}';</script>
+    <script src="{{site.baseurl}}/assets/js/search.js"></script>
 
 
     <!-- Footer -->

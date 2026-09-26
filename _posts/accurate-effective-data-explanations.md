@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Accurate and Effective Data Explanations"
-author: ndcharles
 categories: [ Data ]
 image: assets/images/accurate_effective.webp)
 tags: [ data_explanations ]

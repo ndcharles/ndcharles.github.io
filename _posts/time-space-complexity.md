@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Time & space complexity "
-author: ndcharles
 categories: [ Data, Tech]
 image: assets/images/time_space.webp)
 date_modified: 

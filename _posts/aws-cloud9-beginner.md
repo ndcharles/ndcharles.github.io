@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "A Beginners Guide to AWS Cloud9"
-author: ndcharles
 categories: [ Tech ]
 image: assets/images/aws_cloud9.webp
 tags: [ featured, aws, aws_cloud9, devops, cloud ]

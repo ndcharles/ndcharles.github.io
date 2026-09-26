@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Why Young People are not Prepared for Jobs ofthe Future"
-author: ndcharles
 categories: [ Tech ]
 image: assets/images/product-management-paxo.webp
 tags: [ skills, future, jobs, youth ]

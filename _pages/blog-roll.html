@@ -1,0 +1,59 @@
+---
+title: "Blog Roll"
+layout: default
+permalink: /blog-roll/
+description: "Short, quick thoughts on data, IT operations and building in tech from Ndcharles Nweke. The notes between the long posts."
+---
+{%- assign notes = site['b-roll'] | sort: "date" | reverse -%}
+{%- comment -%} The two newest notes tagged "sticky" are pinned in the cover and left out of the feed. {%- endcomment -%}
+{%- assign pinned = "" | split: "" -%}
+{%- assign pinned_urls = "|" -%}
+{%- for n in notes -%}
+  {%- if pinned.size >= 2 %}{% break %}{% endif -%}
+  {%- if n.tags contains "sticky" -%}
+    {%- assign pinned = pinned | push: n -%}
+    {%- assign pinned_urls = pinned_urls | append: n.url | append: "|" -%}
+  {%- endif -%}
+{%- endfor -%}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/b-roll.css?v={{ site.time | date: "%s" }}">
+
+<div class="container br-page" data-br-api="{{ site.thatbros.api_url }}">
+
+    <div class="br-head">
+        <h1 class="br-head-title">Blog Roll</h1>
+        <p class="br-head-desc">Quick thoughts on data, IT operations and building in tech. The footage between the long posts.</p>
+    </div>
+
+    {% if pinned.size > 0 %}
+    <div class="br-pinned">
+        {% for n in pinned %}{% include b-roll/card.html note=n pinned=true limit=100 %}{% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="br-feed">
+                {%- assign shown = 0 -%}
+                {%- for note in notes -%}
+                  {%- assign key = "|" | append: note.url | append: "|" -%}
+                  {%- if pinned_urls contains key %}{% continue %}{% endif -%}
+                  {%- assign shown = shown | plus: 1 -%}
+                  {% if shown > 10 %}{% include b-roll/card.html note=note hidden=true %}{% else %}{% include b-roll/card.html note=note %}{% endif %}
+                {%- endfor -%}
+                {%- if shown == 0 %}
+                <p class="br-empty">No notes yet. Check back soon.</p>
+                {%- endif %}
+            </div>
+
+            {% if shown > 10 %}
+            <button type="button" class="br-load-more" data-action="load-more">Show more notes</button>
+            {% endif %}
+        </div>
+
+        <div class="col-lg-4">
+            {% include sidebar-featured.html %}
+        </div>
+    </div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/b-roll.js?v={{ site.time | date: "%s" }}" defer></script>

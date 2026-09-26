@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How to Use Checklists to Save the Day"
-author: ndcharles
 categories: [ Tech, Growth ]
 image: assets/images/checklist.webp
 tags: [ alx, checklist_manifesto, checklists, atul_gawande ]

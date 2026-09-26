@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Create Presentation Slides with Jupyter Notebook Like A Boss"
-author: ndcharles
 categories: [ Data ]
 image: assets/images/jupyter_slides.webp)
 tags: [ jupyter_notebook, presentations  ]

@@ -1,0 +1,9 @@
+{%- comment -%} Avatar, name, job title and note time. include.date = the note's date. {%- endcomment -%}
+<div class="br-byline">
+    <img class="br-avatar" src="{{ site.baseurl }}/{{ site.author.avatar }}" alt="{{ site.author.name }}" width="30" height="30" loading="lazy">
+    <div class="br-who">
+        <span class="br-who-top"><span class="br-name">{{ site.author.name }}</span>
+        {%- if include.date %} <span class="br-dot" aria-hidden="true">·</span> <time class="br-time" datetime="{{ include.date | date_to_xmlschema }}" title="{{ include.date | date: '%-d %B %Y' }}">{{ include.date | date: "%-d %b, %Y" | replace: "Sep,", "Sept," }}</time>{% endif %}</span>
+        <span class="br-role">{{ site.author.title }}</span>
+    </div>
+</div>

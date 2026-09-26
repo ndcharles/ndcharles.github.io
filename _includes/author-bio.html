@@ -1,0 +1,10 @@
+<!-- Author box at the end of every post. Details live under `author` in _config.yml. -->
+<div class="row mt-5">
+    <div class="col-md-2 align-self-center">
+        <img class="rounded-circle" src="{{ site.baseurl }}/{{ site.author.avatar }}" alt="{{ site.author.name }}" width="90"/>
+    </div>
+    <div class="col-md-10">
+        <h5 class="font-weight-bold">Written by {{ site.author.name }} <span><a target="_blank" href="https://twitter.com/{{ site.author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span></h5>
+        {{ site.author.bio }} <a href="{{ site.baseurl }}/about.html">More about me</a>
+    </div>
+</div>

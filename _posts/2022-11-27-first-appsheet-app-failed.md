@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "My First Appsheet App was a Failure"
-author: ndcharles
 categories: [ Product, Data, Tech ]
 image: assets/images/appsheet_app.webp
 tags: [featured, no-code, appsheet]

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Career Confusion: You Hate Your Job But Can't Quit"
-author: ndcharles
 categories: [ Tech, Life ]
 image: assets/images/career-confusion.webp
 date_modified: 2023-06-03 

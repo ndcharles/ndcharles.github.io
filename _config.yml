@@ -21,16 +21,27 @@ plugins:
   - jekyll-seo-tag
   - jekyll-target-blank
 
-authors:
-    ndcharles:
-      name:           Ndcharles Nweke
-      display_name:   Ndcharles
-      site:           https://www.ndcharles.github.io
-      avatar:         'assets/images/ndcharles.png'
-      bio:            "Hi, I am Ndcharles. I write about my experience in data science, tech and its products."
-      email:          ndcharles.edu@gmail.com
-      twitter:        https://twitter.com/nndcharles
-      linkedin:       https://linkedin.com/in/nndcharles
+# Author of every post. Shown by _includes/author-bio.html and read by
+# jekyll-seo-tag for the author/publisher in structured data.
+author:
+  name:     Ndcharles Nweke
+  avatar:   'assets/images/ndcharles.png'
+  bio:      "Hi, I am Ndcharles. I write about my experience in data science, tech and its products."
+  twitter:  nndcharles
+  url:      https://ndcharles.github.io/about.html
+  title:    Data and IT Operations
+
+# thatbros Worker: love counts and comments on B-Roll notes.
+# turnstile_site_key is needed for readers to post comments (Cloudflare dash -> Turnstile).
+thatbros:
+  api_url: https://thatbros.ndcharles.workers.dev
+  turnstile_site_key: '0x4AAAAAAFDl--WqO6c4HI99'
+
+# B-Roll: short notes in _b-roll/, listed at /blog-roll/
+collections:
+  b-roll:
+    output: true
+    permalink: /blog-roll/:name
 
 twitter:
     username: nndcharles
@@ -42,8 +53,12 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: ndcharles
-      avatar: 'assets/images/ndcharles.png'
+
+  - scope:
+      path: ""
+      type: "b-roll"
+    values:
+      layout: b-roll
       
   # all pages
   - scope:

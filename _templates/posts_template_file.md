@@ -6,7 +6,6 @@ Post should be saved as: YEAR-MONTH-DAY-title.md
 ---
 layout: post
 title:  "Enter post title"
-author: ndcharles
 categories: [ Product, Data, Tech, Growth ]
 image: assets/images/(add image name)
 date_modified: 2022-06-07 

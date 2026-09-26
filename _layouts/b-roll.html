@@ -1,0 +1,100 @@
+---
+layout: default
+---
+{%- comment -%}
+Related notes: up to 3 other notes, ranked by
+  1. how many tags they share with this note (more shared tags first;
+     "sticky" is a display flag, not a topic, so it doesn't count), then
+  2. newest first among notes with the same number of shared tags.
+If fewer than 3 share a tag, the rest are the newest remaining notes.
+{%- endcomment -%}
+{%- assign others = site['b-roll'] | where_exp: "n", "n.url != page.url" | sort: "date" | reverse -%}
+{%- assign related = "" | split: "" -%}
+{%- assign picked = "|" -%}
+{%- assign topics = page.tags | where_exp: "t", "t != 'sticky'" -%}
+{%- assign max_shared = topics.size | default: 0 -%}
+{%- if max_shared > 0 -%}
+  {%- for score in (1..max_shared) reversed -%}
+    {%- for n in others -%}
+      {%- if related.size >= 3 %}{% break %}{% endif -%}
+      {%- assign shared = 0 -%}
+      {%- for t in n.tags -%}{%- if topics contains t %}{% assign shared = shared | plus: 1 %}{% endif -%}{%- endfor -%}
+      {%- if shared == score -%}
+        {%- assign related = related | push: n -%}
+        {%- assign picked = picked | append: n.url | append: "|" -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- for n in others -%}
+  {%- if related.size >= 3 %}{% break %}{% endif -%}
+  {%- assign key = "|" | append: n.url | append: "|" -%}
+  {%- unless picked contains key %}{% assign related = related | push: n %}{% endunless -%}
+{%- endfor -%}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/b-roll.css?v={{ site.time | date: "%s" }}">
+
+<div class="container br-page br-single" data-br-api="{{ site.thatbros.api_url }}">
+<div class="row">
+<div class="col-lg-8">
+    <a class="br-back" href="{{ site.baseurl }}/blog-roll/">{% include b-roll/icon.html name="arrow-left" %}All notes</a>
+
+    <article class="br-note">
+        <h1 class="br-title">{{ page.title }}</h1>
+        {% include b-roll/byline.html date=page.date %}
+        <div class="br-body">
+            {{ content }}
+        </div>
+        <div class="br-note-foot">
+            {% include b-roll/actions.html note=page %}
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b, %Y" | replace: "Sep,", "Sept," }}</time>
+        </div>
+    </article>
+
+    {% if page.previous or page.next %}
+    <nav class="br-prevnext" aria-label="More notes">
+        {% if page.previous %}
+        <a class="br-pn br-pn-prev" href="{{ page.previous.url | prepend: site.baseurl }}">
+            <span class="br-pn-label">{% include b-roll/icon.html name="arrow-left" %}Previous</span>
+            <span class="br-pn-title">{{ page.previous.title }}</span>
+        </a>
+        {% endif %}
+        {% if page.next %}
+        <a class="br-pn br-pn-next" href="{{ page.next.url | prepend: site.baseurl }}">
+            <span class="br-pn-label">Next{% include b-roll/icon.html name="arrow-right" %}</span>
+            <span class="br-pn-title">{{ page.next.title }}</span>
+        </a>
+        {% endif %}
+    </nav>
+    {% endif %}
+
+    {% if site.thatbros.api_url %}
+    <section id="comments" class="br-section">
+        <h2 class="br-section-title">Comments</h2>
+        <thatbros-comments
+            data-api-url="{{ site.thatbros.api_url }}"
+            data-page-id="{{ page.url | prepend: site.baseurl }}"
+            data-turnstile-site-key="{{ site.thatbros.turnstile_site_key }}"
+            data-theme="light"
+            data-accent="#03a87c"
+            data-sort="best"></thatbros-comments>
+        <script src="{{ site.thatbros.api_url }}/comments.js" defer></script>
+    </section>
+    {% endif %}
+
+    {% if related.size > 0 %}
+    <section class="br-section">
+        <h2 class="br-section-title">Related notes</h2>
+        <div class="br-feed">
+            {% for n in related %}{% include b-roll/card.html note=n %}{% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</div>
+
+<div class="col-lg-4">
+    {% include sidebar-featured.html %}
+</div>
+</div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/b-roll.js?v={{ site.time | date: "%s" }}" defer></script>

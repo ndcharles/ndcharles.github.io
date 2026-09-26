@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Data et Operations at ALX"
-author: ndcharles
 categories: [ Data, Tech ]
 image: assets/images/alx_theroom.webp
 date_modified: 2025-05-21 

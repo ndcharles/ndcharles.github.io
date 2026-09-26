@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "How I am surviving data science without software background "
-author: ndcharles
 categories: [ Data, Tech]
 image: assets/images/data_science_survivor.webp)
 date_modified: 

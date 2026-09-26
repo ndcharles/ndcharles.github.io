@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Anscombe's Quartet and the Dinosaurus "
-author: ndcharles
 categories: [ Data]
 image: assets/images/anscombe_dinosaurus.webp)
 date_modified: 

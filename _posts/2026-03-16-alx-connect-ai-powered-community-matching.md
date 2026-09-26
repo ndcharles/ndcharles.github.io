@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Building ALX Connect - An AI-Powered Community Matching Platform"
-author: ndcharles
 categories: [ Product, Data ]
 image: assets/images/alx-connect-community-matching.webp
 tags: [sticky, AI-powered_matchmaking, community_engagement, orbiit_alternative]
