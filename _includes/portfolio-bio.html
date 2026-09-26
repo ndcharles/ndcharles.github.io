@@ -1,0 +1,13 @@
+{%- assign bio = site.data.portfolio_bio -%}
+<div class="pf-side">
+    <img class="pf-avatar" src="{{ site.baseurl }}/{{ bio.photo }}" alt="{{ bio.name }}" width="150" height="150">
+    <h2 class="pf-name"><a href="{{ site.baseurl }}/portfolio.html">{{ bio.name }}</a></h2>
+    <p class="pf-headline">{{ bio.headline }}</p>
+    <p class="pf-about">{{ bio.about }}</p>
+    <p class="pf-connect">{{ bio.links_title }}<br>
+    {%- for link in bio.links %}
+        <a href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">{{ link.label }}</a>{% unless forloop.last %} <span aria-hidden="true">|</span>{% endunless %}
+    {%- endfor %}
+    </p>
+    <hr class="pf-side-end">
+</div>

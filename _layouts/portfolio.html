@@ -1,0 +1,24 @@
+---
+layout: portfolio-page
+---
+{%- comment -%}
+One portfolio project (_portfolio/*.md). Same template as the old data-portfolio
+site: title, rule, write-up, GitHub link, back to the portfolio, profile links.
+{%- endcomment -%}
+<div class="article-post pf-item">
+    <h1 class="pf-item-title">{{ page.title }}</h1>
+    <hr>
+
+    {% if page.status %}<p class="pf-status">This project is {{ page.status }}. Check back soon.</p>{% endif %}
+
+    {{ content }}
+
+    {% if page.github %}
+    <p><a href="{{ page.github }}">[View project on GitHub]</a></p>
+    {% endif %}
+
+    <br>
+    <p><a href="{{ site.baseurl }}/portfolio.html">[Back to Portfolio]</a></p>
+    <hr>
+    <a href="https://github.com/ndcharles">[View my GitHub profile]</a> | <a href="{{ site.baseurl }}/">[Read the Blog]</a>
+</div>

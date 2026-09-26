@@ -1,0 +1,11 @@
+# Sidebar on /portfolio.html and every project page (_includes/portfolio-bio.html).
+name: Ndcharles Nweke
+headline: Data Science & Analytics | IT Operations
+about: "A data generalist with experience in IT operations, and everything business automations. My interest is in real-life applications of data to business and everyday problems."
+photo: assets/images/ndcharles.png
+links_title: Let's Connect
+links:
+  - { label: LinkedIn, url: "https://linkedin.com/in/nndcharles" }
+  - { label: Twitter, url: "https://twitter.com/nndcharles" }
+  - { label: Blog, url: "/" }
+  - { label: View my Resume, url: "https://drive.google.com/file/d/1zikfMdLc0rLPhel-p-HjmPLqjkOpVrID/view?usp=sharing" }

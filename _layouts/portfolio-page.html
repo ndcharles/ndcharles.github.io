@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- comment -%}
+Shell for /portfolio.html and project pages: bio sidebar on the left (sticky on
+desktop; on phones it sits on top, centred), content on the right.
+{%- endcomment -%}
+<div class="container pf-wrap">
+    <div class="row">
+        <aside class="col-lg-4 pf-aside">
+            {% include portfolio-bio.html %}
+        </aside>
+        <div class="col-lg-8 pf-main">
+            {{ content }}
+        </div>
+    </div>
+</div>

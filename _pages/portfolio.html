@@ -1,0 +1,34 @@
+---
+title: "My Data Science Portfolio"
+layout: portfolio-page
+permalink: "/portfolio.html"
+comments: false
+description: "Data science and analytics projects by Ndcharles Nweke: AI-powered matching, regression, classification, clustering, NLP and exploratory data analysis."
+tools: [MS Excel & Google Sheets, Python, Large Language Models, FastAPI, SQL (including BigQuery), Tableau, Looker Studio, Automations]
+---
+{%- assign projects = site.portfolio | sort: "order" -%}
+<h1 class="pf-page-title">{{ page.title }}</h1>
+<hr class="pf-rule">
+
+<div class="pf-list">
+    {% for p in projects %}
+    {%- assign href = p.external_url | default: p.url -%}
+    <article class="pf-card">
+        <h2 class="pf-title">
+            <a class="pf-card-link" href="{% if p.external_url %}{{ href }}{% else %}{{ href | prepend: site.baseurl }}{% endif %}">{{ p.card_title | default: p.title }}</a>
+            {%- if p.external_url %} <span class="pf-ext" title="Opens on GitHub">&#8599;</span>{% endif %}
+            {%- if p.status %} <span class="pf-badge">{{ p.status }}</span>{% endif %}
+        </h2>
+        <p class="pf-desc">{{ p.description }}</p>
+        <div class="tags-container">
+            {% for tech in p.technologies %}<span class="tech-button technology">{{ tech }}</span>{% endfor %}
+            {% for concept in p.concepts %}<span class="tech-button concept">{{ concept }}</span>{% endfor %}
+        </div>
+    </article>
+    {% endfor %}
+</div>
+
+<section class="pf-tools">
+    <h2 class="pf-tools-title">Some tools I use</h2>
+    <ul>{% for t in page.tools %}<li>{{ t }}</li>{% endfor %}</ul>
+</section>

@@ -37,10 +37,14 @@ thatbros:
   turnstile_site_key: '0x4AAAAAAFDl--WqO6c4HI99'
 
 # B-Roll: short notes in _b-roll/, listed at /blog-roll/
+# Portfolio: projects in _portfolio/, listed at /portfolio.html
 collections:
   b-roll:
     output: true
     permalink: /blog-roll/:name
+  portfolio:
+    output: true
+    permalink: /portfolio/:name
 
 twitter:
     username: nndcharles
@@ -59,6 +63,12 @@ defaults:
       type: "b-roll"
     values:
       layout: b-roll
+
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: portfolio
       
   # all pages
   - scope:
