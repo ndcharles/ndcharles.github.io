@@ -4,6 +4,7 @@
 //     SoundCloud, .mp4/.webm/.mov video, .mp3/.m4a/.ogg/.wav audio).
 //  2. A quote whose last paragraph starts with "—" becomes a quote card, with that
 //     paragraph as the attribution.
+//  3. Every code block gets a Copy button.
 (function () {
     'use strict';
 
@@ -78,6 +79,34 @@
             fig.className = 'embed';
             fig.innerHTML = html;
             p.replaceWith(fig);
+        });
+
+        // 3. Copy button on every code block.
+        body.querySelectorAll('pre').forEach(function (pre) {
+            var box = pre.closest('.highlighter-rouge') || pre;
+            if (box.classList.contains('code-wrap')) return;
+            box.classList.add('code-wrap');
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'code-copy';
+            button.textContent = 'Copy';
+            button.setAttribute('aria-label', 'Copy code');
+            button.addEventListener('click', function () {
+                var text = pre.innerText.replace(/\n$/, '');
+                var done = function () {
+                    button.textContent = 'Copied';
+                    button.classList.add('is-done');
+                    setTimeout(function () { button.textContent = 'Copy'; button.classList.remove('is-done'); }, 1500);
+                };
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(text).then(done);
+                } else {
+                    var ta = document.createElement('textarea');
+                    ta.value = text; ta.style.cssText = 'position:fixed;opacity:0';
+                    document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); done();
+                }
+            });
+            box.appendChild(button);
         });
 
         // 2. Quote ending in "— Name, Source" -> quote card.

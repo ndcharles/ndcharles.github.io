@@ -1,50 +1,134 @@
 # Snippets for writing in Pages CMS. Shown in the CMS sidebar ("Writing kit") and at
-# /writing-kit.html with copy buttons. Everything here is safe in the rich-text editor.
+# /writing-kit.html, grouped into collapsible sections with copy buttons.
+# Everything here is safe in the rich-text editor.
+groups:
+  - Info boxes
+  - Media
+  - Quotes
+  - Images & note boxes
+  - Formatting
+  - Rules
+
 snippets:
-  - title: YouTube, Vimeo, Spotify or SoundCloud
+  # ------------------------------------------------------------------ Info boxes
+  - group: Info boxes
+    title: Info box with code examples
+    how: "A green box with a title, some context and labelled code blocks, each with a Copy button on the site. Paste the whole thing, then edit the text. To add a code block in the editor: / → Code block. For a small label above it: / → Heading 4. Repeat as often as you like."
+    code: |-
+      {% include infobox.html title="Text Classification" %}
+
+      One or two sentences of context about the examples below.
+
+      #### Zero-shot
+
+      ```text
+      "Classify the following text into categories: sports, politics, technology, or entertainment: 'The team secured a victory in the final seconds.'"
+      ```
+
+      #### Few-shot
+
+      ```text
+      "Classify the following text into categories: sports, politics, technology, or entertainment:
+      - 'The government passed a new bill yesterday.' (politics)
+      - 'A new app is changing the way we manage our daily tasks.'"
+      ```
+
+      {% include endinfobox.html %}
+  - group: Info boxes
+    title: Empty info box (start and end lines)
+    how: "Paste the first line where the box should start and the last line where it ends. Everything you write between them goes inside the box. The title is optional. Keep an empty line after the start and before the end."
+    code: |-
+      {% include infobox.html title="Box title" %}
+
+      Write anything here: paragraphs, #### headings, lists, code blocks.
+
+      {% include endinfobox.html %}
+  - group: Info boxes
+    title: Short tip box
+    how: "A box with just a title and a sentence or two."
+    code: |-
+      {% include infobox.html title="Quick tip" %}
+
+      A box can also be just a heading and some text, with `inline code` if you need it.
+
+      {% include endinfobox.html %}
+
+  # ------------------------------------------------------------------ Media
+  - group: Media
+    title: YouTube, Vimeo, Spotify or SoundCloud
     how: "No code needed. Paste the link on its own line (nothing else on that line) and it shows as a player on the site."
     code: |-
       https://www.youtube.com/watch?v=VIDEO_ID
-  - title: Quote card
-    how: "No code needed. Press the quote button (or type > and a space), write the quote, press Enter twice, then start the last line with a dash —. That last line becomes the attribution."
+  - group: Media
+    title: A note with every kind of media (sample)
+    how: "A full example to copy into a B-Roll note or post, then delete what you don't need: quote card, GIF, YouTube and Spotify."
     code: |-
-      > The quote goes here.
-      >
-      > — Author Name, Book or Film
-  - title: Quote card (as a snippet)
-    how: "Same card, written as one line. Paste it in a paragraph of its own."
-    code: |-
-      {% include quote.html text="The quote goes here." by="Author Name" source="Book or Film" %}
-  - title: Image with a size or caption
-    how: "For a normal image, use / then Image in the editor. Use this when you need a fixed width, centring or a caption. Upload the file first and copy its path."
-    code: |-
-      {% include image.html src="/assets/images/file-name.png" alt="What the image shows" width="300" caption="Optional caption" %}
-  - title: Highlighted note box
-    how: "A green box with an optional link at the end. For another site, leave out https:// (write example.com/page). Add style=\"dark\" for a dark box."
-    code: |-
-      {% include callout.html text="For the full story, read" link="my blog article" url="/alx-connect-ai-powered-community-matching" %}
-  - title: Your own video or audio file
+      A short intro sentence.
+
+      {% include quote.html text="Everyone sees what you appear to be, few really know what you are." by="Niccolò Machiavelli" source="The Prince" %}
+
+      ![A GIF](/assets/images/alx_appsheet.gif)
+
+      https://www.youtube.com/watch?v=Cniqsc9QfDo
+
+      {% include embed.html spotify="track/4uLU6hMCjMI75M1A2tKUQC" %}
+  - group: Media
+    title: Your own video or audio file
     how: "Upload the file to Audio & video (assets/media), then paste its path. Leave out https:// for files on other sites."
     code: |-
       {% include embed.html video="/assets/media/clip.mp4" caption="Optional caption" %}
 
       {% include embed.html audio="/assets/media/song.mp3" %}
-  - title: Video by ID (alternative)
+  - group: Media
+    title: Video or track by ID (alternative)
     how: "Same player as pasting the link, if you prefer a snippet. Spotify uses the part after open.spotify.com/."
     code: |-
       {% include embed.html youtube="VIDEO_ID" caption="Optional caption" %}
 
       {% include embed.html spotify="track/TRACK_ID" %}
-  - title: Line break inside a paragraph
+
+  # ------------------------------------------------------------------ Quotes
+  - group: Quotes
+    title: Quote card
+    how: "No code needed. Press the quote button (or type > and a space), write the quote, press Enter twice, then start the last line with a dash —. That last line becomes the attribution."
+    code: |-
+      > The quote goes here.
+      >
+      > — Author Name, Book or Film
+  - group: Quotes
+    title: Quote card (as a snippet)
+    how: "Same card, written as one line. Paste it in a paragraph of its own."
+    code: |-
+      {% include quote.html text="The quote goes here." by="Author Name" source="Book or Film" %}
+
+  # ------------------------------------------------------------------ Images & note boxes
+  - group: Images & note boxes
+    title: Image with a size or caption
+    how: "For a normal image, use / then Image in the editor. Use this when you need a fixed width, centring or a caption. Upload the file first and copy its path."
+    code: |-
+      {% include image.html src="/assets/images/file-name.png" alt="What the image shows" width="300" caption="Optional caption" %}
+  - group: Images & note boxes
+    title: Highlighted note box (one line)
+    how: "A slim green box with an optional link at the end. For another site, leave out https:// (write example.com/page). Add style=\"dark\" for a dark box."
+    code: |-
+      {% include callout.html text="For the full story, read" link="my blog article" url="/alx-connect-ai-powered-community-matching" %}
+
+  # ------------------------------------------------------------------ Formatting
+  - group: Formatting
+    title: Line break inside a paragraph
     how: "Press Shift + Enter in the editor. (Enter on its own starts a new paragraph.)"
     code: |-
       First line
       Second line
-  - title: "Rule 1: no https:// inside snippets"
+
+  # ------------------------------------------------------------------ Rules
+  - group: Rules
+    title: "Rule 1: no https:// inside snippets"
     how: "Inside {% include … %} snippets, never type https:// — the editor turns it into a link and breaks the snippet. Write example.com/page instead; the site adds https:// for you. Pasted links on their own line are fine."
     code: |-
       url="example.com/page"
-  - title: "Rule 2: don't start a paragraph with a short word and a full stop"
+  - group: Rules
+    title: "Rule 2: don't start a paragraph with a short word and a full stop"
     how: "The editor misreads a paragraph that starts with a one- or two-letter word and a full stop (Ok. / Mr. / No. / So. / I.) as a numbered list the next time the post is opened. Write Okay. / Mr Smith / Number 5 instead, or use a comma. Longer words (Okay. / Etc.) are fine."
     code: |-
       Okay. This is fine.

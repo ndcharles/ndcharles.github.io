@@ -1,0 +1,11 @@
+{%- comment -%}
+Start of an info box. Everything up to {% include endinfobox.html %} goes inside it:
+paragraphs, #### headings, lists and code blocks, written normally in the editor.
+  {% include infobox.html title="Text Classification" %}
+  ...content...
+  {% include endinfobox.html %}
+title is optional. Leave a blank line (an empty paragraph) around both lines.
+markdown="1" makes kramdown keep reading Markdown inside the box.
+{%- endcomment %}
+<div class="infobox" markdown="1">
+{% if include.title %}<p class="infobox-title" role="heading" aria-level="3">{{ include.title }}</p>{% endif %}

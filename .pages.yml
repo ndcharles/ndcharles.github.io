@@ -285,11 +285,20 @@ content:
     path: _data/writing_kit.yml
     format: yaml
     fields:
+      - name: groups
+        label: Sections (in page order)
+        type: string
+        list: true
       - name: snippets
         label: Snippets (tap and hold a box to copy)
         type: object
         list: true
         fields:
+          - name: group
+            label: Section
+            type: select
+            options:
+              values: [Info boxes, Media, Quotes, Images & note boxes, Formatting, Rules]
           - name: title
             label: What
             type: string
