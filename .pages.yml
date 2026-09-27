@@ -310,3 +310,9 @@ content:
             type: code
             options:
               format: markdown
+          - name: preview
+            label: Preview content (optional)
+            type: code
+            description: "What the writing-kit page shows as a preview. Leave empty to preview the code above; write none for no preview; or put sample content with real values (e.g. a real video ID)."
+            options:
+              format: markdown

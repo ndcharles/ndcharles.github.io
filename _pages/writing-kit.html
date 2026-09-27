@@ -24,6 +24,14 @@ Not linked from the menu and kept out of search engines and site search.
         <section class="wk-card">
             <h2 class="wk-card-title">{{ s.title }}</h2>
             <p class="wk-how">{{ s.how }}</p>
+            {%- assign sample = s.preview | default: s.code -%}
+            {%- unless sample == "none" %}
+            <p class="wk-label">Preview</p>
+            <div class="wk-preview article-post">
+                {{ sample | liquify | markdownify }}
+            </div>
+            <p class="wk-label">Code</p>
+            {%- endunless %}
             <div class="wk-code">
                 <pre><code>{{ s.code | escape }}</code></pre>
                 <button type="button" class="wk-copy" data-copy>Copy</button>
@@ -53,6 +61,19 @@ Not linked from the menu and kept out of search engines and site search.
     .wk-card { margin-bottom: 14px; padding: 16px 16px 14px; border: 1px solid #e6ebe9; border-radius: 10px; background: #fbfdfc; }
     .wk-card-title { margin: 0 0 6px; font-size: 1.125rem; font-weight: 500; }
     .wk-how { margin: 0 0 12px; font-size: .9375rem; line-height: 1.55; color: #555; }
+    .wk-label { margin: 0 0 6px; font-size: .6875rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #6b7471; }
+    .wk-preview {
+        margin: 0 0 14px;
+        padding: 16px 16px 4px;
+        border: 1px dashed #cfdcd7;
+        border-radius: 8px;
+        background: #fff;
+        font-size: 1rem;
+        line-height: 1.6;
+        overflow: hidden;
+    }
+    .wk-preview > :first-child { margin-top: 0; }
+    .wk-preview p { margin: 0 0 12px; }
     .wk-code { position: relative; }
     .wk-code pre {
         margin: 0;

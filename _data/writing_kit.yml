@@ -1,6 +1,8 @@
 # Snippets for writing in Pages CMS. Shown in the CMS sidebar ("Writing kit") and at
 # /writing-kit.html, grouped into collapsible sections with copy buttons.
 # Everything here is safe in the rich-text editor.
+# Each snippet shows a live preview of `code` on the page; set `preview` to show
+# different sample content instead (e.g. a real video ID), or `preview: none` for none.
 groups:
   - Info boxes
   - Media
@@ -57,6 +59,8 @@ snippets:
   - group: Media
     title: YouTube, Vimeo, Spotify or SoundCloud
     how: "No code needed. Paste the link on its own line (nothing else on that line) and it shows as a player on the site."
+    preview: |-
+      https://www.youtube.com/watch?v=Cniqsc9QfDo
     code: |-
       https://www.youtube.com/watch?v=VIDEO_ID
   - group: Media
@@ -75,6 +79,7 @@ snippets:
   - group: Media
     title: Your own video or audio file
     how: "Upload the file to Audio & video (assets/media), then paste its path. Leave out https:// for files on other sites."
+    preview: none
     code: |-
       {% include embed.html video="/assets/media/clip.mp4" caption="Optional caption" %}
 
@@ -82,6 +87,10 @@ snippets:
   - group: Media
     title: Video or track by ID (alternative)
     how: "Same player as pasting the link, if you prefer a snippet. Spotify uses the part after open.spotify.com/."
+    preview: |-
+      {% include embed.html youtube="Cniqsc9QfDo" caption="Optional caption" %}
+
+      {% include embed.html spotify="track/4uLU6hMCjMI75M1A2tKUQC" %}
     code: |-
       {% include embed.html youtube="VIDEO_ID" caption="Optional caption" %}
 
@@ -105,6 +114,8 @@ snippets:
   - group: Images & note boxes
     title: Image with a size or caption
     how: "For a normal image, use / then Image in the editor. Use this when you need a fixed width, centring or a caption. Upload the file first and copy its path."
+    preview: |-
+      {% include image.html src="/assets/images/alx_appsheet.gif" alt="Attendance app" width="300" caption="Optional caption" %}
     code: |-
       {% include image.html src="/assets/images/file-name.png" alt="What the image shows" width="300" caption="Optional caption" %}
   - group: Images & note boxes
@@ -117,6 +128,7 @@ snippets:
   - group: Formatting
     title: Line break inside a paragraph
     how: "Press Shift + Enter in the editor. (Enter on its own starts a new paragraph.)"
+    preview: "First line  \nSecond line"
     code: |-
       First line
       Second line
@@ -125,11 +137,13 @@ snippets:
   - group: Rules
     title: "Rule 1: no https:// inside snippets"
     how: "Inside {% include … %} snippets, never type https:// — the editor turns it into a link and breaks the snippet. Write example.com/page instead; the site adds https:// for you. Pasted links on their own line are fine."
+    preview: none
     code: |-
       url="example.com/page"
   - group: Rules
     title: "Rule 2: don't start a paragraph with a short word and a full stop"
     how: "The editor misreads a paragraph that starts with a one- or two-letter word and a full stop (Ok. / Mr. / No. / So. / I.) as a numbered list the next time the post is opened. Write Okay. / Mr Smith / Number 5 instead, or use a comma. Longer words (Okay. / Etc.) are fine."
+    preview: none
     code: |-
       Okay. This is fine.
       Ok, this is fine too.

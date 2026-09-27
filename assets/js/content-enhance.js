@@ -8,7 +8,7 @@
 (function () {
     'use strict';
 
-    var bodies = document.querySelectorAll('.article-post, .br-body, .page-content');
+    var bodies = document.querySelectorAll('.article-post, .br-body, .page-content, .wk-preview');
     if (!bodies.length) return;
 
     function frame(src, title, allow) {
