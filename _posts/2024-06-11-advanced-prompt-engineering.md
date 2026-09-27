@@ -46,10 +46,10 @@ Many advanced prompting techniques have been designed to improve performance on 
 - Directional stimulus prompting
 - Chain of density prompting
 
---1. **Reference prompting** (also contextual prompting or reference text prompting): This involves providing context or reference materials to your query which then guides the model's response. This is used when you want specific responses and have access to supporting materials for context. This context can be a passage, a set of instructions or any other relevant information.<br>
+--1. **Reference prompting** (also contextual prompting or reference text prompting): This involves providing context or reference materials to your query which then guides the model's response. This is used when you want specific responses and have access to supporting materials for context. This context can be a passage, a set of instructions or any other relevant information.  
 Examples of Reference prompting 
 
-a. Text summarization
+**a.** Text summarization
 
 ```
 Prompt: Summarize the following text:
@@ -66,7 +66,7 @@ Response: "Quantum computing uses quantum mechanics to perform fast calculations
 
 Examples of zero-shot and few-shot learning 
 
-a. Text Classification 
+**a.** Text Classification 
 
 <pre>
 <b>Zero-shot</b>
@@ -81,7 +81,7 @@ a. Text Classification
 - 'A new app is changing the way we manage our daily tasks.'"
 </pre>
 
-b. Translation
+**b.** Translation
 
 <pre>
 <b>Zero-shot</b>
@@ -94,7 +94,7 @@ b. Translation
 - 'Can you help me with my homework?'"
 </pre>
 
-c. Summarization
+**c.** Summarization
 
 <pre>
 <b>Zero-shot</b>
@@ -107,7 +107,7 @@ c. Summarization
 - 'A new species of bird has been discovered in the Amazon rainforest.'"
 </pre>
 
-d. Question Answering
+**d.** Question Answering
 
 <pre>
 <b>Zero-shot</b>
@@ -120,7 +120,7 @@ d. Question Answering
 - 'How long is the Great Wall of China?'"
 </pre>
 
-e. Sentiment Analysis
+**e.** Sentiment Analysis
 
 <pre>
 <b>Zero-shot</b>

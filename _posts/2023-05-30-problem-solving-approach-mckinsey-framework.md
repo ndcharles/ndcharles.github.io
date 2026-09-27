@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "Problem-Solving Approaches - The McKinsey Problem-Solving Framework"
 categories: [ Tech, Growth ]

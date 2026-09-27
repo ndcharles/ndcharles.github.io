@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "How I am surviving data science without software background "
 categories: [ Data, Tech]

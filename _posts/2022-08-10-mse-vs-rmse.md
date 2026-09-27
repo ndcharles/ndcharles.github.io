@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "Mean Squared Error VS Root Mean Squared Error"
 categories: [ Data ]

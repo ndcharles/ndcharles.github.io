@@ -35,7 +35,6 @@ There are 9 categorical variables and 3 numerical variables. A bar plot function
 
 ![histogram](/assets/images/portfolio/hist.jpg)
 
-<br>
 
 ## Bivariate Analysis
 The aim here is to dig deeper into the dataset. To answer questions such as:

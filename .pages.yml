@@ -1,0 +1,303 @@
+# Pages CMS configuration (https://pagescms.org).
+# Sign in at https://app.pagescms.org with GitHub and open this repository.
+# Every save is a commit to main; GitHub Actions rebuilds the site in about a minute.
+#
+# Snippets for the editor (videos, quotes, images, callouts): open the
+# "Writing kit" entry in the sidebar, or https://ndcharles.github.io/writing-kit.html
+
+settings:
+  content:
+    # Keep front-matter keys the forms below don't show (layout, permalink, ...).
+    merge: true
+  commit:
+    templates:
+      create: "Add {filename} (via Pages CMS)"
+      update: "Update {filename} (via Pages CMS)"
+      delete: "Delete {filename} (via Pages CMS)"
+      rename: "Rename {oldFilename} to {newFilename} (via Pages CMS)"
+
+media:
+  - name: images
+    label: Images
+    input: assets/images
+    output: /assets/images
+    rename: safe
+    categories: [image]
+  - name: media
+    label: Audio & video
+    input: assets/media
+    output: /assets/media
+    rename: safe
+    categories: [video, audio]
+
+components:
+  body:
+    label: Content
+    type: rich-text
+    description: "Type / for headings, lists, quotes, images and tables. Paste a YouTube, Vimeo, Spotify or SoundCloud link on its own line to show a player. For more, see Writing kit in the sidebar."
+    options:
+      format: markdown
+      media: images
+      rename: safe
+  tags:
+    label: Tags
+    type: string
+    list: true
+    description: "Lowercase words, joined with _ (e.g. data_science). Add one per row."
+
+content:
+  # ------------------------------------------------------------------ Blog posts
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: _posts
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [title, published, categories]
+      primary: title
+      search: [title, tags]
+      default:
+        sort: name
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+        description: "Switch off to keep this post as a draft (hidden from the site)."
+      - name: categories
+        label: Categories
+        type: select
+        options:
+          multiple: true
+          values: [Data, Tech, Product, Growth, Life, Jekyll]
+          placeholder: Pick one or more
+      - name: tags
+        component: tags
+        description: "Add featured to show it in the Featured sidebar, sticky to pin it at the top of the homepage. Otherwise lowercase words joined with _ (e.g. data_science)."
+      - name: image
+        label: Cover image
+        type: image
+        description: "Wide image shown at the top of the post and on the homepage."
+        options:
+          media: images
+      - name: date_modified
+        label: Last updated
+        type: date
+        default: ""
+        description: "Optional. Set when you make a meaningful update; shown as “Last updated” on the post."
+      - name: comments
+        label: Allow comments
+        type: boolean
+        default: true
+      - name: body
+        component: body
+
+  # ------------------------------------------------------------------ B-Roll notes
+  - name: b-roll
+    label: B-Roll notes
+    type: collection
+    path: _b-roll
+    exclude: [_template.md]
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      fields: [title, date, sticky, published]
+      primary: title
+      search: [title, tags]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date & time
+        type: date
+        description: "Notes are listed newest first. Defaults to now."
+        options:
+          time: true
+          format: "yyyy-MM-dd HH:mm:ss xx"
+      - name: tags
+        component: tags
+        description: "Topics like data, operations, leadership, books. Notes that share tags appear as Related notes."
+      - name: sticky
+        label: Pin to the top of the Blog Roll
+        type: boolean
+        default: false
+        description: "The two newest pinned notes show side by side at the top."
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+        description: "Switch off to keep this note as a draft."
+      - name: comments
+        label: Allow comments
+        type: boolean
+        default: true
+      - name: body
+        component: body
+        description: "Keep it short: the feed shows the first 300 characters (100 for pinned notes). Paste a YouTube/Spotify link on its own line for a player; end a quote with a line starting “—” for a quote card."
+
+  # ------------------------------------------------------------------ Portfolio
+  - name: portfolio-group
+    label: Portfolio
+    type: group
+    items:
+      - name: portfolio
+        label: Projects
+        type: collection
+        path: _portfolio
+        filename:
+          template: "{primary}.md"
+          field: create
+        view:
+          fields: [title, order, status]
+          primary: title
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            required: true
+            description: "Heading on the project's own page."
+          - name: card_title
+            label: Card title
+            type: string
+            description: "Optional shorter title for the card on the portfolio page."
+          - name: description
+            label: Summary
+            type: text
+            required: true
+            description: "The paragraph on the portfolio card."
+          - name: order
+            label: Position
+            type: number
+            required: true
+            description: "1 shows first on the portfolio page."
+            options:
+              min: 1
+          - name: status
+            label: Status
+            type: select
+            options:
+              values: ["in progress"]
+              placeholder: "Finished (leave empty)"
+          - name: technologies
+            label: Technologies
+            type: string
+            list: true
+            description: "Red tags, e.g. Python, FastAPI."
+          - name: concepts
+            label: Concepts
+            type: string
+            list: true
+            description: "Green tags, e.g. Regression, Clustering."
+          - name: github
+            label: GitHub link
+            type: string
+            description: "Shown as “View project on GitHub” at the end of the page."
+          - name: external_url
+            label: Open this link instead of a page
+            type: string
+            description: "Optional. If set, the card opens this link (e.g. a notebook) instead of the write-up below."
+          - name: body
+            component: body
+      - name: portfolio_bio
+        label: Sidebar bio
+        type: file
+        path: _data/portfolio_bio.yml
+        format: yaml
+        fields:
+          - name: name
+            label: Name
+            type: string
+            required: true
+          - name: headline
+            label: Headline
+            type: string
+          - name: about
+            label: About
+            type: text
+          - name: photo
+            label: Photo
+            type: image
+            description: "Square photo; shown as a circle."
+            options:
+              media: images
+          - name: links_title
+            label: Links heading
+            type: string
+          - name: links
+            label: Links
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: Label
+                type: string
+                required: true
+              - name: url
+                label: Address
+                type: string
+                required: true
+
+  # ------------------------------------------------------------------ Pages
+  - name: pages
+    label: Pages
+    type: collection
+    path: _pages
+    subfolders: false
+    exclude: [blog-roll.html, categories.html, tags.html, portfolio.html, projects.html, writing-kit.html]
+    operations:
+      create: false
+      delete: false
+      rename: false
+    view:
+      fields: [title]
+      primary: title
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description (for Google)
+        type: text
+      - name: body
+        component: body
+
+  # ------------------------------------------------------------------ Writing kit
+  - name: writing_kit
+    label: "✍️ Writing kit"
+    type: file
+    path: _data/writing_kit.yml
+    format: yaml
+    fields:
+      - name: snippets
+        label: Snippets (tap and hold a box to copy)
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: What
+            type: string
+          - name: how
+            label: How to use it
+            type: text
+          - name: code
+            label: Copy this
+            type: code
+            options:
+              format: markdown

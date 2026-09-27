@@ -9,7 +9,7 @@ I had to create an app for events attendance at my new place. The aim was to sim
 
 Haven used Appsheet before, I decide to just continue with the platform to reduce the learning curve and also allow me create time for other event logistics.
 
-<p align="center"><image src="/assets/images/alx_appsheet.gif" alt="Attendance app" width="300" /></p>
+{% include image.html src="/assets/images/alx_appsheet.gif" alt="Attendance app" width="300" %}
 
 At the onset, my fear was the prototype not running smoothly due to appsheet restrictions; but it ran. No one said they couldn't access the data. But then something happened, something no one told me until after the event. I came to check the app's database and there were fewer persons than we had in attendance. Clearly, we just encountered data loss. Despite using Appsheet `unique()` parameter to set a unique key for every entry, something still found a way to go wrong.
 
@@ -18,7 +18,7 @@ My appsheet journey started early 2022. I had someone request assistance with li
 
 A brief Google search led to Appsheet (which is something I was familiar with but not truly tried). I looked at app templates, selected the inventory app template and got down to business. It was a very basic app without any complex parts required. You can see the app below. 
 
-<p align="center"><image src="/assets/images/inventory_manager_app.gif" alt="inventory manager app" width="300" /></p>
+{% include image.html src="/assets/images/inventory_manager_app.gif" alt="Inventory manager app" width="300" %}
 
 To me it was a success because I not only got the pictures, prices and updates I needed, I truly explored the Appsheet platform. So when an app was required for attendance at work, I remembered my escapades with Appsheet and decided to explore it further; this time for an app with complex requirements and conditions.
 

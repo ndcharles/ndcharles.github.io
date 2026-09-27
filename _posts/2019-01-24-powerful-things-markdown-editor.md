@@ -19,7 +19,7 @@ As well as bold and italics, you can also use some other special formatting in M
 
 + ~~strike through~~
 + ==highlight==
-+ \*escaped characters\*
++ `*escaped characters*`
 
 
 ## Writing code blocks
@@ -50,4 +50,4 @@ Another way to insert links in markdown is using reference lists. You might want
 
 Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+{% include embed.html youtube="Cniqsc9QfDo" %}

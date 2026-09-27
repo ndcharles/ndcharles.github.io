@@ -18,7 +18,6 @@ Given it's a classification problem, various classification algorithms (Logistic
 
 [\[View project on GitHub\]](https://github.com/ndcharles/SGA08_DATASCI/blob/master/loan_project/loan_project.ipynb)
 
-<br>
 
 ## Discussions
 

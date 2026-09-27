@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "Create Presentation Slides with Jupyter Notebook Like A Boss"
 categories: [ Data ]

@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "How to Write an ATS Acceptable Resume"
 categories: [ Tech ]

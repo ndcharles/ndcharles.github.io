@@ -3,10 +3,12 @@ Media for B-Roll notes and posts. One source per include; caption is optional.
   {% include embed.html youtube="dQw4w9WgXcQ" caption="..." %}
   {% include embed.html vimeo="76979871" %}
   {% include embed.html spotify="track/4uLU6hMCjMI75M1A2tKUQC" %}   (also album/…, playlist/…, episode/…)
-  {% include embed.html soundcloud="https://soundcloud.com/artist/track" %}
+  {% include embed.html soundcloud="soundcloud.com/artist/track" %}
   {% include embed.html video="/assets/media/clip.mp4" %}
   {% include embed.html audio="/assets/media/song.mp3" %}
 Images and GIFs need no include: ![alt text](/assets/images/file.gif)
+Leave "https://" off addresses inside {% include %}: the Pages CMS editor turns a full
+"https://…" into a link and breaks the snippet.
 {%- endcomment -%}
 <figure class="embed">
 {%- if include.youtube -%}
@@ -17,7 +19,8 @@ Images and GIFs need no include: ![alt text](/assets/images/file.gif)
     {%- assign sp_height = 352 -%}{%- if include.spotify contains "track/" or include.spotify contains "episode/" %}{% assign sp_height = 152 %}{% endif -%}
     <iframe class="embed-audio-frame" src="https://open.spotify.com/embed/{{ include.spotify }}" height="{{ sp_height }}" title="{{ include.caption | default: 'Spotify player' | escape }}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 {%- elsif include.soundcloud -%}
-    <iframe class="embed-audio-frame" src="https://w.soundcloud.com/player/?url={{ include.soundcloud | url_encode }}&amp;color=%2303a87c&amp;visual=false&amp;show_comments=false" height="166" title="{{ include.caption | default: 'SoundCloud player' | escape }}" loading="lazy" allow="autoplay"></iframe>
+    {%- assign sc_url = include.soundcloud -%}{%- unless sc_url contains "://" %}{% assign sc_url = sc_url | prepend: "https://" %}{% endunless -%}
+    <iframe class="embed-audio-frame" src="https://w.soundcloud.com/player/?url={{ sc_url | url_encode }}&amp;color=%2303a87c&amp;visual=false&amp;show_comments=false" height="166" title="{{ include.caption | default: 'SoundCloud player' | escape }}" loading="lazy" allow="autoplay"></iframe>
 {%- elsif include.video -%}
     <video class="embed-video" src="{{ include.video | relative_url }}" controls playsinline preload="metadata"></video>
 {%- elsif include.audio -%}

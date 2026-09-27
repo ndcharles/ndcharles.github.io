@@ -13,7 +13,8 @@ I work in an ecommerce company and although, most conversations around product a
 ## What is Product Analytics?
 
 > Product analytics show you who your users are, what they want, and how to keep them.
-> <cite>&mdash;[Amplitude](https://amplitude.com/behavioral-analytics-platform)</cite>
+>
+> — [Amplitude](https://amplitude.com/behavioral-analytics-platform)
 
 Product analytics refers to capturing and analyzing quantitative data through embedded tools that record how users interact with a product. It is about using data to understand who your users are, how they use your product and how these affects your business.
 

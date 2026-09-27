@@ -9,9 +9,10 @@ published: true
 > During the COVID in 2020 I transitioned fully into tech as a Data Scientist. I have experience in digital marketing before now, so I easily focused on Analytics, with Growth and Product added to the pack (thanks to my first data role). I am interested in the real-life applications of data science and machine learning.
 
 > Currently, at ALX, I work at the intersection of data analysis and operations (IT and community) and have built a few products. I work with Spreadsheets, Looker Studio, Tableau, Python, and SQL. I am currently learning and building more LLM-based products and software products to enhance team and community operations.
-<br>
-<hr/>
-Ok. This next version is an extended version of me.
+
+---
+
+Okay. This next version is an extended version of me.
 
 I am knowledged about digital marketing, web platforms and tech in general which gives me the ability to work across data, software and products. 
 
@@ -21,12 +22,12 @@ Speaking of eye for details, digital marketing and tech, as a product manager I 
 
 In my own time I used to be a homeschool teacher for Common Entrance pupils and every other things (albeit in tech). I design [WordPress websites](https://opendiari.com/thatbros), [write quick tech articles](https://opendiari.com), teach kids to code in Scratch, and read daily about tech and growth marketing. I am currently working on EdstreetNG, seeNaija and Stopeet.
 
-All of my writings on [data science]({{site.baseurl}}/categories.html#data), [products]({{site.baseurl}}/categories.html#product) and [tech life]({{site.baseurl}}/categories.html#tech) can be found under the **Articles section** while my data science portfolio is at [here](https://ndcharles.github.io/data-portfolio).
+All of my writings on [data science]({{site.baseurl}}/categories.html#data), [products]({{site.baseurl}}/categories.html#product) and [tech life]({{site.baseurl}}/categories.html#tech) can be found under the **Articles section** while my data science portfolio is at [here]({{site.baseurl}}/portfolio.html).
 
 Do you like my work or find value in the things that I share here or anywhere else and you want to work with me, or just hangout? Feel free to reach out on [Twitter](https://twitter.com/nndcharles), via e-mail or [LinkedIn](https://linkedin.com/in/nndcharles).
 
 #### What I do?
-- [Data Science & Analytics](https://ndcharles.github.io/data-portfolio)
+- [Data Science & Analytics]({{site.baseurl}}/portfolio.html)
 - [Everything else tech](https://ndcharles.github.io)
 - And Others
 

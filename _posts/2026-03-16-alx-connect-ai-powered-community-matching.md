@@ -48,7 +48,7 @@ In 2025, I took ownership of the project to push it to completion. I leaned on m
 
 > ALX Connect is a fully automated, community-first matching platform
 
-After just one month of focused development, [ALX Connect v2](https://connect.alxafrica.ng) went live 🎉<br>
+After just one month of focused development, [ALX Connect v2](https://connect.alxafrica.ng) went live 🎉  
 We ran our first fully automated matching cycle, and monitored interactions via Microsoft Clarity as real people clicked, scheduled, and connected. This time, it worked the way I envisioned; not perfect but purposeful. Matching was smarter. The process was smoother. And most importantly, it was built to scale.
 
 A few tech notes (because nerdy details matter 😊):
@@ -67,7 +67,7 @@ Most importantly, people are meeting peers who get their journey. Feedback loops
 
 While I’m proud of what we’ve built so far, this isn't the end. It’s the beginning of an AI-powered community ecosystem where connection isn’t left to chance but designed, nurtured, and continuously improved.
 
-> To those who believed, built, tested, and matched: thank you.<br>
+> To those who believed, built, tested, and matched: thank you.  
 > Let’s keep connecting—intentionally, kindly, and at scale.
 
 There’s still so much more we can do to strengthen connections within the community and build tools that truly serve people at scale.
@@ -75,10 +75,4 @@ There’s still so much more we can do to strengthen connections within the comm
 —
 P.S. Building tools that deepen human connection? I’m always open to learning, collaborating, or sharing what we’ve learned at [ALX Connect](https://connect.alxafrica.ng).
 
-<div class="alert alert-primary d-flex align-items-center" role="alert">
-    <i class="fas fa-info-circle flex-shrink-0 me-2" style="font-size: 1.5rem; margin-right: 1rem;"></i>
-    
-    <div>
-		For a more technical version of this project, check out <a href="https://ndcharles.github.io/data-portfolio/alx-connect-peer-matching.html" style="text-decoration: underline; color: white;">my portfolio site.</a>
-    </div>
-</div>
+{% include callout.html text="For a more technical version of this project, check out" link="my portfolio" url="/portfolio/alx-connect-peer-matching" %}

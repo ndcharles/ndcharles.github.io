@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "Exploratory Data Analysis VS Explanatory Data Analysis"
 categories: [ Data ]

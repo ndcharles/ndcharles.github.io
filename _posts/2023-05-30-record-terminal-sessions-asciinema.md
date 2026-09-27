@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title:  "How to Record Your Terminal Sessions using Asciinema"
 categories: [ Tech]

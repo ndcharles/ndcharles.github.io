@@ -1,0 +1,51 @@
+# Snippets for writing in Pages CMS. Shown in the CMS sidebar ("Writing kit") and at
+# /writing-kit.html with copy buttons. Everything here is safe in the rich-text editor.
+snippets:
+  - title: YouTube, Vimeo, Spotify or SoundCloud
+    how: "No code needed. Paste the link on its own line (nothing else on that line) and it shows as a player on the site."
+    code: |-
+      https://www.youtube.com/watch?v=VIDEO_ID
+  - title: Quote card
+    how: "No code needed. Press the quote button (or type > and a space), write the quote, press Enter twice, then start the last line with a dash —. That last line becomes the attribution."
+    code: |-
+      > The quote goes here.
+      >
+      > — Author Name, Book or Film
+  - title: Quote card (as a snippet)
+    how: "Same card, written as one line. Paste it in a paragraph of its own."
+    code: |-
+      {% include quote.html text="The quote goes here." by="Author Name" source="Book or Film" %}
+  - title: Image with a size or caption
+    how: "For a normal image, use / then Image in the editor. Use this when you need a fixed width, centring or a caption. Upload the file first and copy its path."
+    code: |-
+      {% include image.html src="/assets/images/file-name.png" alt="What the image shows" width="300" caption="Optional caption" %}
+  - title: Highlighted note box
+    how: "A green box with an optional link at the end. For another site, leave out https:// (write example.com/page). Add style=\"dark\" for a dark box."
+    code: |-
+      {% include callout.html text="For the full story, read" link="my blog article" url="/alx-connect-ai-powered-community-matching" %}
+  - title: Your own video or audio file
+    how: "Upload the file to Audio & video (assets/media), then paste its path. Leave out https:// for files on other sites."
+    code: |-
+      {% include embed.html video="/assets/media/clip.mp4" caption="Optional caption" %}
+
+      {% include embed.html audio="/assets/media/song.mp3" %}
+  - title: Video by ID (alternative)
+    how: "Same player as pasting the link, if you prefer a snippet. Spotify uses the part after open.spotify.com/."
+    code: |-
+      {% include embed.html youtube="VIDEO_ID" caption="Optional caption" %}
+
+      {% include embed.html spotify="track/TRACK_ID" %}
+  - title: Line break inside a paragraph
+    how: "Press Shift + Enter in the editor. (Enter on its own starts a new paragraph.)"
+    code: |-
+      First line
+      Second line
+  - title: "Rule 1: no https:// inside snippets"
+    how: "Inside {% include … %} snippets, never type https:// — the editor turns it into a link and breaks the snippet. Write example.com/page instead; the site adds https:// for you. Pasted links on their own line are fine."
+    code: |-
+      url="example.com/page"
+  - title: "Rule 2: don't start a paragraph with a short word and a full stop"
+    how: "The editor misreads a paragraph that starts with a one- or two-letter word and a full stop (Ok. / Mr. / No. / So. / I.) as a numbered list the next time the post is opened. Write Okay. / Mr Smith / Number 5 instead, or use a comma. Longer words (Okay. / Etc.) are fine."
+    code: |-
+      Okay. This is fine.
+      Ok, this is fine too.

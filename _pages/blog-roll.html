@@ -5,12 +5,12 @@ permalink: /blog-roll.html
 description: "Short, quick thoughts on data, IT operations and building in tech from Ndcharles Nweke. The notes between the long posts."
 ---
 {%- assign notes = site['b-roll'] | sort: "date" | reverse -%}
-{%- comment -%} The two newest notes tagged "sticky" are pinned in the cover and left out of the feed. {%- endcomment -%}
+{%- comment -%} The two newest pinned notes (sticky: true, or the "sticky" tag) go at the top and are left out of the feed. {%- endcomment -%}
 {%- assign pinned = "" | split: "" -%}
 {%- assign pinned_urls = "|" -%}
 {%- for n in notes -%}
   {%- if pinned.size >= 2 %}{% break %}{% endif -%}
-  {%- if n.tags contains "sticky" -%}
+  {%- if n.sticky == true or n.tags contains "sticky" -%}
     {%- assign pinned = pinned | push: n -%}
     {%- assign pinned_urls = pinned_urls | append: n.url | append: "|" -%}
   {%- endif -%}

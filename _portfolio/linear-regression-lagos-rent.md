@@ -15,8 +15,11 @@ Rent data was scraped from [nigeriapropertycentre](https://nigeriapropertycentre
 
 ## Discussions
 
-After splitting, the linear regression model gave a _score_ of **0.71** and an _intercept_ of **5.6758**. This leaves us with a linear model (where 5.6758 is the intercept; X, the independent variable and; m, the model coefficients.)<br>
-<pre>y = 5.6758 + mX</pre>
+After splitting, the linear regression model gave a _score_ of **0.71** and an _intercept_ of **5.6758**. This leaves us with a linear model (where 5.6758 is the intercept; X, the independent variable and; m, the model coefficients.)
+
+```
+y = 5.6758 + mX
+```
 
 [\[View project on GitHub\]](https://github.com/ndcharles/SGA08_DATASCI/tree/master/lagos_rent)
 

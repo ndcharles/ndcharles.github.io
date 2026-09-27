@@ -1,0 +1,81 @@
+---
+title: "Writing kit"
+layout: default
+permalink: /writing-kit.html
+sitemap: false
+noindex: true
+description: "Copy-ready snippets for writing posts, notes and projects in Pages CMS."
+---
+{%- comment -%}
+Copy-ready snippets for writing in Pages CMS; content lives in _data/writing_kit.yml.
+Not linked from the menu and kept out of search engines and site search.
+{%- endcomment -%}
+<div class="container wk-page">
+    <h1 class="wk-title">Writing kit</h1>
+    <p class="wk-intro">Snippets for the Pages CMS editor. Tap <strong>Copy</strong>, then paste into the post. Keep this tab open while you write.</p>
+
+    {% for s in site.data.writing_kit.snippets %}
+    <section class="wk-card">
+        <h2 class="wk-card-title">{{ s.title }}</h2>
+        <p class="wk-how">{{ s.how }}</p>
+        <div class="wk-code">
+            <pre><code>{{ s.code | escape }}</code></pre>
+            <button type="button" class="wk-copy" data-copy>Copy</button>
+        </div>
+    </section>
+    {% endfor %}
+</div>
+
+<style>
+    .wk-page { max-width: 760px; padding-top: 16px; padding-bottom: 56px; }
+    .wk-title { margin: 0 0 8px; font-size: 2rem; font-weight: 500; }
+    .wk-intro { margin: 0 0 28px; color: #555; }
+    .wk-card { margin-bottom: 18px; padding: 18px 18px 16px; border: 1px solid #e6ebe9; border-radius: 10px; }
+    .wk-card-title { margin: 0 0 6px; font-size: 1.125rem; font-weight: 500; }
+    .wk-how { margin: 0 0 12px; font-size: .9375rem; line-height: 1.55; color: #555; }
+    .wk-code { position: relative; }
+    .wk-code pre {
+        margin: 0;
+        padding: 14px 84px 14px 14px;
+        border-radius: 8px;
+        background: #f4f8f6;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-size: .8125rem;
+        line-height: 1.55;
+    }
+    .wk-copy {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 6px 14px;
+        border: 0;
+        border-radius: 999px;
+        background: #03a87c;
+        color: #fff;
+        font: inherit;
+        font-size: .8125rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .wk-copy.is-done { background: #1d2321; }
+</style>
+<script>
+    document.addEventListener('click', function (event) {
+        var button = event.target.closest('[data-copy]');
+        if (!button) return;
+        var text = button.parentNode.querySelector('code').textContent;
+        var done = function () {
+            button.textContent = 'Copied';
+            button.classList.add('is-done');
+            setTimeout(function () { button.textContent = 'Copy'; button.classList.remove('is-done'); }, 1500);
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(done);
+        } else {
+            var ta = document.createElement('textarea');
+            ta.value = text; ta.style.cssText = 'position:fixed;opacity:0';
+            document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); done();
+        }
+    });
+</script>

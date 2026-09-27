@@ -44,6 +44,6 @@ One thing that is really important to remember with morning pages is that what y
 ## The 30-day Morning Page challenge 
 Morning pages are unique. Meant to be filled with meaningful yet pointless rants (no professionalism needed). Write whatever comes to mind — weird, funny, boring, banal, insightful, dull. Not meant to be re-read. It is meant to be enjoyed not seen as a chore. Watch Leighann Chandler as she shares her experience committing to a 30-day Morning pages challenge.
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/MXXs9JC_ItQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+{% include embed.html youtube="MXXs9JC_ItQ" %}
 
 This is an experiment I have challenged myself to give a try everyday for the next 1 month and I believe that it would impact on my mood, focus, and overall productivity. What have I got to lose? Nothing. As I continue with this, it would strengthen me to start writing here and on my how-to blog.

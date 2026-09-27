@@ -28,6 +28,7 @@
 	</title>
 
     {% seo title=false %}
+    {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
 
@@ -96,6 +97,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     <script src="{{site.baseurl}}/assets/js/theme.js"></script>
+    <script src="{{site.baseurl}}/assets/js/content-enhance.js" defer></script>
 
     <script>var SEARCH_BASEURL = '{{ site.baseurl }}';</script>
     <script src="{{site.baseurl}}/assets/js/search.js"></script>

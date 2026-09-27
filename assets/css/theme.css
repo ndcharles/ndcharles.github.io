@@ -1416,3 +1416,23 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 button, input, select, textarea, .btn, .navbar, .dropdown-menu, footer {
 	font-family: Sen, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
+
+/* ---------- Editor-safe snippets (_includes/image.html, callout.html) ---------- */
+.md-figure { margin: 1.25rem 0; text-align: center; }
+.md-figure img { max-width: 100%; height: auto; margin: 0 auto; border-radius: 8px; }
+.md-figure figcaption { margin-top: .5rem; font-size: .8125rem; color: #6c757d; }
+.md-callout {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin: 1.5rem 0;
+	padding: 14px 18px;
+	border-radius: 10px;
+	background: #e8f6f1;
+	color: #0b5c46;
+}
+.md-callout svg { flex: none; }
+.md-callout p { margin: 0 !important; font-size: 1rem; line-height: 1.5; }
+.md-callout a { color: inherit; font-weight: 700; text-decoration: underline; }
+.md-callout-dark { background: #23292b; color: #f1f4f3; }
+.quote-card figcaption a { color: inherit; text-decoration: underline; }

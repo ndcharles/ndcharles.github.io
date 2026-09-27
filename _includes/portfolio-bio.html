@@ -1,6 +1,6 @@
 {%- assign bio = site.data.portfolio_bio -%}
 <div class="pf-side">
-    <img class="pf-avatar" src="{{ site.baseurl }}/{{ bio.photo }}" alt="{{ bio.name }}" width="150" height="150">
+    <img class="pf-avatar" src="{{ bio.photo | relative_url }}" alt="{{ bio.name }}" width="150" height="150">
     <h2 class="pf-name"><a href="{{ site.baseurl }}/portfolio.html">{{ bio.name }}</a></h2>
     <p class="pf-headline">{{ bio.headline }}</p>
     <p class="pf-about">{{ bio.about }}</p>

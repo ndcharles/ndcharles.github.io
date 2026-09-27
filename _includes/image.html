@@ -1,0 +1,11 @@
+{%- comment -%}
+An image with an optional width and caption (safe in the Pages CMS editor).
+  {% include image.html src="/assets/images/app.gif" alt="What it shows" %}
+  {% include image.html src="/assets/images/app.gif" alt="What it shows" width="300" caption="Optional caption" %}
+{%- endcomment -%}
+<figure class="md-figure">
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt | escape }}"{% if include.width %} width="{{ include.width }}"{% endif %} loading="lazy">
+    {%- if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+    {%- endif %}
+</figure>
