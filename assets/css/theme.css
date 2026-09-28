@@ -1496,3 +1496,41 @@ button, input, select, textarea, .btn, .navbar, .dropdown-menu, footer {
 .code-copy:hover, .code-copy:focus-visible { opacity: 1; background: #e8f6f1; }
 .code-copy.is-done { background: #03a87c; border-color: #03a87c; color: #fff; }
 .code-wrap pre { padding-right: 72px !important; }
+
+/* ---------- Show/hide section (_includes/toggle.html … endtoggle.html) ---------- */
+.md-toggle { margin: 1.5rem 0; }
+.md-toggle > summary {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 18px;
+	border: 1px solid #03a87c;
+	border-radius: 999px;
+	background: #fff;
+	color: #027a5a;
+	font-size: .9375rem;
+	font-weight: 600;
+	cursor: pointer;
+	list-style: none;
+	user-select: none;
+	transition: background .15s, color .15s;
+}
+.md-toggle > summary::-webkit-details-marker { display: none; }
+.md-toggle > summary::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	margin-top: -4px;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	transform: rotate(45deg);
+	transition: transform .2s;
+}
+.md-toggle > summary:hover { background: #eef7f3; }
+.md-toggle > summary:focus-visible { outline: 2px solid #03a87c; outline-offset: 2px; }
+.md-toggle[open] > summary { background: #03a87c; color: #fff; }
+.md-toggle[open] > summary::after { margin-top: 4px; transform: rotate(-135deg); }
+.md-toggle > :not(summary) { animation: md-toggle-in .25s ease-out; }
+.md-toggle > summary + * { margin-top: 1rem; }
+@keyframes md-toggle-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .md-toggle > :not(summary) { animation: none; } }
