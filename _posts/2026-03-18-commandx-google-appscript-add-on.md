@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "Why I Built CommandX: My Own Toolkit for Google Sheets"
 categories:
