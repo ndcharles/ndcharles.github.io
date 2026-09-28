@@ -3,7 +3,7 @@ published: false
 layout: post
 title:  "Paying for What We Use: How I Choose Tools for the ALX Nigeria Team"
 categories: [ Tech, Growth ]
-image: assets/images/[image-name].webp
+image: /assets/images/pay-for-what-we-use.webp
 tags: [saas, it_operations, tool_selection, cost_savings, automation]
 ---
 Most software is priced for a company that uses it the same way every month. Every person gets a seat, the plan is sized for your busiest month, and you pay for it in the quiet months too.

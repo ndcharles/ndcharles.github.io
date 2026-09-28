@@ -3,7 +3,7 @@ published: false
 layout: post
 title:  "What Setting Up Email for 15+ Small Businesses Taught Me"
 categories: [ Tech ]
-image: assets/images/[image-name].webp
+image: /assets/images/business-email-setup.webp
 tags: [business_email, zoho_mail, google_workspace, cloudflare, dns, small_business]
 ---
 Most of my clients forget about their domain until I message them that it's about to expire. One doesn't.
