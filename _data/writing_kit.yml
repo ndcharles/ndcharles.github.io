@@ -55,6 +55,32 @@ snippets:
 
       {% include endinfobox.html %}
 
+  - group: Info boxes
+    title: Show/hide section (toggle)
+    how: "A button that reveals what's between the two lines when tapped. Put anything inside: text, a list, a code block or a whole info box. Change the label to the button text you want; add open=\"true\" to start it open. Keep an empty line after the start and before the end."
+    preview: |-
+      {% include toggle.html label="Show the setup code" %}
+
+      {% include infobox.html title="Setup code" %}
+
+      Paste this into Code.gs.
+
+      ```text
+      function onOpen() {
+        SpreadsheetApp.getUi().createMenu('My menu').addToUi();
+      }
+      ```
+
+      {% include endinfobox.html %}
+
+      {% include endtoggle.html %}
+    code: |-
+      {% include toggle.html label="Show the setup code" %}
+
+      Anything here stays hidden until the button is tapped.
+
+      {% include endtoggle.html %}
+
   # ------------------------------------------------------------------ Media
   - group: Media
     title: YouTube, Vimeo, Spotify or SoundCloud

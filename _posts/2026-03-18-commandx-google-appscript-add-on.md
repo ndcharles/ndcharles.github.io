@@ -103,7 +103,7 @@ I'd like to turn CommandX into a proper Google Workspace add-on for my own use, 
 
 Until then, you can use it the same way my team does, as a library.
 
-**See the setup steps and code below:**
+**See the setup steps below, and tap the button to show the code:**
 
 1. Open the Google Sheet you want to use it in.
 2. Go to **Extensions > Apps Script**.
@@ -112,6 +112,8 @@ Until then, you can use it the same way my team does, as a library.
 5. Delete everything in **Code.gs**, paste the code below, name the project and save.
 6. Reload your sheet. You will see a new **Command-X** menu.
 7. Optional, for x-tracker: change the tab and column names in the settings to match your sheet. Then in Apps Script, go to **Triggers**, add a trigger for `adminOnEdit` with the event type **On edit**, and save.
+
+{% include toggle.html label="Show the setup code" %}
 
 {% include infobox.html title="Command-X Client Script" %}
 
@@ -212,6 +214,8 @@ This is the library code to add to code.gs
 ```
 
 {% include endinfobox.html %}
+
+{% include endtoggle.html %}
 
 Once it is installed, go to your sheet, and you will see the new add-on menu. Go to **Command-X > How this library works** walks you through each tool, and **View Changelog** in any sidebar shows what is new.
 

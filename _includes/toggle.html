@@ -1,0 +1,11 @@
+{%- comment -%}
+Start of a show/hide section. Everything up to {% include endtoggle.html %} is hidden
+until the reader taps the button: paragraphs, lists, code blocks, even an info box.
+  {% include toggle.html label="Show the setup code" %}
+  ...content...
+  {% include endtoggle.html %}
+label is the button text (default "Show more"). Add open="true" to start it open.
+Leave a blank line (an empty paragraph) around both lines.
+{%- endcomment %}
+<details class="md-toggle"{% if include.open %} open{% endif %} markdown="1">
+<summary markdown="0"><span>{{ include.label | default: "Show more" }}</span></summary>
