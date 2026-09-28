@@ -113,170 +113,102 @@ Until then, you can use it the same way my team does, as a library.
 6. Reload your sheet. You will see a new **Command-X** menu.
 7. Optional, for x-tracker: change the tab and column names in the settings to match your sheet. Then in Apps Script, go to **Triggers**, add a trigger for `adminOnEdit` with the event type **On edit**, and save.
 
-{% include infobox.html title="command-X Client Script" %}
+{% include infobox.html title="Command-X Client Script" %}
 
 This is the library code to add to code.gs
 
 ```text
 
 // command-X Client Script
-
   function onOpen() {
-
     SpreadsheetApp.getUi()
-
       .createMenu('🔌 command-X')
-
       .addItem('⛓️‍💥 x-split', 'openSplit')
-
       .addItem('⛓️ x-combine', 'openCombine')
-
       .addItem('⛙ x-filter', 'showFilter')
-
       .addSeparator()
-
       .addItem('⛓ x-merge', 'openMerge') 
-
       .addItem('𝌤 x-flatten', 'openExpand')
-
       .addSeparator()
-
       .addItem('❓ How this library works', 'showHelp')
-
       .addItem('📖 Run this library in another sheet', 'showSetupInstructions')
-
       .addToUi();
-
   }
 
   // Sidebars (update for each function)
-
   function openSplit() {
-
     const html = CommandX.getLibraryHtml('sidebar').setTitle('x-split').setWidth(420);
-
     SpreadsheetApp.getUi().showSidebar(html);
-
   }
 
   function openCombine() {
-
     const html = CommandX.getLibraryHtml('combineSidebar').setTitle('x-combine').setWidth(420);
-
     SpreadsheetApp.getUi().showSidebar(html);
-
   }
 
   function showFilter() {
-
     const html = CommandX.getLibraryHtml('filterSidebar').setTitle('x-filter').setWidth(420);
-
     SpreadsheetApp.getUi().showSidebar(html);
-
   }
 
   function openExpand() {
-
     const html = CommandX.getLibraryHtml('expandSidebar').setTitle('x-expand').setWidth(420);
-
     SpreadsheetApp.getUi().showSidebar(html);
-
   }
 
   function openMerge() {
-
     const html = CommandX.getLibraryHtml('mergeSidebar').setTitle('x-merge').setWidth(420);
-
     SpreadsheetApp.getUi().showSidebar(html);
-
   }
 
     /**
-
    * =========================================
-
    * X-TRACKER CONFIGURATIONS
-
    * This tracker is used to track datetime for sheets being logged.
-
    * See the configuration details below or in the help modal of Command-X
-
    * =========================================
-
    */
 
   // SETUP A: The 1-to-1 Mapping (Specific columns trigger specific dates)
-
   const ONE_TO_ONE = {
-
     trackedTabs: ["Asonwa", "Kate", "Seun"],   
-
     headerRow: 1,
-
     columnMap: {
-
       "Initial call": "Initial call date",
-
       "Follow-up": "Follow-up date"
-
     }
-
   };
 
   // SETUP B: The Many-to-1 Mapping (Any of these columns trigger one master date)
-
   const MANY_TO_ONE = {
-
     trackedTabs: ["Asonwa", "Kate", "Seun"],   
-
     headerRow: 1,
-
     watchColumns: ["Dropdown", "Call date"], 
-
     timestampColumn: "Logged date"
-
   };
 
   // Google Sheets Simple Trigger to ensure the time tracker logs successfully
-
   function adminOnEdit(e) {
-
     runTracker(e, ONE_TO_ONE); 
 
     // To switch setups, just comment out the line above and uncomment the line below:
-
     // CommandX.runTracker(e, MANY_TO_ONE);
-
   }
 
   // BRIDGE: Passthrough functions so the sidebar can find them. (update for each function)
-
   function getSpecificSheetData(name) { return CommandX.getSpecificSheetData(name); }
-
   function getInitialData() { return CommandX.getInitialData(); }
-
   function getSheetNames() { return CommandX.getSheetNames(); }
-
   function getSheetSchema(names) { return CommandX.getSheetSchema(names); }
-
   function getUniqueValues(sheetName, rangeA1, colIdx, hasHeaders) { return CommandX.getUniqueValues(sheetName, rangeA1, colIdx, hasHeaders); }
-
   function runSplit(opts) { return CommandX.runSplit(opts); }
-
   function runCombine(opts) { return CommandX.runCombine(opts); }
-
   function runFilter(config) { return CommandX.runFilter(config); }
-
   function runExpand(opts) { return CommandX.runExpand(opts); }
-
   function runMerge(config) { return CommandX.runMerge(config); }
-
   function runTracker(e, config) { return CommandX.runTracker(e, config); }
-
   function showHelp(tab) { return CommandX.showHelp(tab); }
-
   function showSetupInstructions() { CommandX.showSetupInstructions(); }
-
 ```
 
 {% include endinfobox.html %}
