@@ -1,10 +1,21 @@
 ---
 published: false
 layout: post
-title:  "Why I Built CommandX: My Own Toolkit for Google Sheets"
-categories: [ Product, Data, Tech, Growth ]
-image: assets/images/commandx_toolkit.webp
-tags: [CommandX, google-sheets, automation, google-apps-script, call-centre, operations]
+title: "Why I Built CommandX: My Own Toolkit for Google Sheets"
+categories:
+  - Product
+  - Data
+  - Tech
+  - Growth
+image: /assets/images/commandx_toolkit.webp
+tags:
+  - CommandX
+  - google-sheets
+  - automation
+  - google-apps-script
+  - call-centre
+  - operations
+comments: true
 ---
 I built CommandX for one reason: I wanted every tool I need for processing data in one place, not spread across several free and paid tools.
 
@@ -101,18 +112,188 @@ I'd like to turn CommandX into a proper Google Workspace add-on for my own use, 
 
 Until then, you can use it the same way my team does, as a library.
 
-<details style="border:1px solid #dadce0; border-radius:8px; padding:12px 16px; margin:1.5rem 0;">
-<summary style="cursor:pointer; font-weight:600;">Show the setup steps and code (click to open)</summary>
-<ol style="margin-top:1rem;">
-<li>Open the Google Sheet you want to use it in.</li>
-<li>Go to <strong>Extensions &gt; Apps Script</strong>.</li>
-<li>Click <strong>+</strong> next to <strong>Libraries</strong> and paste this Script ID: <code>1lmhlX_ZrCyR4KVGP9rbo51ZpCNSIXgBJheOY_7JBMhSxLMy0vr8dAUhK</code></li>
-<li>Make sure the identifier is <strong>CommandX</strong>, pick the latest version, and click <strong>Add</strong>.</li>
-<li>Delete everything in <strong>Code.gs</strong>, paste the code below, name the project and save.</li>
-<li>Reload your sheet. You will see a new <strong>command-X</strong> menu.</li>
-<li>Optional, for x-tracker: change the tab and column names in the settings to match your sheet. Then in Apps Script, go to <strong>Triggers</strong>, add a trigger for <code>adminOnEdit</code> with the event type <strong>On edit</strong>, and save.</li>
-</ol>
-<pre style="max-height:320px; overflow:auto; font-size:12px; line-height:1.5; padding:12px; border-radius:6px; background:#f6f8fa;"><code>// command-X Client Script
+**Show the setup steps and code (click to open)**
+
+1. Open the Google Sheet you want to use it in.
+2. Go to **Extensions > Apps Script**.
+3. Click **+** next to **Libraries** and paste this Script ID: `1lmhlX_ZrCyR4KVGP9rbo51ZpCNSIXgBJheOY_7JBMhSxLMy0vr8dAUhK`
+4. Make sure the identifier is **CommandX**, pick the latest version, and click **Add**.
+5. Delete everything in **Code.gs**, paste the code below, name the project and save.
+6. Reload your sheet. You will see a new **command-X** menu.
+7. Optional, for x-tracker: change the tab and column names in the settings to match your sheet. Then in Apps Script, go to **Triggers**, add a trigger for `adminOnEdit` with the event type **On edit**, and save.
+
+{% include infobox.html title="command-X Client Script" %}
+
+This is the library code to add to code.gs
+
+```text
+
+// command-X Client Script
+
+  function onOpen() {
+
+    SpreadsheetApp.getUi()
+
+      .createMenu('🔌 command-X')
+
+      .addItem('⛓️‍💥 x-split', 'openSplit')
+
+      .addItem('⛓️ x-combine', 'openCombine')
+
+      .addItem('⛙ x-filter', 'showFilter')
+
+      .addSeparator()
+
+      .addItem('⛓ x-merge', 'openMerge') 
+
+      .addItem('𝌤 x-flatten', 'openExpand')
+
+      .addSeparator()
+
+      .addItem('❓ How this library works', 'showHelp')
+
+      .addItem('📖 Run this library in another sheet', 'showSetupInstructions')
+
+      .addToUi();
+
+  }
+
+  // Sidebars (update for each function)
+
+  function openSplit() {
+
+    const html = CommandX.getLibraryHtml('sidebar').setTitle('x-split').setWidth(420);
+
+    SpreadsheetApp.getUi().showSidebar(html);
+
+  }
+
+  function openCombine() {
+
+    const html = CommandX.getLibraryHtml('combineSidebar').setTitle('x-combine').setWidth(420);
+
+    SpreadsheetApp.getUi().showSidebar(html);
+
+  }
+
+  function showFilter() {
+
+    const html = CommandX.getLibraryHtml('filterSidebar').setTitle('x-filter').setWidth(420);
+
+    SpreadsheetApp.getUi().showSidebar(html);
+
+  }
+
+  function openExpand() {
+
+    const html = CommandX.getLibraryHtml('expandSidebar').setTitle('x-expand').setWidth(420);
+
+    SpreadsheetApp.getUi().showSidebar(html);
+
+  }
+
+  function openMerge() {
+
+    const html = CommandX.getLibraryHtml('mergeSidebar').setTitle('x-merge').setWidth(420);
+
+    SpreadsheetApp.getUi().showSidebar(html);
+
+  }
+
+    /**
+
+   * =========================================
+
+   * X-TRACKER CONFIGURATIONS
+
+   * This tracker is used to track datetime for sheets being logged.
+
+   * See the configuration details below or in the help modal of Command-X
+
+   * =========================================
+
+   */
+
+  // SETUP A: The 1-to-1 Mapping (Specific columns trigger specific dates)
+
+  const ONE_TO_ONE = {
+
+    trackedTabs: ["Asonwa", "Kate", "Seun"],   
+
+    headerRow: 1,
+
+    columnMap: {
+
+      "Initial call": "Initial call date",
+
+      "Follow-up": "Follow-up date"
+
+    }
+
+  };
+
+  // SETUP B: The Many-to-1 Mapping (Any of these columns trigger one master date)
+
+  const MANY_TO_ONE = {
+
+    trackedTabs: ["Asonwa", "Kate", "Seun"],   
+
+    headerRow: 1,
+
+    watchColumns: ["Dropdown", "Call date"], 
+
+    timestampColumn: "Logged date"
+
+  };
+
+  // Google Sheets Simple Trigger to ensure the time tracker logs successfully
+
+  function adminOnEdit(e) {
+
+    runTracker(e, ONE_TO_ONE); 
+
+    // To switch setups, just comment out the line above and uncomment the line below:
+
+    // CommandX.runTracker(e, MANY_TO_ONE);
+
+  }
+
+  // BRIDGE: Passthrough functions so the sidebar can find them. (update for each function)
+
+  function getSpecificSheetData(name) { return CommandX.getSpecificSheetData(name); }
+
+  function getInitialData() { return CommandX.getInitialData(); }
+
+  function getSheetNames() { return CommandX.getSheetNames(); }
+
+  function getSheetSchema(names) { return CommandX.getSheetSchema(names); }
+
+  function getUniqueValues(sheetName, rangeA1, colIdx, hasHeaders) { return CommandX.getUniqueValues(sheetName, rangeA1, colIdx, hasHeaders); }
+
+  function runSplit(opts) { return CommandX.runSplit(opts); }
+
+  function runCombine(opts) { return CommandX.runCombine(opts); }
+
+  function runFilter(config) { return CommandX.runFilter(config); }
+
+  function runExpand(opts) { return CommandX.runExpand(opts); }
+
+  function runMerge(config) { return CommandX.runMerge(config); }
+
+  function runTracker(e, config) { return CommandX.runTracker(e, config); }
+
+  function showHelp(tab) { return CommandX.showHelp(tab); }
+
+  function showSetupInstructions() { CommandX.showSetupInstructions(); }
+
+```
+
+{% include endinfobox.html %}
+
+
+
+```
+// command-X Client Script
 function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('🔌 command-X')
@@ -127,6 +308,9 @@ function onOpen() {
     .addItem('📖 Run this library in another sheet', 'showSetupInstructions')
     .addToUi();
 }
+
+
+```
 
 // Sidebars
 function openSplit() {
@@ -193,16 +377,18 @@ function runExpand(opts) { return CommandX.runExpand(opts); }
 function runMerge(config) { return CommandX.runMerge(config); }
 function runTracker(e, config) { return CommandX.runTracker(e, config); }
 function showHelp(tab) { return CommandX.showHelp(tab); }
-function showSetupInstructions() { CommandX.showSetupInstructions(); }</code></pre>
-<p>Once it is installed, <strong>command-X &gt; How this library works</strong> walks you through each tool, and <strong>View Changelog</strong> in any sidebar shows what is new.</p>
-</details>
+function showSetupInstructions() { CommandX.showSetupInstructions(); }&nbsp;
+
+Once it is installed, **command-X > How this library works** walks you through each tool, and **View Changelog** in any sidebar shows what is new.
 
 If you try it and something breaks, or you have an idea for a new tool, [reach out](https://linke.ro/ndcharles). I'd like to hear how you use it.
 
 A few notes on how it's built (because the details matter 😊):
+
 - Google Apps Script, published as a shared library with version checks
 - HTML sidebars and a tabbed help manual inside Google Sheets
 - Live views built on Google Sheets' `QUERY` function
 - An on-edit trigger for automatic timestamps
 - Column locking that is saved and restored when data is appended to protected tabs
 - Six tools: x-split (with an append mode), x-combine, x-filter, x-merge, x-flatten and x-tracker
+
