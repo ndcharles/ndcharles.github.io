@@ -1,0 +1,163 @@
+{%- comment -%}
+Meta tags and structured data for every page. Replaces {% seo %} from jekyll-seo-tag,
+which always labels the publisher as an Organization. Here the site, every post and
+every page are by one Person: site.author in _config.yml.
+The <title> itself is set in _layouts/default.html.
+{%- endcomment -%}
+{%- assign author = site.author -%}
+{%- assign person_id = site.url | append: "/#person" -%}
+{%- assign website_id = site.url | append: "/#website" -%}
+
+{%- if page.title -%}
+  {%- assign seo_title = page.title -%}
+{%- elsif page.tag -%}
+  {%- assign seo_title = page.tag -%}
+{%- else -%}
+  {%- assign seo_title = site.brand -%}
+{%- endif -%}
+{%- assign seo_title = seo_title | strip_html | normalize_whitespace -%}
+
+{%- if page.description -%}
+  {%- assign seo_description = page.description -%}
+{%- elsif page.excerpt -%}
+  {%- assign seo_description = page.excerpt -%}
+{%- else -%}
+  {%- assign seo_description = site.description -%}
+{%- endif -%}
+{%- assign seo_description = seo_description | strip_html | normalize_whitespace | truncatewords: 50 -%}
+
+{%- assign seo_url = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url -%}
+
+{%- if page.image -%}
+  {%- assign seo_image = page.image | absolute_url -%}
+{%- endif -%}
+{%- assign author_image = author.avatar | absolute_url -%}
+
+{%- comment -%} Posts, B-Roll notes and portfolio projects are articles; the rest are pages. {%- endcomment -%}
+{%- if page.collection == "posts" or page.collection == "b-roll" or page.collection == "portfolio" -%}
+  {%- assign is_article = true -%}
+{%- else -%}
+  {%- assign is_article = false -%}
+{%- endif -%}
+{%- assign is_home = false -%}
+{%- if page.url == "/" or page.url == "/index.html" -%}{%- assign is_home = true -%}{%- endif -%}
+
+<meta name="description" content="{{ seo_description | escape }}">
+<meta name="author" content="{{ author.name | escape }}">
+<link rel="canonical" href="{{ seo_url }}">
+{%- if paginator.previous_page_path %}
+<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
+{%- endif %}
+{%- if paginator.next_page_path %}
+<link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
+{%- endif %}
+
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ seo_title | escape }}">
+<meta property="og:description" content="{{ seo_description | escape }}">
+<meta property="og:url" content="{{ seo_url }}">
+<meta property="og:locale" content="en_US">
+{%- if is_article %}
+<meta property="og:type" content="article">
+<meta property="article:author" content="{{ author.url }}">
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{%- if page.date_modified %}
+<meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}">
+{%- endif %}
+{%- elsif page.url == "/about.html" %}
+<meta property="og:type" content="profile">
+<meta property="profile:first_name" content="{{ author.first_name }}">
+<meta property="profile:last_name" content="{{ author.last_name }}">
+{%- else %}
+<meta property="og:type" content="website">
+{%- endif %}
+<meta property="og:image" content="{{ seo_image | default: author_image }}">
+{%- if seo_image %}
+<meta property="og:image:alt" content="{{ seo_title | escape }}">
+{%- endif %}
+
+<meta name="twitter:card" content="{% if seo_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:site" content="@{{ author.twitter }}">
+<meta name="twitter:creator" content="@{{ author.twitter }}">
+<meta name="twitter:title" content="{{ seo_title | escape }}">
+<meta name="twitter:description" content="{{ seo_description | escape }}">
+<meta name="twitter:image" content="{{ seo_image | default: author_image }}">
+
+{%- if site.google_site_verification %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+
+{%- capture person -%}
+{
+  "@type": "Person",
+  "@id": {{ person_id | jsonify }},
+  "name": {{ author.name | jsonify }},
+  "givenName": {{ author.first_name | jsonify }},
+  "familyName": {{ author.last_name | jsonify }},
+  "url": {{ author.url | jsonify }},
+  "image": {{ author_image | jsonify }},
+  "jobTitle": {{ author.title | jsonify }},
+  "description": {{ author.bio | jsonify }},
+  "sameAs": {{ author.same_as | jsonify }}
+}
+{%- endcapture -%}
+
+{%- capture website -%}
+{
+  "@type": "WebSite",
+  "@id": {{ website_id | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "alternateName": {{ site.brand | jsonify }},
+  "url": {{ site.url | append: "/" | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "inLanguage": "en",
+  "author": { "@id": {{ person_id | jsonify }} },
+  "publisher": { "@id": {{ person_id | jsonify }} }
+}
+{%- endcapture %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {{ person }},
+    {{ website }},
+    {%- if is_article %}
+    {
+      "@type": "BlogPosting",
+      "@id": {{ seo_url | append: "#article" | jsonify }},
+      "headline": {{ seo_title | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "url": {{ seo_url | jsonify }},
+      "mainEntityOfPage": {{ seo_url | jsonify }},
+      {%- if seo_image %}
+      "image": {{ seo_image | jsonify }},
+      {%- endif %}
+      {%- if page.tags.size > 0 %}
+      "keywords": {{ page.tags | join: ", " | jsonify }},
+      {%- endif %}
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.date_modified | default: page.date | date_to_xmlschema | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "author": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    }
+    {%- else %}
+    {
+      "@type": {% if is_home %}"CollectionPage"{% elsif page.url == "/about.html" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+      "@id": {{ seo_url | append: "#webpage" | jsonify }},
+      "name": {{ seo_title | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "url": {{ seo_url | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      {%- if page.url == "/about.html" %}
+      "mainEntity": { "@id": {{ person_id | jsonify }} },
+      {%- endif %}
+      "author": { "@id": {{ person_id | jsonify }} }
+    }
+    {%- endif %}
+  ]
+}
+</script>
