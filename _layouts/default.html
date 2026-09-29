@@ -5,29 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	
+	{%- comment -%} Homepage: its own title. Everything else: "Title - My Life in Tech by Ndcharles Nweke". {%- endcomment %}
 	<title>
-		{% if page.url == "/" %}
+		{%- if page.url == "/" -%}
 			{{ page.title | escape }}
-		{% else %}
-		{% if page.tag or page.title %}
-			{% if page.tag %}
-				{{ page.tag | escape }}
-			{% else %}
-				{{ page.title | escape }}
-			{% endif %}
-			-
-		{% endif %}
-		{% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-			Page {{ paginator.page }} of {{ paginator.total_pages }}
-			-
-		{% endif %}
-		{{ site.name | escape }}
-		{% unless page.tag or page.title %} - {{ site.description | escape }}
-		{% endunless %}
-		{% endif %}
+		{%- else -%}
+			{%- if page.tag -%}{{ page.tag | escape }} - {% elsif page.title -%}{{ page.title | escape }} - {% endif -%}
+			{%- if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 -%}Page {{ paginator.page }} of {{ paginator.total_pages }} - {% endif -%}
+			{{ site.brand | escape }}
+		{%- endif -%}
 	</title>
 
-    {% seo title=false %}
+    {% include seo.html %}
     {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">

@@ -1,5 +1,9 @@
 # Site
 name: 'MLIT'
+# Site name for search engines and link previews (og:site_name, structured data).
+title: 'MLIT by Ndcharles'
+# Added after every page title except the homepage: "Post title - My Life in Tech by Ndcharles Nweke".
+brand: 'My Life in Tech by Ndcharles Nweke'
 description: 'Welcome to MyLifeInTech, a tech blog by Ndcharles Nweke on Data, Tech and its Products.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
@@ -17,18 +21,24 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-seo-tag
   - jekyll-target-blank
 
 # Author of every post. Shown by _includes/author-bio.html and read by
-# jekyll-seo-tag for the author/publisher in structured data.
+# _includes/seo.html as the Person who writes and publishes the site.
 author:
   name:     Ndcharles Nweke
+  first_name: Ndcharles
+  last_name:  Nweke
   avatar:   'assets/images/ndcharles.png'
   bio:      "Hi, I am Ndcharles. I write about my experience in data science, tech and its products."
   twitter:  nndcharles
   url:      https://ndcharles.github.io/about.html
   title:    Data and IT Operations
+  # Your profiles elsewhere, so search engines know they are the same person.
+  same_as:
+    - https://www.linkedin.com/in/nndcharles
+    - https://x.com/nndcharles
+    - https://github.com/ndcharles
 
 # thatbros Worker: love counts and comments on B-Roll notes.
 # turnstile_site_key is needed for readers to post comments (Cloudflare dash -> Turnstile).
