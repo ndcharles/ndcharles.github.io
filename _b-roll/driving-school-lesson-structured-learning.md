@@ -20,10 +20,6 @@ For instance, when you are turning into a road, the depth of your turn depends o
 
 {% include embed.html youtube="zXOpP1J5do8" caption="If you want to turn into a road, the depth of your turn depends on the lane you are entering; are you turning directly into your lane, or do you need extra effort to be in your lane?" %}
 
-"If you want to turn into a road, the depth of your turn depends on the lane you are entering; are you turning directly into your lane, or do you need extra effort to be in your lane?" (See the image below for better context)
-
-
-
 What's the takeaway in my story?
 
 We live in a society where most people are merely figuring things out informally. To truly master a skill, you owe it to yourself to seek structured training, which would then help you organise and streamline all that you have learnt.
