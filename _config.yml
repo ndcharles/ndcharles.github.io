@@ -13,6 +13,11 @@ google_analytics: 'G-EBC8NBRK90'
 email: 'ndcharles.edu@gmail.com'
 
 include: ["_pages"]
+
+# Build posts and notes even if their date is a few minutes or hours ahead of the build
+# (Pages CMS fills in "now", which can land after the deploy starts). Drafts are hidden
+# with the Published switch, not with future dates.
+future: true
 permalink: /:title
 google_site_verification: aFoRrj4Mizc_WYiBreiSaocQzFy_4ZEPfv8YK5HJCio
 
